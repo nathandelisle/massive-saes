@@ -1,0 +1,18 @@
+{
+ "model": "qwen-2.5-7b",
+ "condition": "standard",
+ "seed": 42,
+ "config_hash": "a7aea6eb7584a091",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-17-153.us-west-2.compute.internal",
+  "code_hash": "71001a11fc0b15ec",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "n_gpu": 1
+ }
+}

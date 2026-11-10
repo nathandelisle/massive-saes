@@ -1,0 +1,29 @@
+Table 62: top-50 sharing (%), native (original-unit) decoder cosine > 0.7, mean over 6 directed seed pairs
+pair | X0 X1 X2 X3 X4
+Identical | 2.7 2.0 91.3 92.3 3.3
+PC1 doubled | 3.7 2.0 83.0 81.7 1.3
+Layers 12 and 16 | 2.7 3.3 93.0 92.7 3.3
+Step 71,000 and final | 2.7 2.0 93.0 92.7 1.3
+
+Table 63: dictionary sharing (%) and content FVU (mean of 3 seeds)
+pair | Dict X0 | Dict X2 | FVU X0 | FVU X2
+Identical | 66.8 | 67.2 | 0.3661 | 0.2753   (unrounded FVU: 0.366145, 0.275348)
+PC1 doubled | 60.4 | 66.6 | 0.4453 | 0.3053   (unrounded FVU: 0.445289, 0.305253)
+Layers 12 and 16 | 72.7 | 71.8 | 0.3495 | 0.2741   (unrounded FVU: 0.349504, 0.274078)
+Step 71,000 and final | 69.7 | 66.4 | 0.3561 | 0.2828   (unrounded FVU: 0.356069, 0.282757)
+
+Table 64: ReLU-L1 crosscoders, seed 42 (A-only/B-only % are block_sum)
+Layers 12 and 16 0.001 | L0 block_sum 2707.5 | L0 joint 3044.8 | A-only 7.27 | B-only 20.75
+Layers 12 and 16 0.003 | L0 block_sum 619.5 | L0 joint 1003.9 | A-only 0.06 | B-only 7.11
+Layers 12 and 16 0.01 | L0 block_sum 62.9 | L0 joint 104.1 | A-only 0.02 | B-only 1.07
+Step 71,000 and final 0.001 | L0 block_sum 2433.1 | L0 joint 2766.4 | A-only 13.43 | B-only 0.64
+Step 71,000 and final 0.003 | L0 block_sum 756.3 | L0 joint 1193.1 | A-only 0.15 | B-only 0.08
+Step 71,000 and final 0.01 | L0 block_sum 72.6 | L0 joint 125.7 | A-only 0.10 | B-only 0.02
+
+Exclusive-feature check (paper: joint/TopK none; ReLU none on C0/C1):
+  nonzero: C3a L1block_sum_0.001 42 0.07266872024642958 0.20750490058807056
+  nonzero: C3a L1block_sum_0.003 42 0.0005747952291995977 0.07113090961345021
+  nonzero: C3a L1block_sum_0.01 42 0.00023685457129322596 0.010658455708195168
+  nonzero: C3b L1block_sum_0.001 42 0.13432002234012846 0.006422786931024853
+  nonzero: C3b L1block_sum_0.003 42 0.0015384615384615385 0.0008391608391608392
+  nonzero: C3b L1block_sum_0.01 42 0.0010309278350515464 0.0002061855670103093

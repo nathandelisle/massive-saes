@@ -1,0 +1,19 @@
+{
+ "cohort_id": "v3core_rxzero",
+ "model_id": "llama-3.1-8b",
+ "block_index": 16,
+ "condition": "standard",
+ "seed": 0,
+ "checkpoint_sha256": "ddeed8555087c8428a69cabde7572c3ddbbab0aa1b2d523810b4d0678cf4cbf9",
+ "checkpoint_s3": "s3://ssup-research-079415246777/a5-big2/saes/00b879901353de3c.pt",
+ "config_hash": "00b879901353de3c",
+ "mean_sha256": "64b26423513e8b2313ff345b11161b0a9a3ddc8a1afb7dfc0e05dd5de9cdf635",
+ "pc1_sha256": "caded9b5e64d33791dcfacbcde96955c9729e19225c7d428fe820ebded3fe485",
+ "geometry_sha256": "0f1afc449780b8939320274f1b430a36f5a34a8c91d4354eda1b271b11deb98a",
+ "ranking_data_id": "RX rank partition, partitions.json sha256 c0937c202102694d7c6c121009ce2b9959f348621c8e15207945d9f6ff0349af",
+ "importance_protocol_id": "rx_zero imp-m1; summed dCE/valid targets; rank partition; status!=NOT_EVALUATED",
+ "alive_rule": "v3 archived counter: fires on (rows over first 106,496 store rows)/100,000 > 1e-3",
+ "n_importance_measured": 9566,
+ "n_alive": 9566,
+ "rank_zero_s3": "s3://ssup-research-079415246777/rx-imp-llama-3.1-8b-standard-s0/results/imp/llama-3.1-8b/standard_s0/rank_zero.npz"
+}

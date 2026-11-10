@@ -1,0 +1,17 @@
+{
+ "arm": "abc",
+ "model": "facebook/dinov2-base",
+ "site": 9,
+ "grid": 256,
+ "patch_geometry": {
+  "median_patch_norm": 9.184613526065965,
+  "max_over_median": 57.23647973565416,
+  "frac_norm_gt_3x": 0.01845550537109375,
+  "frac_norm_gt_10x": 0.01517486572265625,
+  "pc1_var_share": 0.9618626097270491,
+  "outlier_pc1_energy_frac": 0.9847777756155611,
+  "n_rows": 131072
+ },
+ "n_train_rows": 131072,
+ "n_heldout_rows": 32768
+}

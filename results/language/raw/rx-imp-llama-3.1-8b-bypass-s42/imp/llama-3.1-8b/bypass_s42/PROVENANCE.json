@@ -1,0 +1,93 @@
+{
+ "gates.json": {
+  "kind": "gates",
+  "protocol": "2fbc3872543dfe37",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T03:55:22Z"
+ },
+ "plan.json": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:06:13Z"
+ },
+ "chunks_rank": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T06:02:20Z"
+ },
+ "rank_zero.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:06:15Z"
+ },
+ "rank_grad.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:06:15Z"
+ },
+ "rank_sp.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:06:15Z"
+ },
+ "rank_mg.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:06:15Z"
+ },
+ "resample_universe.npy": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:06:29Z"
+ },
+ "rank_st.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T22:05:41Z"
+ },
+ "rank_mean.npz": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T06:51:34Z"
+ },
+ "chunks_valid": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T06:51:36Z"
+ },
+ "valid_zero.npz": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T10:50:50Z"
+ },
+ "valid_grad.npz": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T11:03:12Z"
+ }
+}

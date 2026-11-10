@@ -1,0 +1,11 @@
+model,task,status,reason
+gpt2,sva,measured,
+gpt2,ioi,not_run,v2 confirmation is SVA-only; v1 IOI retained as exploratory
+pythia-160m,sva,measured,
+pythia-160m,ioi,not_run,v2 confirmation is SVA-only; v1 IOI retained as exploratory
+pythia-1.4b,sva,measured,
+pythia-1.4b,ioi,not_run,v2 confirmation is SVA-only; v1 IOI retained as exploratory
+gemma-2-2b,sva,measured,
+gemma-2-2b,ioi,not_run,v2 confirmation is SVA-only; v1 IOI retained as exploratory
+qwen-2.5-7b,sva,measured,
+qwen-2.5-7b,ioi,not_run,v2 confirmation is SVA-only; v1 IOI retained as exploratory

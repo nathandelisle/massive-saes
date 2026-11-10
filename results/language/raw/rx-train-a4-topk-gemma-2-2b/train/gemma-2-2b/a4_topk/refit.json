@@ -1,0 +1,89 @@
+{
+ "n_cluster": 585,
+ "d": 2304,
+ "refit_steps": 5000,
+ "tolerance_rel": 0.01,
+ "free_params": "cluster rows of W_enc, b_enc, W_dec; everything else frozen incl. b_dec",
+ "continuation": {
+  "mse": 3495.05255,
+  "eff_rank_dec": 222.45431518554688
+ },
+ "random_null_mean_cos2": {
+  "expected": 0.25390625,
+  "empirical_mean": 0.2538076269668445,
+  "empirical_q95": 0.2544262710583397
+ },
+ "refits": [
+  {
+   "init_seed": 1000,
+   "mse": 3555.24132,
+   "rel_loss_diff": 0.017221134486232605,
+   "within_tolerance": false,
+   "maxcos_mean": 0.5752366185188293,
+   "hungarian_cos_mean": 0.5592131018638611,
+   "frac_matched_07": 0.5418803418803418,
+   "agg_output_rel_mse": 0.00156014459207654,
+   "agg_output_cos": 1.000859022140503,
+   "eff_rank_dec": 294.0656433105469,
+   "eff_rank_agg": 1.1208492517471313,
+   "span_overlap_mean_cos2": 0.6307361721992493
+  },
+  {
+   "init_seed": 1001,
+   "mse": 3552.48249,
+   "rel_loss_diff": 0.016431781547891173,
+   "within_tolerance": false,
+   "maxcos_mean": 0.5822305679321289,
+   "hungarian_cos_mean": 0.5631657242774963,
+   "frac_matched_07": 0.5299145299145299,
+   "agg_output_rel_mse": 0.0014966303715482354,
+   "agg_output_cos": 1.0008928775787354,
+   "eff_rank_dec": 289.9452819824219,
+   "eff_rank_agg": 1.1210163831710815,
+   "span_overlap_mean_cos2": 0.643473744392395
+  },
+  {
+   "init_seed": 1002,
+   "mse": 3554.647935,
+   "rel_loss_diff": 0.017051355923103383,
+   "within_tolerance": false,
+   "maxcos_mean": 0.5769667029380798,
+   "hungarian_cos_mean": 0.5579673647880554,
+   "frac_matched_07": 0.5299145299145299,
+   "agg_output_rel_mse": 0.0015575415454804897,
+   "agg_output_cos": 1.0008573532104492,
+   "eff_rank_dec": 295.3316345214844,
+   "eff_rank_agg": 1.1209137439727783,
+   "span_overlap_mean_cos2": 0.6359644532203674
+  },
+  {
+   "init_seed": 1003,
+   "mse": 3538.58518,
+   "rel_loss_diff": 0.01245550084790575,
+   "within_tolerance": false,
+   "maxcos_mean": 0.6569015383720398,
+   "hungarian_cos_mean": 0.6385562419891357,
+   "frac_matched_07": 0.6068376068376068,
+   "agg_output_rel_mse": 0.0012049569049850106,
+   "agg_output_cos": 1.0010465383529663,
+   "eff_rank_dec": 275.0885925292969,
+   "eff_rank_agg": 1.1219767332077026,
+   "span_overlap_mean_cos2": 0.6981911659240723
+  },
+  {
+   "init_seed": 1004,
+   "mse": 3551.611365,
+   "rel_loss_diff": 0.016182536368444682,
+   "within_tolerance": false,
+   "maxcos_mean": 0.5998221635818481,
+   "hungarian_cos_mean": 0.5808205604553223,
+   "frac_matched_07": 0.5606837606837607,
+   "agg_output_rel_mse": 0.0014729923568665981,
+   "agg_output_cos": 1.000903606414795,
+   "eff_rank_dec": 279.0669860839844,
+   "eff_rank_agg": 1.1211763620376587,
+   "span_overlap_mean_cos2": 0.6509915590286255
+  }
+ ],
+ "seconds": 1065.9355566501617
+}

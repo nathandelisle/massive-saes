@@ -1,0 +1,23 @@
+{
+ "model": "gpt2",
+ "condition": "bypass",
+ "seed": 137,
+ "config_hash": "2089f01132083c2c",
+ "sae_sha256": "c91fe95b8b65b55dec7068725f92d9c7c634e418552981be2b12a9512e657f40",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-13-88.us-east-2.compute.internal",
+  "code_hash": "1e499583cae6494d",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L4",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 6,
+ "hidden_state_index": 7,
+ "n_alive_archived_rule": 3071
+}

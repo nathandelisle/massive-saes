@@ -1,0 +1,89 @@
+{
+ "model": "qwen-2.5-7b",
+ "l1_coef": 5.64369,
+ "massive_geometry": {
+  "n_rows": 100000,
+  "n_massive": 1780,
+  "massive_fraction": 0.0178,
+  "median_row_norm": 284.75103759765625,
+  "massive_norm_median": 14800.0244140625,
+  "massive_norm_over_median": 51.97531337875033,
+  "cos_to_massive_mean_median": 0.9998941421508789,
+  "cos_to_massive_mean_p10": 0.999806159734726,
+  "uncentered_energy_top1": 0.9997872710227966,
+  "uncentered_energy_top5": 0.9999056458473206,
+  "centered_var_top1": 0.8026769161224365,
+  "centered_var_top5": 0.9104694128036499,
+  "centered_participation_ratio": 1.5356199863817552,
+  "within_massive_var_over_mean_sq": 0.001015063428329944,
+  "pc1_coef_massive_median": 14799.296770828434,
+  "pc1_coef_massive_cv": 0.028320531115809136,
+  "pc1_coef_over_rms_norm": 7.466465596458698
+ },
+ "runs": [
+  {
+   "init_seed": 0,
+   "data_seed": 42,
+   "source": "trained_here",
+   "label": "trained i0 d42",
+   "l0_exact": 56.49107,
+   "rows": 100000,
+   "n_alive": 5014,
+   "n_never_fired": 5306,
+   "fvu_total": 0.0003357471765409964,
+   "fvu_content": 0.28550388887320793,
+   "w1_rows": 0.9988292568428532,
+   "heldout_l0_exact": 55.53593,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 5065,
+   "heldout_n_never_fired": 5260,
+   "heldout_fvu_total": 0.00032460835285704105,
+   "heldout_fvu_content": 0.2882825350610799,
+   "heldout_w1_rows": 0.9988794663318271,
+   "massive_rows": {
+    "n_massive_rows": 1780,
+    "n_ordinary_rows": 98220,
+    "massive_canonical_active_atoms_mean": 3.0,
+    "massive_canonical_l1_mean": 6628.736328125,
+    "massive_canonical_pc1_fraction_mean": 0.2683955729007721,
+    "massive_band_active_atoms_mean": 11.585954666137695,
+    "massive_band_l1_mean": 23447.9296875,
+    "massive_band_pc1_fraction_mean": 0.7313703298568726,
+    "massive_content_active_atoms_mean": 24.960674285888672,
+    "massive_content_l1_mean": 534.2380981445312,
+    "massive_content_pc1_fraction_mean": 0.0002339865022804588,
+    "massive_atoms_for_90pct_pc1_median": 9.0,
+    "massive_total_l1_mean": 30610.908203125,
+    "massive_reconstructed_pc1_coef_mean": 14715.03125,
+    "n_massive_specific_atoms": 13,
+    "massive_specific_by_class": {
+     "canonical": 3,
+     "band": 10,
+     "content": 0
+    }
+   },
+   "init_similarity": null,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 1296.120361328125,
+     "fvu": 0.00031072134152054787,
+     "l0": 56.975830078125
+    },
+    {
+     "step": 18000,
+     "mse": 1265.41796875,
+     "fvu": 0.00032737196306698024,
+     "l0": 56.72314453125
+    },
+    {
+     "step": 19000,
+     "mse": 1275.013671875,
+     "fvu": 0.0002921180275734514,
+     "l0": 56.198974609375
+    }
+   ]
+  }
+ ],
+ "minutes": 175.43658015330632
+}

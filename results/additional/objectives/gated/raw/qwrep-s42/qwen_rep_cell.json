@@ -1,0 +1,44 @@
+{
+ "role": "rep_cell",
+ "coef": 5.64369,
+ "seeds": [
+  42,
+  137,
+  0
+ ],
+ "cell": {
+  "top50_mean": 0.47000000000000003,
+  "top50_std": 0.33,
+  "dictwide_mean": 0.2781918960244648,
+  "dictwide_std": 0.26366590214067276,
+  "dense_importance_share": 0.924932556648601,
+  "dense_importance_share_signed": 0.9338555325405997,
+  "dense_importance_denominator": 9.071005414520085,
+  "dense_importance_n_evaluated": 1500,
+  "l0_measured": [
+   61.379539489746094,
+   60.18838882446289,
+   50.77341842651367
+  ],
+  "l0_measured_mean": 57.44711558024088,
+  "l0_train_log_stale": [
+   56.834716796875,
+   56.661376953125,
+   68.8828125
+  ],
+  "fvu": 0.00029390904819592834,
+  "l0_matched": true,
+  "top50_dense_frac": 0.72,
+  "top50_shared_dense": 0.4583333333333333,
+  "top50_shared_content": 0.5,
+  "top50_dce_max": 2.5645200650759223,
+  "top50_dce_min": 0.009132659978308144,
+  "dce_p99_over_median": 196.10218851574527,
+  "n_cand": 1500,
+  "n_screened": 1500,
+  "screen": 1500,
+  "n_alive": 5232,
+  "jumprelu_testability": null
+ },
+ "siblings_trained_here": []
+}

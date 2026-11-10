@@ -1,0 +1,275 @@
+{
+ "arm": "ttr",
+ "model": "facebook/dinov2-base",
+ "site": 9,
+ "detect_outliers_layer": -2,
+ "highest_layer": 9,
+ "released_config_reference": "configs/dinov2_large.yaml (detect -2, top_k 50, 1 register, highest 17/24)",
+ "chosen_n_neurons": 2,
+ "selection": {
+  "n_neurons": 2,
+  "layers": {
+   "8": [
+    258,
+    1678
+   ]
+  },
+  "scores_top": [
+   79.963194093136,
+   76.62975669085658
+  ]
+ },
+ "calibration_grid": [
+  {
+   "n_neurons": 1,
+   "outlier_frac_ratio": 0.9801980198019802,
+   "cls_cos": 0.968012809753418,
+   "passes": false,
+   "selected": {
+    "8": [
+     258
+    ]
+   }
+  },
+  {
+   "n_neurons": 2,
+   "outlier_frac_ratio": 0.0,
+   "cls_cos": 0.968080997467041,
+   "passes": true,
+   "selected": {
+    "8": [
+     258,
+     1678
+    ]
+   }
+  },
+  {
+   "n_neurons": 4,
+   "outlier_frac_ratio": 0.0,
+   "cls_cos": 0.9627962112426758,
+   "passes": true,
+   "selected": {
+    "8": [
+     100,
+     258,
+     1678,
+     2242
+    ]
+   }
+  },
+  {
+   "n_neurons": 8,
+   "outlier_frac_ratio": 0.0,
+   "cls_cos": 0.9604067802429199,
+   "passes": true,
+   "selected": {
+    "8": [
+     100,
+     258,
+     1678,
+     2242,
+     2875
+    ],
+    "9": [
+     110
+    ],
+    "7": [
+     2729,
+     3058
+    ]
+   }
+  },
+  {
+   "n_neurons": 16,
+   "outlier_frac_ratio": 0.0,
+   "cls_cos": 0.9771203398704529,
+   "passes": true,
+   "selected": {
+    "8": [
+     100,
+     258,
+     1678,
+     2242,
+     2875
+    ],
+    "9": [
+     110
+    ],
+    "7": [
+     831,
+     2292,
+     2729,
+     3058
+    ],
+    "6": [
+     634,
+     1830,
+     2892
+    ],
+    "5": [
+     662,
+     2384
+    ],
+    "4": [
+     1701
+    ]
+   }
+  },
+  {
+   "n_neurons": 32,
+   "outlier_frac_ratio": 0.0,
+   "cls_cos": 0.9697719812393188,
+   "passes": true,
+   "selected": {
+    "8": [
+     100,
+     258,
+     1160,
+     1678,
+     2242,
+     2875
+    ],
+    "9": [
+     110,
+     1540
+    ],
+    "7": [
+     135,
+     831,
+     873,
+     2292,
+     2729,
+     3058
+    ],
+    "6": [
+     634,
+     911,
+     973,
+     992,
+     1778,
+     1830,
+     2892
+    ],
+    "5": [
+     662,
+     2384,
+     2788,
+     3055
+    ],
+    "4": [
+     662,
+     1701,
+     2118
+    ],
+    "0": [
+     114,
+     709,
+     2481,
+     2513
+    ]
+   }
+  }
+ ],
+ "variant_comparison": {
+  "literal": {
+   "cls_cosine_baseline_vs_intervened": 0.9456787109375,
+   "wrapper_matches_hf_max_abs_diff": 0.0,
+   "patch_tokens_baseline": 256,
+   "patch_tokens_intervened": 256,
+   "token_counts_match": true,
+   "outlier_frac_baseline": 0.0123291015625,
+   "outlier_frac_intervened": 0.0,
+   "outlier_frac_ratio": 0.0,
+   "max_patch_norm_baseline": 598.5112915039062,
+   "max_patch_norm_intervened": 46.77614212036133,
+   "added_register_mean_norm": 48.909385681152344,
+   "register_carries_more_than_max_patch": true,
+   "median_patch_norm_baseline": 25.069156646728516,
+   "detect_layer": -2,
+   "norm_mult": 10.0,
+   "variant": "literal",
+   "per_neuron_max": false,
+   "n_registers": 1,
+   "selected_layers": {
+    "8": 7,
+    "9": 4,
+    "7": 7,
+    "6": 10,
+    "5": 7,
+    "4": 4,
+    "0": 8,
+    "2": 1,
+    "1": 1,
+    "3": 1
+   },
+   "passes": true
+  },
+  "per_neuron": {
+   "cls_cosine_baseline_vs_intervened": 0.9380393624305725,
+   "wrapper_matches_hf_max_abs_diff": 0.0,
+   "patch_tokens_baseline": 256,
+   "patch_tokens_intervened": 256,
+   "token_counts_match": true,
+   "outlier_frac_baseline": 0.0123291015625,
+   "outlier_frac_intervened": 0.0,
+   "outlier_frac_ratio": 0.0,
+   "max_patch_norm_baseline": 598.5112915039062,
+   "max_patch_norm_intervened": 47.48463439941406,
+   "added_register_mean_norm": 37.40757751464844,
+   "register_carries_more_than_max_patch": false,
+   "median_patch_norm_baseline": 25.069156646728516,
+   "detect_layer": -2,
+   "norm_mult": 10.0,
+   "variant": "per_neuron",
+   "per_neuron_max": true,
+   "n_registers": 1,
+   "selected_layers": {
+    "8": 7,
+    "9": 4,
+    "7": 7,
+    "6": 10,
+    "5": 7,
+    "4": 4,
+    "0": 8,
+    "2": 1,
+    "1": 1,
+    "3": 1
+   },
+   "passes": false
+  }
+ },
+ "variant_deltas": {
+  "outlier_ratio": 0,
+  "register_norm": 0.30747268149079987,
+  "cls_cosine": 0.00763934850692749
+ },
+ "materially_different": true,
+ "primary_variant": "literal",
+ "arm_label": "Jiang et al. as released (literal sign-max reduced over positions and over that layer's selected neurons, one scalar written into the register)",
+ "per_neuron_variant_status": "recorded sensitivity, NOT used for the SAE arm; it is our reading of the paper's per-neuron wording and fails the register-dominance gate on this batch",
+ "validation": {
+  "cls_cosine_baseline_vs_intervened": 0.968080997467041,
+  "wrapper_matches_hf_max_abs_diff": 0.0,
+  "patch_tokens_baseline": 256,
+  "patch_tokens_intervened": 256,
+  "token_counts_match": true,
+  "outlier_frac_baseline": 0.0123291015625,
+  "outlier_frac_intervened": 0.0,
+  "outlier_frac_ratio": 0.0,
+  "max_patch_norm_baseline": 598.5112915039062,
+  "max_patch_norm_intervened": 194.8960723876953,
+  "added_register_mean_norm": 436.78094482421875,
+  "register_carries_more_than_max_patch": true,
+  "median_patch_norm_baseline": 25.069156646728516,
+  "detect_layer": -2,
+  "norm_mult": 10.0,
+  "variant": "literal",
+  "per_neuron_max": false,
+  "n_registers": 1,
+  "selected_layers": {
+   "8": 2
+  },
+  "passes": true
+ },
+ "suppression_target": 0.1
+}

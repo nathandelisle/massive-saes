@@ -1,0 +1,19 @@
+{
+  "name": "pythia-1.4b",
+  "lm": {
+    "model_path": "EleutherAI/pythia-1.4b",
+    "revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+    "block_path": "gpt_neox.layers",
+    "block_index": 12,
+    "dtype": "bfloat16",
+    "attn_implementation": "eager"
+  },
+  "provenance": "Model/hook/revision copied from supplied morning-bundle site.json. New campaign uses explicit bf16 + eager; historical results retain their own precision.",
+  "training": {
+    "width": 8192,
+    "k": 64,
+    "steps": 20000,
+    "batch": 4096,
+    "lr": 0.0003
+  }
+}

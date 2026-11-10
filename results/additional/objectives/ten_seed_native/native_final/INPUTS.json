@@ -1,0 +1,2763 @@
+{
+  "protocol": "a62c9629bc16c80cea311af5785a528cf58c0e6950d8629087dccf80c21eaf16",
+  "sites": {
+    "gpt2": {
+      "name": "gpt2",
+      "lm": {
+        "model_path": "openai-community/gpt2",
+        "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+        "block_path": "transformer.h",
+        "block_index": 6,
+        "dtype": "bfloat16",
+        "attn_implementation": "eager",
+        "bos_token_id": 50256,
+        "eos_token_id": 50256
+      },
+      "min_articles": 30,
+      "splits": {
+        "train": {
+          "x": "/mnt/pc1night/input/gpt2/train.npy",
+          "meta": "/mnt/pc1night/input/gpt2/train_meta.npz",
+          "tokens": "/mnt/pc1night/input/gpt2/train_tokens.npz"
+        },
+        "calibration": {
+          "x": "/mnt/pc1night/input/gpt2/calibration.npy",
+          "meta": "/mnt/pc1night/input/gpt2/calibration_meta.npz",
+          "tokens": "/mnt/pc1night/input/gpt2/calibration_tokens.npz"
+        },
+        "selection": {
+          "x": "/mnt/pc1night/input/gpt2/selection.npy",
+          "meta": "/mnt/pc1night/input/gpt2/selection_meta.npz",
+          "tokens": "/mnt/pc1night/input/gpt2/selection_tokens.npz"
+        },
+        "test": {
+          "x": "/mnt/pc1night/input/gpt2/test.npy",
+          "meta": "/mnt/pc1night/input/gpt2/test_meta.npz",
+          "tokens": "/mnt/pc1night/input/gpt2/test_tokens.npz"
+        }
+      },
+      "training": {
+        "width": 3072,
+        "k": 64,
+        "steps": 20000,
+        "batch": 4096,
+        "lr": 0.0003
+      }
+    },
+    "pythia-1.4b": {
+      "name": "pythia-1.4b",
+      "lm": {
+        "model_path": "EleutherAI/pythia-1.4b",
+        "revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+        "block_path": "gpt_neox.layers",
+        "block_index": 12,
+        "dtype": "bfloat16",
+        "attn_implementation": "eager",
+        "bos_token_id": 0,
+        "eos_token_id": 0
+      },
+      "min_articles": 30,
+      "splits": {
+        "train": {
+          "x": "/mnt/pc1night/input/pythia-1.4b/train.npy",
+          "meta": "/mnt/pc1night/input/pythia-1.4b/train_meta.npz",
+          "tokens": "/mnt/pc1night/input/pythia-1.4b/train_tokens.npz"
+        },
+        "calibration": {
+          "x": "/mnt/pc1night/input/pythia-1.4b/calibration.npy",
+          "meta": "/mnt/pc1night/input/pythia-1.4b/calibration_meta.npz",
+          "tokens": "/mnt/pc1night/input/pythia-1.4b/calibration_tokens.npz"
+        },
+        "selection": {
+          "x": "/mnt/pc1night/input/pythia-1.4b/selection.npy",
+          "meta": "/mnt/pc1night/input/pythia-1.4b/selection_meta.npz",
+          "tokens": "/mnt/pc1night/input/pythia-1.4b/selection_tokens.npz"
+        },
+        "test": {
+          "x": "/mnt/pc1night/input/pythia-1.4b/test.npy",
+          "meta": "/mnt/pc1night/input/pythia-1.4b/test_meta.npz",
+          "tokens": "/mnt/pc1night/input/pythia-1.4b/test_tokens.npz"
+        }
+      },
+      "training": {
+        "width": 8192,
+        "k": 64,
+        "steps": 20000,
+        "batch": 4096,
+        "lr": 0.0003
+      }
+    },
+    "qwen-2.5-7b": {
+      "name": "qwen-2.5-7b",
+      "lm": {
+        "model_path": "Qwen/Qwen2.5-7B",
+        "revision": "d149729398750b98c0af14eb82c78cfe92750796",
+        "block_path": "model.layers",
+        "block_index": 14,
+        "dtype": "bfloat16",
+        "attn_implementation": "eager",
+        "bos_token_id": null,
+        "eos_token_id": 151643
+      },
+      "min_articles": 30,
+      "splits": {
+        "train": {
+          "x": "/mnt/pc1night/input/qwen-2.5-7b/train.npy",
+          "meta": "/mnt/pc1night/input/qwen-2.5-7b/train_meta.npz",
+          "tokens": "/mnt/pc1night/input/qwen-2.5-7b/train_tokens.npz"
+        },
+        "calibration": {
+          "x": "/mnt/pc1night/input/qwen-2.5-7b/calibration.npy",
+          "meta": "/mnt/pc1night/input/qwen-2.5-7b/calibration_meta.npz",
+          "tokens": "/mnt/pc1night/input/qwen-2.5-7b/calibration_tokens.npz"
+        },
+        "selection": {
+          "x": "/mnt/pc1night/input/qwen-2.5-7b/selection.npy",
+          "meta": "/mnt/pc1night/input/qwen-2.5-7b/selection_meta.npz",
+          "tokens": "/mnt/pc1night/input/qwen-2.5-7b/selection_tokens.npz"
+        },
+        "test": {
+          "x": "/mnt/pc1night/input/qwen-2.5-7b/test.npy",
+          "meta": "/mnt/pc1night/input/qwen-2.5-7b/test_meta.npz",
+          "tokens": "/mnt/pc1night/input/qwen-2.5-7b/test_tokens.npz"
+        }
+      },
+      "training": {
+        "width": 14336,
+        "k": 64,
+        "steps": 20000,
+        "batch": 4096,
+        "lr": 0.0003
+      }
+    },
+    "gemma-2-2b": {
+      "name": "gemma-2-2b",
+      "lm": {
+        "model_path": "google/gemma-2-2b",
+        "revision": "c5ebcd40d208330abc697524c919956e692655cf",
+        "block_path": "model.layers",
+        "block_index": 13,
+        "dtype": "bfloat16",
+        "attn_implementation": "eager",
+        "bos_token_id": 2,
+        "eos_token_id": 1
+      },
+      "min_articles": 30,
+      "splits": {
+        "train": {
+          "x": "/mnt/pc1night/input/gemma-2-2b/train.npy",
+          "meta": "/mnt/pc1night/input/gemma-2-2b/train_meta.npz",
+          "tokens": "/mnt/pc1night/input/gemma-2-2b/train_tokens.npz"
+        },
+        "calibration": {
+          "x": "/mnt/pc1night/input/gemma-2-2b/calibration.npy",
+          "meta": "/mnt/pc1night/input/gemma-2-2b/calibration_meta.npz",
+          "tokens": "/mnt/pc1night/input/gemma-2-2b/calibration_tokens.npz"
+        },
+        "selection": {
+          "x": "/mnt/pc1night/input/gemma-2-2b/selection.npy",
+          "meta": "/mnt/pc1night/input/gemma-2-2b/selection_meta.npz",
+          "tokens": "/mnt/pc1night/input/gemma-2-2b/selection_tokens.npz"
+        },
+        "test": {
+          "x": "/mnt/pc1night/input/gemma-2-2b/test.npy",
+          "meta": "/mnt/pc1night/input/gemma-2-2b/test_meta.npz",
+          "tokens": "/mnt/pc1night/input/gemma-2-2b/test_tokens.npz"
+        }
+      },
+      "training": {
+        "width": 9216,
+        "k": 64,
+        "steps": 20000,
+        "batch": 4096,
+        "lr": 0.0003
+      }
+    },
+    "syn_w0.9_p0.001_dep0_s4": {
+      "name": "syn_w0.9_p0.001_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.001,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.001_dep0_s16": {
+      "name": "syn_w0.9_p0.001_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.001,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.001_dep0.8_s4": {
+      "name": "syn_w0.9_p0.001_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.001,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.001_dep0.8_s16": {
+      "name": "syn_w0.9_p0.001_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.001_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.001,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.01_dep0_s4": {
+      "name": "syn_w0.9_p0.01_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.01,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.01_dep0_s16": {
+      "name": "syn_w0.9_p0.01_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.01,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.01_dep0.8_s4": {
+      "name": "syn_w0.9_p0.01_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.01,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.01_dep0.8_s16": {
+      "name": "syn_w0.9_p0.01_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.01_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.01,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.1_dep0_s4": {
+      "name": "syn_w0.9_p0.1_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.1,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.1_dep0_s16": {
+      "name": "syn_w0.9_p0.1_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.1,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.1_dep0.8_s4": {
+      "name": "syn_w0.9_p0.1_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.1,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.1_dep0.8_s16": {
+      "name": "syn_w0.9_p0.1_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.1_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.1,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.5_dep0_s4": {
+      "name": "syn_w0.9_p0.5_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.5,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.5_dep0_s16": {
+      "name": "syn_w0.9_p0.5_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.5,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.5_dep0.8_s4": {
+      "name": "syn_w0.9_p0.5_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.5,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.9_p0.5_dep0.8_s16": {
+      "name": "syn_w0.9_p0.5_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.9_p0.5_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.9,
+        "tail_p": 0.5,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.001_dep0_s4": {
+      "name": "syn_w0.99_p0.001_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.001,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.001_dep0_s16": {
+      "name": "syn_w0.99_p0.001_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.001,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.001_dep0.8_s4": {
+      "name": "syn_w0.99_p0.001_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.001,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.001_dep0.8_s16": {
+      "name": "syn_w0.99_p0.001_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.001_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.001,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.01_dep0_s4": {
+      "name": "syn_w0.99_p0.01_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.01,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.01_dep0_s16": {
+      "name": "syn_w0.99_p0.01_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.01,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.01_dep0.8_s4": {
+      "name": "syn_w0.99_p0.01_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.01,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.01_dep0.8_s16": {
+      "name": "syn_w0.99_p0.01_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.01_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.01,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.1_dep0_s4": {
+      "name": "syn_w0.99_p0.1_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.1,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.1_dep0_s16": {
+      "name": "syn_w0.99_p0.1_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.1,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.1_dep0.8_s4": {
+      "name": "syn_w0.99_p0.1_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.1,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.1_dep0.8_s16": {
+      "name": "syn_w0.99_p0.1_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.1_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.1,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.5_dep0_s4": {
+      "name": "syn_w0.99_p0.5_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.5,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.5_dep0_s16": {
+      "name": "syn_w0.99_p0.5_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.5,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.5_dep0.8_s4": {
+      "name": "syn_w0.99_p0.5_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.5,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.99_p0.5_dep0.8_s16": {
+      "name": "syn_w0.99_p0.5_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.99_p0.5_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.99,
+        "tail_p": 0.5,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.001_dep0_s4": {
+      "name": "syn_w0.999_p0.001_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.001,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.001_dep0_s16": {
+      "name": "syn_w0.999_p0.001_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.001,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.001_dep0.8_s4": {
+      "name": "syn_w0.999_p0.001_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.001,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.001_dep0.8_s16": {
+      "name": "syn_w0.999_p0.001_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.001_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.001,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.01_dep0_s4": {
+      "name": "syn_w0.999_p0.01_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.01,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.01_dep0_s16": {
+      "name": "syn_w0.999_p0.01_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.01,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.01_dep0.8_s4": {
+      "name": "syn_w0.999_p0.01_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.01,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.01_dep0.8_s16": {
+      "name": "syn_w0.999_p0.01_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.01_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.01,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.1_dep0_s4": {
+      "name": "syn_w0.999_p0.1_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.1,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.1_dep0_s16": {
+      "name": "syn_w0.999_p0.1_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.1,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.1_dep0.8_s4": {
+      "name": "syn_w0.999_p0.1_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.1,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.1_dep0.8_s16": {
+      "name": "syn_w0.999_p0.1_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.1_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.1,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.5_dep0_s4": {
+      "name": "syn_w0.999_p0.5_dep0_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.5,
+        "dependence": 0.0,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.5_dep0_s16": {
+      "name": "syn_w0.999_p0.5_dep0_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.5,
+        "dependence": 0.0,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.5_dep0.8_s4": {
+      "name": "syn_w0.999_p0.5_dep0.8_s4",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s4/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.5,
+        "dependence": 0.8,
+        "content_support": 4
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    },
+    "syn_w0.999_p0.5_dep0.8_s16": {
+      "name": "syn_w0.999_p0.5_dep0.8_s16",
+      "min_articles": 8,
+      "axis_fit_split": "train",
+      "mean": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/mean.npy",
+      "pc1": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/pc1.npy",
+      "splits": {
+        "train": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/train.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/train_meta.npz"
+        },
+        "calibration": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/calibration.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/calibration_meta.npz"
+        },
+        "selection": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/selection.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/selection_meta.npz"
+        },
+        "test": {
+          "x": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/test.npy",
+          "meta": "/opt/synprep/results/campaign/synthetic_data/syn_w0.999_p0.5_dep0.8_s16/test_meta.npz"
+        }
+      },
+      "synthetic": {
+        "w1": 0.999,
+        "tail_p": 0.5,
+        "dependence": 0.8,
+        "content_support": 16
+      },
+      "synthetic_convention": "tail_p is the generating event frequency before linear decorrelation; dependence is a copula parameter. Scalar/content cross-covariance is removed before setting w1, making the planted axis a true empirical PC1."
+    }
+  },
+  "hashes": {
+    "gpt2": {
+      "train": {
+        "x": "392ab6817ce1e96334d276ead602bf88574770e95391db50e30d7c96d5389b76",
+        "meta": "32d7bec5ce3add5a9c010cda588cf879a243811c3cb2c3919cab19f29ca1abbe",
+        "tokens": "5085c2aebe001e91fdbe441040538fdfd36c7c9e8bf270dbead778d187c36037"
+      },
+      "calibration": {
+        "x": "0a937188236c38b1db85bd90d394e41cfb8a5ad8f781e9618620f1f8f71eca49",
+        "meta": "4e77cacd2740e78e3c349fb36e391f248e39d95ace95b5df4e71d392da700dd9",
+        "tokens": "076403a2f637feaee391721ed1cafd1ea3db3152d33ba4f1158d71a39898cb8b"
+      },
+      "selection": {
+        "x": "ec15d74c36d8e2b6c63b8c1737fc1f77cc8268696000fb7af7479f135bf896e6",
+        "meta": "e6817d2d858774a5041d5e16aa342e74c8b93f02dc08c95bd70e8eee2fc39713",
+        "tokens": "3de68ea72fb4d727e8b85d06686d30daf9e0c3178c22265ed4841acd0274c881"
+      },
+      "test": {
+        "x": "687a8ca21339c912584b14f29c7aa77ac63c784fe089c7c3b21d0b488280d685",
+        "meta": "b9d44c7b3fa757c0d152091867452156af69e941c4731b8f8a636888cd26cb17",
+        "tokens": "88e2f92ef4288cfa605cd0b862c77b6fb9ad1a5df5b09cd32d65c4d92dfd7f9c"
+      }
+    },
+    "pythia-1.4b": {
+      "train": {
+        "x": "832bc7d57dea3c9c874657b70eb56f660fe807de91f932e761082a48c02e68f6",
+        "meta": "70403bf624f5f57eac43ab4ec749a8bd99ab9064f5cf724a23aa561802d356be",
+        "tokens": "45d0ee7139030fcfe7c639b6b1e21994632001122908dd33b03e16edc46b55ba"
+      },
+      "calibration": {
+        "x": "cba119a190b65da67c800caa2b64fbaebd1bd2095d8cacd4f77dec6d3aff471a",
+        "meta": "0e371a71e108a46f94d70ce5fbe0eebd7c449ff54fe11e8ba026f9b03b075484",
+        "tokens": "e8eeb6f2b535811804b0fbb865783a5ddc7c653114544b89504b1b5a50d47e28"
+      },
+      "selection": {
+        "x": "4b0abf9834611ca83c32ad3f7815d1fd7c6f6bf4619781e70b10d6d87b05481c",
+        "meta": "5d5a049b33c5c9112b3a8da9733589b7fff912a3704d8ec87e90245c425e13ac",
+        "tokens": "e51eace818c781a4939c2f79794f062c47a329d06f524780f3736149218a855b"
+      },
+      "test": {
+        "x": "5fa01be5b5f6d2ce2bf737dc15e26a4b98087bfaf822a8b9066930148be27287",
+        "meta": "2fe3a770595f315387ac0f2f664124b80f390b534d92151496113faa735018df",
+        "tokens": "84b3a4dcc38172155f2d66c8676d54c18dbcdd9c77803028dfa5684a7138c716"
+      }
+    },
+    "qwen-2.5-7b": {
+      "train": {
+        "x": "9abcb60bcc29ac33fffb00244f2959d2cd73dc2bf82d6c46764dc72bedb4214e",
+        "meta": "1ecf912c51dbc81ff306935e5dce5e11afa5be40f4d365803b5a88758a145ba8",
+        "tokens": "8f418191c34f5195f2671f8781e5bf7b4f69d83e4e6891cd4d9ee6f80e7cf9c8"
+      },
+      "calibration": {
+        "x": "c8c4caf49a92a087495de995c4e436f22f7e7922cb4aca69555adf78234148da",
+        "meta": "85bb25067ebcc09ded91fbf53bf49be3b7a6069c6c2e8a2abf3f2b190fd2b1c4",
+        "tokens": "3db825e00d808c2b562872deab78e58eabdfcf6ba1a3116cd45e7cff8b645465"
+      },
+      "selection": {
+        "x": "0aed20b48cee5a3ff610da92d10cef35aa3317f1e07f0383cbc0936220b4e01e",
+        "meta": "def370c5e4f5f5a7954406b5c5cd5cee4509427d3226802bf8296b9ed802ab83",
+        "tokens": "8c7c8b0a623ea8baeea2e9f02c6d8d46271c3442e0e451e18d1a3a346b3f8e99"
+      },
+      "test": {
+        "x": "5fdfe09bd5aa9bfdf8fc09251944b9f59ca0fb4ecd51e7e1bc91d825282d2848",
+        "meta": "0a647c69cd4524f8d3dc5055cb4375a1b8319385962f8d61687e8e6a30cc6eb6",
+        "tokens": "3f33d528c79b88a9a4886c812e5c0acadd07c43ef139a7109d7b94be1c16f4dc"
+      }
+    },
+    "gemma-2-2b": {
+      "train": {
+        "x": "5ba94c15d2f1c6e084726af86b1054f93969fe4316b534507c12e86915722e26",
+        "meta": "d59935aefdf827cf71025953b1c0ae9c0a4d0223a126e6fe54124311c993c92f",
+        "tokens": "c6015b848984a4cb27d731980c90da2696639fce79d59c921bd6279c4fc6f646"
+      },
+      "calibration": {
+        "x": "20d39abc4d736415c7b0af95bf7c5897385c1e61af8182de3a13bd690f987930",
+        "meta": "5fa4c52177fb7f956d0d3cb8f7eb0395885822e1f4a341b79bb71153e4372a0a",
+        "tokens": "71152b8458b459ceed3e52e7885ce8cc6cc2b8b6da9216a265ac118029ba55c8"
+      },
+      "selection": {
+        "x": "04a2c25a5e462fd8bec43c7a01c7aa2951567e6e303e63278fee83918f24862a",
+        "meta": "16a7fbb7d68e02a56784157d4bedf16fa453bff00a5c17442c603b37d1b205c8",
+        "tokens": "76970f9e8534eb3717c6ccca1513420d1ef13ab2cd51f5b841737b4ad338bec7"
+      },
+      "test": {
+        "x": "ca303f6ddd1708bde529d16d57c61cb99c9972f30c7c195d644593ca26423a6a",
+        "meta": "41ecb30a586f0112bd07266126ff3ef2b25b8a14d81d9a46efc497d7048415e3",
+        "tokens": "f01b233a1d361b181d64d7353f15f9f687523e110b3267aaf40e5a445a1e1ea3"
+      }
+    },
+    "syn_w0.9_p0.001_dep0_s4": {
+      "train": {
+        "x": "7c80c2bfd8b055787485c6b8d70af40fd7ae53d5108601e0de0f584272c15bfd",
+        "meta": "a5c42f2a44eb495563088a70d5e4ed94c175421f7724be5ee9177f4f45ed6e47"
+      },
+      "calibration": {
+        "x": "419856d37e7d01c0b97650f05be34adf4aefc9dc1fc304f0d1fa6d6af8538a11",
+        "meta": "7e42f826f411bf49edd9e1e91dfdccfe2ebb9ce791df17b9911cf8aac4277d84"
+      },
+      "selection": {
+        "x": "5f27e919948db8f071b6e9807d4e44601c1f20d0c47748be03b5dbc88578f69e",
+        "meta": "7d5db449ec72c56ac61b8e1c276a9766d1fa077e8abffc779297bd20ba59bd9b"
+      },
+      "test": {
+        "x": "db1b4b672fc6aada035b1d78a014aa1f13941f3e8dbe469e9d4adb392256966f",
+        "meta": "7f800ce38e1aed9907bf674281f787fa57f86ed2451c31d18b29d0bf2172bb63"
+      },
+      "mean": "02a8a12399fc6e063e3ece0e67d2eb3d776f559ee74296ff2de1b40e8e0f7075",
+      "pc1": "46e6243fbadfc24496e53da0f28de138c95571089f1d2d5770759e4d5f7e2419"
+    },
+    "syn_w0.9_p0.001_dep0_s16": {
+      "train": {
+        "x": "2e41f42d1ad949545918c3ed7f09d09fbe907f18a0ce268437fa020c4062fe7e",
+        "meta": "5e3efb685084ca5b7282edafe9958a496bbf2032f59f0ca1279cc70677403de6"
+      },
+      "calibration": {
+        "x": "e637b2274e0ed2515791b357b0ceccedcd46956fb1bcea7dd9e3ddf72ba71804",
+        "meta": "cd57cfbdf4460673a5711349ee8dcd8187359390a69e5a677e0e060f5ce723e4"
+      },
+      "selection": {
+        "x": "c493abdfddb202cc82b53c692546f74a8b471418a1f888cd39d5a266e5c667ea",
+        "meta": "3b6e39ed18fc1706a5d1724ea1ad1b806259905be8e6afe1393be17a5810766d"
+      },
+      "test": {
+        "x": "dcf8cf6de1c0d2517fe4982c8e6ca51ef257bd19061a81f8a2319df1cc79186b",
+        "meta": "2292b9526903ab1fb00269ecdb9491bf29c42bbd0dca27ce4bd9a77c172788de"
+      },
+      "mean": "3ff3fa46eb0f6388ba4963ff95498300d4f691e34686d36527c285699cadf6bf",
+      "pc1": "8f4bd489e1407a341c82a79219ac26c4cdeb681fdf2e783316e838a8c756e328"
+    },
+    "syn_w0.9_p0.001_dep0.8_s4": {
+      "train": {
+        "x": "8bed79fd530323abfcbc2ced358d6cacc68450fa1e05901c4c191d00a06b4f33",
+        "meta": "66a2c601b04ad0db87d649361ec531a340f3a4454a1c1c9228a19602d379624f"
+      },
+      "calibration": {
+        "x": "fc563ac14c8fde75cc147ad2877bc12dd4a1c56173d0568fb2a7689d9663ca2c",
+        "meta": "579f7c55a6792c36b5b6f7bc11a752edb7c917956fcc8216d54b181e29cc91f7"
+      },
+      "selection": {
+        "x": "93c5f67782a33f2e1bad3d9c4a0244c4373f7055554c232d0c8f3169294b3257",
+        "meta": "4de29f53355a51e245e27758a1ed9fa7c5c0c877486ec589bb8058c19b5ce34c"
+      },
+      "test": {
+        "x": "1220174d44d1ba1b58beb87cca3a360e8f54f5f912874f11a4b9ece72e2dc734",
+        "meta": "14aa030a651f244e3e2670163e88ee90682456c7efbc9043788de480efbeaae7"
+      },
+      "mean": "ae23a75fd02a1cee1623eb0537319757eb291b581764b5093f2505c1380f5559",
+      "pc1": "71e301ca17cf879a996ca7c1cb0728aedf440f0188ed0d6ff5638535d17a5580"
+    },
+    "syn_w0.9_p0.001_dep0.8_s16": {
+      "train": {
+        "x": "50bf5c63b9804a9f41f6c6e094cf83d865e9fa35a81774089036af8209cc275f",
+        "meta": "35fe5724b61c69c5a4926e6436efce1ce22ea93987bd338e4ad3816cb6d55e5c"
+      },
+      "calibration": {
+        "x": "3e7c15a58558a62a338eaf27792847e5d000a2c4a9c002037627ae3c9e3e6d3a",
+        "meta": "32d3a47f051a1d899d1f786e456ebfb409f50ad6eb5146494124a661a2e0d4e8"
+      },
+      "selection": {
+        "x": "63325031da3e2bb6083e1b85530459b7173488d0e4c1e12612b3c709dc3d9303",
+        "meta": "d51d5cd15627f79b3d88b81b003a01848c416d67b00c700dd87a264aa9328c42"
+      },
+      "test": {
+        "x": "c0774abf4d32c74c7fdbf7e1ecb6aa17201abe3dc70b415f388a83d9528a121e",
+        "meta": "0f336db79db9d97c5bf3ac3562a6fbb5b34c892051240af88cb6922232e3cac3"
+      },
+      "mean": "9e0085b7f41c2203d8dc345c023398e280816c94cf754e674ce3093b69e6c4cf",
+      "pc1": "3ace0e01ecbfadddd51e59d07945bc69e5dbd99babf9a27ce4e423643e2f1316"
+    },
+    "syn_w0.9_p0.01_dep0_s4": {
+      "train": {
+        "x": "031f7a7e64e08fc77417df47b424279b9bba650bafbee58c2ffa7dc68366ccea",
+        "meta": "1b1881f86b0bb1d4c2e7a01eeeaa7842367a5149089280ea8107d95ac5bf3d8e"
+      },
+      "calibration": {
+        "x": "b52b71322ff7cc5c17e9da55dabfb7269061d6434b3d9188450eb625c29d60d7",
+        "meta": "b142a194b20253e5873d2d108300b66cbc3d928656c30d3bfd9d044ef9d3b1ba"
+      },
+      "selection": {
+        "x": "b5d90e43ce13c20dafae5ee2fcf1c6fe230fd689e2c783ded4d9ba51f3e7a67a",
+        "meta": "ab6b1417045e6c35d85ab2778eb5f0612120cef941847083d96d7fe9673728ff"
+      },
+      "test": {
+        "x": "8892726d1b6f57a4be2876b22e27cc99404b6e767fd9999dcb4925d9f06a9f5c",
+        "meta": "290da7fe6c1434d8c1db443d93245fd4b79b16160ec26847ef1f514d98b5bb9a"
+      },
+      "mean": "0b5869130d2e1db9c4605122ffe056a7c1b3de971bf2f5b74ba300594791934b",
+      "pc1": "df56b23b2cb53993a3b7d3892c6db1f4d80a9067d1cc96d51ad0b4a2cf550ab8"
+    },
+    "syn_w0.9_p0.01_dep0_s16": {
+      "train": {
+        "x": "422b1eaab1517b1fbebdf97e23fc5e959f4f0f37166274e329453dbb858c6390",
+        "meta": "30e9ce8a028f4a8b616a44c44d51700b9c79f992665c11f0793debc7361cc751"
+      },
+      "calibration": {
+        "x": "f51ac5c9a1355fff26f2decce229396fc89ec16bdb2b3d34eb818359fea83660",
+        "meta": "feb3f6ad5d5d4afbf294a3a3ed47269be9cc1700e3035f589a562fe1a6ca0a1a"
+      },
+      "selection": {
+        "x": "ae2d9ba4162c718c0d5d4ca3bfc0d1a89faf3c98a78f2131200f4c1242510de2",
+        "meta": "404c899b731e8e2f7326c8df2827b84475517ae26d6c32bcc41b4a3d4fae5d48"
+      },
+      "test": {
+        "x": "10864d6004993687b46d0a94ab7df3436559e8499c14cce232f1dac1b6f2ed5a",
+        "meta": "edfdf21d9ef7d63ae530da77a691aae0f1bb609d8675d68bf2ce89541f7201fc"
+      },
+      "mean": "6ced5d39ae269c8611da1dc6d0ce4c033e0abeaf5202e23cd7f3710801128cca",
+      "pc1": "19f0d55c9e7714ba4b0afbe2d83d9e530813022dd002d6d02a061166e29c2f30"
+    },
+    "syn_w0.9_p0.01_dep0.8_s4": {
+      "train": {
+        "x": "a928de0d845a4c22c8575a5fb38bf5d8da64823439ea4c4d02854b895ce54dbb",
+        "meta": "404c896594a5e4b9b7e9442c77626e77a0794d6aa209f8f36d1d18345818d9e0"
+      },
+      "calibration": {
+        "x": "c41f1da301e2f83a7416e561f7899172d57e404053533e7e8cbbd5fdd1050ed3",
+        "meta": "058cd1a1df48f68e7d6e933690a6ded3a3c36ac91e5c1d83e5163c50c32427b7"
+      },
+      "selection": {
+        "x": "f9eea1297622a8ae9abb8ba78d5825ca074d339d0f16196bcba6d91321207e98",
+        "meta": "b9d6818ff9db75bd535fcb0201384a56f7c16334b19cda7397ad06a3676bd9dd"
+      },
+      "test": {
+        "x": "5b97a4fea62c963ca1e85eb870976e6e29dee12b0487cbb5ae069deedb25aa4b",
+        "meta": "cbe12d6db14948168b0f4eba89bd1aeb979b62f8c73f5d8b966552fe7e0824a2"
+      },
+      "mean": "0dbf21a2a989873a834b494efd1d234c6da2ed0eda15cb6b27f5dfd445ef16e5",
+      "pc1": "b4532d7957f3c52f9d498257e7a395f43ac08098002305c68920f9f24c2cbdc0"
+    },
+    "syn_w0.9_p0.01_dep0.8_s16": {
+      "train": {
+        "x": "c431701ea97d79e78f293f018a5530bc96d7333396b7d5d774cc2456d5c94690",
+        "meta": "4730f2a0e4923e0f62ac194f24a4b1b27f3e4c4e10361d4e564e3c570f9ded63"
+      },
+      "calibration": {
+        "x": "ea79eefe9810a605eaf88e54dc85195baf725f653ce01375930d93e332eff982",
+        "meta": "653634314ccc23556a325d202fe8aee9e03705bf70afd22eec4e636f1ec75ed6"
+      },
+      "selection": {
+        "x": "cc8e872896295917e804d3b17cee1f732a8e675fdb84018fce7e964b9957ad8c",
+        "meta": "440bacdb4b7501ef00176d8eadb8b1debae1d437d2b2b3d65a321fc5faa9bc24"
+      },
+      "test": {
+        "x": "9827ca8f6e74d356beeb316aacd3d275bfa882f632faad30d75d00530651f7a1",
+        "meta": "1f481f4d05269831e378c92194433f451aa875e0ed7439347fa5ce9352cca512"
+      },
+      "mean": "de65cd5d330910ae92613e5d398d6d56d11f270ef018106791f0de5352fd2f7c",
+      "pc1": "1e9b15b8ec8fbdd8637e89213c448d2def8b3a507c296e2222e20b80f60b497c"
+    },
+    "syn_w0.9_p0.1_dep0_s4": {
+      "train": {
+        "x": "c0768a334c21eb3d1ea9a1c80bf77508d7c6bf77aa35999013a24cc51d23680d",
+        "meta": "054df6238fa0a1750c9c6bf367f3fb6cc02ffd5590e19b11581ab4b39146cc09"
+      },
+      "calibration": {
+        "x": "5d083b58df1656ea7b4757b23cdb973236c02d118d0a4a35e5804930c257a765",
+        "meta": "365c28c85c2feb983a03751c7c015be5c968d6cee37c032380ba26f09e551251"
+      },
+      "selection": {
+        "x": "842897c7e4592169aca96990859f392d7a91a310ba7952d9286e1abf1b3319bf",
+        "meta": "4c793a6d960018c6c7e7c12c8ee9ce5eaed9673b1dca48bd90d9a0abc3fec0d2"
+      },
+      "test": {
+        "x": "18793e8beae55c49655f4e17e960807414f4931a3528c6f89d99abcba8f9c6e0",
+        "meta": "7fa6081fae443bb8b8c3536b840af11437959e11739707408c0a7849fc79200a"
+      },
+      "mean": "01b326f2fd3c3b9fd71ed1f759386fd53a40aa4e7ac196870e8cf083745b9ae8",
+      "pc1": "d9a8ac1068db8a955c00f5eef692d9e62a8b4a4196589c571017309e122db9b8"
+    },
+    "syn_w0.9_p0.1_dep0_s16": {
+      "train": {
+        "x": "9c80c0dffc07f66b94b1fb74d8b6b585156b04c3f464996698d145310c0810f0",
+        "meta": "6ed4e5ac3019f10222684bf2bfcf29ec9182fd30b46cd839238903e274df18e3"
+      },
+      "calibration": {
+        "x": "be81a7c1781df478d11837f294bdf0605b5c1e5877fa1c7a1bafe70c201d019c",
+        "meta": "8d5ff5a02e62f151a77f2e3dd005464a681425449eba20a9138e27ef1388e635"
+      },
+      "selection": {
+        "x": "797c88c7d9a66d86eb9d6e13064900be6e9b83905fc235f093d7e1a9d02bb46f",
+        "meta": "9adce6687da69a0151b1bd538f31e9326770b1c7f2622d9675bc82186c449fd4"
+      },
+      "test": {
+        "x": "39ef677cce1bd816461f7eefcd3c65c4713fa1b3b9d2cab22724cde7531a2b26",
+        "meta": "a20ab3a1c93ea900af0738d481a58e6ba0b13efb2c9fac646c3ad0caef192f2d"
+      },
+      "mean": "7e83e38e4856c2713aeb38e93a2da0247b127ec97282dfaa03395e4ab59ff7ac",
+      "pc1": "d1c17eb06e0cb48205fa2484ff0db090aa6e4665c31c2c9cbfca582c92be0887"
+    },
+    "syn_w0.9_p0.1_dep0.8_s4": {
+      "train": {
+        "x": "6b0e37a8f45a9bdb65d897ad15273a62d2bc48d6b67a1a7c6b0fb3472f4287fe",
+        "meta": "dc13b8e0c8e5b1b100f131474c3cb8d0f4ada228c35b94a7d271ba1c34669757"
+      },
+      "calibration": {
+        "x": "34f277e44ce15b1cb8fc61b50e031790ef1d263a8c90fdb582d9bb99d9b1513c",
+        "meta": "7f4f9d2b3fddb6b5c27a0992c883321e95438c1ffad4185c8a9a4d996bf49c82"
+      },
+      "selection": {
+        "x": "36b89233cf8ef2f2e3ff3d3551942513041eae1a3a5bedb7ecdb831aa8890f8c",
+        "meta": "1b2bf251246645db9ea0fe3db14ac2bf42331a948844b46612c707e4591d1c59"
+      },
+      "test": {
+        "x": "ce0bcd3c7d0be0b53d2a5c8c3e354a833398e2cedb385f4e1ea9f4e66457bde2",
+        "meta": "ea171e3cd127ec312e78743e2dd700f7c392584dcd2cd0bcd511fb322eddf706"
+      },
+      "mean": "f431f4c05fbf78a82d2014c291bd7109ae340a1a051ff5937f4e99c309c35c0b",
+      "pc1": "2f0130912bd353739d4edc47986a94b334f5e797a8e6b7fb1d4eb85851dc62de"
+    },
+    "syn_w0.9_p0.1_dep0.8_s16": {
+      "train": {
+        "x": "6013a9ca474aabff03fd057fde840430ccff08b53b5032828d99564dd74e2c62",
+        "meta": "a0dacbca672867f7509eb0beb37081adfaf46f92f1df56902c549bfe350100de"
+      },
+      "calibration": {
+        "x": "1a720f3ea0f8472a62c70cce4ae752186ab0f740e6576dec6587d8ff43ff1a6a",
+        "meta": "2643e87d6e616fdbbd55b6b81aa0022037e75411b9b476ac16fd9ed80eb55766"
+      },
+      "selection": {
+        "x": "befba5c200b7a4e05eeeb149cff3d599bc471767a3243f46aaa8430dffbfd5f4",
+        "meta": "8d256f1f75e8fce9c0e042aa7aeea4e902790d5ac0325ad5922b4c662b874d18"
+      },
+      "test": {
+        "x": "9c997f388a9d0a5e7a4afb77cfde1ca4befaaf29dbe10a72b939e472bb278ecb",
+        "meta": "c285372e1b1ed3cc16d6cb9603d4fdb10577e1e09b8f6ad1e596d2d83659e758"
+      },
+      "mean": "f4da43c20e41142e80a043b53562f6bf8ed2738e2c5e96c082df18139b48d55d",
+      "pc1": "965be044e6cb75e0487db38385df2873d1b52a88c340ca1627be8bf4f532404f"
+    },
+    "syn_w0.9_p0.5_dep0_s4": {
+      "train": {
+        "x": "2d9cb7ddbce4b1cd36f5a96f46dce8481f223d30834cf57daf4cfdc8e17603c4",
+        "meta": "94bbacdfac7cebae54a226035f48f4034f3a428f10f8d4de13754a85a174b7a9"
+      },
+      "calibration": {
+        "x": "5683afebcbe7c36d5fd7046f28310e45727294559128458bf88d70667adf19c8",
+        "meta": "4930243e558f3450fa376f57289757e6f819c08bd21eac3128b0195a074e9edb"
+      },
+      "selection": {
+        "x": "7977d19695bf242a8543530b7133484090a7f6f6b0558ea6242e94bd714d9953",
+        "meta": "7171479a6fc85ba5944be52bd8655a642dc41aac8d9e2f9d48587fe1fd3ff03a"
+      },
+      "test": {
+        "x": "5a1317399cb3bb267acadd4b9963e2c7126627ff1e256742026ed76e0663712f",
+        "meta": "64f33b1cfe15b6eb9e020e1416f67546e9f63de50be8270dabd4fe7581ec3ac4"
+      },
+      "mean": "55eed58f815caf5c057324fbb197bde75e5dc2b1b201e4af65d37fa0b0da70b2",
+      "pc1": "4a4b0b6d823d601e83db334472229b7a0fa11076bd05762245ee8bc019ece4e0"
+    },
+    "syn_w0.9_p0.5_dep0_s16": {
+      "train": {
+        "x": "a1ad6d9482c1948c32416a5895d7c9f4a5355d988d2f82c04f3befb2c6a5060d",
+        "meta": "82f9d7e67aeb0d262deccda100a57df2209abe8f6598bf65eb3feb559ad8c578"
+      },
+      "calibration": {
+        "x": "ca1d90207b8fbf03cb65d73b3cee80b778f00789528ecc984f52a1a26a2c6ca7",
+        "meta": "7781ffb2956bda445f05cac024805102113a12e86b66c8ba92c09b55a3761d27"
+      },
+      "selection": {
+        "x": "d67ad2fe4d68864158a622f00e30df087942b7f3a21220eee4855f9f1e35f988",
+        "meta": "9b7cd575e49904cd63403c03a711e947e422b63907c18e3d47f011f33efe5b05"
+      },
+      "test": {
+        "x": "f4ad14a1ecd7616d7787c73efae99fcfa07e5b89e18d11c58428782e631b1347",
+        "meta": "9f95031639392caf3b8b1ee650eee4207bf3fcd8e36928aa1a2b0061bdb6b42d"
+      },
+      "mean": "a0396474376062bdeaa43aa679274312229a6fc959a50dd5408e26b6f996128e",
+      "pc1": "d6a19d6e831c9b4ff67af7f254b5fbb4032f1f7896f955c026ddf4c25f0a4a80"
+    },
+    "syn_w0.9_p0.5_dep0.8_s4": {
+      "train": {
+        "x": "17859adda72b324d043d6c185e2305d237dea6dfa7640d904fdf2a6320512c8f",
+        "meta": "f11ee958e61597d6d689c94075f4ea02050817f807712bdea3acad3ceb426bb3"
+      },
+      "calibration": {
+        "x": "1867b72c146c8ce7dd5f2b29f9d9649de6ec17d08ef8a77870e32262bae79f42",
+        "meta": "583b7619667f43f1f81cb3bc569e1b604e2162c026365549050b9f1e7910e1b3"
+      },
+      "selection": {
+        "x": "0ba317af0c64e524d05947fd1280ada2febb2d04d7d6160ee9752876fe279f2b",
+        "meta": "26e2f9eb8b945685ab8c8f93ab683ff1a67d2804d9c8112084cc5472466b501a"
+      },
+      "test": {
+        "x": "6bf678d552f0b126bbabdd287839146a250967f7c457a16ecdd7bb48909c4849",
+        "meta": "ded70429bad72cb6aec83ebd5b3722225fd1554667c8a5043514fc20e9d20237"
+      },
+      "mean": "b794e98635dc42a7b65883eff562b0f9d65160bdfcb193a2b6a04ddbd32c6d46",
+      "pc1": "33df2aa0d2194f1d2eab23e110f8105b62cb376d3e0a74bc0e23cf687a06babe"
+    },
+    "syn_w0.9_p0.5_dep0.8_s16": {
+      "train": {
+        "x": "b84915488839f6793392e6a99ddcf9eac149c73f728c4d847ab411b40124d7ea",
+        "meta": "661b96f40bf9d5a65a9038f0ea278a7d8f6410195127ef16e48706d03df91338"
+      },
+      "calibration": {
+        "x": "777e2cd288f85a90ec9c229e907376491196fc957686a564dbe3cc31883e95a8",
+        "meta": "76a3220227924df63a7f78c98ccf42e0cbbc606954b19573e663076e3447267e"
+      },
+      "selection": {
+        "x": "ba0c64daee9314fcb42470e8b24c3b9f86a279e44560f6ebd45a5903c3066bee",
+        "meta": "6c8d6e36577989906cf7532c7f4bbac04e197f50a5d53bd64180889ffbcca0bb"
+      },
+      "test": {
+        "x": "4f1c9309893498c6a5779eb6afdad084352a3eee25c801eb10565c12e5d33298",
+        "meta": "04ef7d1fde5c9ecee5d7e45e25623de1713e6ba2f63f5df7d9f6767c961c511f"
+      },
+      "mean": "932ef10162e215ae504beb5b055fbbc339613643774b1c03cebdb95c603486fa",
+      "pc1": "ebe97a071b30c53243cfceba56fc4f795e520c4b06b3b6c38be32376c25a9816"
+    },
+    "syn_w0.99_p0.001_dep0_s4": {
+      "train": {
+        "x": "d5332ab9442a66958c52f033eb3f711bf472c7f9f46f09d4310f80ddc14c5e56",
+        "meta": "647a510d7d8d669e30c3d554729651eb6fe872149cfb76ced3ee5d371fd4754e"
+      },
+      "calibration": {
+        "x": "ec5dee1239dabaea5b860738034471a0c694f9dfd2c1e8380b6ba927390357cd",
+        "meta": "5797cdf5d4ada77af3b755233dfbcf06b78ed45121c398f6164950be92d840af"
+      },
+      "selection": {
+        "x": "0fde67ec5ba40b0fb8827543034ff7c47920bb138e4926b263915801513c4662",
+        "meta": "70a9b5f2c0da333ba99f2b2109d5338f7a9b6d011e834429ffecaea8ee7e3fc1"
+      },
+      "test": {
+        "x": "145949c817244ca7e8980c9921f508f958b225c78bc29275779bb1c4014cec63",
+        "meta": "b05cddf8fd9057cf8bbd107a3859769531459894400ce07f2506a795ca2a07aa"
+      },
+      "mean": "bbcc4f67972f7eb82a9caab1bfc2af4c8e3f7244b1daae7ff45c638de9af39ca",
+      "pc1": "d4ca678b7f9b6ca55692e1164a22d49c810970d2c68e683aa50a39d263136527"
+    },
+    "syn_w0.99_p0.001_dep0_s16": {
+      "train": {
+        "x": "c867aa8edbef4a080c2c92f4a072d1080ecf26265c1544838d449468886106a3",
+        "meta": "7bdf7d00246e1248cafa065b047d1c83f40f5184f72a607ed5f3b07ecd824af8"
+      },
+      "calibration": {
+        "x": "0d472d96adb4a9b1d31a068533b03fb7cc5ac578ce704416fad3ddb223bc1ddb",
+        "meta": "2f6abee7c41850139b9a19984f7c969b24b74c620e5aa73b169927c32fbaba7b"
+      },
+      "selection": {
+        "x": "2f53a03aac14395e77c8562e0b1f4f0bd0e76c7421bb83fb369351d9a018105b",
+        "meta": "1673717e0945e149f3bc36906761564d36fabbf170f7ccf09cafdfb068ca5bdb"
+      },
+      "test": {
+        "x": "52d7132a55f0534e4858214f40e2d7327c1803771bea48fd6ca0c4dd400ab553",
+        "meta": "c8c96612fcb34d566a79b31ca2c0cb1844ea83e7da247f845a6178b8dc17fcc2"
+      },
+      "mean": "8e5bbe8c832c39c34284a53544a84f4f25c2259735ee4d2e1f78cbbb2db05b10",
+      "pc1": "4d4eb0198fff78fe3a819bd3e4819558cbe8ba5c6cbeec9278155a9339763b62"
+    },
+    "syn_w0.99_p0.001_dep0.8_s4": {
+      "train": {
+        "x": "befa3480347d02ddb928c7b967e5af6bb182f9e51af336b8615b2eb7e9802008",
+        "meta": "53b57f4f630a580ced81cf81fd6ee75935daa1dcd87774781554c4efce4582ad"
+      },
+      "calibration": {
+        "x": "1eb020320be1d07a4ee028bcea1ad00cf1fadf94ca936a31a639db862dc8df4e",
+        "meta": "4276264ce120a0a07bd9dbd1b23f32200693b7f2b6f48fc9485dad20c48abeb4"
+      },
+      "selection": {
+        "x": "765fa3e5e7e33eb0f404860b9b3aa31650e771cd8df3b08dc08a02e623046097",
+        "meta": "0250b62925f4e57d6d0dfe74e1f38f88011255e4477f2c2012f39a8877f04251"
+      },
+      "test": {
+        "x": "3c7d41ef566bc8c855a209940b3f6c1d10cafde8f612e7ca72f231cb855ddfcf",
+        "meta": "449303d4b1b57e7ef70a4aa9508bc070b36ebb89df66751dc28c9c600d5f4ac2"
+      },
+      "mean": "8e06936c37438939aeb8fb483ccbc97bf1dd9c8c2822bbfe0e7cc7e6951f34e9",
+      "pc1": "6c8bef609eba6c55417831c457fc39f6774e4d855dd9bfd778010eb43b7dc7e5"
+    },
+    "syn_w0.99_p0.001_dep0.8_s16": {
+      "train": {
+        "x": "20b96aa58c998a8fd798611924cb74af6c6df5c6957d5c12341c5d6905efe7c7",
+        "meta": "d6bc75cec87eb1b8a4d9716cb91dfa7dc341dd35c0a6157d09f401a397939ed2"
+      },
+      "calibration": {
+        "x": "f2b7d94a5a04cc5f7c76eb8f161b89cae2fa48fdd711ad631aa841f650b584cf",
+        "meta": "f60c4145e8aa33e3099d46447932a050e0b2e7f4f522546d27dfb071d0072fbc"
+      },
+      "selection": {
+        "x": "02103e99a5d77c993778c70779983acb806af010ee18d83cf49e0cc4c2d605ec",
+        "meta": "e9a40ba10cae57a71c63756f017a3fa4e807052b04e10899e56a839c14bc9d30"
+      },
+      "test": {
+        "x": "f41ccd7aaef919f7e3406ef4d05be453bdd80fad68b2c27ee56e5a1a97584b0c",
+        "meta": "2ad9ba31d4583366e1e30c4749c6810093a512b2ec0797fc52873abc94e853c8"
+      },
+      "mean": "12714790818d1b58904cd74f7b6d77584f24b3d1942cca293f88093a3b8de546",
+      "pc1": "4e2a520cdde003d357042cef02ed49073cdbaf20cc0e309134a7dcc085bdbfaa"
+    },
+    "syn_w0.99_p0.01_dep0_s4": {
+      "train": {
+        "x": "0074e1fca7bdfbf5b9b6eefb1b60d5819de814a397b242bc8a3a5422ac0197c6",
+        "meta": "2b69ff2fdc0ade0e2f709046383ae09e3eb72e0c7111c5ade99172e8e0a0cc2a"
+      },
+      "calibration": {
+        "x": "93b550208102b4a633f29b1ce83a354315520c31c5cbecd2cfb37ad89359d37c",
+        "meta": "56842ee9e24a97cf56dd104a08944f9027c9bcba91349dee944aeda7d6601575"
+      },
+      "selection": {
+        "x": "cc3d049ada5fd388ee8ab436cf7b9fbc88971c38d49dce8ba16b197d9af4f5e8",
+        "meta": "b19dbf451fb39257ed919650bb0efa5f812b571e97d6dca0e7baa8113a443a0c"
+      },
+      "test": {
+        "x": "3b8cb9786c1be603c1d2c59eb1423d021ddc169cf137a3c68f89377e7028676a",
+        "meta": "7df209793db122fe90239482f91c86c85e0957107146466fbf825c500ce92b94"
+      },
+      "mean": "e0077113054b75989b61450fc2961e4b2c65eadea2cfee28bb97f44ab6a67428",
+      "pc1": "af5a7bb390054f7f7731d057162e4242e4b845a4ba4498327c1c0cf8b5ddaa73"
+    },
+    "syn_w0.99_p0.01_dep0_s16": {
+      "train": {
+        "x": "5cdc7ec513721dba5f2ea3e738b510e22f20099e77e9e4e624c9b1b75bf3cc04",
+        "meta": "97aaaafd2eb4ad3711ff34fa5b1e2d304e7506b8ef8b46b6c8dd9fc8a99e1570"
+      },
+      "calibration": {
+        "x": "938191d8375ca36384848f066db96915d65acd0d384230579f49153a9b3c8a90",
+        "meta": "9d7ca7f8c39125c4786b70bdf731a3274b914c569e6652e8024fa7af3324ccee"
+      },
+      "selection": {
+        "x": "054dee5b8bea2c10de5d168554bcbf391602c865fa3913623d85c729842f51e8",
+        "meta": "c18ea96a9b69b46624a40f6908e2db950542a387b0ab726841875e209b0b0f80"
+      },
+      "test": {
+        "x": "857c59267e2428aa43e02fa626c298d3e7ba7a1e483f094c3114643e3d94c971",
+        "meta": "ba9376518e9f4c1c176f48b268320dbb2e96901c679d13ba58edba3553af5d10"
+      },
+      "mean": "22a2d42dc86d31d144593be54c07233c804a638f337a862fbd5e64afacbff361",
+      "pc1": "4ecc7cd48f00690d5fd6b987a4e8bc8fa1d963b1be5ccf9338f7e2f623e45143"
+    },
+    "syn_w0.99_p0.01_dep0.8_s4": {
+      "train": {
+        "x": "e4864ada935c8d496c59afa0cf6a0876c5e949bb74e9ebf7470358a6946b5157",
+        "meta": "348d147e556a93f2cd166ac078abc681804c4c84a4e16bcfa736b4943ba6a40b"
+      },
+      "calibration": {
+        "x": "28d930b17d0b6fcc663f86234b8e04ff5e61751490bcf63501fef179c46f3fc2",
+        "meta": "27b215422b6ac5836dc1159febcc634754d867492e1687e958fb1a58fa3acc19"
+      },
+      "selection": {
+        "x": "229958a3db8003b2320dfcc49182c5474fd3e6bcf2224f13b5aa12b6f462aee6",
+        "meta": "ddcc62895d1a00e37567cbb76d40dba0029003e47f06991fc8980069f2b103be"
+      },
+      "test": {
+        "x": "c82a54a840301692d8a835b5ce03bc6f63eb1a37723d82314a1b173597527be2",
+        "meta": "1bccbf7808f702b30c2dfcd2f21a6b9806e837a22b0799227cf76de79ec6e0a1"
+      },
+      "mean": "8e94b56b0e565ac5759c23cbae3ad21abbb307a27ef3f3cc7aff86bd3c385c65",
+      "pc1": "7cb9a7c446450851e05d9be66fe7cbe6e265d7d4349de2ab34abf82bcc844a7b"
+    },
+    "syn_w0.99_p0.01_dep0.8_s16": {
+      "train": {
+        "x": "7be23f3c596715db24f79edd77f1d8b314f6c8b5574c97b5aa4a84a2f2f28c30",
+        "meta": "f4d43f986085c2b9e2fde04fe9dc6aae973e340a97badc94738c2eadb27120fc"
+      },
+      "calibration": {
+        "x": "d01f49aba576dd24a320d9afd44cadcbe0d611c54b47a8b53a6f968b9b2dcbc7",
+        "meta": "5df79a6c03e87cd119fa5ccdf0e04830ab4dc21275606061997a7e76fd6fae0b"
+      },
+      "selection": {
+        "x": "c932f086058545fc55cb55727f9f024224539fdabcd76aafeef4350ee43ed976",
+        "meta": "f8591245acb32472b521c1dbf43c0d9b1660e56728d0a2b52c7fcf0186b2d426"
+      },
+      "test": {
+        "x": "77951a63c2b646cda2ff4bf4c92b8d7345dfac0a4d65b854d9fffedca4a0e30e",
+        "meta": "e9d8d67c9d94387cfe4ed1f417a34bac21b05e42aaa006ff18eb541d229b48ae"
+      },
+      "mean": "610519d31dfe2e684f46f31b5889f20e7598d545dd003f367472ae8c09fd1f6e",
+      "pc1": "636b2db0fba3c30905f5f9fb9d994d00c950ac868b521d6095b0dedebc0c8295"
+    },
+    "syn_w0.99_p0.1_dep0_s4": {
+      "train": {
+        "x": "049347e112659d79fada317092a132d8e54e997ec67c5a7f2a1f47b3bb4ea6e7",
+        "meta": "e0952cdc87f07664d4a4671c02feeb68fe6f59aaa6da16bd9b4071c9db9faf71"
+      },
+      "calibration": {
+        "x": "3afc31e30a4b94c1c807a5a9571d2c3eb7aab929fe65f6bd249668b0dec8249e",
+        "meta": "2a3b8465fbdb8f90674ee869c933e658ed4ed2924eb5730a6a40f6aa78a0718f"
+      },
+      "selection": {
+        "x": "99145887ae005bd0803e7ac35534bbded5a6511c6897f091bfe1574b4ca0746e",
+        "meta": "efaf18a198e0b8b5d4124c6981dba847fed636a994d1079f1415f1658740c618"
+      },
+      "test": {
+        "x": "baa9283057cce9b96a8e4d3b92820ee82debcdb302184213b76534bc44a50237",
+        "meta": "23ac46d81366e724711781e7bd949c4334a9e638fe20b3e0d128a432c65c3e99"
+      },
+      "mean": "ffb92b82f2b0e3eaa4fcad4bfcd04d7733731096148c3b3d0a2e7c6ec3111856",
+      "pc1": "7f533db21aaa5bb8fe4807680fcef909590c779b89788de02cffadc8cf0cec08"
+    },
+    "syn_w0.99_p0.1_dep0_s16": {
+      "train": {
+        "x": "df4fc0b31b6bba30ec5459f3f57bd7f83bb52aaf9cd205b5a844333715cb8d1b",
+        "meta": "ee64dfc33df82662a70d4459c6a1aa70c94323eee643267ca5512393891eac93"
+      },
+      "calibration": {
+        "x": "dd70f5b848dc64f4feb902044b1763d83cfb5cee63631c9f3d36a7830f8f476a",
+        "meta": "fbd23e5eb6b4d7834dcd40bb842f497e40191b92c432db866dbc0a5eb4a47ed9"
+      },
+      "selection": {
+        "x": "0a282a3cca1d26e98b87a68304b44e1133149d16b53f673bfa9cf98c7dbd26e2",
+        "meta": "68543c27e417bb93b4ff7ea3ab6e914056f6e392da5026cd37e4113c9f88ec9a"
+      },
+      "test": {
+        "x": "51573184d93180cb1d552b1c6a4c358592b7abc50cdf5b169ef8043223d08685",
+        "meta": "97b027ea94e4bd3a08102c38f2c0928037bb7bfc96a2fdbe902d43772d791d12"
+      },
+      "mean": "c90640ea637014bd1c96e9117d01c04a644cb04cdc9e2af85e61bba914624c36",
+      "pc1": "9cd7e5b97f6de293fca2e642d0983d227ea51f2e5b3421069d2c56f180f6c9c1"
+    },
+    "syn_w0.99_p0.1_dep0.8_s4": {
+      "train": {
+        "x": "7aab7aafa0bb23fcfbf82f3f478bc2c1a1ed847f7d43164a4fc697a764fe07ac",
+        "meta": "e3ebc49bba963bc34fa931f993a2a8594505880fcfbaa939b90af1f7e1fdc389"
+      },
+      "calibration": {
+        "x": "a3f97a150d2ed9fa71328206b2507512af3e514773006e320c002e284570892e",
+        "meta": "1d6a965aebc849997f7aa0efd8b3d20bc79f9665738b6b7292f309efe9f3c5a4"
+      },
+      "selection": {
+        "x": "f3b7e36867bdb8d25c4dcf2ee75d361da52bc4dc9f75819991f5070eb80949af",
+        "meta": "64e680c18a8d3ac0dda5f3f35eeebcad05cf19ce8b3b8b559d61e34c83e11dd6"
+      },
+      "test": {
+        "x": "274b450a1358b73cefd1f83f95f06ac3106d91c3429f9a3fc0805bce1123d819",
+        "meta": "b2718f74530b5ca28fd9cb88fc3ed2af2a325fec2e6a58f7bda6922208ba969c"
+      },
+      "mean": "85d1e0f89c705229f321ba9c5fe182720ce535bdaaf24fef287e032628e2bcd1",
+      "pc1": "1a7e835b8cadc84e863b7743de50fecc41f0234c111a309a943f7513e6e4003d"
+    },
+    "syn_w0.99_p0.1_dep0.8_s16": {
+      "train": {
+        "x": "095e0e570d1b46a579681464fa1478e1735a3dab8534e7e6e85fa93f7b2c140c",
+        "meta": "41e917bbddebeb0681d30da71d88dac419b17d4c2b102ce742cdff79e286abe9"
+      },
+      "calibration": {
+        "x": "54d816c63ba7d5458cb16d95b6666dfde5fce0f29e11c3c641098b520d5c43cd",
+        "meta": "a846bbb34186bef14aa8bc30c5683dcf6ace822ce09f299e1796f60d4031f2c0"
+      },
+      "selection": {
+        "x": "254e53e8e7a68212c39230afa68c29c4128d1eb4aa96cf7f1cda77c27c72cbad",
+        "meta": "900abfdb753bf85bb75da2acde14ec7da64fb0a7aa3e6814cec857915ede2dae"
+      },
+      "test": {
+        "x": "8665615a8817fb4afb2edcd588c1905a4b65d8396bee36365b3ba7c50c5bdea0",
+        "meta": "0688d0a11f5963d8e93ca5ccd3329ceccae961996b1d7e5f9392ee9942b7d10d"
+      },
+      "mean": "3b8bc00e07a5f865ed1f64409a8fa0b4142f8ac54b510958e3c8fda41bea762e",
+      "pc1": "78cd1489076a260dc8416974dcba6f40824830777802743c4eccc8027d063a00"
+    },
+    "syn_w0.99_p0.5_dep0_s4": {
+      "train": {
+        "x": "4766ac10b7b2bf1f0dd0b68ebcdca9d32c7644125adf7952f50c92c5a12bb325",
+        "meta": "b3b597567cf7c5c6a85199890c2ca80c75c9dd610cf25c1c2dea63258f19f4b7"
+      },
+      "calibration": {
+        "x": "78f6cb3ddc5340a4b193dacba2873b89f3e1aa6ed022d05a1af1212e068121ab",
+        "meta": "31bc69fa4f1540550283cbeb3660c8aad41ae0457d9a9609c14b40ebbe2d21a1"
+      },
+      "selection": {
+        "x": "379e3ff8b97a8f5150db17d4169769e1f69ffdec818de26ddf950eb8908137f8",
+        "meta": "b20d8d1a48d4a149968249a021f505715fa058acb764998f6c4309c772246961"
+      },
+      "test": {
+        "x": "23685bd67335f969f61d5245d094df89c9dbea813bbe7e9e231a033c48a9cc6b",
+        "meta": "130cbf84bc5d38842f6967c6dc352005d66f7596a2f153396dbd067f128d96d8"
+      },
+      "mean": "3e5fa957369d5c28511d37b4013a33254a1801eadd9ed4c371195f7a0a8ea85d",
+      "pc1": "3686301b0b4fd9aedb4de7aea8c1fc5d30597e89b385dcfb63845d43158138e5"
+    },
+    "syn_w0.99_p0.5_dep0_s16": {
+      "train": {
+        "x": "5e696aff7087a0c493a89a681b328de6fb34d5df5e9e140edb05a73b58edf079",
+        "meta": "cd6b739f6a7c541de0f92b1ada080558c1cd5d57271111826cbaf9e86873bf6a"
+      },
+      "calibration": {
+        "x": "e503167ff7598d65d1b05354e6011987701b9fe4d678473ff0f82cccfde2ba7a",
+        "meta": "a94964cc82fe6045ffc31ea9bfce8edf1bcfcca6fc8b0391e624c43585b929de"
+      },
+      "selection": {
+        "x": "28769ae6f9c420f40634491cb54a4b5196a63d37ebbb47c800cb4757e7d493c3",
+        "meta": "0d747b35998c89a139661b2b89ea1e9eb9b0d1f182eee7c04b65cc5635f09121"
+      },
+      "test": {
+        "x": "5b6dfd0eb39190575e039b9a169146c91d944be1b2a6171fd72544f482f28eee",
+        "meta": "f6c57d1f0fba58b6cbcb128051f6446a47026eba2f703177b377619e79315fa3"
+      },
+      "mean": "77484c56a6c617ab762048d93a9e6027f7d0fd4951427039b4b7ea678aa11f9e",
+      "pc1": "abf08d150dbef607f9345c871f5b5776c62defdc7657b9a7085cdf30c71216f9"
+    },
+    "syn_w0.99_p0.5_dep0.8_s4": {
+      "train": {
+        "x": "747104bcc78fcecab8a3682cb24d0bd3686099f82c615be5bad98cf395c1cd34",
+        "meta": "c9d9e7388735880eefb014e5fd414a34fffceaa6fa6dd102659a5eaae98a2bd7"
+      },
+      "calibration": {
+        "x": "6e88ba75acad53de507c59ce8b0c997debb11e3f9190b25d9f5f20378c15a50e",
+        "meta": "5c884756f05e2c08f65716e299f64f652fdc2a24b6da2899310af9db3b525f7f"
+      },
+      "selection": {
+        "x": "b17ebe21bec7add78d3fab115922d284bbb6dcfb23d501afb07a48dba1c1de90",
+        "meta": "1966e89bd2f50eb4c23557b6ad35b476952643baa2f209f1e2a48b9db5abd708"
+      },
+      "test": {
+        "x": "b5e7cf57ae4ab171289b9d4a319089fe17b3761bd35b677a3b5f104188b8b3ca",
+        "meta": "3706467e57057102ca7d5bdf965a461e9f32d483aec6d35d62990dbfd1a1e8d8"
+      },
+      "mean": "ffcf84edfd8543b21ed94dc214f6ba4b3dcc9ff344eb389eda606b74ede919cc",
+      "pc1": "5a9187ec7a9f56a959a76622ea50ac98d63385ba23d7c335cf8a464fe52ec706"
+    },
+    "syn_w0.99_p0.5_dep0.8_s16": {
+      "train": {
+        "x": "f8b5562bb28666e06c04f70c3723f53a2cf949d5634439a73d75edb4ce406976",
+        "meta": "ad4c691f8e4cc1e819c1159adbb3f43998114b20e8c722fe76a1faae6aaae9e4"
+      },
+      "calibration": {
+        "x": "fc5209e76a8daf4c3b1bccd7161cf0f5d0830bf9afda5eaaa95bffe84bef36ba",
+        "meta": "03af624f21ec117c7329b42ae6aa548ee50757a149024498dc958cb014fac112"
+      },
+      "selection": {
+        "x": "d49606b7a4d190c8750dbe2822f5be2df1ee96422a1efe28cc858b514b4cba0b",
+        "meta": "f87bbd0b4bd53bd5b9e5bd56592db8e9f7d1d3403138f4bdcf420379446f61d7"
+      },
+      "test": {
+        "x": "2bb90efd2058e7dcc9c1ffbdecb1f164eaa02b20e95a4aadcd76ce5a5ec18050",
+        "meta": "bfc699936b20ecbd196fe94f44582a5b1bdc0c2c02828e6e67cbb47a523a3afe"
+      },
+      "mean": "b9d870bccbd24352bc812de13d6d117b6899421189fd2d8bb9e747e17fa46290",
+      "pc1": "07a312c264ae2314e098b480e6ca1098408cf6113c733c1808aa9b5564ea2947"
+    },
+    "syn_w0.999_p0.001_dep0_s4": {
+      "train": {
+        "x": "b948b2e52d0d7914eaa8b22f53f1342af4daaae5b67526f3d97bff8b47568906",
+        "meta": "20f3c5a792092c25105103e9204d4d86a0cd04375f903dd6c1e93a46f2c48d7e"
+      },
+      "calibration": {
+        "x": "101cb55fda964aca7c697a3b8ff2e9628b59749b206937f1d5622bc17bd31280",
+        "meta": "f38d387df19c2bf76b7b39d0394d9fc51ab401b5d09c4bda9a58ebbdf1ba86ee"
+      },
+      "selection": {
+        "x": "75a08ebf7f547aa50b22a6a36539eaf8413ba41247099a10eb76f532bb093986",
+        "meta": "1762b870ab84e571a436de9b7392f43373a3e6d465a7f80ec0a510a0794113fb"
+      },
+      "test": {
+        "x": "6622f8702dbadb546e93974cc6c47cacda3905f05a5d51dc38f75f7c6c7e8324",
+        "meta": "44888473996a7446359052aec74a458dfa7224c2dfa453a954c5a8b3c0d1f7cf"
+      },
+      "mean": "9e0890aef555e9ec57a9bbfd6cc9a0baa127e1cd4da5aa6b9974e4336f63dad6",
+      "pc1": "7790659701e199b7f4e1d187ced72130bc0b9b3f28ffba4f60c303f19b25c7b3"
+    },
+    "syn_w0.999_p0.001_dep0_s16": {
+      "train": {
+        "x": "16ea1529d17ed60beefb60e72a542c3dde0cc253acfcdeb7545926ea3e081e8a",
+        "meta": "db8b0370dcb32db3f5bc2aacf64612d3aab83e3f1c28c169625fb5172d97e256"
+      },
+      "calibration": {
+        "x": "6db4c4c4113327adbdb182eec0ff5dc31ca089ea535b91ee9584c8ae930f706a",
+        "meta": "6e269e9438811c07cfe04142f7cc193a202f1f89d43589174b0d2f0984900e39"
+      },
+      "selection": {
+        "x": "06249683980479186ab9b71326c8eed0ea7d66c9f28b820f3acd35c6038315b8",
+        "meta": "ee36f06ac1367793ebeea4a2baa30be31602934e77a00186ab117459179b4225"
+      },
+      "test": {
+        "x": "52cfa16ba477c0775672081bb02cefe5d799c4690503cf7d86ac6d7307c289b3",
+        "meta": "4b99bcfd3f17007608cd272231bb5fac455e609c2dde87057e790a05d2e61682"
+      },
+      "mean": "07fd95d850ff335d3f3ad74a2eed4a9f7188cb67518e801ad752bbede36ca407",
+      "pc1": "560e0155f343264f29fc49077b3a2c8eadd3a13d14dd4956c0bc6671fc460dc8"
+    },
+    "syn_w0.999_p0.001_dep0.8_s4": {
+      "train": {
+        "x": "e539909d5c9fc94e52d5b809c68d682a57ade3cf4cf8736b9bc61eb05fbf5fd4",
+        "meta": "a5e16ad2c56905311d6ca6023884dba4320dd25d2ab95a9038356f3897df283c"
+      },
+      "calibration": {
+        "x": "132660c7b24db0e64cf26e12425793e193e03ebf45eb5ca1cc660a89f0ffbd53",
+        "meta": "43acb04eb99232cf071f3eaf814e29e75b750260193ac185c60d788e280eaece"
+      },
+      "selection": {
+        "x": "4d96c4c572d5381a293ad172541a165ef944abf3af619c7905ef204b91e46c46",
+        "meta": "300d910d240df660d9866bcbfb0dc73b1cb54ea5841b8d9a803d7ec4201c048f"
+      },
+      "test": {
+        "x": "f3511e4f34e7c249ddae32bb4728c8f1dbc109f2a503dd6657c13331b136157c",
+        "meta": "8c3599050993e1a73c4e3ad1129fbe73ad88ff2843652381a3558e53e289812d"
+      },
+      "mean": "36c56d1361052f2339e02edb68791686a17ab4e2fd0adb905cc8d72a606f308e",
+      "pc1": "ebbc85fa746a35fa02d00689c774e5f73585653fe3e418308235e5f4c1b7b15e"
+    },
+    "syn_w0.999_p0.001_dep0.8_s16": {
+      "train": {
+        "x": "263fc1ae56c8f8674c0ca1cf018e402e4af5ecbdf75ef877db338925b49c989a",
+        "meta": "f8890d3ff31c3347fac2aa1fd682e91f88c68c3f6e64189273eeca85a2073360"
+      },
+      "calibration": {
+        "x": "1ceffcfa9f33b1ea4c061a1c2e488c3fd9540cb49d9bdb7fb30562060a2d3cb4",
+        "meta": "e2ecf454ff38d84f23e631ae632e8991ff9fdb42c21b1fe264c3d8a4f3a1556d"
+      },
+      "selection": {
+        "x": "bd653d28b56a7478ed1f54269ecfa6657b3d6809ea6bbc72dce6013e7fe96608",
+        "meta": "31b3672da8a778428e08ddcd7389ef06538204dc6506e15b11dab0505ea6fc12"
+      },
+      "test": {
+        "x": "379e9e9368c3bac2cd4e1580ed856823d25c53a72e4cff02b3303843f59facf5",
+        "meta": "82a3617276de4e925d4f728489e18e39be27689a96895fbd7ec86ec88840ae20"
+      },
+      "mean": "0c7822748fc938803a58d89081f68590c11a6c5a04a10c45d14a966c4d083b95",
+      "pc1": "08c4b6d90ff679abacd5c98f9fbd757b1d6849f90adeb81f1e2cba921af77e0f"
+    },
+    "syn_w0.999_p0.01_dep0_s4": {
+      "train": {
+        "x": "bfbe6096362eccec1491de6bff4043edd74c76753e0aafa7af66f2447e39c5b0",
+        "meta": "7828d582471b48fffe152c93edf022b0a2dafccbe1f49ffcc766fd28d28135f1"
+      },
+      "calibration": {
+        "x": "85a736f4ba42117edffa4f7c14502004e15e52cfe5eff68444c2ae2806fa0970",
+        "meta": "3c91440003dd64d89aedb5df6eeec3c0676a51e9b22deec0ce8fcecb7d748625"
+      },
+      "selection": {
+        "x": "6d8d324b63ec13ac3876af19f0036f95ef2fa0db6bbc191ba606b6d54519251b",
+        "meta": "dc0baa4df7f66f553a164fdcf457ec3d63732d1f286c2b7029020b2f40e07366"
+      },
+      "test": {
+        "x": "3dfc2af8a6e4d7e455f96206695290e0107d5db756d6d1400b52b4213f5e9ecf",
+        "meta": "652c68408d1771a62d6e0a2ea5b6d8e09884d33303fbc849b5b3c457a9b527e7"
+      },
+      "mean": "ea42a93b96411e024ceeab7ec79b219a87d8d36c4b0385ea8317a4d622aed02b",
+      "pc1": "60ff6b4a0ae1a840c0751fe8e5a07a50323dd2b0ef6b1b0dd15f2d9738d65104"
+    },
+    "syn_w0.999_p0.01_dep0_s16": {
+      "train": {
+        "x": "84ea64f5b948c6f83a33ea57fdc29276b4efda296267c91516392ac5b787bfe3",
+        "meta": "a4a66d7bb6e533e7a6772ba5bcf87689204065ebe9e5418c5b2cac5cd1d5b707"
+      },
+      "calibration": {
+        "x": "6ce1c3bbf30d50d9a85b05f3735a013e3de3fa1b90a2a701c2e073a6686a46b7",
+        "meta": "9f3d80a70b273f6fe3300d2b7f1ac4299e7bf7ce5447dc71d8feef4260851f30"
+      },
+      "selection": {
+        "x": "7616ea5a0259cadf4993be4f44f9fc05f4bb66314dee86418bb422dbaf8daa7f",
+        "meta": "10476f96bdf908a1e4fe95c9cb048494901e61839ebb25a9ee11cce1d8d5681e"
+      },
+      "test": {
+        "x": "38d6479b8c077a49d9b7909d5c9569c57a7a17a697b76d6bbace70b786be133f",
+        "meta": "5deec1512ae45eed4ec08ee0ba9e56458779ab1123d132d98c86301f7032004e"
+      },
+      "mean": "09ea42185745c7a0ce8d765a24fdfc84320e578f1eb30b5facca2fe0a1971af2",
+      "pc1": "232e3beb1ae4ef7554a75fd98281bb761ff73cb5e668fad29a243e1edf706df4"
+    },
+    "syn_w0.999_p0.01_dep0.8_s4": {
+      "train": {
+        "x": "14fbd239b4e38b65d212e3fc264af3f4ddea3dc15a6bc0e4bd28fc96064ad5c8",
+        "meta": "c3fd7ab7788fade30f2f622840d17bde8a529eb53ed2743d0631872ad74c9584"
+      },
+      "calibration": {
+        "x": "a455263ea90bd4c9f2af13589a1813f321ebe0d3c2d5f8963b06466e5f11d720",
+        "meta": "2919a994e62642b86c79acbdaa14b2490b403b7e1503045062d0128bb33f0320"
+      },
+      "selection": {
+        "x": "d85df4c01035a0d6241eddf2c3967fe30baab325e20a7c2f1d38b73837fecfaa",
+        "meta": "becdc701bd11338aed4a059f9aab8a42bb0649a4eda86d86386f227911e2df83"
+      },
+      "test": {
+        "x": "926ec0434de1961407f8f027e0dbc4965dc3a38d6629dafa5549d53c1487f3ca",
+        "meta": "325d0d8878503dcce73d5dc007afeabc1863c2f049436ffdbad5fad01df6ea23"
+      },
+      "mean": "35b54d6d64d0101fa07afdeab7688782cfa1d34afc1295a1e0b6f63dd5512bb3",
+      "pc1": "94bb9f07b4806223ed55e517ec20f7a86f9c1281cf5b7954ab47e3ed98809c91"
+    },
+    "syn_w0.999_p0.01_dep0.8_s16": {
+      "train": {
+        "x": "9714e42e64ef554943940950746f8e8aabfff2800cf5bcfcc2fcbeb5168f1134",
+        "meta": "8205a67072de89a2ac02a642aead6ac6df1bd9dc13ffd643d9b5fb179f82bf57"
+      },
+      "calibration": {
+        "x": "ad3133d3115140cb2823d8090704bdee667e6ce87a95b1f9d19a3139e467b4be",
+        "meta": "cd1730522510c0f4b7b9855a84dd89e20e854e817d756709193ccd68c1212456"
+      },
+      "selection": {
+        "x": "c6da806626a37859ca9f4b1884024192c34be5dcc9416c8becc5597b4e96c127",
+        "meta": "1a9c4257287abcace858b63c2156506457b6e104d6c1ecffda0d21be58ec1776"
+      },
+      "test": {
+        "x": "11df104e7bd3c975ef69ddcd552d8225fdc0ab878307987dda5bd85d31232762",
+        "meta": "144003a42f11bf9fbf28fda43e5737d6e3d8437a064c2a8a7a54ccf4d8de1008"
+      },
+      "mean": "fd402f4e9af8ba7bf8b944150b7d55aab18d8843c236250c7dd3a1047744f01f",
+      "pc1": "95d87afd207d3adcb54d0d0916f1b986ae69f801c301766b9a46e904ab1710ab"
+    },
+    "syn_w0.999_p0.1_dep0_s4": {
+      "train": {
+        "x": "37d2375595b2632b8f93f86bf75c4308cf457691075495d4ab958ff32ed8f893",
+        "meta": "b500597d4bdd5d60f5e01053928ea4ad4ca88fcb94bc82b6b2c2ab88891961c1"
+      },
+      "calibration": {
+        "x": "882412e7431658e2666a66dcfd643b2c37078328eaefb03b8ec7c228c351567a",
+        "meta": "421f6b3d38b24e2124a030ea53907c87d7267d1e7109713cf14cdb51454f8f7f"
+      },
+      "selection": {
+        "x": "ff7be49812b0f4aaa00964ba22632f75fbba60471edb277a0fa481ee8b1da8a0",
+        "meta": "fb7f841e8d5842138384c3e61a5f074ac65401640b67780aef541ead53e16960"
+      },
+      "test": {
+        "x": "6502d090b941dae7de9797feecab3faf117bbb9668968d092f00762757908bf4",
+        "meta": "04e5d35c0fc93a61856efd7de55ccb1aae2f12e496875df65e4fbefb4541aeca"
+      },
+      "mean": "dbbb800c358ef21bf50f82319b2381bc6e40efaa37ae63ee8c703ba6d79b2af2",
+      "pc1": "213726f063784ffd3980cebb1409cc0da9eae6631d677ab37e808cce063a3593"
+    },
+    "syn_w0.999_p0.1_dep0_s16": {
+      "train": {
+        "x": "045ae790653f7ca3290f20e410289f573fe2daf63b81b0c23b32abb69d4bb086",
+        "meta": "c11f5404dfcb22576c3b0032e9f38763a9e3364e2c7178ad8feef6992b4453a7"
+      },
+      "calibration": {
+        "x": "3ba9608024f1ccd8dbb1adef9b9d5e0728634a9a6bec321f7009ac68705a0962",
+        "meta": "304a599e7667f8bee66512b93f40b6aded9334465c5caa5b9292287d3ec6446a"
+      },
+      "selection": {
+        "x": "0ce5d03e82aeba3a71c3d2ad8da7b70e4d3368b51b3518d2fad99954414ce789",
+        "meta": "883f8b185a59847694a93cd8b38802058d331872983c74340bf136740691c782"
+      },
+      "test": {
+        "x": "91c3ff43ca81fd08b8eaf13dd67d4a23c3541d5a2995cfc1b7f469cae03663e3",
+        "meta": "05700d195d46c0b70fd79f481e49ff7b4ae6c88c398ae87f1a9f008ca3ed7901"
+      },
+      "mean": "4196526b6489a41b372059ae2e1412dd53033cd981c04f1a5d93910a28430650",
+      "pc1": "aa6273904f6ae155ab37fa554d294d7b4ad38a86aa0a5b4e7a2a0af039d216d1"
+    },
+    "syn_w0.999_p0.1_dep0.8_s4": {
+      "train": {
+        "x": "16a7e426e35d2b360619c30f402e1c617878ff09d0c7947d4933a55a45e0408b",
+        "meta": "172c496d9248fabf8ca2ecda637ace342acc111838997563274c841f8f1632b7"
+      },
+      "calibration": {
+        "x": "bc9ab2cf842e11a0347d06d04c514aeb6da1d5db51cf0cce36c4d5f9125adb69",
+        "meta": "b012e9a604ae7a7ddd8f3b570af6be47e61ab41a65a58119f821d241aadbbc43"
+      },
+      "selection": {
+        "x": "2885a5b8007c854c962fc05934f8cb571eee148ba2c1a9a5f4ca24562b0a8057",
+        "meta": "e6d4ee7c36fdfd956b3112a8ded03dc8e1c01029c50bd0fd69b05b0e8118bf98"
+      },
+      "test": {
+        "x": "b7d97b234b3368d923f573d31c8ef4a981e036ec73316cdc815f2911682fd750",
+        "meta": "bff2964c4043df3411e910e0780adf4f6e3d5cafdec5775924a49d56dc9deeae"
+      },
+      "mean": "fad918779d442083d1f28c11c82a6b090fcd2347352ed5d82693d8b6704c09aa",
+      "pc1": "243c9adcd0c4fe23ada61b0169da47c413a0883c0fcdc976cf55466d77a8424b"
+    },
+    "syn_w0.999_p0.1_dep0.8_s16": {
+      "train": {
+        "x": "c7b72f45505a39f4cdb747a235c0b030227b61663a18c63af70554642561f3b5",
+        "meta": "fc6a94801114932fc4d1f16095d5267cc6df9f743b8b4edf22a8ec1b2d258159"
+      },
+      "calibration": {
+        "x": "45d183af7146fc94ab2a5611c3b4d78cf929f6bcf7f5adf5b32d1b885bb4127d",
+        "meta": "16eb47af5ffcdcea0f1c4492c1c1b2e0a9fe87fc8fcb650923ec0d0e4e631a05"
+      },
+      "selection": {
+        "x": "6b9937d057b38034fe7137fb8ee2ecd95c5364b11f2915f8024a379eeb7244a9",
+        "meta": "174ef335fb533395fa490b8055d32494caf8e0423ea27215cd80158cbe76cf58"
+      },
+      "test": {
+        "x": "9015db937a1c122743d93a4ff0ae226b822ed34d9f0f4a613d878557b2859cbc",
+        "meta": "f73982ac88e2f677374bcb2c460c1734621b3618b9bb9b341b00ee0539c3551e"
+      },
+      "mean": "c1e0765161c953cdfa0ff5f3c4202e12132edb8a5487717e9b416285923c6810",
+      "pc1": "ea8d3593867eb6bf4ca8b60b8446ee32d14ff99e7fa48fea896adda371c7045b"
+    },
+    "syn_w0.999_p0.5_dep0_s4": {
+      "train": {
+        "x": "24bb398fcb799c2091eee5386f28145778a55a42a2d03fa06be3f1cb916294f5",
+        "meta": "5f6d7444a7b92483c3893bb2142f8fe84d58ceae7a4752f528d7d1b8ad89ee1c"
+      },
+      "calibration": {
+        "x": "d7bd0d3e77e1b9d6af294b52dcf1981c16adc2395575ebb6743cac2278e40c0e",
+        "meta": "5096299227be0fb2b28f8f926ed69e09fdfa6bdaf8105c6d6f5777122a301551"
+      },
+      "selection": {
+        "x": "6e61469f90ddd0ba87a2bc52d5afb695b3359ae2c3a08fc23f27180a8fa54ed8",
+        "meta": "cd6ebebda402b8a5735abc5cc2f9c3861f6b7bcf89d7cc905d9eebcea1c75b85"
+      },
+      "test": {
+        "x": "c21eec8af7162282e5b5429de20cc487e6754a4c94da2baf500a68ed791dc03f",
+        "meta": "913f2f099ed96346f37bdbb19ca01f5f60bc32a090f6183fb08aa0942dc494d1"
+      },
+      "mean": "c08c6c519bf6b3ad1f8de2ba0b0b7bb95536d6a7692e34afaba7dd6ce0877073",
+      "pc1": "0237f0d32b1be14c58b8d50853d9ee66344b2eaf9ab45e39a302a25cc6cef449"
+    },
+    "syn_w0.999_p0.5_dep0_s16": {
+      "train": {
+        "x": "32da701229c0e320157aeb38920def49985299b6bb2b1ed3a6fd16a269c768e7",
+        "meta": "05b2e867d5ebc54a430cb87cf37d999c226fe6e5b5c67624b07b4a259806795d"
+      },
+      "calibration": {
+        "x": "c887850c05433da631a7e5cb35b6e8edd85e29135ca1ea9a3c54ad0fb3b66d5f",
+        "meta": "58ef3387969d3df8614d1de8232baa2ab8a933e57a6778e5ce97ee1693dc91dc"
+      },
+      "selection": {
+        "x": "d4e3bd12a706e9b5454335590ba9b137dff38e73f355e6fec8cd09793e827525",
+        "meta": "172559f3ef2023a7bb66cffba4a2c83bad1f67669afc597053e8305e122247d1"
+      },
+      "test": {
+        "x": "080ce2645dfa565c9a36530e54a55bce647f05d03760774a541e3a7570a4e657",
+        "meta": "ee334b0aa40706ce6362fae0a3486c7dcdf9fe2a7cb9b023d0a957b579ab5313"
+      },
+      "mean": "54e98de11a5858d852977931922150076ff7bc887250ccaee18057e1544abc3c",
+      "pc1": "92a99ad3e302d0a2765408a4af03e620d5c13bcc54ddbb15171d17abdcaafa54"
+    },
+    "syn_w0.999_p0.5_dep0.8_s4": {
+      "train": {
+        "x": "3d27050affbbf19713b217e00fdf96f36f8b1ee89ccea3523e9d9cd7ba4931c7",
+        "meta": "9a4ac788cf5396c22cb7046cdb5051f558f080d70ac7138a0678dc1b81d6221a"
+      },
+      "calibration": {
+        "x": "e830abd483966bc64da07788479a66f19be621cd1892662f4fda331e4d014400",
+        "meta": "c7c1985d53c1ce3e0223140d6e27b954d1c0183677119c3f51d4d6f477c043a4"
+      },
+      "selection": {
+        "x": "7c3a8aab6679d05f613d1b822b32860b4fadcd3a54049da30f8250893eca763b",
+        "meta": "bec3eeea7fded08a0d999fe3f59998e705bbb708bd9e98a4b73f234358f4af4b"
+      },
+      "test": {
+        "x": "2702c8aae0befc6b76042e462fc2f27ac182bfff955aa9022c9b54342ae8bd5d",
+        "meta": "804a33896a8bd762d9be8f39b26c6c5f26067504e6a27527286c6e35090a6c35"
+      },
+      "mean": "de66d9df82dc6f8c1c823ddea560af5eda619577293a52d8593bbc3b788b261c",
+      "pc1": "2ee512dd5fe2e3187d429f7c585763c2c174d02697b611831d8be901a35f8908"
+    },
+    "syn_w0.999_p0.5_dep0.8_s16": {
+      "train": {
+        "x": "d00e409bf484a90f24e2dae0b5b697dbe11837b3810b76c6975543900ba05cbc",
+        "meta": "5cbf71e357a786a708b9cabc10d09eb9a5634a14e59b6f5627ae3c3358f63048"
+      },
+      "calibration": {
+        "x": "35c3a72d8db7e0f0247ece5b98ef211eb6587e8dce438efb71f5ca9c4a075001",
+        "meta": "2315351fdb439c861e153306185d32b5df4158625105cff3e438407812a27746"
+      },
+      "selection": {
+        "x": "a3ca158e0e2f0f695690d90149135fbc5e147d3761e6a8e8b06c64356c36b5cf",
+        "meta": "142a394658ac1d4b5ca7a402a9edff435559450ed84629b66e9dfa8e950f2eb3"
+      },
+      "test": {
+        "x": "c4c3967567a7afb8d2d0628d7e5c704df0d2f2054ec3ba954c61c633a81eed3b",
+        "meta": "a58e221f40cc3f0620aeacf17c619f8d80edb4cbf1669593022b322efb6ee1ff"
+      },
+      "mean": "402a1f3773143baa28e453526e041e53d0245d7bcff25012ed0b09ce6d73c045",
+      "pc1": "f65833d65eae964504ff0de63c8c832db4dd84cbf21995ce34633b6bb7f71ebb"
+    }
+  }
+}

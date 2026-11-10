@@ -1,0 +1,19 @@
+{
+  "name": "gemma-2-2b",
+  "lm": {
+    "model_path": "google/gemma-2-2b",
+    "revision": "c5ebcd40d208330abc697524c919956e692655cf",
+    "block_path": "model.layers",
+    "block_index": 13,
+    "dtype": "bfloat16",
+    "attn_implementation": "eager"
+  },
+  "provenance": "Model/hook/revision copied from supplied morning-bundle site.json. New campaign uses explicit bf16 + eager; historical results retain their own precision.",
+  "training": {
+    "width": 9216,
+    "k": 64,
+    "steps": 20000,
+    "batch": 4096,
+    "lr": 0.0003
+  }
+}

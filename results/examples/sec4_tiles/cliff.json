@@ -1,0 +1,1331 @@
+{
+  "cells": {
+    "gemma-2-9b_bypass": {
+      "dictwide_baseline": 0.6058067030397506,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 9930,
+          "sharing": 0.6083585095669688,
+          "ci_lo": 0.6010303373615307,
+          "ci_hi": 0.6158377391742196,
+          "ratio_to_baseline": 1.0042122454479523
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 302,
+          "sharing": 0.5860927152317881,
+          "ci_lo": 0.5397350993377483,
+          "ci_hi": 0.6332781456953642,
+          "ratio_to_baseline": 0.9674582870921635
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 32,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        }
+      ],
+      "cliff_cos2": 0.0001,
+      "band_hi_cos2": 0.001,
+      "band_n": 32,
+      "band_sharing": 0.0,
+      "canonical_n": 0,
+      "canonical_sharing": null,
+      "canonical_max_cos2": null,
+      "two_regime_gap": null,
+      "top50_mean_cos2": 1.426260922653211e-05,
+      "top50_sharing": 0.895,
+      "top50_frac_in_band": 0.02,
+      "cliff_drop": 0.5860927152317881,
+      "median_other_drop": 0.022265794335180722,
+      "cliff_sharpness": 26.322560354639645,
+      "std_band_threshold": 0.03,
+      "n_at_or_above_std_band": 0
+    },
+    "pythia-6.9b_bypass": {
+      "dictwide_baseline": 0.6107356254285434,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 10168,
+          "sharing": 0.6098544453186467,
+          "ci_lo": 0.6028717545239969,
+          "ci_hi": 0.617231756490952,
+          "ratio_to_baseline": 0.9985571823990481
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 41,
+          "sharing": 0.8292682926829268,
+          "ci_lo": 0.7317073170731707,
+          "ci_hi": 0.9146341463414634,
+          "ratio_to_baseline": 1.3578187650360867
+        }
+      ],
+      "cliff_cos2": null,
+      "band_hi_cos2": null,
+      "band_n": 0,
+      "band_sharing": null,
+      "top50_mean_cos2": 1.9536061677476767e-06,
+      "top50_sharing": 0.915,
+      "std_band_threshold": 0.03,
+      "n_at_or_above_std_band": 0
+    },
+    "llama-3.1-8b_bypass": {
+      "dictwide_baseline": 0.680351783927976,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 11984,
+          "sharing": 0.6803029038718291,
+          "ci_lo": 0.6735642314753004,
+          "ci_hi": 0.6870410547396528,
+          "ratio_to_baseline": 0.9999281547321524
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 4,
+          "sharing": 0.1875,
+          "ci_lo": 0.0,
+          "ci_hi": 0.375,
+          "ratio_to_baseline": 0.2755927219261165
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 8,
+          "sharing": 1.0,
+          "ci_lo": 1.0,
+          "ci_hi": 1.0,
+          "ratio_to_baseline": 1.4698278502726214
+        }
+      ],
+      "cliff_cos2": null,
+      "band_hi_cos2": null,
+      "band_n": 0,
+      "band_sharing": null,
+      "top50_mean_cos2": 1.5796966618749424e-06,
+      "top50_sharing": 0.89,
+      "std_band_threshold": 0.03,
+      "n_at_or_above_std_band": 0
+    },
+    "qwen-2.5-7b_bypass": {
+      "dictwide_baseline": 0.6139402280770743,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 7543,
+          "sharing": 0.6129192628927482,
+          "ci_lo": 0.6040335410314198,
+          "ci_hi": 0.6220021874585708,
+          "ratio_to_baseline": 0.9983370283658984
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 81,
+          "sharing": 0.7222222222222222,
+          "ci_lo": 0.6388888888888888,
+          "ci_hi": 0.8024691358024691,
+          "ratio_to_baseline": 1.1763722088782138
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 5,
+          "sharing": 0.4,
+          "ci_lo": 0.0,
+          "ci_hi": 0.8,
+          "ratio_to_baseline": 0.651529223378703
+        }
+      ],
+      "cliff_cos2": null,
+      "band_hi_cos2": null,
+      "band_n": 0,
+      "band_sharing": null,
+      "top50_mean_cos2": 3.521960773767921e-06,
+      "top50_sharing": 0.985,
+      "std_band_threshold": 0.01,
+      "n_at_or_above_std_band": 0
+    },
+    "pythia-6.9b_standard": {
+      "dictwide_baseline": 0.6242450861974306,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 235,
+          "sharing": 0.4595744680851064,
+          "ci_lo": 0.4053191489361702,
+          "ci_hi": 0.5138297872340426,
+          "ratio_to_baseline": 0.7362083871329927
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 1030,
+          "sharing": 0.5512135922330097,
+          "ci_lo": 0.5269356796116504,
+          "ci_hi": 0.5754975728155339,
+          "ratio_to_baseline": 0.8830082998181212
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 7479,
+          "sharing": 0.6413624816151892,
+          "ci_lo": 0.6331035231982886,
+          "ci_hi": 0.6497200494718545,
+          "ratio_to_baseline": 1.0274209533983338
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 290,
+          "sharing": 0.7086206896551724,
+          "ci_lo": 0.6672413793103448,
+          "ci_hi": 0.7491379310344828,
+          "ratio_to_baseline": 1.1351642252752252
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 6,
+          "sharing": 0.7083333333333334,
+          "ci_lo": 0.5,
+          "ci_hi": 0.875,
+          "ratio_to_baseline": 1.1347038991498095
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 3,
+          "sharing": 0.5833333333333334,
+          "ci_lo": 0.25,
+          "ci_hi": 1.0,
+          "ratio_to_baseline": 0.9344620345939607
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 63,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.6,
+          "hi": 1.01,
+          "n": 1,
+          "sharing": 1.0,
+          "ci_lo": null,
+          "ci_hi": null,
+          "ratio_to_baseline": 1.6019349164467898
+        }
+      ],
+      "cliff_cos2": 0.03,
+      "band_hi_cos2": 0.1,
+      "band_n": 63,
+      "band_sharing": 0.0,
+      "canonical_n": 1,
+      "canonical_sharing": 1.0,
+      "canonical_max_cos2": 0.9148215242536522,
+      "two_regime_gap": 1.0,
+      "top50_mean_cos2": 0.0879552028149465,
+      "top50_sharing": 0.1,
+      "top50_frac_in_band": 0.92,
+      "cliff_drop": 0.5833333333333334,
+      "median_other_drop": -0.07870354871108137,
+      "cliff_sharpness": 7.4117793020329295
+    },
+    "qwen-2.5-7b_standard": {
+      "dictwide_baseline": 0.4782715322738866,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 64,
+          "sharing": 0.296875,
+          "ci_lo": 0.21484375,
+          "ci_hi": 0.390625,
+          "ratio_to_baseline": 0.6207247974566711
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 510,
+          "sharing": 0.307843137254902,
+          "ci_lo": 0.2789093137254902,
+          "ci_hi": 0.3362867647058823,
+          "ratio_to_baseline": 0.6436576640706535
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 4331,
+          "sharing": 0.5092934657123066,
+          "ci_lo": 0.4975756176402678,
+          "ci_hi": 0.5205509697529439,
+          "ratio_to_baseline": 1.0648625965483034
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 79,
+          "sharing": 0.6708860759493671,
+          "ci_lo": 0.5886075949367089,
+          "ci_hi": 0.7468354430379747,
+          "ratio_to_baseline": 1.402730521634263
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 7,
+          "sharing": 0.32142857142857145,
+          "ci_lo": 0.14285714285714285,
+          "ci_hi": 0.5357142857142857,
+          "ratio_to_baseline": 0.6720629385997041
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 4,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 75,
+          "sharing": 0.01,
+          "ci_lo": 0.0,
+          "ci_hi": 0.03,
+          "ratio_to_baseline": 0.020908624756435238
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.3,
+          "n": 27,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        }
+      ],
+      "cliff_cos2": 0.01,
+      "band_hi_cos2": 0.3,
+      "band_n": 106,
+      "band_sharing": 0.007075471698113208,
+      "canonical_n": 0,
+      "canonical_sharing": null,
+      "canonical_max_cos2": null,
+      "two_regime_gap": null,
+      "top50_mean_cos2": 0.10948863263228596,
+      "top50_sharing": 0.06,
+      "top50_frac_in_band": 0.94,
+      "cliff_drop": 0.32142857142857145,
+      "median_other_drop": -0.01048406862745099,
+      "cliff_sharpness": 30.65876262837102
+    },
+    "gemma-2-9b_standard": {
+      "dictwide_baseline": 0.5810944496511506,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 308,
+          "sharing": 0.5332792207792207,
+          "ci_lo": 0.49105113636363634,
+          "ci_hi": 0.5746753246753247,
+          "ratio_to_baseline": 0.9177152201322265
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 804,
+          "sharing": 0.5307835820895522,
+          "ci_lo": 0.5027985074626866,
+          "ci_hi": 0.5562810945273632,
+          "ratio_to_baseline": 0.9134204988676081
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 4619,
+          "sharing": 0.5847586057588222,
+          "ci_lo": 0.5740420004329941,
+          "ci_hi": 0.5955306884607058,
+          "ratio_to_baseline": 1.0063056119532225
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 3216,
+          "sharing": 0.597636815920398,
+          "ci_lo": 0.5847306436567163,
+          "ci_hi": 0.6101543065920398,
+          "ratio_to_baseline": 1.0284676032944011
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 587,
+          "sharing": 0.6017887563884157,
+          "ci_lo": 0.5698360306643953,
+          "ci_hi": 0.633304940374787,
+          "ratio_to_baseline": 1.0356126387882185
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 13,
+          "sharing": 0.6923076923076923,
+          "ci_lo": 0.46153846153846156,
+          "ci_hi": 0.8846153846153846,
+          "ratio_to_baseline": 1.1913858284540602
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 39,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.3,
+          "n": 13,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.3,
+          "hi": 0.6,
+          "n": 4,
+          "sharing": 1.0,
+          "ci_lo": 1.0,
+          "ci_hi": 1.0,
+          "ratio_to_baseline": 1.7208906411003093
+        }
+      ],
+      "cliff_cos2": 0.03,
+      "band_hi_cos2": 0.3,
+      "band_n": 52,
+      "band_sharing": 0.0,
+      "canonical_n": 4,
+      "canonical_sharing": 1.0,
+      "canonical_max_cos2": 0.596886714676514,
+      "two_regime_gap": 1.0,
+      "top50_mean_cos2": 0.029712680730628303,
+      "top50_sharing": 0.895,
+      "top50_frac_in_band": 0.08,
+      "cliff_drop": 0.6923076923076923,
+      "median_other_drop": -0.012878210161575754,
+      "cliff_sharpness": 53.75806759027007
+    },
+    "pythia-160m_standard": {
+      "dictwide_baseline": 0.4903972422849639,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 548,
+          "sharing": 0.4762773722627737,
+          "ci_lo": 0.44068202554744523,
+          "ci_hi": 0.51141651459854,
+          "ratio_to_baseline": 0.9712072809455456
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 995,
+          "sharing": 0.4894472361809045,
+          "ci_lo": 0.46430904522613065,
+          "ci_hi": 0.5148241206030151,
+          "ratio_to_baseline": 0.9980627825319064
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 1311,
+          "sharing": 0.5184973302822273,
+          "ci_lo": 0.49522787948131197,
+          "ci_hi": 0.5404319221967963,
+          "ratio_to_baseline": 1.057300664796428
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 102,
+          "sharing": 0.5,
+          "ci_lo": 0.4215686274509804,
+          "ci_hi": 0.5759803921568627,
+          "ratio_to_baseline": 1.019581589958159
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 18,
+          "sharing": 0.625,
+          "ci_lo": 0.4444444444444444,
+          "ci_hi": 0.7916666666666666,
+          "ratio_to_baseline": 1.2744769874476987
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 8,
+          "sharing": 0.40625,
+          "ci_lo": 0.125,
+          "ci_hi": 0.6875,
+          "ratio_to_baseline": 0.8284100418410042
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 61,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.3,
+          "n": 3,
+          "sharing": 0.16666666666666666,
+          "ci_lo": 0.0,
+          "ci_hi": 0.25,
+          "ratio_to_baseline": 0.339860529986053
+        }
+      ],
+      "cliff_cos2": 0.03,
+      "band_hi_cos2": 0.3,
+      "band_n": 64,
+      "band_sharing": 0.0078125,
+      "canonical_n": 0,
+      "canonical_sharing": null,
+      "canonical_max_cos2": null,
+      "two_regime_gap": null,
+      "top50_mean_cos2": 0.05962121604293768,
+      "top50_sharing": 0.11,
+      "top50_frac_in_band": 0.9,
+      "cliff_drop": 0.40625,
+      "median_other_drop": -0.021109979009726804,
+      "cliff_sharpness": 19.244453052881436
+    },
+    "gemma-2-2b_bypass": {
+      "dictwide_baseline": 0.621335403726708,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 8010,
+          "sharing": 0.6243133583021223,
+          "ci_lo": 0.6160088951310861,
+          "ci_hi": 0.6327403245942572,
+          "ratio_to_baseline": 1.0047928293761352
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 30,
+          "sharing": 0.03333333333333333,
+          "ci_lo": 0.0,
+          "ci_hi": 0.1,
+          "ratio_to_baseline": 0.05364788990519985
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 10,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        }
+      ],
+      "cliff_cos2": 1e-05,
+      "band_hi_cos2": 0.001,
+      "band_n": 40,
+      "band_sharing": 0.025,
+      "canonical_n": 0,
+      "canonical_sharing": null,
+      "canonical_max_cos2": null,
+      "two_regime_gap": null,
+      "top50_mean_cos2": 1.2091725416735617e-05,
+      "top50_sharing": 0.875,
+      "top50_frac_in_band": 0.06,
+      "cliff_drop": 0.590980024968789,
+      "median_other_drop": 0.03333333333333333,
+      "cliff_sharpness": 17.72940074906367,
+      "std_band_threshold": 0.03,
+      "n_at_or_above_std_band": 0
+    },
+    "gemma-2-2b_standard": {
+      "dictwide_baseline": 0.5802773703160421,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 387,
+          "sharing": 0.5038759689922481,
+          "ci_lo": 0.4657622739018088,
+          "ci_hi": 0.5426356589147286,
+          "ratio_to_baseline": 0.8683364107716577
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 923,
+          "sharing": 0.5270855904658721,
+          "ci_lo": 0.5013542795232936,
+          "ci_hi": 0.5522751895991332,
+          "ratio_to_baseline": 0.9083338717461967
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 3886,
+          "sharing": 0.5986875965002574,
+          "ci_lo": 0.5869772902727741,
+          "ci_hi": 0.6106552367472979,
+          "ratio_to_baseline": 1.031726596841418
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 1815,
+          "sharing": 0.6115702479338843,
+          "ci_lo": 0.5947658402203857,
+          "ci_hi": 0.6287913223140496,
+          "ratio_to_baseline": 1.0539274478355047
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 370,
+          "sharing": 0.577027027027027,
+          "ci_lo": 0.5351351351351351,
+          "ci_hi": 0.6189189189189189,
+          "ratio_to_baseline": 0.9943986385558258
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 34,
+          "sharing": 0.5073529411764706,
+          "ci_lo": 0.34558823529411764,
+          "ci_hi": 0.6691176470588235,
+          "ratio_to_baseline": 0.8743283249183852
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 81,
+          "sharing": 0.009259259259259259,
+          "ci_lo": 0.0,
+          "ci_hi": 0.027777777777777776,
+          "ratio_to_baseline": 0.015956609257769778
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.3,
+          "n": 1,
+          "sharing": 0.0,
+          "ci_lo": null,
+          "ci_hi": null,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.6,
+          "hi": 1.01,
+          "n": 2,
+          "sharing": 1.0,
+          "ci_lo": 1.0,
+          "ci_hi": 1.0,
+          "ratio_to_baseline": 1.7233137998391361
+        }
+      ],
+      "cliff_cos2": 0.03,
+      "band_hi_cos2": 0.3,
+      "band_n": 82,
+      "band_sharing": 0.009146341463414634,
+      "canonical_n": 2,
+      "canonical_sharing": 1.0,
+      "canonical_max_cos2": 0.6683146464748757,
+      "two_regime_gap": 0.9908536585365854,
+      "top50_mean_cos2": 0.040440900122019105,
+      "top50_sharing": 0.805,
+      "top50_frac_in_band": 0.22,
+      "cliff_drop": 0.4980936819172113,
+      "median_other_drop": -0.01288265143362688,
+      "cliff_sharpness": 38.66391049105502
+    },
+    "gpt2_bypass": {
+      "dictwide_baseline": 0.44275244299674266,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 263,
+          "sharing": 0.32129277566539927,
+          "ci_lo": 0.2747148288973384,
+          "ci_hi": 0.3726235741444867,
+          "ratio_to_baseline": 0.725671378549035
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 1362,
+          "sharing": 0.3694933920704846,
+          "ci_lo": 0.3469117107195301,
+          "ci_hi": 0.3909691629955947,
+          "ratio_to_baseline": 0.8345372180661303
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 1402,
+          "sharing": 0.5290656205420827,
+          "ci_lo": 0.5089069186875892,
+          "ci_hi": 0.5492287803138374,
+          "ratio_to_baseline": 1.1949468126276948
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 34,
+          "sharing": 0.7205882352941176,
+          "ci_lo": 0.6029411764705882,
+          "ci_hi": 0.8308823529411765,
+          "ratio_to_baseline": 1.627519501455171
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 6,
+          "sharing": 0.4583333333333333,
+          "ci_lo": 0.125,
+          "ci_hi": 0.7927083333333276,
+          "ratio_to_baseline": 1.0351909754153639
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 3,
+          "sharing": 0.8333333333333334,
+          "ci_lo": 0.5,
+          "ci_hi": 1.0,
+          "ratio_to_baseline": 1.8821654098461162
+        }
+      ],
+      "cliff_cos2": null,
+      "band_hi_cos2": null,
+      "band_n": 0,
+      "band_sharing": null,
+      "top50_mean_cos2": 0.0003545842403939769,
+      "top50_sharing": 0.76,
+      "std_band_threshold": 0.01,
+      "n_at_or_above_std_band": 3
+    },
+    "gpt2_standard": {
+      "dictwide_baseline": 0.4664922349763673,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 739,
+          "sharing": 0.4654939106901218,
+          "ci_lo": 0.43538565629228687,
+          "ci_hi": 0.4949255751014885,
+          "ratio_to_baseline": 0.9978599337536752
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 1279,
+          "sharing": 0.45093823299452696,
+          "ci_lo": 0.42825938232994526,
+          "ci_hi": 0.47263487099296325,
+          "ratio_to_baseline": 0.9666575329327222
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 857,
+          "sharing": 0.5183780630105017,
+          "ci_lo": 0.49154025670945156,
+          "ci_hi": 0.5463827304550758,
+          "ratio_to_baseline": 1.1112254913241224
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 19,
+          "sharing": 0.6578947368421053,
+          "ci_lo": 0.4868421052631579,
+          "ci_hi": 0.8289473684210527,
+          "ratio_to_baseline": 1.4103015817089313
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 1,
+          "sharing": 1.0,
+          "ci_lo": null,
+          "ci_hi": null,
+          "ratio_to_baseline": 2.1436584041975757
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 6,
+          "sharing": 0.16666666666666666,
+          "ci_lo": 0.0,
+          "ci_hi": 0.5,
+          "ratio_to_baseline": 0.3572764006995959
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 58,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.3,
+          "n": 2,
+          "sharing": 0.75,
+          "ci_lo": 0.75,
+          "ci_hi": 0.75,
+          "ratio_to_baseline": 1.6077438031481817
+        },
+        {
+          "lo": 0.6,
+          "hi": 1.01,
+          "n": 1,
+          "sharing": 0.75,
+          "ci_lo": null,
+          "ci_hi": null,
+          "ratio_to_baseline": 1.6077438031481817
+        }
+      ],
+      "cliff_cos2": 0.01,
+      "band_hi_cos2": 0.1,
+      "band_n": 64,
+      "band_sharing": 0.015625,
+      "canonical_n": 3,
+      "canonical_sharing": 0.75,
+      "canonical_max_cos2": 0.7087591694376867,
+      "two_regime_gap": 0.734375,
+      "top50_mean_cos2": 0.04710889302919024,
+      "top50_sharing": 0.055,
+      "top50_frac_in_band": 0.96,
+      "cliff_drop": 0.8333333333333334,
+      "median_other_drop": -0.06743983001597476,
+      "cliff_sharpness": 12.356693857857266
+    },
+    "pythia-1.4b_bypass": {
+      "dictwide_baseline": 0.5874982694171397,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 3643,
+          "sharing": 0.5261460334888828,
+          "ci_lo": 0.5131725226461707,
+          "ci_hi": 0.5392550782322262,
+          "ratio_to_baseline": 0.8955703546341935
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 3551,
+          "sharing": 0.6480568853843988,
+          "ci_lo": 0.6356660095747677,
+          "ci_hi": 0.6603069557871022,
+          "ratio_to_baseline": 1.1030787988998498
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 29,
+          "sharing": 0.8793103448275862,
+          "ci_lo": 0.7931034482758621,
+          "ci_hi": 0.9482758620689655,
+          "ratio_to_baseline": 1.496702868078156
+        }
+      ],
+      "cliff_cos2": null,
+      "band_hi_cos2": null,
+      "band_n": 0,
+      "band_sharing": null,
+      "top50_mean_cos2": 2.6223159525867267e-05,
+      "top50_sharing": 0.855,
+      "std_band_threshold": 0.03,
+      "n_at_or_above_std_band": 0
+    },
+    "pythia-1.4b_standard": {
+      "dictwide_baseline": 0.6287393162393162,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 880,
+          "sharing": 0.5627840909090909,
+          "ci_lo": 0.5352272727272728,
+          "ci_hi": 0.5886363636363636,
+          "ratio_to_baseline": 0.8950992507916892
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 1902,
+          "sharing": 0.6240799158780231,
+          "ci_lo": 0.6069860672975815,
+          "ci_hi": 0.6413019190325973,
+          "ratio_to_baseline": 0.9925892969614778
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 3381,
+          "sharing": 0.6591245193729666,
+          "ci_lo": 0.6464803312629399,
+          "ci_hi": 0.6719184412895592,
+          "ratio_to_baseline": 1.0483271879916682
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 301,
+          "sharing": 0.632890365448505,
+          "ci_lo": 0.5913413621262459,
+          "ci_hi": 0.6727574750830565,
+          "ratio_to_baseline": 1.0066021785213266
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 20,
+          "sharing": 0.7625,
+          "ci_lo": 0.5875,
+          "ci_hi": 0.9125,
+          "ratio_to_baseline": 1.2127442650807136
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 2,
+          "sharing": 0.5,
+          "ci_lo": 0.5,
+          "ci_hi": 0.5,
+          "ratio_to_baseline": 0.7952421410365336
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 65,
+          "sharing": 0.015384615384615385,
+          "ci_lo": 0.0,
+          "ci_hi": 0.038461538461538464,
+          "ratio_to_baseline": 0.024468988954970267
+        },
+        {
+          "lo": 0.6,
+          "hi": 1.01,
+          "n": 1,
+          "sharing": 1.0,
+          "ci_lo": null,
+          "ci_hi": null,
+          "ratio_to_baseline": 1.5904842820730671
+        }
+      ],
+      "cliff_cos2": 0.03,
+      "band_hi_cos2": 0.1,
+      "band_n": 65,
+      "band_sharing": 0.015384615384615385,
+      "canonical_n": 1,
+      "canonical_sharing": 1.0,
+      "canonical_max_cos2": 0.9109403351534656,
+      "two_regime_gap": 0.9846153846153847,
+      "top50_mean_cos2": 0.06758788445729388,
+      "top50_sharing": 0.1,
+      "top50_frac_in_band": 0.92,
+      "cliff_drop": 0.4846153846153846,
+      "median_other_drop": -0.04817021423193785,
+      "cliff_sharpness": 10.060478084693147
+    },
+    "pythia-160m_bypass": {
+      "dictwide_baseline": 0.4653457273320287,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 2789,
+          "sharing": 0.4428110433847257,
+          "ci_lo": 0.42757036572248114,
+          "ci_hi": 0.4584080315525278,
+          "ratio_to_baseline": 0.9515743185684731
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 277,
+          "sharing": 0.6922382671480144,
+          "ci_lo": 0.6489169675090253,
+          "ci_hi": 0.7355821299638988,
+          "ratio_to_baseline": 1.4875784314531713
+        }
+      ],
+      "cliff_cos2": null,
+      "band_hi_cos2": null,
+      "band_n": 0,
+      "band_sharing": null,
+      "top50_mean_cos2": 8.25304629977891e-06,
+      "top50_sharing": 0.785,
+      "std_band_threshold": 0.03,
+      "n_at_or_above_std_band": 0
+    },
+    "llama-3.1-8b_standard": {
+      "dictwide_baseline": 0.662378764675855,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 746,
+          "sharing": 0.5901474530831099,
+          "ci_lo": 0.5609919571045576,
+          "ci_hi": 0.6169571045576407,
+          "ratio_to_baseline": 0.8909516496530613
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 2055,
+          "sharing": 0.6400243309002434,
+          "ci_lo": 0.6234793187347932,
+          "ci_hi": 0.6555991484184914,
+          "ratio_to_baseline": 0.9662512825474544
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 5695,
+          "sharing": 0.685820895522388,
+          "ci_lo": 0.6766450834064969,
+          "ci_hi": 0.6951284021071116,
+          "ratio_to_baseline": 1.0353908248523105
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 1064,
+          "sharing": 0.6665883458646616,
+          "ci_lo": 0.6447309680451128,
+          "ci_hi": 0.6884457236842104,
+          "ratio_to_baseline": 1.0063552478027684
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 163,
+          "sharing": 0.6579754601226994,
+          "ci_lo": 0.593558282208589,
+          "ci_hi": 0.7147622699386501,
+          "ratio_to_baseline": 0.9933522860514551
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 10,
+          "sharing": 0.825,
+          "ci_lo": 0.65,
+          "ci_hi": 0.975,
+          "ratio_to_baseline": 1.2455109432799014
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 2,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.3,
+          "n": 58,
+          "sharing": 0.0,
+          "ci_lo": 0.0,
+          "ci_hi": 0.0,
+          "ratio_to_baseline": 0.0
+        },
+        {
+          "lo": 0.3,
+          "hi": 0.6,
+          "n": 2,
+          "sharing": 1.0,
+          "ci_lo": 1.0,
+          "ci_hi": 1.0,
+          "ratio_to_baseline": 1.5097102342786684
+        }
+      ],
+      "cliff_cos2": 0.03,
+      "band_hi_cos2": 0.3,
+      "band_n": 60,
+      "band_sharing": 0.0,
+      "canonical_n": 2,
+      "canonical_sharing": 1.0,
+      "canonical_max_cos2": 0.5630105495001805,
+      "two_regime_gap": 1.0,
+      "top50_mean_cos2": 0.06816504181941845,
+      "top50_sharing": 0.54,
+      "top50_frac_in_band": 0.46,
+      "cliff_drop": 0.825,
+      "median_other_drop": -0.04579656462214465,
+      "cliff_sharpness": 18.01445166917774
+    },
+    "pythia-70m-deduped_bypass": {
+      "dictwide_baseline": 0.4547911547911548,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 2028,
+          "sharing": 0.4531558185404339,
+          "ci_lo": 0.4355245315581854,
+          "ci_hi": 0.47164694280078895,
+          "ratio_to_baseline": 0.9964042039219697
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 7,
+          "sharing": 0.9285714285714286,
+          "ci_lo": 0.7857142857142857,
+          "ci_hi": 1.0,
+          "ratio_to_baseline": 2.0417534923207534
+        }
+      ],
+      "cliff_cos2": null,
+      "band_hi_cos2": null,
+      "band_n": 0,
+      "band_sharing": null,
+      "top50_mean_cos2": 1.4257119228567141e-06,
+      "top50_sharing": 0.84,
+      "std_band_threshold": 0.03,
+      "n_at_or_above_std_band": 0
+    },
+    "pythia-70m-deduped_standard": {
+      "dictwide_baseline": 0.47023809523809523,
+      "bins": [
+        {
+          "lo": 0.0,
+          "hi": 1e-05,
+          "n": 249,
+          "sharing": 0.5251004016064257,
+          "ci_lo": 0.4718875502008032,
+          "ci_hi": 0.5763052208835341,
+          "ratio_to_baseline": 1.1166692084794876
+        },
+        {
+          "lo": 1e-05,
+          "hi": 0.0001,
+          "n": 437,
+          "sharing": 0.465675057208238,
+          "ci_lo": 0.4279176201372998,
+          "ci_hi": 0.5034324942791762,
+          "ratio_to_baseline": 0.9902963241896706
+        },
+        {
+          "lo": 0.0001,
+          "hi": 0.001,
+          "n": 924,
+          "sharing": 0.4810606060606061,
+          "ci_lo": 0.454004329004329,
+          "ci_hi": 0.5078463203463204,
+          "ratio_to_baseline": 1.0230149597238205
+        },
+        {
+          "lo": 0.001,
+          "hi": 0.003,
+          "n": 277,
+          "sharing": 0.47021660649819497,
+          "ci_lo": 0.4214575812274368,
+          "ci_hi": 0.5189530685920578,
+          "ratio_to_baseline": 0.9999543024265412
+        },
+        {
+          "lo": 0.003,
+          "hi": 0.01,
+          "n": 50,
+          "sharing": 0.465,
+          "ci_lo": 0.36,
+          "ci_hi": 0.5651249999999992,
+          "ratio_to_baseline": 0.9888607594936709
+        },
+        {
+          "lo": 0.01,
+          "hi": 0.03,
+          "n": 34,
+          "sharing": 0.38235294117647056,
+          "ci_lo": 0.25,
+          "ci_hi": 0.5220588235294118,
+          "ratio_to_baseline": 0.8131049888309754
+        },
+        {
+          "lo": 0.03,
+          "hi": 0.1,
+          "n": 38,
+          "sharing": 0.02631578947368421,
+          "ci_lo": 0.0,
+          "ci_hi": 0.06578947368421052,
+          "ratio_to_baseline": 0.05596269153897401
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.3,
+          "n": 7,
+          "sharing": 0.25,
+          "ci_lo": 0.0,
+          "ci_hi": 0.5714285714285714,
+          "ratio_to_baseline": 0.5316455696202532
+        }
+      ],
+      "cliff_cos2": 0.03,
+      "band_hi_cos2": 0.1,
+      "band_n": 38,
+      "band_sharing": 0.02631578947368421,
+      "canonical_n": 7,
+      "canonical_sharing": 0.25,
+      "canonical_max_cos2": 0.2619715075502973,
+      "two_regime_gap": 0.2236842105263158,
+      "top50_mean_cos2": 0.05234568205728419,
+      "top50_sharing": 0.395,
+      "top50_frac_in_band": 0.54,
+      "cliff_drop": 0.3560371517027864,
+      "median_other_drop": 0.008030303030303027,
+      "cliff_sharpness": 44.336701910158325
+    }
+  },
+  "verdict": {
+    "n_cells": 18,
+    "E1_cliff_in_standard": true,
+    "E3_band_empty_in_bypass": true,
+    "bypass_n_in_std_band": {
+      "gemma-2-9b_bypass": 0,
+      "pythia-6.9b_bypass": 0,
+      "llama-3.1-8b_bypass": 0,
+      "qwen-2.5-7b_bypass": 0,
+      "gemma-2-2b_bypass": 0,
+      "gpt2_bypass": 3,
+      "pythia-1.4b_bypass": 0,
+      "pythia-160m_bypass": 0,
+      "pythia-70m-deduped_bypass": 0
+    },
+    "bypass_residual_band": {
+      "gemma-2-9b_bypass": [
+        0.0001,
+        32,
+        0.0
+      ],
+      "gemma-2-2b_bypass": [
+        1e-05,
+        40,
+        0.025
+      ]
+    },
+    "cliff_locations": {
+      "pythia-6.9b_standard": 0.03,
+      "qwen-2.5-7b_standard": 0.01,
+      "gemma-2-9b_standard": 0.03,
+      "pythia-160m_standard": 0.03,
+      "gemma-2-2b_standard": 0.03,
+      "gpt2_standard": 0.01,
+      "pythia-1.4b_standard": 0.03,
+      "llama-3.1-8b_standard": 0.03,
+      "pythia-70m-deduped_standard": 0.03
+    },
+    "band_sharing": {
+      "pythia-6.9b_standard": 0.0,
+      "qwen-2.5-7b_standard": 0.007075471698113208,
+      "gemma-2-9b_standard": 0.0,
+      "pythia-160m_standard": 0.0078125,
+      "gemma-2-2b_standard": 0.009146341463414634,
+      "gpt2_standard": 0.015625,
+      "pythia-1.4b_standard": 0.015384615384615385,
+      "llama-3.1-8b_standard": 0.0,
+      "pythia-70m-deduped_standard": 0.02631578947368421
+    },
+    "canonical_sharing": {
+      "pythia-6.9b_standard": 1.0,
+      "qwen-2.5-7b_standard": null,
+      "gemma-2-9b_standard": 1.0,
+      "pythia-160m_standard": null,
+      "gemma-2-2b_standard": 1.0,
+      "gpt2_standard": 0.75,
+      "pythia-1.4b_standard": 1.0,
+      "llama-3.1-8b_standard": 1.0,
+      "pythia-70m-deduped_standard": 0.25
+    },
+    "canonical_n": {
+      "pythia-6.9b_standard": 1,
+      "qwen-2.5-7b_standard": 0,
+      "gemma-2-9b_standard": 4,
+      "pythia-160m_standard": 0,
+      "gemma-2-2b_standard": 2,
+      "gpt2_standard": 3,
+      "pythia-1.4b_standard": 1,
+      "llama-3.1-8b_standard": 2,
+      "pythia-70m-deduped_standard": 7
+    },
+    "two_regime_gaps": [
+      1.0,
+      1.0,
+      0.9908536585365854,
+      0.734375,
+      0.9846153846153847,
+      1.0,
+      0.2236842105263158
+    ],
+    "E1b_canonical_recovers": false,
+    "E2_cliff_stable": true
+  },
+  "bins": [
+    0.0,
+    1e-05,
+    0.0001,
+    0.001,
+    0.003,
+    0.01,
+    0.03,
+    0.1,
+    0.3,
+    0.6,
+    1.01
+  ]
+}

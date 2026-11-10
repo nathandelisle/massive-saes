@@ -1,0 +1,150 @@
+{
+ "model": "pythia-1.4b",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-38-179.us-east-2.compute.internal",
+  "code_hash": "4874451bf68a7060",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A10G",
+  "n_gpu": 1
+ },
+ "site_block": 12,
+ "hidden_state_index": 13,
+ "store": {
+  "mode": "full re-stream",
+  "n_written": 5000000,
+  "last_row": 106858,
+  "precedes_partitions": true
+ },
+ "pc1": {
+  "pc1_var_explained": 0.9639490789327195,
+  "pc2_var_explained": 0.001553159229537361,
+  "spectral_gap": 620.6376401084457,
+  "cos_pc1_mean": 0.9490171563255356
+ },
+ "alive_rules": {
+  "primary": "archived counter: firing counts over the first 106,496 store rows / 100,000 (reproduces every archived ranking universe)",
+  "corrected": "stated rule: firing rate over the first 100,000 rows > 1e-3",
+  "n_alive_corrected": {
+   "bypass_s0": 7153,
+   "bypass_s1": 7173,
+   "bypass_s2": 7169,
+   "bypass_s42": 7122,
+   "bypass_s137": 7127,
+   "standard_s0": 6452,
+   "standard_s1": 6453,
+   "standard_s2": 6458,
+   "standard_s42": 6432,
+   "standard_s137": 6431
+  }
+ },
+ "n_alive": {
+  "bypass_s0": 7256,
+  "bypass_s1": 7273,
+  "bypass_s2": 7268,
+  "bypass_s42": 7223,
+  "bypass_s137": 7239,
+  "standard_s0": 6574,
+  "standard_s1": 6576,
+  "standard_s2": 6571,
+  "standard_s42": 6552,
+  "standard_s137": 6563
+ },
+ "n_alive_cal": {
+  "bypass_s0": 7190,
+  "bypass_s1": 7217,
+  "bypass_s2": 7202,
+  "bypass_s42": 7201,
+  "bypass_s137": 7190,
+  "standard_s0": 6539,
+  "standard_s1": 6507,
+  "standard_s2": 6534,
+  "standard_s42": 6496,
+  "standard_s137": 6515
+ },
+ "partition_cal": {
+  "name": "cal",
+  "n_seqs": 868,
+  "n_docs": 88,
+  "n_tokens": 65705,
+  "n_targets": 64837
+ },
+ "gate3": {
+  "status": "PASS",
+  "pc1_share_now": 0.9639490789327195,
+  "pc1_share_archived": 0.96394907893272,
+  "abs_diff_pc1": 4.440892098500626e-16,
+  "alive_now_vs_archived": {
+   "bypass_s0": [
+    7256,
+    7256,
+    0.0
+   ],
+   "bypass_s1": [
+    7273,
+    7273,
+    0.0
+   ],
+   "bypass_s2": [
+    7268,
+    7268,
+    0.0
+   ],
+   "bypass_s42": [
+    7223,
+    7223,
+    0.0
+   ],
+   "bypass_s137": [
+    7239,
+    7239,
+    0.0
+   ],
+   "standard_s0": [
+    6574,
+    6574,
+    0.0
+   ],
+   "standard_s1": [
+    6576,
+    6576,
+    0.0
+   ],
+   "standard_s2": [
+    6571,
+    6571,
+    0.0
+   ],
+   "standard_s42": [
+    6552,
+    6552,
+    0.0
+   ],
+   "standard_s137": [
+    6563,
+    6563,
+    0.0
+   ]
+  },
+  "worst_alive_rel_diff": 0.0,
+  "tolerance": {
+   "pc1_abs": 0.002,
+   "alive_rel": 0.005
+  },
+  "note": "alive counts under the ARCHIVED counter (106,496 rows / 100,000)"
+ },
+ "sites": {
+  "pre_rise_block": 2,
+  "post_fall_block": 23,
+  "canonical_block": 12,
+  "rule": "calibration-geometry",
+  "threshold": 0.5,
+  "pc1_share_pre": 0.1551595408462713,
+  "pc1_share_canonical": 0.9579665567109397,
+  "pc1_share_post": 0.1136973550764653
+ }
+}

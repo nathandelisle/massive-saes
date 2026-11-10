@@ -1,0 +1,15 @@
+{
+ "model": "gpt2",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-19-4.us-west-2.compute.internal",
+  "code_hash": "288106b3f13e8f80",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L4",
+  "n_gpu": 1
+ }
+}

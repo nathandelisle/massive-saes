@@ -1,0 +1,19 @@
+{
+ "cohort_id": "v3core_rxzero",
+ "model_id": "gemma-2-9b",
+ "block_index": 21,
+ "condition": "bypass",
+ "seed": 0,
+ "checkpoint_sha256": "fb1f01eed7f5d59b33634373243942325a9dd9693154040d8189b06dbee85038",
+ "checkpoint_s3": "s3://ssup-research-079415246777/a5-gemma9b/saes/918d056bf4a429ee.pt",
+ "config_hash": "918d056bf4a429ee",
+ "mean_sha256": "665f7409a6639ed929dfd0de19aac3f5a6b9b9553e5e8344507e629056584535",
+ "pc1_sha256": "47094137f9a61db79e75a55f3345c7ac8ab865bb462d0c83795fbc50d9e2e2d9",
+ "geometry_sha256": "e691d784f80b429d6d64f889bf9e161e22a17781c45b920d72d6e221c5c12691",
+ "ranking_data_id": "RX rank partition, partitions.json sha256 c0937c202102694d7c6c121009ce2b9959f348621c8e15207945d9f6ff0349af",
+ "importance_protocol_id": "rx_zero imp-m1; summed dCE/valid targets; rank partition; status!=NOT_EVALUATED",
+ "alive_rule": "v3 archived counter: fires on (rows over first 106,496 store rows)/100,000 > 1e-3",
+ "n_importance_measured": 10274,
+ "n_alive": 10274,
+ "rank_zero_s3": "s3://ssup-research-079415246777/rx-imp-gemma-2-9b-bypass-s0/results/imp/gemma-2-9b/bypass_s0/rank_zero.npz"
+}

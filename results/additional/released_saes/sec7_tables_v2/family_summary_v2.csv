@@ -1,0 +1,9 @@
+family,view,checkpoints,model_layer_sites,median_ratio,max_ratio,min_ratio,n_ratio_gt_2,n_ratio_gt_5,n_ratio_gt_10,convention_status,eligible_for_documented_convention_headline
+EleutherAI Pythia,all rows shown,1,1,8.067028328191682,8.067028328191682,8.067028328191682,1,1,0,no (cfg carries architecture/k only; no published evaluation recipe),False
+Gemma Scope,all rows shown,24,6,1.0528576995448953,1.5552388032446187,1.037788014371615,0,0,0,documented,True
+Gemma Scope 2,all rows shown,12,3,2.100740844260512,2.2033003111486154,1.3467829028811698,8,0,0,documented,True
+Llama Scope,all rows shown,6,3,1.0203256096980655,1.0551978120798637,1.0152465285771577,0,0,0,documented,True
+OpenAI GPT-2,all rows shown,2,1,1.0321190692284943,1.0323483629727364,1.0318897754842524,0,0,0,documented,True
+Qwen Scope,unfiltered view,6,3,98.76108511015178,220.12547258251607,3.988469285976384,6,4,4,Unfiltered activations; release norm cutoff unspecified.,False
+Qwen Scope,standardized 10x filter,6,3,1.0294049835666692,1.0865886127884918,1.0245987463369721,0,0,0,Fixed calibration threshold; release norm cutoff unspecified.,False
+Qwen2.5 filtered BatchTopK,all rows shown,3,3,11.556769065746826,19.88672637823456,1.124028031677045,2,2,2,no -- only the position half of the documented filter is reproduced,False

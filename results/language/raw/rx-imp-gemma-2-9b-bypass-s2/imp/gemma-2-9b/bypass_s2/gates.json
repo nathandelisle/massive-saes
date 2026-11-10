@@ -1,0 +1,176 @@
+{
+ "gate1": {
+  "max_abs": 0.0,
+  "pass_": true,
+  "what": "prefix capture == hidden_states[b+1]"
+ },
+ "gate2": {
+  "identity_max_abs_logit": 0.0,
+  "proj_restore_max_abs_logit_info": 0.0,
+  "tol": 0.03,
+  "proj_restore_elements_beyond_rounding_bound": 0,
+  "proj_restore_frac_elements_changed": 0.00012467741908039898,
+  "pass_": true
+ },
+ "gate3_splice_equals_v3": {
+  "residual_elements_beyond_rounding_bound": 0,
+  "residual_frac_elements_differing": 0.00010150317393708974,
+  "residual_max_abs": 0.015625,
+  "max_abs_logit_info": 2.3125,
+  "pass_": true
+ },
+ "pc1_leakage": {
+  "mean_sq_recon_on_v1_over_mean_sq_coef": 2.5566470185367507e-07,
+  "mode": "bypass",
+  "note": "bypass: the SAE output's PC1 component relative to the routed one"
+ },
+ "gate4": {
+  "max_row_support": 64,
+  "k": 64,
+  "l0_mean": 63.86710739135742,
+  "n_targets": 590,
+  "pass_": true
+ },
+ "gate5": {
+  "finite": true,
+  "dtype": "torch.bfloat16",
+  "final_logit_softcapping": 30.0,
+  "attn_impl": "eager",
+  "pass_": true
+ },
+ "gate7": {
+  "max_abs": 1.2104725167155266,
+  "tol": 2.2256357217133047,
+  "noise_floor": 0.7409186623990536,
+  "pass_": true,
+  "features": [
+   {
+    "feature": 1144,
+    "engine": 0.27512000128626823,
+    "full_forward": 0.17835944890975952,
+    "full_forward_per_seq": 0.9192781113088131,
+    "cls": "dense"
+   },
+   {
+    "feature": 6273,
+    "engine": 0.552884429693222,
+    "full_forward": 0.2166185975074768,
+    "full_forward_per_seq": 0.37392736971378326,
+    "cls": "dense"
+   },
+   {
+    "feature": 6326,
+    "engine": 0.8810698315501213,
+    "full_forward": -0.3294026851654053,
+    "full_forward_per_seq": -0.042798928916454315,
+    "cls": "dense"
+   },
+   {
+    "feature": 7124,
+    "engine": 2.5545180439949036,
+    "full_forward": 2.879734516143799,
+    "full_forward_per_seq": 3.0308156609535217,
+    "cls": "dense"
+   },
+   {
+    "feature": 9026,
+    "engine": 0.07104659080505371,
+    "full_forward": 0.10225851833820343,
+    "full_forward_per_seq": -0.08204242587089539,
+    "cls": "random"
+   },
+   {
+    "feature": 9889,
+    "engine": 0.24723660945892334,
+    "full_forward": 0.20157985389232635,
+    "full_forward_per_seq": 0.3459736183285713,
+    "cls": "random"
+   },
+   {
+    "feature": 12873,
+    "engine": -0.0929262787103653,
+    "full_forward": -0.32018616795539856,
+    "full_forward_per_seq": -0.36240193247795105,
+    "cls": "random"
+   },
+   {
+    "feature": 13517,
+    "engine": -0.015823982656002045,
+    "full_forward": -0.20073869824409485,
+    "full_forward_per_seq": -0.28735974431037903,
+    "cls": "rare"
+   },
+   {
+    "feature": 13524,
+    "engine": 0.20286236703395844,
+    "full_forward": 0.02907465398311615,
+    "full_forward_per_seq": -0.059362687170505524,
+    "cls": "rare"
+   },
+   {
+    "feature": 13528,
+    "engine": 0.15105563402175903,
+    "full_forward": 0.26670753955841064,
+    "full_forward_per_seq": 0.11723297834396362,
+    "cls": "rare"
+   },
+   {
+    "feature": 13532,
+    "engine": -0.10374431312084198,
+    "full_forward": -0.1528327465057373,
+    "full_forward_per_seq": -0.05520274490118027,
+    "cls": "rare"
+   },
+   {
+    "feature": 13544,
+    "engine": -0.02290300279855728,
+    "full_forward": 0.09371493011713028,
+    "full_forward_per_seq": 0.05478783696889877,
+    "cls": "random"
+   }
+  ],
+  "dtype": "torch.bfloat16",
+  "precision_of_check": "torch.bfloat16 (fp32 upcast does not fit; weak check)"
+ },
+ "all_hard_pass": true,
+ "gate9": {
+  "fd": {
+   "checks": [
+    {
+     "pos": 111,
+     "feature": 4959,
+     "autograd": -0.0015284019755199552,
+     "finite_diff": -2.38189697265625
+    },
+    {
+     "pos": 123,
+     "feature": 207,
+     "autograd": -0.00020423578098416328,
+     "finite_diff": 2.178955078125
+    },
+    {
+     "pos": 53,
+     "feature": 13750,
+     "autograd": -0.001371441874653101,
+     "finite_diff": 0.146484375
+    }
+   ],
+   "max_rel": 1.0093623765309652,
+   "pass_": false,
+   "note": "loose tolerance: half-precision suffix, central difference eps=0.01"
+  },
+  "ig_convergence": [
+   {
+    "steps": 16,
+    "completeness_rel_error": 0.0053543621470761435,
+    "top50_overlap_prev": null
+   },
+   {
+    "steps": 32,
+    "completeness_rel_error": 0.000962744509014628,
+    "top50_overlap_prev": 0.96
+   }
+  ],
+  "ig_converged": true
+ }
+}

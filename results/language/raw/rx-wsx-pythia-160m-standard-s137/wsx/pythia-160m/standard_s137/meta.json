@@ -1,0 +1,18 @@
+{
+ "model": "pythia-160m",
+ "condition": "standard",
+ "seed": 137,
+ "config_hash": "fe33b08ffa328e45",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-6-152.ec2.internal",
+  "code_hash": "f18e8081a9c8b2dd",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A10G",
+  "n_gpu": 1
+ }
+}

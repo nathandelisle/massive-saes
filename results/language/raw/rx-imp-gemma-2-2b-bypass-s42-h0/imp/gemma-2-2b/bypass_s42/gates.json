@@ -1,0 +1,271 @@
+{
+ "gate1": {
+  "max_abs": 0.0,
+  "pass_": true,
+  "what": "prefix capture == hidden_states[b+1]"
+ },
+ "gate2": {
+  "identity_max_abs_logit": 0.0,
+  "proj_restore_max_abs_logit_info": 0.0,
+  "tol": 0.03,
+  "proj_restore_elements_beyond_rounding_bound": 0,
+  "proj_restore_frac_elements_changed": 9.661083458922803e-05,
+  "pass_": true
+ },
+ "gate3_splice_equals_v3": {
+  "residual_elements_beyond_rounding_bound": 0,
+  "residual_frac_elements_differing": 9.444791066925973e-05,
+  "residual_max_abs": 0.015625,
+  "max_abs_logit_info": 0.875,
+  "pass_": true
+ },
+ "pc1_leakage": {
+  "mean_sq_recon_on_v1_over_mean_sq_coef": 1.4151346761082095e-07,
+  "mode": "bypass",
+  "note": "bypass: the SAE output's PC1 component relative to the routed one"
+ },
+ "gate4": {
+  "max_row_support": 64,
+  "k": 64,
+  "l0_mean": 63.63454818725586,
+  "n_targets": 590,
+  "pass_": true
+ },
+ "gate5": {
+  "finite": true,
+  "dtype": "torch.bfloat16",
+  "final_logit_softcapping": 30.0,
+  "attn_impl": "eager",
+  "pass_": true
+ },
+ "gate7": {
+  "max_abs": 0.0004585385322570801,
+  "tol": 0.024101704359054565,
+  "noise_floor": 0.00036659836769104004,
+  "pass_": true,
+  "features": [
+   {
+    "feature": 44,
+    "engine": -0.050448618829250336,
+    "full_forward": -0.050446826964616776,
+    "full_forward_per_seq": -0.0504864901304245,
+    "cls": "rare"
+   },
+   {
+    "feature": 46,
+    "engine": -0.08329446613788605,
+    "full_forward": -0.08327627182006836,
+    "full_forward_per_seq": -0.08325257897377014,
+    "cls": "rare"
+   },
+   {
+    "feature": 5749,
+    "engine": 0.028282448649406433,
+    "full_forward": 0.028275489807128906,
+    "full_forward_per_seq": 0.028275392949581146,
+    "cls": "random"
+   },
+   {
+    "feature": 6093,
+    "engine": -12.980193316936493,
+    "full_forward": -12.98065185546875,
+    "full_forward_per_seq": -12.980285257101059,
+    "cls": "dense"
+   },
+   {
+    "feature": 6302,
+    "engine": -0.1306741889566183,
+    "full_forward": -0.1309470534324646,
+    "full_forward_per_seq": -0.1307820938527584,
+    "cls": "random"
+   },
+   {
+    "feature": 8262,
+    "engine": 7.4378771642223,
+    "full_forward": 7.437946796417236,
+    "full_forward_per_seq": 7.438169576227665,
+    "cls": "random"
+   },
+   {
+    "feature": 8686,
+    "engine": -2.3072974421083927,
+    "full_forward": -2.3072705268859863,
+    "full_forward_per_seq": -2.307219535112381,
+    "cls": "random"
+   },
+   {
+    "feature": 8774,
+    "engine": -23.001757875084877,
+    "full_forward": -23.001909255981445,
+    "full_forward_per_seq": -23.001570165157318,
+    "cls": "dense"
+   },
+   {
+    "feature": 8871,
+    "engine": -2.712779882363975,
+    "full_forward": -2.7130346298217773,
+    "full_forward_per_seq": -2.7127844216302037,
+    "cls": "dense"
+   },
+   {
+    "feature": 9164,
+    "engine": 0.004597546067088842,
+    "full_forward": 0.0046565658412873745,
+    "full_forward_per_seq": 0.004648709669709206,
+    "cls": "rare"
+   },
+   {
+    "feature": 9170,
+    "engine": -0.0002547651529312134,
+    "full_forward": -0.00026113539934158325,
+    "full_forward_per_seq": -0.00022888928651809692,
+    "cls": "rare"
+   },
+   {
+    "feature": 9210,
+    "engine": -12.50020282715559,
+    "full_forward": -12.500469207763672,
+    "full_forward_per_seq": -12.500218003988266,
+    "cls": "dense"
+   }
+  ],
+  "dtype": "torch.float32",
+  "precision_of_check": "float32 (upcast for the logic check)",
+  "half_precision_info": {
+   "max_abs": 1.7013355195522308,
+   "noise_floor": 4.544664055109024,
+   "features": [
+    {
+     "feature": 4378,
+     "engine": 0.0,
+     "full_forward": 0.0,
+     "full_forward_per_seq": 0.0,
+     "cls": "rare"
+    },
+    {
+     "feature": 4380,
+     "engine": -0.1493026614189148,
+     "full_forward": 0.09961234778165817,
+     "full_forward_per_seq": 0.6157671809196472,
+     "cls": "rare"
+    },
+    {
+     "feature": 4392,
+     "engine": -0.20102986693382263,
+     "full_forward": -0.023925811052322388,
+     "full_forward_per_seq": 0.2595196068286896,
+     "cls": "rare"
+    },
+    {
+     "feature": 5749,
+     "engine": -0.008501559495925903,
+     "full_forward": 0.12369278073310852,
+     "full_forward_per_seq": 0.277406707406044,
+     "cls": "random"
+    },
+    {
+     "feature": 6093,
+     "engine": -11.669498264789581,
+     "full_forward": -12.034834861755371,
+     "full_forward_per_seq": -9.46509924530983,
+     "cls": "dense"
+    },
+    {
+     "feature": 6305,
+     "engine": -0.09976348280906677,
+     "full_forward": 0.5115426778793335,
+     "full_forward_per_seq": 0.4605061113834381,
+     "cls": "random"
+    },
+    {
+     "feature": 8262,
+     "engine": 7.161598026752472,
+     "full_forward": 6.838709354400635,
+     "full_forward_per_seq": 8.915845081210136,
+     "cls": "random"
+    },
+    {
+     "feature": 8686,
+     "engine": -2.8109640330076218,
+     "full_forward": -2.4643616676330566,
+     "full_forward_per_seq": -1.252208650112152,
+     "cls": "random"
+    },
+    {
+     "feature": 8774,
+     "engine": -24.129141241312027,
+     "full_forward": -25.830476760864258,
+     "full_forward_per_seq": -21.285812705755234,
+     "cls": "dense"
+    },
+    {
+     "feature": 8871,
+     "engine": -1.675869144499302,
+     "full_forward": -3.034130811691284,
+     "full_forward_per_seq": 0.43182606995105743,
+     "cls": "dense"
+    },
+    {
+     "feature": 9143,
+     "engine": 0.04181051254272461,
+     "full_forward": -0.010170221328735352,
+     "full_forward_per_seq": -0.009471654891967773,
+     "cls": "rare"
+    },
+    {
+     "feature": 9210,
+     "engine": -12.736685447394848,
+     "full_forward": -13.191367149353027,
+     "full_forward_per_seq": -11.055120661854744,
+     "cls": "dense"
+    }
+   ]
+  }
+ },
+ "archive_repro": {
+  "status": "compared",
+  "n_features": 80,
+  "pearson": 0.9997515508538329,
+  "max_abs_diff": 0.0012944594982715362,
+  "median_abs_diff": 0.00018272501542174256,
+  "archived_scale": 0.06903744073887585,
+  "top16_mine": [
+   0.030555710780988593,
+   0.0005391178012964119,
+   0.012436342741456205,
+   0.00018755819609833424,
+   0.03222663963220008,
+   0.0004183688679561792,
+   2.8031929734462686e-05,
+   0.0002334601033130938,
+   -0.00014788737668813717,
+   -5.6296979741009666e-05,
+   0.0001728051651436771,
+   -0.00013148508302119775,
+   0.0004087848150554825,
+   0.058074326340631165,
+   0.0006112330770410056,
+   0.0008033495815309686
+  ],
+  "top16_archived": [
+   0.03051681254561789,
+   -5.227059229007125e-06,
+   0.013019310974332399,
+   0.00031977458808674086,
+   0.03213181545165167,
+   0.0007077913383297663,
+   -4.32948340183259e-05,
+   0.0005197756018193722,
+   1.6578753514462363e-05,
+   -7.959385644173977e-05,
+   0.0007106952601239058,
+   5.7075262894557e-05,
+   -0.0003025886509244735,
+   0.05790530934053306,
+   8.975758272056211e-05,
+   0.0007358273832855922
+  ],
+  "note": "archive used v3 fastabl on the same 64 sequences; differences reflect GPU numerics and our per-feature restriction to firing sequences"
+ },
+ "all_hard_pass": true
+}

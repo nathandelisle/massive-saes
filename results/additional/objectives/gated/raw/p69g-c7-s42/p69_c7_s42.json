@@ -1,0 +1,39 @@
+{
+ "model": "pythia-6.9b",
+ "arch": "gated",
+ "condition": "standard",
+ "l1_coef": 7.0,
+ "seed": 42,
+ "checkpoint": "a5cb6d4621a46e53.pt",
+ "checkpoint_sha256": "7e207e2398dd4dadad827f398e95e95538d4a0c39a2749ba5305401d33314789",
+ "train_log_tail": [
+  {
+   "step": 17000,
+   "mse": 2784.955078125,
+   "fvu": 0.017392238602042198,
+   "l0": 71.98876953125
+  },
+  {
+   "step": 18000,
+   "mse": 2791.70947265625,
+   "fvu": 0.015111695043742657,
+   "l0": 71.35400390625
+  },
+  {
+   "step": 19000,
+   "mse": 2864.0986328125,
+   "fvu": 0.015900911763310432,
+   "l0": 70.25634765625
+  }
+ ],
+ "l0_archived_counter": 75.88841247558594,
+ "n_alive_archived_counter": 7381,
+ "l0_exact": 71.39304,
+ "rows": 100000,
+ "n_alive": 7274,
+ "n_never_fired": 5677,
+ "fvu_total": 0.015581158725691789,
+ "fvu_content": 0.32368408617454014,
+ "w1_rows": 0.9521649041560867,
+ "minutes_to_here": 61.73340688149134
+}

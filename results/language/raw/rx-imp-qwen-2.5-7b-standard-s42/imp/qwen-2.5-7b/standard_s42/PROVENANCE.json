@@ -1,0 +1,86 @@
+{
+ "gates.json": {
+  "kind": "gates",
+  "protocol": "b3bdee829f5ebdae",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T17:28:46Z"
+ },
+ "plan.json": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:28:54Z"
+ },
+ "chunks_rank": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T17:28:56Z"
+ },
+ "rank_zero.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:28:56Z"
+ },
+ "rank_grad.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:28:56Z"
+ },
+ "rank_sp.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:28:56Z"
+ },
+ "rank_mg.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:28:56Z"
+ },
+ "rank_st.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": true,
+  "utc": "2026-10-07T17:28:56Z"
+ },
+ "rank_mean.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T18:36:48Z"
+ },
+ "chunks_valid": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T18:36:50Z"
+ },
+ "valid_zero.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T19:11:33Z"
+ },
+ "valid_grad.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T19:27:26Z"
+ }
+}

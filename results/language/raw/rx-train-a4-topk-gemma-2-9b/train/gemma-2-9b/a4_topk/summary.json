@@ -1,0 +1,308 @@
+{
+ "model": "gemma-2-9b",
+ "kind": "a4",
+ "layer": 21,
+ "pc1_var_explained": 0.7000235152460121,
+ "cells": {
+  "standard": {
+   "arch": "topk",
+   "condition": "standard",
+   "layer": null,
+   "kwargs": {
+    "k": 64
+   },
+   "screen": 1500,
+   "l0_measured": [
+    68.10562896728516,
+    68.12368774414062,
+    68.13734436035156,
+    68.12413787841797,
+    68.1156997680664
+   ],
+   "l0_matched_pm5": false,
+   "fvu_final_log": [
+    0.06582781672477722,
+    0.06423427164554596,
+    0.06607724726200104,
+    0.06261368840932846,
+    0.06997822225093842
+   ],
+   "by_source": [
+    {
+     "seed": 42,
+     "top50_shared_mean": 0.89,
+     "top50_shared_std": 0.01732050807568879,
+     "dictwide_mean": 0.5808425328056654,
+     "top50_dense_frac": 0.48,
+     "dense_importance_share": 0.496206812823003,
+     "n_dense": 353,
+     "n_alive": 9602
+    },
+    {
+     "seed": 137,
+     "top50_shared_mean": 0.85,
+     "top50_shared_std": 0.01732050807568879,
+     "dictwide_mean": 0.5827439524395244,
+     "top50_dense_frac": 0.44,
+     "dense_importance_share": 0.4837219521158393,
+     "n_dense": 474,
+     "n_alive": 9756
+    },
+    {
+     "seed": 0,
+     "top50_shared_mean": 0.8,
+     "top50_shared_std": 0.014142135623730925,
+     "dictwide_mean": 0.5796551016218435,
+     "top50_dense_frac": 0.56,
+     "dense_importance_share": 0.5885419153504433,
+     "n_dense": 444,
+     "n_alive": 9742
+    },
+    {
+     "seed": 1,
+     "top50_shared_mean": 0.875,
+     "top50_shared_std": 0.021794494717703387,
+     "dictwide_mean": 0.5812023097545886,
+     "top50_dense_frac": 0.42,
+     "dense_importance_share": 0.5286673511188245,
+     "n_dense": 329,
+     "n_alive": 9698
+    },
+    {
+     "seed": 2,
+     "top50_shared_mean": 0.77,
+     "top50_shared_std": 0.01732050807568879,
+     "dictwide_mean": 0.5803348585690516,
+     "top50_dense_frac": 0.56,
+     "dense_importance_share": 0.5326204127643669,
+     "n_dense": 402,
+     "n_alive": 9616
+    }
+   ],
+   "top50_shared_mean_over_sources": 0.8370000000000001,
+   "top50_shared_sd_over_sources": 0.04534313619501852,
+   "calibration_ok": true,
+   "reused_archived": [
+    [
+     "standard",
+     42,
+     "e1a339faae06d0b8"
+    ],
+    [
+     "standard",
+     137,
+     "0412ea85724f8a7a"
+    ],
+    [
+     "standard",
+     0,
+     "ebb41728f00dac17"
+    ],
+    [
+     "standard",
+     1,
+     "c546c204035aea04"
+    ],
+    [
+     "standard",
+     2,
+     "7bfc90f24a3b1411"
+    ],
+    [
+     "bypass",
+     42,
+     "6971f4d410f9bca3"
+    ],
+    [
+     "bypass",
+     137,
+     "7a3d80b5a3dd08c6"
+    ],
+    [
+     "bypass",
+     0,
+     "918d056bf4a429ee"
+    ],
+    [
+     "bypass",
+     1,
+     "b39d35b0b1528b90"
+    ],
+    [
+     "bypass",
+     2,
+     "bb0f28940e87f247"
+    ]
+   ]
+  },
+  "bypass": {
+   "arch": "topk",
+   "condition": "bypass",
+   "layer": null,
+   "kwargs": {
+    "k": 64
+   },
+   "screen": 1500,
+   "l0_measured": [
+    68.0650405883789,
+    68.100341796875,
+    68.06796264648438,
+    68.04161071777344,
+    68.09333038330078
+   ],
+   "l0_matched_pm5": false,
+   "fvu_final_log": [
+    0.20585602521896362,
+    0.2043256014585495,
+    0.20987392961978912,
+    0.20015543699264526,
+    0.2122156023979187
+   ],
+   "by_source": [
+    {
+     "seed": 42,
+     "top50_shared_mean": 0.895,
+     "top50_shared_std": 0.008660254037844395,
+     "dictwide_mean": 0.6059012562080046,
+     "top50_dense_frac": 0.5,
+     "dense_importance_share": 0.5427293110845789,
+     "n_dense": 539,
+     "n_alive": 10269
+    },
+    {
+     "seed": 137,
+     "top50_shared_mean": 0.945,
+     "top50_shared_std": 0.029580398915498064,
+     "dictwide_mean": 0.607375218489027,
+     "top50_dense_frac": 0.34,
+     "dense_importance_share": 0.514169937592744,
+     "n_dense": 394,
+     "n_alive": 10298
+    },
+    {
+     "seed": 0,
+     "top50_shared_mean": 0.9199999999999999,
+     "top50_shared_std": 0.014142135623730925,
+     "dictwide_mean": 0.605425790754258,
+     "top50_dense_frac": 0.46,
+     "dense_importance_share": 0.5170094887919199,
+     "n_dense": 413,
+     "n_alive": 10275
+    },
+    {
+     "seed": 1,
+     "top50_shared_mean": 0.905,
+     "top50_shared_std": 0.016583123951777013,
+     "dictwide_mean": 0.6031881652182404,
+     "top50_dense_frac": 0.32,
+     "dense_importance_share": 0.4318982941338329,
+     "n_dense": 1216,
+     "n_alive": 10241
+    },
+    {
+     "seed": 2,
+     "top50_shared_mean": 0.945,
+     "top50_shared_std": 0.01658312395177697,
+     "dictwide_mean": 0.6120161447189263,
+     "top50_dense_frac": 0.42,
+     "dense_importance_share": 0.5241644386470063,
+     "n_dense": 930,
+     "n_alive": 10282
+    }
+   ],
+   "top50_shared_mean_over_sources": 0.922,
+   "top50_shared_sd_over_sources": 0.02039607805437111,
+   "calibration_ok": true,
+   "reused_archived": []
+  }
+ },
+ "refit": {
+  "n_cluster": 353,
+  "d": 3584,
+  "refit_steps": 5000,
+  "tolerance_rel": 0.01,
+  "free_params": "cluster rows of W_enc, b_enc, W_dec; everything else frozen incl. b_dec",
+  "continuation": {
+   "mse": 5914.93617,
+   "eff_rank_dec": 168.81283569335938
+  },
+  "random_null_mean_cos2": {
+   "expected": 0.09849330357142858,
+   "empirical_mean": 0.09857678467425371,
+   "empirical_q95": 0.09920625235405288
+  },
+  "refits": [
+   {
+    "init_seed": 1000,
+    "mse": 5980.03942,
+    "rel_loss_diff": 0.011006585384673749,
+    "within_tolerance": false,
+    "maxcos_mean": 0.49424827098846436,
+    "hungarian_cos_mean": 0.4726703464984894,
+    "frac_matched_07": 0.4447592067988669,
+    "agg_output_rel_mse": 0.0013371012173593044,
+    "agg_output_cos": 1.0001916885375977,
+    "eff_rank_dec": 239.6902313232422,
+    "eff_rank_agg": 1.2178343534469604,
+    "span_overlap_mean_cos2": 0.5084868669509888
+   },
+   {
+    "init_seed": 1001,
+    "mse": 5977.38273,
+    "rel_loss_diff": 0.010557435990048955,
+    "within_tolerance": false,
+    "maxcos_mean": 0.5028771162033081,
+    "hungarian_cos_mean": 0.48134052753448486,
+    "frac_matched_07": 0.45609065155807366,
+    "agg_output_rel_mse": 0.0013084537349641323,
+    "agg_output_cos": 1.0002082586288452,
+    "eff_rank_dec": 237.6460723876953,
+    "eff_rank_agg": 1.2177857160568237,
+    "span_overlap_mean_cos2": 0.5189692378044128
+   },
+   {
+    "init_seed": 1002,
+    "mse": 5991.0471,
+    "rel_loss_diff": 0.012867582643753166,
+    "within_tolerance": false,
+    "maxcos_mean": 0.482286274433136,
+    "hungarian_cos_mean": 0.46393945813179016,
+    "frac_matched_07": 0.42776203966005666,
+    "agg_output_rel_mse": 0.0014073937200009823,
+    "agg_output_cos": 1.0001585483551025,
+    "eff_rank_dec": 238.53125,
+    "eff_rank_agg": 1.2177140712738037,
+    "span_overlap_mean_cos2": 0.5086374878883362
+   },
+   {
+    "init_seed": 1003,
+    "mse": 5986.61468,
+    "rel_loss_diff": 0.012118222063586485,
+    "within_tolerance": false,
+    "maxcos_mean": 0.4995426833629608,
+    "hungarian_cos_mean": 0.4805040955543518,
+    "frac_matched_07": 0.45325779036827196,
+    "agg_output_rel_mse": 0.0014374182792380452,
+    "agg_output_cos": 1.0001428127288818,
+    "eff_rank_dec": 230.15087890625,
+    "eff_rank_agg": 1.2173570394515991,
+    "span_overlap_mean_cos2": 0.527890682220459
+   },
+   {
+    "init_seed": 1004,
+    "mse": 5987.89023,
+    "rel_loss_diff": 0.012333871051731067,
+    "within_tolerance": false,
+    "maxcos_mean": 0.48875465989112854,
+    "hungarian_cos_mean": 0.465580016374588,
+    "frac_matched_07": 0.43342776203966005,
+    "agg_output_rel_mse": 0.0014581558061763644,
+    "agg_output_cos": 1.0001273155212402,
+    "eff_rank_dec": 232.59591674804688,
+    "eff_rank_agg": 1.2170614004135132,
+    "span_overlap_mean_cos2": 0.5038003325462341
+   }
+  ],
+  "seconds": 1309.6704618930817
+ }
+}

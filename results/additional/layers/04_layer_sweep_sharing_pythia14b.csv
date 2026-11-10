@@ -1,0 +1,6 @@
+model,source,layer,pc1_pct,top50_standard,dictwide_standard,top50_bypass,dictwide_bypass,n_alive_standard
+Pythia-1.4B,layer_sweep,L3,93.82274823924097,0.14,0.3000747263431549,0.68,0.23021051287651062,8028
+Pythia-1.4B,layer_sweep,L23,11.094722934706532,0.96,0.6462235450744629,0.92,0.6371411085128784,8169
+Pythia-1.4B,layer_sweep,L12,92.95382511131184,0.08,0.6317943334579468,0.92,0.6235668659210205,7819
+Pythia-1.4B,multilayer,L6,97.3,,,,,5857
+Pythia-1.4B,multilayer,L18,89.3,,,,,7649

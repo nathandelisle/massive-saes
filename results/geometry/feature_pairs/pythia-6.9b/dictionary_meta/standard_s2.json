@@ -1,0 +1,19 @@
+{
+ "cohort_id": "v3core_rxzero",
+ "model_id": "pythia-6.9b",
+ "block_index": 16,
+ "condition": "standard",
+ "seed": 2,
+ "checkpoint_sha256": "f80f2de0b3398e91062da31f8ce3462532624bf8a0bd8731b846997487c907a9",
+ "checkpoint_s3": "s3://ssup-research-079415246777/a5-pythia69/saes/b3ae6985ffbd6394.pt",
+ "config_hash": "b3ae6985ffbd6394",
+ "mean_sha256": "0d536c9b109a8f0e657662fe0d0cae4baf76f1080e3f041072e570eb7b0f52cc",
+ "pc1_sha256": "d05b5a397d4026ee657d0e6ca256a31af3ebe6fc78f8f37927a5efe31f2baf39",
+ "geometry_sha256": "a42c4063ae8e13ef047d0ca5384bd5e4823ff817c80cd597167502d621965c81",
+ "ranking_data_id": "RX rank partition, partitions.json sha256 c0937c202102694d7c6c121009ce2b9959f348621c8e15207945d9f6ff0349af",
+ "importance_protocol_id": "rx_zero imp-m1; summed dCE/valid targets; rank partition; status!=NOT_EVALUATED",
+ "alive_rule": "v3 archived counter: fires on (rows over first 106,496 store rows)/100,000 > 1e-3",
+ "n_importance_measured": 9027,
+ "n_alive": 9027,
+ "rank_zero_s3": "s3://ssup-research-079415246777/rx-imp-pythia-6.9b-standard-s2/results/imp/pythia-6.9b/standard_s2/rank_zero.npz"
+}

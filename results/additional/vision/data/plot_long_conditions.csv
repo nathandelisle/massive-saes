@@ -1,0 +1,67 @@
+condition,condition_order,condition_label,backbone,steps,metric_group,metric,metric_label,value,note
+A_standard,0,A standard,dinov2-base,10000,geometry,pc1_var_share,PC1 share of patch variance,0.9618626097270491,higher = more massive-activation dominance
+A_standard,0,A standard,dinov2-base,10000,geometry,max_over_median_norm,max / median patch norm,57.23647973565416,
+A_standard,0,A standard,dinov2-base,10000,geometry,frac_norm_gt_3x,fraction of patches above 3x median norm,0.01845550537109375,
+A_standard,0,A standard,dinov2-base,10000,fidelity,heldout_fvu,held-out FVU (total),0.0131,lower = better
+A_standard,0,A standard,dinov2-base,3000,fidelity,heldout_fvu,held-out FVU (total),0.01519,lower = better
+A_standard,0,A standard,dinov2-base,10000,fidelity,heldout_content_fvu,held-out content FVU (off PC1),0.34349,lower = better
+A_standard,0,A standard,dinov2-base,10000,fidelity,achieved_l0,achieved L0 (batch average),32.0,budget match check
+A_standard,0,A standard,dinov2-base,10000,reproducibility,match_all_median,median nearest cross-seed cosine,0.3954,higher = better
+A_standard,0,A standard,dinov2-base,3000,reproducibility,match_all_median,median nearest cross-seed cosine,0.1651,higher = better
+A_standard,0,A standard,dinov2-base,10000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.2884,the inflated statistic
+A_standard,0,A standard,dinov2-base,3000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.1934,the inflated statistic
+B_random_bypass,1,B random bypass,dinov2-base,10000,geometry,pc1_var_share,PC1 share of patch variance,0.9618626097270491,higher = more massive-activation dominance
+B_random_bypass,1,B random bypass,dinov2-base,10000,geometry,max_over_median_norm,max / median patch norm,57.23647973565416,
+B_random_bypass,1,B random bypass,dinov2-base,10000,geometry,frac_norm_gt_3x,fraction of patches above 3x median norm,0.01845550537109375,
+B_random_bypass,1,B random bypass,dinov2-base,10000,fidelity,heldout_fvu,held-out FVU (total),0.01312,lower = better
+B_random_bypass,1,B random bypass,dinov2-base,3000,fidelity,heldout_fvu,held-out FVU (total),0.01516,lower = better
+B_random_bypass,1,B random bypass,dinov2-base,10000,fidelity,heldout_content_fvu,held-out content FVU (off PC1),0.34392,lower = better
+B_random_bypass,1,B random bypass,dinov2-base,10000,fidelity,achieved_l0,achieved L0 (batch average),32.0,budget match check
+B_random_bypass,1,B random bypass,dinov2-base,10000,reproducibility,match_all_median,median nearest cross-seed cosine,0.3924,higher = better
+B_random_bypass,1,B random bypass,dinov2-base,3000,reproducibility,match_all_median,median nearest cross-seed cosine,0.1656,higher = better
+B_random_bypass,1,B random bypass,dinov2-base,10000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.285,the inflated statistic
+B_random_bypass,1,B random bypass,dinov2-base,3000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.1921,the inflated statistic
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,geometry,pc1_var_share,PC1 share of patch variance,0.9618626097270491,higher = more massive-activation dominance
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,geometry,max_over_median_norm,max / median patch norm,57.23647973565416,
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,geometry,frac_norm_gt_3x,fraction of patches above 3x median norm,0.01845550537109375,
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,fidelity,heldout_fvu,held-out FVU (total),0.01268,lower = better
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,3000,fidelity,heldout_fvu,held-out FVU (total),0.0126,lower = better
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,fidelity,heldout_content_fvu,held-out content FVU (off PC1),0.33277,lower = better
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,fidelity,achieved_l0,achieved L0 (batch average),32.0,budget match check
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,reproducibility,match_all_median,median nearest cross-seed cosine,0.4186,higher = better
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,3000,reproducibility,match_all_median,median nearest cross-seed cosine,0.27,higher = better
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,10000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.1662,the inflated statistic
+C_pc1_bypass,2,C PC1 bypass,dinov2-base,3000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.0851,the inflated statistic
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,geometry,pc1_var_share,PC1 share of patch variance,0.7566281047357122,higher = more massive-activation dominance
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,geometry,max_over_median_norm,max / median patch norm,18.56910436545737,
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,geometry,frac_norm_gt_3x,fraction of patches above 3x median norm,0.0227813720703125,
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,fidelity,heldout_fvu,held-out FVU (total),0.0848,lower = better
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),3000,fidelity,heldout_fvu,held-out FVU (total),0.08726,lower = better
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,fidelity,heldout_content_fvu,held-out content FVU (off PC1),0.34931,lower = better
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,fidelity,achieved_l0,achieved L0 (batch average),32.0,budget match check
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,reproducibility,match_all_median,median nearest cross-seed cosine,0.4531,higher = better
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),3000,reproducibility,match_all_median,median nearest cross-seed cosine,0.3274,higher = better
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),10000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.2528,the inflated statistic
+D_ttr_n2,3,D2 test-time registers (n=2),dinov2-base + test-time registers (n=2),3000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.1601,the inflated statistic
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,geometry,pc1_var_share,PC1 share of patch variance,0.03958319712340207,higher = more massive-activation dominance
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,geometry,max_over_median_norm,max / median patch norm,2.318731548281267,
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,geometry,frac_norm_gt_3x,fraction of patches above 3x median norm,0.0,
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,fidelity,heldout_fvu,held-out FVU (total),0.41473,lower = better
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),3000,fidelity,heldout_fvu,held-out FVU (total),0.40507,lower = better
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,fidelity,heldout_content_fvu,held-out content FVU (off PC1),0.42879,lower = better
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,fidelity,achieved_l0,achieved L0 (batch average),32.0,budget match check
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,reproducibility,match_all_median,median nearest cross-seed cosine,0.4655,higher = better
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),3000,reproducibility,match_all_median,median nearest cross-seed cosine,0.4075,higher = better
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),10000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.1384,the inflated statistic
+D_ttr,4,D test-time registers (n=50),dinov2-base + test-time registers (n=50),3000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.0678,the inflated statistic
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,geometry,pc1_var_share,PC1 share of patch variance,0.0399852213081176,higher = more massive-activation dominance
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,geometry,max_over_median_norm,max / median patch norm,1.71373872967536,
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,geometry,frac_norm_gt_3x,fraction of patches above 3x median norm,0.0,
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,fidelity,heldout_fvu,held-out FVU (total),0.42751,lower = better
+E_registers,5,E pretrained registers,dinov2-with-registers-base,3000,fidelity,heldout_fvu,held-out FVU (total),0.42217,lower = better
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,fidelity,heldout_content_fvu,held-out content FVU (off PC1),0.44135,lower = better
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,fidelity,achieved_l0,achieved L0 (batch average),32.0,budget match check
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,reproducibility,match_all_median,median nearest cross-seed cosine,0.4793,higher = better
+E_registers,5,E pretrained registers,dinov2-with-registers-base,3000,reproducibility,match_all_median,median nearest cross-seed cosine,0.4137,higher = better
+E_registers,5,E pretrained registers,dinov2-with-registers-base,10000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.1591,the inflated statistic
+E_registers,5,E pretrained registers,dinov2-with-registers-base,3000,reproducibility,match_all_frac_gt_0p7,fraction of features with a >=0.7 match,0.069,the inflated statistic

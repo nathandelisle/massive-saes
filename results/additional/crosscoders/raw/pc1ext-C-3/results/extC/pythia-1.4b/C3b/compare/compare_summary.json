@@ -1,0 +1,542 @@
+[
+ {
+  "arm": "X0",
+  "a": 42,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6771771771771772,
+   "dictionary_shared_absolute": 0.6771771771771772,
+   "top50_reconstruction_ablation_shared_signed": 0.04,
+   "mean_max_cosine": 0.7608815826462386
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6771771771771772,
+   "dictionary_shared_absolute": 0.6771771771771772,
+   "top50_reconstruction_ablation_shared_signed": 0.04,
+   "mean_max_cosine": 0.7608815826462386
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X0",
+  "a": 42,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.6891891891891891,
+   "dictionary_shared_absolute": 0.6891891891891891,
+   "top50_reconstruction_ablation_shared_signed": 0.04,
+   "mean_max_cosine": 0.7581138573860876
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6891891891891891,
+   "dictionary_shared_absolute": 0.6891891891891891,
+   "top50_reconstruction_ablation_shared_signed": 0.04,
+   "mean_max_cosine": 0.7581138573860876
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X0",
+  "a": 137,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.6989914662529092,
+   "dictionary_shared_absolute": 0.7013188518231187,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7643222761404285
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6989914662529092,
+   "dictionary_shared_absolute": 0.7013188518231187,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7643222761404285
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X0",
+  "a": 137,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.7059736229635376,
+   "dictionary_shared_absolute": 0.7067494181536075,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7655951553857665
+  },
+  "native": {
+   "dictionary_shared_signed": 0.7059736229635376,
+   "dictionary_shared_absolute": 0.7067494181536075,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7655951553857665
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X0",
+  "a": 0,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.7107501933488012,
+   "dictionary_shared_absolute": 0.7107501933488012,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7679584744324353
+  },
+  "native": {
+   "dictionary_shared_signed": 0.7107501933488012,
+   "dictionary_shared_absolute": 0.7107501933488012,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7679584744324353
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X0",
+  "a": 0,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.7022428460943542,
+   "dictionary_shared_absolute": 0.7022428460943542,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7669296781449136
+  },
+  "native": {
+   "dictionary_shared_signed": 0.7022428460943542,
+   "dictionary_shared_absolute": 0.7022428460943542,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7669296781449136
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X1",
+  "a": 42,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6513545347467609,
+   "dictionary_shared_absolute": 0.6513545347467609,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7469301745945527
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6513545347467609,
+   "dictionary_shared_absolute": 0.6513545347467609,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7469040327249795
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X1",
+  "a": 42,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.666077738515901,
+   "dictionary_shared_absolute": 0.6684334511189635,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7500802396989305
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6672555948174322,
+   "dictionary_shared_absolute": 0.6696113074204947,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7500538575562842
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X1",
+  "a": 137,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.6895261845386533,
+   "dictionary_shared_absolute": 0.690149625935162,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7647406807190603
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6895261845386533,
+   "dictionary_shared_absolute": 0.690149625935162,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7647191981424059
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X1",
+  "a": 137,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.7038653366583542,
+   "dictionary_shared_absolute": 0.7057356608478803,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7726741413835465
+  },
+  "native": {
+   "dictionary_shared_signed": 0.7038653366583542,
+   "dictionary_shared_absolute": 0.7057356608478803,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7726120834622892
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X1",
+  "a": 0,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.6770708283313326,
+   "dictionary_shared_absolute": 0.6794717887154862,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7515706302095932
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6782713085234093,
+   "dictionary_shared_absolute": 0.680672268907563,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7515370491808246
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X1",
+  "a": 0,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6764705882352942,
+   "dictionary_shared_absolute": 0.6776710684273709,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7586383019612143
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6764705882352942,
+   "dictionary_shared_absolute": 0.6776710684273709,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7585759645237302
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X2",
+  "a": 42,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6484417714598141,
+   "dictionary_shared_absolute": 0.6489885183160197,
+   "top50_reconstruction_ablation_shared_signed": 0.9,
+   "mean_max_cosine": 0.7533733460126493
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6484417714598141,
+   "dictionary_shared_absolute": 0.6489885183160197,
+   "top50_reconstruction_ablation_shared_signed": 0.9,
+   "mean_max_cosine": 0.7533733460126493
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X2",
+  "a": 42,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.6585565882996173,
+   "dictionary_shared_absolute": 0.6585565882996173,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7601449600140491
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6585565882996173,
+   "dictionary_shared_absolute": 0.6585565882996173,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7601449600140491
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X2",
+  "a": 137,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.6589772095608671,
+   "dictionary_shared_absolute": 0.6595330739299611,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7575378480823337
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6589772095608671,
+   "dictionary_shared_absolute": 0.6595330739299611,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7575378480823337
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X2",
+  "a": 137,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.6687048360200111,
+   "dictionary_shared_absolute": 0.668982768204558,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7610565115048246
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6687048360200111,
+   "dictionary_shared_absolute": 0.668982768204558,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7610565115048246
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X2",
+  "a": 0,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.6739495798319328,
+   "dictionary_shared_absolute": 0.6745098039215687,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7677897341501065
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6739495798319328,
+   "dictionary_shared_absolute": 0.6745098039215687,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7677897341501065
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X2",
+  "a": 0,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6736694677871149,
+   "dictionary_shared_absolute": 0.6745098039215687,
+   "top50_reconstruction_ablation_shared_signed": 0.96,
+   "mean_max_cosine": 0.7635210473029059
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6736694677871149,
+   "dictionary_shared_absolute": 0.6745098039215687,
+   "top50_reconstruction_ablation_shared_signed": 0.96,
+   "mean_max_cosine": 0.7635210473029059
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X3",
+  "a": 42,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6538987688098495,
+   "dictionary_shared_absolute": 0.654172366621067,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7548786484295831
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6538987688098495,
+   "dictionary_shared_absolute": 0.654172366621067,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7548786484295831
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X3",
+  "a": 42,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.651436388508892,
+   "dictionary_shared_absolute": 0.651436388508892,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7553107385402034
+  },
+  "native": {
+   "dictionary_shared_signed": 0.651436388508892,
+   "dictionary_shared_absolute": 0.651436388508892,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7553107385402034
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X3",
+  "a": 137,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.670687237026648,
+   "dictionary_shared_absolute": 0.6715287517531556,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7634205445521632
+  },
+  "native": {
+   "dictionary_shared_signed": 0.670687237026648,
+   "dictionary_shared_absolute": 0.6715287517531556,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7634205445521632
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X3",
+  "a": 137,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.6597475455820477,
+   "dictionary_shared_absolute": 0.6608695652173913,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7591802965166364
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6597475455820477,
+   "dictionary_shared_absolute": 0.6608695652173913,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7591802965166364
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X3",
+  "a": 0,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.6630434782608695,
+   "dictionary_shared_absolute": 0.6638795986622074,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7618261935476206
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6630434782608695,
+   "dictionary_shared_absolute": 0.6638795986622074,
+   "top50_reconstruction_ablation_shared_signed": 0.92,
+   "mean_max_cosine": 0.7618261935476206
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X3",
+  "a": 0,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6544035674470458,
+   "dictionary_shared_absolute": 0.6555183946488294,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7563044509676022
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6544035674470458,
+   "dictionary_shared_absolute": 0.6555183946488294,
+   "top50_reconstruction_ablation_shared_signed": 0.94,
+   "mean_max_cosine": 0.7563044509676022
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X4",
+  "a": 42,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6664179104477612,
+   "dictionary_shared_absolute": 0.6671641791044776,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7492085988463213
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6664179104477612,
+   "dictionary_shared_absolute": 0.6671641791044776,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7492085988463213
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X4",
+  "a": 42,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.682089552238806,
+   "dictionary_shared_absolute": 0.6828358208955224,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.751822282981076
+  },
+  "native": {
+   "dictionary_shared_signed": 0.682089552238806,
+   "dictionary_shared_absolute": 0.6828358208955224,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7518222829810759
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X4",
+  "a": 137,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.7003129890453834,
+   "dictionary_shared_absolute": 0.7003129890453834,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7644235297072909
+  },
+  "native": {
+   "dictionary_shared_signed": 0.7003129890453834,
+   "dictionary_shared_absolute": 0.7003129890453834,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7644235297072909
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X4",
+  "a": 137,
+  "b": 0,
+  "objective": {
+   "dictionary_shared_signed": 0.689358372456964,
+   "dictionary_shared_absolute": 0.689358372456964,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7647897735220168
+  },
+  "native": {
+   "dictionary_shared_signed": 0.689358372456964,
+   "dictionary_shared_absolute": 0.689358372456964,
+   "top50_reconstruction_ablation_shared_signed": 0.02,
+   "mean_max_cosine": 0.7647897735220168
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X4",
+  "a": 0,
+  "b": 42,
+  "objective": {
+   "dictionary_shared_signed": 0.700920245398773,
+   "dictionary_shared_absolute": 0.7024539877300614,
+   "top50_reconstruction_ablation_shared_signed": 0.0,
+   "mean_max_cosine": 0.7582776044462956
+  },
+  "native": {
+   "dictionary_shared_signed": 0.700920245398773,
+   "dictionary_shared_absolute": 0.7024539877300614,
+   "top50_reconstruction_ablation_shared_signed": 0.0,
+   "mean_max_cosine": 0.7582776044462954
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ },
+ {
+  "arm": "X4",
+  "a": 0,
+  "b": 137,
+  "objective": {
+   "dictionary_shared_signed": 0.6756134969325154,
+   "dictionary_shared_absolute": 0.6771472392638037,
+   "top50_reconstruction_ablation_shared_signed": 0.0,
+   "mean_max_cosine": 0.7551568017593066
+  },
+  "native": {
+   "dictionary_shared_signed": 0.6756134969325154,
+   "dictionary_shared_absolute": 0.6771472392638037,
+   "top50_reconstruction_ablation_shared_signed": 0.0,
+   "mean_max_cosine": 0.7551568017593066
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+ }
+]

@@ -1,0 +1,79 @@
+{
+  "scope": "training geometry; validation prediction; no test outcomes",
+  "metadata": {
+    "task": "crosscoder",
+    "coordinates": "raw_uncentered",
+    "output_widths": [
+      2048,
+      2048
+    ],
+    "cache_id": "pair-C0_identical-9db9746ffd",
+    "source": {
+      "stream_a": "pythia-1.4b-resid12-a04ba43b62",
+      "stream_b": "pythia-1.4b-resid12-a04ba43b62",
+      "label": "C0_identical",
+      "a": {
+        "model": "pythia-1.4b",
+        "base_model": "EleutherAI/pythia-1.4b",
+        "layer": 12,
+        "dtype_stored": "float16",
+        "hooks": "output of block 12",
+        "splits": {
+          "train": "trainx",
+          "validation": "rank",
+          "test": "valid"
+        },
+        "train_rule": "trainx (ext/cache.py)",
+        "n_tokens": {
+          "train": 3001602,
+          "validation": 33058,
+          "test": 33176
+        }
+      },
+      "b": {
+        "model": "pythia-1.4b",
+        "base_model": "EleutherAI/pythia-1.4b",
+        "layer": 12,
+        "dtype_stored": "float16",
+        "hooks": "output of block 12",
+        "splits": {
+          "train": "trainx",
+          "validation": "rank",
+          "test": "valid"
+        },
+        "train_rule": "trainx (ext/cache.py)",
+        "n_tokens": {
+          "train": 3001602,
+          "validation": 33058,
+          "test": 33176
+        }
+      }
+    }
+  },
+  "pc1_shares_by_stream": [
+    0.9576503967919913,
+    0.9576503967919913
+  ],
+  "joint_variance_fractions_top10": [
+    0.9576503967919927,
+    0.0015392366839684026,
+    0.001213634417103599,
+    0.0009549737979934429,
+    0.0007691914522225774,
+    0.0005546142728673687,
+    0.000444341888149467,
+    0.0003665693264635969,
+    0.0003526519146678493,
+    0.000339495135367744
+  ],
+  "pc_coefficient_second_moment": [
+    [
+      0.47882519839599547,
+      0.47882519839599547
+    ],
+    [
+      0.47882519839599547,
+      0.47882519839599547
+    ]
+  ]
+}

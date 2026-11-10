@@ -1,0 +1,55 @@
+{
+ "production_group_dce": {
+  "top50_full": NaN,
+  "top50_par": 4.468230404358681,
+  "top50_perp": 2.0868595046639054,
+  "dense_full": 7.702200358875849,
+  "dense_par": 6.086738723205927,
+  "dense_perp": 0.6608902049142091,
+  "ctl_count_full": 0.030934249791065117,
+  "ctl_count_par": -3.985487090047409e-05,
+  "ctl_count_perp": 0.031019977578874702,
+  "ctl_rate_full": 0.12397758930028668,
+  "ctl_rate_par": -0.0001693463190312478,
+  "ctl_rate_perp": 0.12424270456383166,
+  "ctl_energy_full": 0.6963096642061026,
+  "ctl_energy_par": -0.0002824796345557795,
+  "ctl_energy_perp": 0.6972811220068318
+ },
+ "runs": {
+  "float16": {
+   "base_ce": 2.6480484008789062,
+   "n_targets": 33244,
+   "top50_full": NaN,
+   "top50_full_finite": false,
+   "top50_par": 4.467984229473269,
+   "top50_par_finite": true,
+   "top50_perp": 2.0877894774597485,
+   "top50_perp_finite": true,
+   "dense_full": 7.701540759117247,
+   "dense_full_finite": true,
+   "dense_par": 6.086182863384417,
+   "dense_par_finite": true,
+   "dense_perp": 0.6604261328318879,
+   "dense_perp_finite": true,
+   "seconds": 42.71464395523071
+  },
+  "bfloat16": {
+   "base_ce": 2.641519546508789,
+   "n_targets": 33244,
+   "top50_full": 5.6521725489938035,
+   "top50_full_finite": true,
+   "top50_par": 4.432929751245055,
+   "top50_par_finite": true,
+   "top50_perp": 1.9819512705182702,
+   "top50_perp_finite": true,
+   "dense_full": 7.7190462529422605,
+   "dense_full_finite": true,
+   "dense_par": 6.11417874072436,
+   "dense_par_finite": true,
+   "dense_perp": 0.6618350380925176,
+   "dense_perp_finite": true,
+   "seconds": 17.082443237304688
+  }
+ }
+}

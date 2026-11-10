@@ -1,0 +1,23 @@
+{
+ "model": "gemma-2-9b",
+ "condition": "bypass",
+ "seed": 1,
+ "config_hash": "b39d35b0b1528b90",
+ "sae_sha256": "0870d34feffa22cdb742fcdaec937f5c77ef9fec113aaf65816db9b544610784",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-6-30.us-east-2.compute.internal",
+  "code_hash": "f18e8081a9c8b2dd",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 21,
+ "hidden_state_index": 22,
+ "n_alive_archived_rule": 10231
+}

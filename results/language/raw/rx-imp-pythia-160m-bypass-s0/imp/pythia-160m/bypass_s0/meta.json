@@ -1,0 +1,23 @@
+{
+ "model": "pythia-160m",
+ "condition": "bypass",
+ "seed": 0,
+ "config_hash": "39c0597423df1acd",
+ "sae_sha256": "14ba14ba25ccd3e1bfce1cae60d4fda33bb821cae8cf10571dc46843a5e47a68",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-3-241.us-east-2.compute.internal",
+  "code_hash": "ab7cdf28f636d671",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L4",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 6,
+ "hidden_state_index": 7,
+ "n_alive_archived_rule": 3065
+}

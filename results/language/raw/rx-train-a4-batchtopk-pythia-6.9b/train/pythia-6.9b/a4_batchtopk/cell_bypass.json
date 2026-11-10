@@ -1,0 +1,80 @@
+{
+ "arch": "batchtopk",
+ "condition": "bypass",
+ "layer": null,
+ "kwargs": {
+  "k": 64
+ },
+ "screen": 1500,
+ "l0_measured": [
+  68.67131042480469,
+  68.79478454589844,
+  68.69607543945312,
+  68.9261474609375,
+  68.84770965576172
+ ],
+ "l0_matched_pm5": false,
+ "fvu_final_log": [
+  0.2748476266860962,
+  0.2708326280117035,
+  0.2722485363483429,
+  0.2691827714443207,
+  0.2751995325088501
+ ],
+ "by_source": [
+  {
+   "seed": 42,
+   "top50_shared_mean": 0.895,
+   "top50_shared_std": 0.016583123951777013,
+   "dictwide_mean": 0.6052475833497731,
+   "top50_dense_frac": 0.22,
+   "dense_importance_share": 0.19126815482703735,
+   "n_dense": 764,
+   "n_alive": 10138
+  },
+  {
+   "seed": 137,
+   "top50_shared_mean": 0.905,
+   "top50_shared_std": 0.021794494717703342,
+   "dictwide_mean": 0.6101840913565664,
+   "top50_dense_frac": 0.18,
+   "dense_importance_share": 0.1514179139267954,
+   "n_dense": 776,
+   "n_alive": 10158
+  },
+  {
+   "seed": 0,
+   "top50_shared_mean": 0.95,
+   "top50_shared_std": 0.017320508075688742,
+   "dictwide_mean": 0.6070759830491771,
+   "top50_dense_frac": 0.26,
+   "dense_importance_share": 0.20167334541104423,
+   "n_dense": 872,
+   "n_alive": 10147
+  },
+  {
+   "seed": 1,
+   "top50_shared_mean": 0.88,
+   "top50_shared_std": 0.014142135623730963,
+   "dictwide_mean": 0.6132223310479922,
+   "top50_dense_frac": 0.26,
+   "dense_importance_share": 0.18124684679237368,
+   "n_dense": 771,
+   "n_alive": 10210
+  },
+  {
+   "seed": 2,
+   "top50_shared_mean": 0.895,
+   "top50_shared_std": 0.02598076211353318,
+   "dictwide_mean": 0.608629191321499,
+   "top50_dense_frac": 0.24,
+   "dense_importance_share": 0.15897671902948093,
+   "n_dense": 806,
+   "n_alive": 10140
+  }
+ ],
+ "top50_shared_mean_over_sources": 0.905,
+ "top50_shared_sd_over_sources": 0.023874672772626625,
+ "calibration_ok": true,
+ "reused_archived": []
+}

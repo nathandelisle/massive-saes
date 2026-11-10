@@ -1,0 +1,90 @@
+{
+ "job_id": "qwen3_8b-32e2059b20de",
+ "group": "qwen3_8b",
+ "family": "Qwen Scope",
+ "repo_id": "Qwen/SAE-Res-Qwen3-8B-Base-W64K-L0_50",
+ "repo_revision": "9b7d647127c303dd371e5dbd992236bd9799b171",
+ "sae_id": "layer7",
+ "conversion_func": "qwen_scope",
+ "loader": "saelens",
+ "architecture": "topk",
+ "normalization": "none",
+ "d_in": 4096,
+ "d_sae": 65536,
+ "k": 50,
+ "apply_b_dec_to_input_used": false,
+ "encoder_centering_corrected": false,
+ "wdec_orientation_corrected": false,
+ "native": {
+  "transposed_to_canonical": {
+   "W_enc": true,
+   "W_dec": true
+  },
+  "source_keys": {
+   "W_enc": "W_enc",
+   "W_dec": "W_dec"
+  },
+  "decoder_row_norm_median": 0.9999999020094128
+ },
+ "native_keys": [
+  "W_dec",
+  "W_enc",
+  "b_dec",
+  "b_enc"
+ ],
+ "checks": {
+  "ordinary": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 3.828565730165574e-07,
+   "reconstruction_rel_diff_same_input": 3.828565730165574e-07,
+   "reconstruction_max_abs_diff": 5.267745500958654e-05,
+   "activation_max_abs_diff": 5.928697586909948e-05,
+   "active_jaccard": 1.0,
+   "l0_native": 50.0,
+   "l0_converted": 50.0,
+   "mean_row_norm": 54.55730803733856
+  },
+  "high_norm": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 4.801944259621704e-07,
+   "reconstruction_rel_diff_same_input": 4.801944259621704e-07,
+   "reconstruction_max_abs_diff": 0.0018883943848777562,
+   "activation_max_abs_diff": 0.004053325261338614,
+   "active_jaccard": 1.0,
+   "l0_native": 50.0,
+   "l0_converted": 50.0,
+   "mean_row_norm": 5465.110383437324
+  },
+  "zero": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 8.908332794034836e-08,
+   "reconstruction_rel_diff_same_input": 8.908332794034836e-08,
+   "reconstruction_max_abs_diff": 6.829834724442208e-07,
+   "activation_max_abs_diff": 0.0,
+   "active_jaccard": 1.0,
+   "l0_native": 50.0,
+   "l0_converted": 50.0,
+   "mean_row_norm": 0.0
+  },
+  "b_dec": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 3.7295414117013536e-08,
+   "reconstruction_rel_diff_same_input": 3.7295414117013536e-08,
+   "reconstruction_max_abs_diff": 1.2742044006586184e-06,
+   "activation_max_abs_diff": 2.2298872692783078e-07,
+   "active_jaccard": 1.0,
+   "l0_native": 2.0,
+   "l0_converted": 2.0,
+   "mean_row_norm": 36.33902418891702
+  }
+ },
+ "utc": "2026-09-20T23:17:27Z",
+ "max_reconstruction_rel_diff_own_normalization": 4.801944259621704e-07,
+ "max_reconstruction_rel_diff": 4.801944259621704e-07,
+ "min_active_jaccard": 1.0,
+ "verdict": "MATCH"
+}

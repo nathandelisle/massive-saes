@@ -1,0 +1,10 @@
+model,w1_c3_store,content_FVE_pct_SAE_standard,content_FVE_pct_SAE_bypass,content_FVE_pct_fixed_PCs,content_FVE_pct_adaptive_PCA,content_FVE_pct_random_subspace,FVU_PC1_SAE_standard,note
+Pythia-70M,0.829,88.4,88.5,66.4,78.9,12.8,2.8e-05,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+Pythia-160M,0.934,84.9,85.0,56.1,69.6,8.4,4.1e-06,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+GPT-2,0.970,85.9,86.2,45.5,63.8,8.4,7.1e-07,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+Pythia-1.4B,0.964,77.1,77.4,34.0,47.2,3.1,9.1e-07,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+Gemma-2-2B,0.783,79.3,79.6,47.7,57.4,2.8,2.9e-05,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+Qwen-2.5-7B,0.999,68.4,78.8,40.5,52.8,1.8,9.0e-08,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+Pythia-6.9B,0.957,71.8,72.4,25.5,36.1,1.6,7.6e-06,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+Llama-3.1-8B,0.969,75.3,76.7,30.7,41.5,1.6,1.5e-05,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."
+Gemma-2-9B,0.700,79.0,79.2,47.8,56.5,1.8,4.2e-05,"TopK SAEs only (C3, held-out 100k tail, k=64). NOT per objective. Source: SEC5_PULLS.md addendum 3."

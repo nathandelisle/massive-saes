@@ -1,0 +1,142 @@
+{
+ "arm": "D_ttr",
+ "n_neurons": 50,
+ "selection": {
+  "n_neurons": 50,
+  "layers": {
+   "8": [
+    100,
+    258,
+    697,
+    1160,
+    1678,
+    2242,
+    2875
+   ],
+   "9": [
+    110,
+    271,
+    890,
+    1540
+   ],
+   "7": [
+    135,
+    831,
+    873,
+    963,
+    2292,
+    2729,
+    3058
+   ],
+   "6": [
+    334,
+    634,
+    911,
+    973,
+    992,
+    1459,
+    1552,
+    1778,
+    1830,
+    2892
+   ],
+   "5": [
+    662,
+    1551,
+    2384,
+    2788,
+    2839,
+    2955,
+    3055
+   ],
+   "4": [
+    662,
+    1701,
+    2118,
+    3057
+   ],
+   "0": [
+    114,
+    709,
+    1098,
+    1313,
+    1347,
+    2481,
+    2513,
+    2801
+   ],
+   "2": [
+    1462
+   ],
+   "1": [
+    2026
+   ],
+   "3": [
+    2324
+   ]
+  },
+  "scores_top": [
+   79.963194093136,
+   76.62975669085658,
+   45.123607432801684,
+   19.585989373631907,
+   11.103471534256492,
+   6.164103137931124,
+   5.32100727793952,
+   4.0068944055842
+  ]
+ },
+ "validation": {
+  "cls_cosine_baseline_vs_intervened": 0.9456787109375,
+  "wrapper_matches_hf_max_abs_diff": 0.0,
+  "patch_tokens_baseline": 256,
+  "patch_tokens_intervened": 256,
+  "token_counts_match": true,
+  "outlier_frac_baseline": 0.0123291015625,
+  "outlier_frac_intervened": 0.0,
+  "outlier_frac_ratio": 0.0,
+  "max_patch_norm_baseline": 598.5112915039062,
+  "max_patch_norm_intervened": 46.77614212036133,
+  "added_register_mean_norm": 48.909385681152344,
+  "register_carries_more_than_max_patch": true,
+  "median_patch_norm_baseline": 25.069156646728516,
+  "detect_layer": -2,
+  "norm_mult": 10.0,
+  "variant": "literal",
+  "per_neuron_max": false,
+  "n_registers": 1,
+  "selected_layers": {
+   "8": 7,
+   "9": 4,
+   "7": 7,
+   "6": 10,
+   "5": 7,
+   "4": 4,
+   "0": 8,
+   "2": 1,
+   "1": 1,
+   "3": 1
+  },
+  "passes": true
+ },
+ "patch_geometry": {
+  "median_patch_norm": 7.4266454764571685,
+  "max_over_median": 2.318731548281267,
+  "frac_norm_gt_3x": 0.0,
+  "frac_norm_gt_10x": 0.0,
+  "pc1_var_share": 0.03958319712340207,
+  "outlier_pc1_energy_frac": null,
+  "n_rows": 131072
+ },
+ "added_register_geometry_separate": {
+  "median_patch_norm": 4.536183040032405,
+  "max_over_median": 5.200992521799251,
+  "frac_norm_gt_3x": 0.00390625,
+  "frac_norm_gt_10x": 0.0,
+  "pc1_var_share": 0.6285093635941482,
+  "outlier_pc1_energy_frac": 0.006830520370734937,
+  "n_rows": 512
+ },
+ "site": 9,
+ "grid": 256
+}

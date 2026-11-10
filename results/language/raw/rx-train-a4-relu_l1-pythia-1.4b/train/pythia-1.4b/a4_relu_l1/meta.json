@@ -1,0 +1,20 @@
+{
+ "model": "pythia-1.4b",
+ "kind": "a4",
+ "arch": "relu_l1",
+ "site": null,
+ "layer": 12,
+ "screen": 0,
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-16-5.us-west-2.compute.internal",
+  "code_hash": "f18e8081a9c8b2dd",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "n_gpu": 1
+ }
+}

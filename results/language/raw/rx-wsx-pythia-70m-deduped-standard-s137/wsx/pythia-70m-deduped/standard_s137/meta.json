@@ -1,0 +1,18 @@
+{
+ "model": "pythia-70m-deduped",
+ "condition": "standard",
+ "seed": 137,
+ "config_hash": "9e7c154c0871d8aa",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-44-21.us-west-2.compute.internal",
+  "code_hash": "f18e8081a9c8b2dd",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A10G",
+  "n_gpu": 1
+ }
+}

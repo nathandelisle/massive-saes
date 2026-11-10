@@ -1,0 +1,131 @@
+{
+ "arch": "topk",
+ "condition": "standard",
+ "layer": null,
+ "kwargs": {
+  "k": 64
+ },
+ "screen": 0,
+ "l0_measured": [
+  68.05400085449219,
+  68.05648040771484,
+  68.08123016357422,
+  68.05301666259766,
+  68.0477294921875
+ ],
+ "l0_matched_pm5": false,
+ "fvu_final_log": [
+  0.04962436109781265,
+  0.04840363934636116,
+  0.04745548963546753,
+  0.049776215106248856,
+  0.050281278789043427
+ ],
+ "by_source": [
+  {
+   "seed": 42,
+   "top50_shared_mean": 0.8049999999999999,
+   "top50_shared_std": 0.016583123951776964,
+   "dictwide_mean": 0.5802773703160421,
+   "top50_dense_frac": 0.52,
+   "dense_importance_share": 0.3218273987693061,
+   "n_dense": 585,
+   "n_alive": 7499
+  },
+  {
+   "seed": 137,
+   "top50_shared_mean": 0.835,
+   "top50_shared_std": 0.021794494717703342,
+   "dictwide_mean": 0.5919063545150501,
+   "top50_dense_frac": 0.52,
+   "dense_importance_share": 0.4200463300764182,
+   "n_dense": 682,
+   "n_alive": 7475
+  },
+  {
+   "seed": 0,
+   "top50_shared_mean": 0.875,
+   "top50_shared_std": 0.02958039891549811,
+   "dictwide_mean": 0.586685759957373,
+   "top50_dense_frac": 0.36,
+   "dense_importance_share": 0.35709036401262456,
+   "n_dense": 625,
+   "n_alive": 7507
+  },
+  {
+   "seed": 1,
+   "top50_shared_mean": 0.77,
+   "top50_shared_std": 0.033166247903554026,
+   "dictwide_mean": 0.57922954725973,
+   "top50_dense_frac": 0.54,
+   "dense_importance_share": 0.39234449451552017,
+   "n_dense": 616,
+   "n_alive": 7554
+  },
+  {
+   "seed": 2,
+   "top50_shared_mean": 0.835,
+   "top50_shared_std": 0.016583123951777013,
+   "dictwide_mean": 0.5784365509045293,
+   "top50_dense_frac": 0.44,
+   "dense_importance_share": 0.35179969465516175,
+   "n_dense": 585,
+   "n_alive": 7573
+  }
+ ],
+ "top50_shared_mean_over_sources": 0.8239999999999998,
+ "top50_shared_sd_over_sources": 0.034985711369071804,
+ "calibration_ok": true,
+ "reused_archived": [
+  [
+   "standard",
+   42,
+   "5c981d908c7d675f"
+  ],
+  [
+   "standard",
+   137,
+   "1fd79a98bf7e44ed"
+  ],
+  [
+   "standard",
+   0,
+   "7bdca391dff1906b"
+  ],
+  [
+   "standard",
+   1,
+   "e3ba805eed8cd9c3"
+  ],
+  [
+   "standard",
+   2,
+   "192865d9acb78645"
+  ],
+  [
+   "bypass",
+   42,
+   "0616bde9074f1813"
+  ],
+  [
+   "bypass",
+   137,
+   "98f2443430393fb3"
+  ],
+  [
+   "bypass",
+   0,
+   "9a485951d4759c4c"
+  ],
+  [
+   "bypass",
+   1,
+   "a4eb1bac8201354e"
+  ],
+  [
+   "bypass",
+   2,
+   "5dcdec03e27a1018"
+  ]
+ ]
+}

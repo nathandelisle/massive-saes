@@ -1,0 +1,73 @@
+condition,condition_order,condition_label,seed,steps,metric,value
+A_standard,0,A standard,0,10000,fvu,0.013020749545438536
+A_standard,0,A standard,0,10000,content_fvu,0.3412877759534981
+A_standard,0,A standard,0,10000,l0,32.0
+A_standard,0,A standard,0,10000,n_alive,6144.0
+A_standard,0,A standard,1,10000,fvu,0.013200060773238929
+A_standard,0,A standard,1,10000,content_fvu,0.34598549463181033
+A_standard,0,A standard,1,10000,l0,32.0
+A_standard,0,A standard,1,10000,n_alive,6144.0
+A_standard,0,A standard,2,10000,fvu,0.01309313586120092
+A_standard,0,A standard,2,10000,content_fvu,0.3432017490001553
+A_standard,0,A standard,2,10000,l0,32.000030517578125
+A_standard,0,A standard,2,10000,n_alive,6144.0
+B_random_bypass,1,B random bypass,0,10000,fvu,0.013121834706429261
+B_random_bypass,1,B random bypass,0,10000,content_fvu,0.34394883170194646
+B_random_bypass,1,B random bypass,0,10000,l0,32.0
+B_random_bypass,1,B random bypass,0,10000,n_alive,6144.0
+B_random_bypass,1,B random bypass,1,10000,fvu,0.013206893067637381
+B_random_bypass,1,B random bypass,1,10000,content_fvu,0.3461384105595381
+B_random_bypass,1,B random bypass,1,10000,l0,32.0
+B_random_bypass,1,B random bypass,1,10000,n_alive,6144.0
+B_random_bypass,1,B random bypass,2,10000,fvu,0.013035103638818248
+B_random_bypass,1,B random bypass,2,10000,content_fvu,0.3416678252751284
+B_random_bypass,1,B random bypass,2,10000,l0,32.0
+B_random_bypass,1,B random bypass,2,10000,n_alive,6144.0
+C_pc1_bypass,2,C PC1 bypass,0,10000,fvu,0.01269070309200704
+C_pc1_bypass,2,C PC1 bypass,0,10000,content_fvu,0.33297322177517574
+C_pc1_bypass,2,C PC1 bypass,0,10000,l0,32.0
+C_pc1_bypass,2,C PC1 bypass,0,10000,n_alive,6144.0
+C_pc1_bypass,2,C PC1 bypass,1,10000,fvu,0.012714743510891462
+C_pc1_bypass,2,C PC1 bypass,1,10000,content_fvu,0.3336039423563974
+C_pc1_bypass,2,C PC1 bypass,1,10000,l0,32.0
+C_pc1_bypass,2,C PC1 bypass,1,10000,n_alive,6144.0
+C_pc1_bypass,2,C PC1 bypass,2,10000,fvu,0.012642929042245718
+C_pc1_bypass,2,C PC1 bypass,2,10000,content_fvu,0.3317197622816961
+C_pc1_bypass,2,C PC1 bypass,2,10000,l0,32.0
+C_pc1_bypass,2,C PC1 bypass,2,10000,n_alive,6144.0
+D_ttr,4,D test-time registers (n=50),0,10000,fvu,0.4135462509211876
+D_ttr,4,D test-time registers (n=50),0,10000,content_fvu,0.4276364825615808
+D_ttr,4,D test-time registers (n=50),0,10000,l0,32.0
+D_ttr,4,D test-time registers (n=50),0,10000,n_alive,6144.0
+D_ttr,4,D test-time registers (n=50),1,10000,fvu,0.4139430328422564
+D_ttr,4,D test-time registers (n=50),1,10000,content_fvu,0.42808011483852976
+D_ttr,4,D test-time registers (n=50),1,10000,l0,32.0
+D_ttr,4,D test-time registers (n=50),1,10000,n_alive,6144.0
+D_ttr,4,D test-time registers (n=50),2,10000,fvu,0.41669969217409525
+D_ttr,4,D test-time registers (n=50),2,10000,content_fvu,0.43065781364170214
+D_ttr,4,D test-time registers (n=50),2,10000,l0,32.0
+D_ttr,4,D test-time registers (n=50),2,10000,n_alive,6144.0
+D_ttr_n2,3,D2 test-time registers (n=2),0,10000,fvu,0.08483561096177794
+D_ttr_n2,3,D2 test-time registers (n=2),0,10000,content_fvu,0.34953201440833426
+D_ttr_n2,3,D2 test-time registers (n=2),0,10000,l0,32.0
+D_ttr_n2,3,D2 test-time registers (n=2),0,10000,n_alive,6144.0
+D_ttr_n2,3,D2 test-time registers (n=2),1,10000,fvu,0.0850813971785519
+D_ttr_n2,3,D2 test-time registers (n=2),1,10000,content_fvu,0.3504279575063972
+D_ttr_n2,3,D2 test-time registers (n=2),1,10000,l0,32.0
+D_ttr_n2,3,D2 test-time registers (n=2),1,10000,n_alive,6144.0
+D_ttr_n2,3,D2 test-time registers (n=2),2,10000,fvu,0.08449500858842449
+D_ttr_n2,3,D2 test-time registers (n=2),2,10000,content_fvu,0.347955077631512
+D_ttr_n2,3,D2 test-time registers (n=2),2,10000,l0,32.0
+D_ttr_n2,3,D2 test-time registers (n=2),2,10000,n_alive,6144.0
+E_registers,5,E pretrained registers,0,10000,fvu,0.4271448388242564
+E_registers,5,E pretrained registers,0,10000,content_fvu,0.44128592867546085
+E_registers,5,E pretrained registers,0,10000,l0,32.0
+E_registers,5,E pretrained registers,0,10000,n_alive,6144.0
+E_registers,5,E pretrained registers,1,10000,fvu,0.4278352488140045
+E_registers,5,E pretrained registers,1,10000,content_fvu,0.4415225273937365
+E_registers,5,E pretrained registers,1,10000,l0,32.0
+E_registers,5,E pretrained registers,1,10000,n_alive,6144.0
+E_registers,5,E pretrained registers,2,10000,fvu,0.4275441320708135
+E_registers,5,E pretrained registers,2,10000,content_fvu,0.4412564957544024
+E_registers,5,E pretrained registers,2,10000,l0,32.0
+E_registers,5,E pretrained registers,2,10000,n_alive,6144.0

@@ -1,0 +1,73 @@
+{
+ "in_scope_expected": 1240,
+ "ok": 1239,
+ "by_site": {
+  "gpt2": {
+   "ok": 310
+  },
+  "pythia-1.4b": {
+   "ok": 310
+  },
+  "qwen-2.5-7b": {
+   "ok": 310
+  },
+  "gemma-2-2b": {
+   "ok": 309,
+   "sha_mismatch_metrics.json": 1
+  }
+ },
+ "first_pass_not_ok": {
+  "gemma-2-2b__shuffle__s4": "sha_mismatch_metrics.json"
+ },
+ "repairs": {
+  "gemma-2-2b__shuffle__s4": {
+   "before": "sha_mismatch_metrics.json",
+   "tried": [
+    [
+     "pc1r-gemma-2-2b-0",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-1",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-2",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-3",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-4",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-5",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-6",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-7",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-8",
+     "sha_mismatch_metrics.json"
+    ],
+    [
+     "pc1r-gemma-2-2b-9",
+     "sha_mismatch_metrics.json"
+    ]
+   ],
+   "after": "sha_mismatch_metrics.json"
+  }
+ },
+ "still_not_ok": [
+  "gemma-2-2b__shuffle__s4"
+ ]
+}

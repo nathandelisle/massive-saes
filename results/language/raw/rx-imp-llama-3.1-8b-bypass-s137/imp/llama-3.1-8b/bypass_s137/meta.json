@@ -1,0 +1,23 @@
+{
+ "model": "llama-3.1-8b",
+ "condition": "bypass",
+ "seed": 137,
+ "config_hash": "d3a5378bdb6c4983",
+ "sae_sha256": "1c2d3ef9ff30cf03afecb98f4df464ea731c8302e787851fc82111827bbd4fb1",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-19-247.ec2.internal",
+  "code_hash": "1e499583cae6494d",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 16,
+ "hidden_state_index": 17,
+ "n_alive_archived_rule": 11942
+}

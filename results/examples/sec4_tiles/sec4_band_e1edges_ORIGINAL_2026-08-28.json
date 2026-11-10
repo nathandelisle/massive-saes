@@ -1,0 +1,101 @@
+{
+ "pythia-70m-deduped": {
+  "lo": 0.03,
+  "hi": 0.1,
+  "n": 38,
+  "frac_alive": 0.018849206349206348,
+  "share_pos_imp": 0.23311763399473429,
+  "sharing_mean": 0.02631578947368421,
+  "sharing_pair": 0.02631578947368421,
+  "dictwide": 0.46924603174603174,
+  "enrichment": 12.367503950878536
+ },
+ "pythia-160m": {
+  "lo": 0.03,
+  "hi": 0.3,
+  "n": 64,
+  "frac_alive": 0.021011162179908074,
+  "share_pos_imp": 0.6592492948537764,
+  "sharing_mean": 0.0,
+  "sharing_pair": 0.0078125,
+  "dictwide": 0.4891661195009849,
+  "enrichment": 31.37614612694692
+ },
+ "gpt2": {
+  "lo": 0.01,
+  "hi": 0.1,
+  "n": 64,
+  "frac_alive": 0.02160702228224173,
+  "share_pos_imp": 0.7358484601078773,
+  "sharing_mean": 0.015625,
+  "sharing_pair": 0.015625,
+  "dictwide": 0.45543551654287645,
+  "enrichment": 34.05598654436769
+ },
+ "pythia-1.4b": {
+  "lo": 0.03,
+  "hi": 0.1,
+  "n": 65,
+  "frac_alive": 0.00992063492063492,
+  "share_pos_imp": 0.6312161880875666,
+  "sharing_mean": 0.0,
+  "sharing_pair": 0.015384615384615385,
+  "dictwide": 0.6385836385836385,
+  "enrichment": 63.62659175922672
+ },
+ "gemma-2-2b": {
+  "lo": 0.03,
+  "hi": 0.3,
+  "n": 82,
+  "frac_alive": 0.010934791305507402,
+  "share_pos_imp": 0.047859295132481536,
+  "sharing_mean": 0.012195121951219513,
+  "sharing_pair": 0.009146341463414634,
+  "dictwide": 0.5884784637951727,
+  "enrichment": 4.3767909048595
+ },
+ "qwen-2.5-7b": {
+  "lo": 0.01,
+  "hi": 0.3,
+  "n": 106,
+  "frac_alive": 0.020796546988424564,
+  "share_pos_imp": 0.812507652228592,
+  "sharing_mean": 0.0,
+  "sharing_pair": 0.007075471698113208,
+  "dictwide": 0.460466941338042,
+  "enrichment": 39.069353805746545
+ },
+ "pythia-6.9b": {
+  "lo": 0.03,
+  "hi": 0.1,
+  "n": 63,
+  "frac_alive": 0.006917755572636433,
+  "share_pos_imp": 0.459815660636641,
+  "sharing_mean": 0.0,
+  "sharing_pair": 0.0,
+  "dictwide": 0.6267706160096629,
+  "enrichment": 66.46890827647444
+ },
+ "llama-3.1-8b": {
+  "lo": 0.03,
+  "hi": 0.3,
+  "n": 60,
+  "frac_alive": 0.006125574272588055,
+  "share_pos_imp": 0.1307361939644586,
+  "sharing_mean": 0.0,
+  "sharing_pair": 0.0,
+  "dictwide": 0.6719754977029097,
+  "enrichment": 21.342683664697866
+ },
+ "gemma-2-9b": {
+  "lo": 0.03,
+  "hi": 0.3,
+  "n": 52,
+  "frac_alive": 0.005414974487139436,
+  "share_pos_imp": 0.011575453195591442,
+  "sharing_mean": 0.0,
+  "sharing_pair": 0.0,
+  "dictwide": 0.5833593668645215,
+  "enrichment": 2.1376745584089347
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "objective": {
+    "dictionary_shared_signed": 0.7209228824273072,
+    "dictionary_shared_absolute": 0.7215549936788875,
+    "top50_reconstruction_ablation_shared_signed": 0.92,
+    "mean_max_cosine": 0.7923753540480479
+  },
+  "native": {
+    "dictionary_shared_signed": 0.7209228824273072,
+    "dictionary_shared_absolute": 0.7215549936788875,
+    "top50_reconstruction_ablation_shared_signed": 0.92,
+    "mean_max_cosine": 0.7923753540480479
+  },
+  "warning": "Not a causal importance inversion test. Compare both directions and all seed pairs."
+}

@@ -1,0 +1,14 @@
+{
+  "model_id": "EleutherAI/pythia-1.4b",
+  "model_revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+  "tokenizer_id": "EleutherAI/pythia-1.4b",
+  "tokenizer_revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+  "corpus": "wikitext-103-v1 train (HF Salesforce/wikitext)",
+  "partition": "RX a1test partition (pkg_rx/partitions.json sha256 c0937c202102694d7c6c121009ce2b9959f348621c8e15207945d9f6ff0349af)",
+  "bos_rule": "tokenizer(text, add_special_tokens=True); the Pythia/GPT-NeoX tokenizer adds no BOS token, so position 0 is the first text token",
+  "train_eval_overlap": "RX partitions use WikiText-103 train articles starting after row 400,000; the SAE training store (first 5M tokens) ends before that row (asserted in rx/prep.py), so they are article-disjoint from SAE training. Overlap with the model's pretraining corpus (the Pile) is not controlled.",
+  "n_sequences": 862,
+  "n_tokens": 65535,
+  "n_articles": 87,
+  "snapshot": ".cache\\huggingface\\hub\\models--EleutherAI--pythia-1.4b\\snapshots\\fedc38a16eea3bd36a96b906d78d11d2ce18ed79"
+}

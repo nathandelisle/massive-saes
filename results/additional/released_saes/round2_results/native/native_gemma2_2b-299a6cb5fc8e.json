@@ -1,0 +1,93 @@
+{
+ "job_id": "gemma2_2b-299a6cb5fc8e",
+ "group": "gemma2_2b",
+ "family": "Gemma Scope",
+ "repo_id": "google/gemma-scope-2b-pt-res",
+ "repo_revision": "fd571b47c1c64851e9b1989792367b9babb4af63",
+ "sae_id": "layer_12/width_16k/average_l0_41",
+ "conversion_func": "gemma_2",
+ "loader": "saelens",
+ "architecture": "jumprelu",
+ "normalization": "none",
+ "d_in": 2304,
+ "d_sae": 16384,
+ "k": null,
+ "apply_b_dec_to_input_used": false,
+ "encoder_centering_corrected": false,
+ "wdec_orientation_corrected": false,
+ "native": {
+  "transposed_to_canonical": {
+   "W_enc": false,
+   "W_dec": false
+  },
+  "source_keys": {
+   "W_enc": "W_enc",
+   "W_dec": "W_dec"
+  },
+  "decoder_row_norm_median": 1.000000014720151,
+  "threshold_key": "threshold",
+  "threshold_median": 4.442454814910889
+ },
+ "native_keys": [
+  "W_dec",
+  "W_enc",
+  "b_dec",
+  "b_enc",
+  "threshold"
+ ],
+ "checks": {
+  "ordinary": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 3.4611255077326205e-07,
+   "reconstruction_rel_diff_same_input": 3.4611255077326205e-07,
+   "reconstruction_max_abs_diff": 0.00013054983793381325,
+   "activation_max_abs_diff": 0.00012962257208926076,
+   "active_jaccard": 1.0,
+   "l0_native": 39.171875,
+   "l0_converted": 39.171875,
+   "mean_row_norm": 141.0737980150884
+  },
+  "high_norm": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 2.2531387572433273e-07,
+   "reconstruction_rel_diff_same_input": 2.2531387572433273e-07,
+   "reconstruction_max_abs_diff": 0.0004683094811070987,
+   "activation_max_abs_diff": 0.00035233791948030557,
+   "active_jaccard": 1.0,
+   "l0_native": 33.6015625,
+   "l0_converted": 33.6015625,
+   "mean_row_norm": 482.42161745248313
+  },
+  "zero": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 2.4260491639549504e-07,
+   "reconstruction_rel_diff_same_input": 2.4260491639549504e-07,
+   "reconstruction_max_abs_diff": 9.722767771336294e-06,
+   "activation_max_abs_diff": 0.0,
+   "active_jaccard": 1.0,
+   "l0_native": 14.0,
+   "l0_converted": 14.0,
+   "mean_row_norm": 0.0
+  },
+  "b_dec": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 0.0,
+   "reconstruction_rel_diff_same_input": 0.0,
+   "reconstruction_max_abs_diff": 0.0,
+   "activation_max_abs_diff": 0.0,
+   "active_jaccard": 1.0,
+   "l0_native": 0.0,
+   "l0_converted": 0.0,
+   "mean_row_norm": 82.56199208715819
+  }
+ },
+ "utc": "2026-09-20T23:14:21Z",
+ "max_reconstruction_rel_diff_own_normalization": 3.4611255077326205e-07,
+ "max_reconstruction_rel_diff": 3.4611255077326205e-07,
+ "min_active_jaccard": 1.0,
+ "verdict": "MATCH"
+}

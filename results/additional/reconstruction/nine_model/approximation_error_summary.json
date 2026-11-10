@@ -1,0 +1,24 @@
+{
+ "claim": "FVU_content / FVU_total = 1/(1 - w1)",
+ "models_covered": [
+  "GPT-2",
+  "Gemma-2-2B",
+  "Gemma-2-9B",
+  "Llama-3.1-8B",
+  "Pythia-1.4B",
+  "Pythia-160M",
+  "Pythia-6.9B",
+  "Pythia-70M",
+  "Qwen-2.5-7B"
+ ],
+ "n_cells": 18,
+ "max_relative_error": 0.001168,
+ "mean_relative_error": 0.00028327777777777775,
+ "worst_cell": "Pythia-70M",
+ "holds_within": "0.2%",
+ "note": "the identity is exact only when PC1 reconstruction error is negligible; the residual below is that approximation, not measurement noise",
+ "excluded": [
+  "Pythia-70M (no held-out decomposition)"
+ ],
+ "sensitivity_warning": "the understatement factor is 1/(1-w1), so its relative error is about dw1/(1-w1). At Qwen's w1 = 0.99888 a change of 0.014 percentage points in w1 moves the factor by 12 percent (w1 .99874 -> 794, .99888 -> 893). Quote it to at most two significant figures and state w1 and its population."
+}

@@ -1,0 +1,79 @@
+{
+  "scope": "training geometry; validation prediction; no test outcomes",
+  "metadata": {
+    "task": "crosscoder",
+    "coordinates": "raw_uncentered",
+    "output_widths": [
+      2048,
+      2048
+    ],
+    "cache_id": "pair-C3a_crosslayer_12_16-5f78b7a43e",
+    "source": {
+      "stream_a": "pythia-1.4b-resid12-9f0e42e673",
+      "stream_b": "pythia-1.4b-resid16-3630757406",
+      "label": "C3a_crosslayer_12_16",
+      "a": {
+        "model": "pythia-1.4b",
+        "base_model": "EleutherAI/pythia-1.4b",
+        "layer": 12,
+        "dtype_stored": "float16",
+        "hooks": "output of block 12",
+        "splits": {
+          "train": "trainx",
+          "validation": "rank",
+          "test": "valid"
+        },
+        "train_rule": "trainx (ext/cache.py)",
+        "n_tokens": {
+          "train": 3001602,
+          "validation": 33058,
+          "test": 33176
+        }
+      },
+      "b": {
+        "model": "pythia-1.4b",
+        "base_model": "EleutherAI/pythia-1.4b",
+        "layer": 16,
+        "dtype_stored": "float16",
+        "hooks": "output of block 16",
+        "splits": {
+          "train": "trainx",
+          "validation": "rank",
+          "test": "valid"
+        },
+        "train_rule": "trainx (ext/cache.py)",
+        "n_tokens": {
+          "train": 3001602,
+          "validation": 33058,
+          "test": 33176
+        }
+      }
+    }
+  },
+  "pc1_shares_by_stream": [
+    0.9576466778197634,
+    0.9180663514207059
+  ],
+  "joint_variance_fractions_top10": [
+    0.9372579108872566,
+    0.0024858146091255758,
+    0.0018226774446118916,
+    0.001328598055628835,
+    0.001061185669197117,
+    0.0008594935093113207,
+    0.0007524615931742674,
+    0.0006837828852762836,
+    0.0005583501448918906,
+    0.0005217505343852445
+  ],
+  "pc_coefficient_second_moment": [
+    [
+      0.4798400500743583,
+      -0.4681809623925462
+    ],
+    [
+      -0.4681809623925462,
+      0.4580584860561841
+    ]
+  ]
+}

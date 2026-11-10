@@ -1,0 +1,232 @@
+{
+  "gemma-2-2b": {
+    "n_alive": {
+      "bypass_s42": 8050,
+      "bypass_s137": 8040,
+      "bypass_s0": 8004,
+      "bypass_s1": 8038,
+      "bypass_s2": 8040,
+      "standard_s42": 7499,
+      "standard_s137": 7475,
+      "standard_s0": 7507,
+      "standard_s1": 7554,
+      "standard_s2": 7573
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/gemma-2-2b_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/gemma-2-2b_standard.json"
+    ],
+    "pc1_var_explained": 0.7814936910523037,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_gemma-2-2b_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_gemma-2-2b_bypass.npz"
+    }
+  },
+  "gemma-2-9b": {
+    "n_alive": {
+      "bypass_s42": 10264,
+      "bypass_s137": 10298,
+      "bypass_s0": 10274,
+      "bypass_s1": 10231,
+      "bypass_s2": 10286,
+      "standard_s42": 9603,
+      "standard_s137": 9752,
+      "standard_s0": 9750,
+      "standard_s1": 9692,
+      "standard_s2": 9610
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/gemma-2-9b_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/gemma-2-9b_standard.json"
+    ],
+    "pc1_var_explained": 0.6999419169339764,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_gemma-2-9b_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_gemma-2-9b_bypass.npz"
+    }
+  },
+  "gpt2": {
+    "n_alive": {
+      "bypass_s42": 3070,
+      "bypass_s137": 3071,
+      "bypass_s0": 3070,
+      "bypass_s1": 3072,
+      "bypass_s2": 3071,
+      "standard_s42": 2962,
+      "standard_s137": 2984,
+      "standard_s0": 3024,
+      "standard_s1": 2957,
+      "standard_s2": 2987
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/gpt2_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/gpt2_standard.json"
+    ],
+    "pc1_var_explained": 0.9702074853199549,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_gpt2_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_gpt2_bypass.npz"
+    }
+  },
+  "llama-3.1-8b": {
+    "n_alive": {
+      "bypass_s42": 11996,
+      "bypass_s137": 11942,
+      "bypass_s0": 11945,
+      "bypass_s1": 12042,
+      "bypass_s2": 11920,
+      "standard_s42": 9795,
+      "standard_s137": 9591,
+      "standard_s0": 9566,
+      "standard_s1": 9726,
+      "standard_s2": 9742
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/llama-3.1-8b_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/llama-3.1-8b_standard.json"
+    ],
+    "pc1_var_explained": 0.9686386042435503,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_llama-3.1-8b_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_llama-3.1-8b_bypass.npz"
+    }
+  },
+  "pythia-1.4b": {
+    "n_alive": {
+      "bypass_s42": 7223,
+      "bypass_s137": 7239,
+      "bypass_s0": 7256,
+      "bypass_s1": 7273,
+      "bypass_s2": 7268,
+      "standard_s42": 6552,
+      "standard_s137": 6563,
+      "standard_s0": 6574,
+      "standard_s1": 6576,
+      "standard_s2": 6571
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-1.4b_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-1.4b_standard.json"
+    ],
+    "pc1_var_explained": 0.96394907893272,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_pythia-1.4b_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_pythia-1.4b_bypass.npz"
+    }
+  },
+  "pythia-160m": {
+    "n_alive": {
+      "bypass_s42": 3066,
+      "bypass_s137": 3061,
+      "bypass_s0": 3065,
+      "bypass_s1": 3063,
+      "bypass_s2": 3060,
+      "standard_s42": 3046,
+      "standard_s137": 3044,
+      "standard_s0": 3050,
+      "standard_s1": 3028,
+      "standard_s2": 3037
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-160m_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-160m_standard.json"
+    ],
+    "pc1_var_explained": 0.9342973183836806,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_pythia-160m_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_pythia-160m_bypass.npz"
+    }
+  },
+  "pythia-6.9b": {
+    "n_alive": {
+      "bypass_s42": 10209,
+      "bypass_s137": 10235,
+      "bypass_s0": 10247,
+      "bypass_s1": 10186,
+      "bypass_s2": 10208,
+      "standard_s42": 9107,
+      "standard_s137": 9140,
+      "standard_s0": 9086,
+      "standard_s1": 9144,
+      "standard_s2": 9027
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-6.9b_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-6.9b_standard.json"
+    ],
+    "pc1_var_explained": 0.9568455376264012,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_pythia-6.9b_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_pythia-6.9b_bypass.npz"
+    }
+  },
+  "pythia-70m-deduped": {
+    "n_alive": {
+      "bypass_s42": 2035,
+      "bypass_s137": 2041,
+      "bypass_s0": 2041,
+      "bypass_s1": 2037,
+      "bypass_s2": 2036,
+      "standard_s42": 2016,
+      "standard_s137": 2025,
+      "standard_s0": 2028,
+      "standard_s1": 2029,
+      "standard_s2": 2028
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-70m-deduped_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/pythia-70m-deduped_standard.json"
+    ],
+    "pc1_var_explained": 0.828950083897039,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_pythia-70m-deduped_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_pythia-70m-deduped_bypass.npz"
+    }
+  },
+  "qwen-2.5-7b": {
+    "n_alive": {
+      "bypass_s42": 7629,
+      "bypass_s137": 7634,
+      "bypass_s0": 7613,
+      "bypass_s1": 7687,
+      "bypass_s2": 7722,
+      "standard_s42": 5097,
+      "standard_s137": 3999,
+      "standard_s0": 4866,
+      "standard_s1": 4838,
+      "standard_s2": 4998
+    },
+    "source": [
+      "_sweep/c2-all9/results/a5_metric_battery/qwen-2.5-7b_bypass.json",
+      "_sweep/c2-all9/results/a5_metric_battery/qwen-2.5-7b_standard.json"
+    ],
+    "pc1_var_explained": 0.9988994768328849,
+    "a5_npz": {
+      "standard": "c2-all9/results/a5_metric_battery/features_qwen-2.5-7b_standard.npz",
+      "bypass": "c2-all9/results/a5_metric_battery/features_qwen-2.5-7b_bypass.npz"
+    }
+  },
+  "llama-3.1-70b": {
+    "n_alive": {
+      "standard_s42": 4525,
+      "standard_s137": 6640,
+      "standard_s0": 4761,
+      "standard_s1": 7215,
+      "standard_s2": 6490,
+      "bypass_s42": 14321,
+      "bypass_s137": 14256,
+      "bypass_s0": 14285,
+      "bypass_s1": 14235,
+      "bypass_s2": 14247
+    },
+    "source": [
+      "l70_std.json",
+      "l70_byp.json"
+    ],
+    "pc1_var_explained": 0.978031189416373,
+    "a5_npz": {
+      "standard": "rx-modal-70b/results/results/a5_metric_battery/features_llama-3.1-70b_standard.npz",
+      "bypass": "rx-modal-70b/results/results/a5_metric_battery/features_llama-3.1-70b_bypass.npz"
+    }
+  }
+}

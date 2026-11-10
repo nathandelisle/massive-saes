@@ -1,0 +1,25 @@
+{
+  "activation": "relu_l1",
+  "features": 8192,
+  "k": 64,
+  "data_seed": 101,
+  "scale_mode": "global",
+  "penalty": "block_sum",
+  "l1": 0.003,
+  "ridge": 1e-05,
+  "direction_seed": 101,
+  "fit_tokens": 50000,
+  "steps": 20000,
+  "batch_size": 4096,
+  "learning_rate": 0.0003,
+  "evaluate_every": 500,
+  "eval_batch_size": 1024,
+  "validation_tokens": 50000,
+  "task": "crosscoder",
+  "seed": 42,
+  "variant": "plain",
+  "output_widths": [
+    2048,
+    2048
+  ]
+}

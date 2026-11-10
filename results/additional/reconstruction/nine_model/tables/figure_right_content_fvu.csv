@@ -1,0 +1,17 @@
+model,arm,content_fvu_heldout_mean,content_fvu_heldout_min,content_fvu_heldout_max,n_seeds
+GPT-2,bypass,0.13746,0.13728,0.13756,5
+GPT-2,standard_and_posthoc,0.14055,0.1402,0.14081,5
+Gemma-2-2B,bypass,0.20586,0.20575,0.20594,5
+Gemma-2-2B,standard_and_posthoc,0.20827,0.208,0.20876,5
+Gemma-2-9B,bypass,0.21528,0.2152,0.21532,3
+Gemma-2-9B,standard_and_posthoc,0.21699,0.21697,0.217,3
+Llama-3.1-8B,bypass,0.24258,0.24252,0.24269,3
+Llama-3.1-8B,standard_and_posthoc,0.2551,0.25508,0.25514,3
+Pythia-1.4B,bypass,0.22294,0.22283,0.22308,5
+Pythia-1.4B,standard_and_posthoc,0.2265,0.22628,0.22673,5
+Pythia-160M,bypass,0.14662,0.1465,0.14678,5
+Pythia-160M,standard_and_posthoc,0.14874,0.14861,0.14882,5
+Pythia-6.9B,bypass,0.27831,0.2782,0.27837,3
+Pythia-6.9B,standard_and_posthoc,0.28363,0.28342,0.28379,3
+Qwen-2.5-7B,bypass,0.21791,0.21783,0.21801,3
+Qwen-2.5-7B,standard_and_posthoc,0.32978,0.32219,0.34127,3

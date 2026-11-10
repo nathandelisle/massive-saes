@@ -1,0 +1,61 @@
+{
+ "arm": "D_ttr_n2",
+ "n_neurons": 2,
+ "selection": {
+  "n_neurons": 2,
+  "layers": {
+   "8": [
+    258,
+    1678
+   ]
+  },
+  "scores_top": [
+   79.963194093136,
+   76.62975669085658
+  ]
+ },
+ "validation": {
+  "cls_cosine_baseline_vs_intervened": 0.968080997467041,
+  "wrapper_matches_hf_max_abs_diff": 0.0,
+  "patch_tokens_baseline": 256,
+  "patch_tokens_intervened": 256,
+  "token_counts_match": true,
+  "outlier_frac_baseline": 0.0123291015625,
+  "outlier_frac_intervened": 0.0,
+  "outlier_frac_ratio": 0.0,
+  "max_patch_norm_baseline": 598.5112915039062,
+  "max_patch_norm_intervened": 194.8960723876953,
+  "added_register_mean_norm": 436.78094482421875,
+  "register_carries_more_than_max_patch": true,
+  "median_patch_norm_baseline": 25.069156646728516,
+  "detect_layer": -2,
+  "norm_mult": 10.0,
+  "variant": "literal",
+  "per_neuron_max": false,
+  "n_registers": 1,
+  "selected_layers": {
+   "8": 2
+  },
+  "passes": true
+ },
+ "patch_geometry": {
+  "median_patch_norm": 7.845059877225034,
+  "max_over_median": 18.56910436545737,
+  "frac_norm_gt_3x": 0.0227813720703125,
+  "frac_norm_gt_10x": 0.01519775390625,
+  "pc1_var_share": 0.7566281047357122,
+  "outlier_pc1_energy_frac": 0.9728853118616868,
+  "n_rows": 131072
+ },
+ "added_register_geometry_separate": {
+  "median_patch_norm": 14.850116309214318,
+  "max_over_median": 3.4672271701496995,
+  "frac_norm_gt_3x": 0.01953125,
+  "frac_norm_gt_10x": 0.0,
+  "pc1_var_share": 0.97335469559333,
+  "outlier_pc1_energy_frac": 0.11845389076634172,
+  "n_rows": 512
+ },
+ "site": 9,
+ "grid": 256
+}

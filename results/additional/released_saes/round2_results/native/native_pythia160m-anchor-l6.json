@@ -1,0 +1,90 @@
+{
+ "job_id": "pythia160m-anchor-l6",
+ "group": "pythia160m",
+ "family": "EleutherAI Pythia",
+ "repo_id": "EleutherAI/sae-pythia-160m-32k",
+ "repo_revision": "2046768ae0c8cb69a2e8ed64f2eafb9f8c5fa294",
+ "sae_id": "layers.6",
+ "conversion_func": null,
+ "loader": "sparsify",
+ "architecture": "topk",
+ "normalization": "none",
+ "d_in": 768,
+ "d_sae": 32768,
+ "k": 32,
+ "apply_b_dec_to_input_used": true,
+ "encoder_centering_corrected": true,
+ "wdec_orientation_corrected": true,
+ "native": {
+  "transposed_to_canonical": {
+   "W_enc": true,
+   "W_dec": false
+  },
+  "source_keys": {
+   "W_enc": "encoder.weight",
+   "W_dec": "W_dec"
+  },
+  "decoder_row_norm_median": 0.9999999299221036
+ },
+ "native_keys": [
+  "W_dec",
+  "b_dec",
+  "encoder.bias",
+  "encoder.weight"
+ ],
+ "checks": {
+  "ordinary": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 2.924383472294562e-07,
+   "reconstruction_rel_diff_same_input": 2.924383472294562e-07,
+   "reconstruction_max_abs_diff": 4.804983460005019e-06,
+   "activation_max_abs_diff": 1.0338405482812618e-05,
+   "active_jaccard": 1.0,
+   "l0_native": 32.0,
+   "l0_converted": 32.0,
+   "mean_row_norm": 18.34263033823447
+  },
+  "high_norm": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 3.01867253211295e-07,
+   "reconstruction_rel_diff_same_input": 3.01867253211295e-07,
+   "reconstruction_max_abs_diff": 0.00021756149521934276,
+   "activation_max_abs_diff": 0.0002613167342815359,
+   "active_jaccard": 1.0,
+   "l0_native": 32.0,
+   "l0_converted": 32.0,
+   "mean_row_norm": 322.7353384856532
+  },
+  "zero": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 1.394350652057595e-07,
+   "reconstruction_rel_diff_same_input": 1.394350652057595e-07,
+   "reconstruction_max_abs_diff": 4.47641935963361e-07,
+   "activation_max_abs_diff": 3.354443585124045e-07,
+   "active_jaccard": 1.0,
+   "l0_native": 32.0,
+   "l0_converted": 32.0,
+   "mean_row_norm": 0.0
+  },
+  "b_dec": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 2.159653383463576e-08,
+   "reconstruction_rel_diff_same_input": 2.159653383463576e-08,
+   "reconstruction_max_abs_diff": 9.238940323896827e-08,
+   "activation_max_abs_diff": 0.0,
+   "active_jaccard": 1.0,
+   "l0_native": 7.0,
+   "l0_converted": 7.0,
+   "mean_row_norm": 10.310555756293995
+  }
+ },
+ "utc": "2026-09-20T23:15:41Z",
+ "max_reconstruction_rel_diff_own_normalization": 3.01867253211295e-07,
+ "max_reconstruction_rel_diff": 3.01867253211295e-07,
+ "min_active_jaccard": 1.0,
+ "verdict": "MATCH"
+}

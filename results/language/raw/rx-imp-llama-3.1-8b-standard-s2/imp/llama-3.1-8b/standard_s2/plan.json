@@ -1,0 +1,16 @@
+{
+ "rule": "16 keyed draws per resampling operator; universe = all alive if the measured cost fits 75% of the remaining budget, else U; mean and validation zero/grad always; validation resampling only if the budget covers it",
+ "hours": 8.0,
+ "min_draws": 4,
+ "max_draws": 16,
+ "zero_rank_seconds": 2147.071446657181,
+ "zero_rank_items": 645646,
+ "draws": 16,
+ "mean": true,
+ "resample_universe": "U",
+ "universe_source": "runtime rule",
+ "reduced_protocol": false,
+ "lean_protocol": true,
+ "valid_resampling": false,
+ "universe_rule": "U = top-256 alive by rank-partition zero ablation  UNION  top-256 by gradient x input magnitude  UNION  top-256 by IG magnitude  UNION  the dense PC1 cluster (cos^2 > 5 x alive median)  UNION  256 uniformly random alive features (seeded by SAE seed); under the reduced (70B) protocol U is built before any ablation, so the zero list is absent. Fixed before any resampling outcome exists. Features outside U are NOT_EVALUATED (NaN), never zero. On the small models every alive feature is resampled, which measures how much of the full resampling top-50 U would have contained."
+}

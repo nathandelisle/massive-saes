@@ -1,0 +1,105 @@
+{
+ "job_id": "gpt2-15ae48b36d1a",
+ "group": "gpt2",
+ "family": "OpenAI GPT-2",
+ "repo_id": "jbloom/GPT2-Small-OAI-v5-32k-resid-post-SAEs",
+ "repo_revision": "21df74db7b9f690cd2403a20485cf75f46330d0d",
+ "sae_id": "blocks.8.hook_resid_post",
+ "conversion_func": null,
+ "loader": "saelens",
+ "architecture": "topk",
+ "normalization": "layer_norm",
+ "d_in": 768,
+ "d_sae": 32768,
+ "k": 32,
+ "apply_b_dec_to_input_used": true,
+ "encoder_centering_corrected": false,
+ "wdec_orientation_corrected": false,
+ "native": {
+  "transposed_to_canonical": {
+   "W_enc": false,
+   "W_dec": false
+  },
+  "source_keys": {
+   "W_enc": "W_enc",
+   "W_dec": "W_dec"
+  },
+  "decoder_row_norm_median": 0.9994565882958113
+ },
+ "native_keys": [
+  "W_dec",
+  "W_enc",
+  "b_dec",
+  "b_enc",
+  "sparsity"
+ ],
+ "checks": {
+  "ordinary": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0006539772525811364,
+   "reconstruction_rel_diff": 0.005165625610706689,
+   "reconstruction_rel_diff_same_input": 1.1605622016973174e-07,
+   "reconstruction_max_abs_diff": 0.15502195886622694,
+   "activation_max_abs_diff": 0.7465145187381103,
+   "active_jaccard": 0.9987800414785897,
+   "l0_native": 32.0,
+   "l0_converted": 32.0,
+   "mean_row_norm": 120.88725374076252,
+   "degenerate_for_this_release": false
+  },
+  "high_norm": {
+   "n_rows": 256,
+   "input_space_rel_diff": 0.0006524392259065441,
+   "reconstruction_rel_diff": 0.002483912115285148,
+   "reconstruction_rel_diff_same_input": 1.477517456929886e-07,
+   "reconstruction_max_abs_diff": 0.15129350540497333,
+   "activation_max_abs_diff": 0.7359873968222318,
+   "active_jaccard": 0.9948855333658061,
+   "l0_native": 32.0,
+   "l0_converted": 31.9921875,
+   "mean_row_norm": 1981.3327544876065,
+   "degenerate_for_this_release": false
+  },
+  "zero": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.0,
+   "reconstruction_rel_diff": 2.127023855754338e-07,
+   "reconstruction_rel_diff_same_input": 2.127023855754338e-07,
+   "reconstruction_max_abs_diff": 1.3397687812499726e-06,
+   "activation_max_abs_diff": 2.8039026487292062e-06,
+   "active_jaccard": 1.0,
+   "l0_native": 14.0,
+   "l0_converted": 14.0,
+   "mean_row_norm": 0.0,
+   "degenerate_for_this_release": true
+  },
+  "b_dec": {
+   "n_rows": 1,
+   "input_space_rel_diff": 0.000661901887502779,
+   "reconstruction_rel_diff": 0.0002839441942737637,
+   "reconstruction_rel_diff_same_input": 3.556017320729323e-08,
+   "reconstruction_max_abs_diff": 0.002006919333584989,
+   "activation_max_abs_diff": 0.007728347044946876,
+   "active_jaccard": 1.0,
+   "l0_native": 3.0,
+   "l0_converted": 3.0,
+   "mean_row_norm": 27.15232628683756,
+   "degenerate_for_this_release": false
+  }
+ },
+ "utc": "2026-09-20T23:26:33Z",
+ "gpt2_normalization": {
+  "saelens_rule": "x-mean(x); divide by torch.std(x) (unbiased, ddof=1)",
+  "paper_rule": "x-mean(x); divide by ||x-mean(x)||/sqrt(d)  (OpenAI 2406.04093 \u00a72.1)",
+  "max_abs_diff": 0.010828823540244059,
+  "median_norm_ratio": 0.9993464149574158,
+  "expected_ddof_ratio": 1.0006516781401997
+ },
+ "probes_excluded_as_degenerate": [
+  "zero"
+ ],
+ "max_reconstruction_rel_diff_own_normalization": 0.005165625610706689,
+ "max_reconstruction_rel_diff": 1.477517456929886e-07,
+ "min_active_jaccard": 0.9948855333658061,
+ "verdict": "CLOSE"
+}

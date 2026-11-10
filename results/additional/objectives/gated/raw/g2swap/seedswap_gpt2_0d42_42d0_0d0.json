@@ -1,0 +1,341 @@
+{
+ "model": "gpt2",
+ "l1_coef": 5.62397,
+ "massive_geometry": {
+  "n_rows": 100000,
+  "n_massive": 1341,
+  "massive_fraction": 0.01341,
+  "median_row_norm": 75.2451400756836,
+  "massive_norm_median": 2959.0146484375,
+  "massive_norm_over_median": 39.32499355388592,
+  "cos_to_massive_mean_median": 0.9999804496765137,
+  "cos_to_massive_mean_p10": 0.9999633431434631,
+  "uncentered_energy_top1": 0.9999525547027588,
+  "uncentered_energy_top5": 0.9999787211418152,
+  "centered_var_top1": 0.5481101870536804,
+  "centered_var_top5": 0.7905634045600891,
+  "centered_participation_ratio": 3.092701728059425,
+  "within_massive_var_over_mean_sq": 9.347976128837275e-05,
+  "pc1_coef_massive_median": 2958.9640566685653,
+  "pc1_coef_massive_cv": 0.006797934277786262,
+  "pc1_coef_over_rms_norm": 8.40892405004485
+ },
+ "runs": [
+  {
+   "init_seed": 0,
+   "data_seed": 0,
+   "source": "archived",
+   "label": "archived i0 d0",
+   "l0_exact": 61.10245,
+   "rows": 100000,
+   "n_alive": 2284,
+   "n_never_fired": 741,
+   "fvu_total": 0.005797477900371942,
+   "fvu_content": 0.17652747242010688,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 60.47517,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2279,
+   "heldout_n_never_fired": 735,
+   "heldout_fvu_total": 0.005553063915099154,
+   "heldout_fvu_content": 0.17555629922338106,
+   "heldout_w1_rows": 0.9685018943786969,
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 3.0,
+    "massive_canonical_l1_mean": 9594.4931640625,
+    "massive_canonical_pc1_fraction_mean": 1.9854422807693481,
+    "massive_band_active_atoms_mean": 11.83370590209961,
+    "massive_band_l1_mean": 35425.92578125,
+    "massive_band_pc1_fraction_mean": -1.0404951572418213,
+    "massive_content_active_atoms_mean": 361.8023986816406,
+    "massive_content_l1_mean": 27699.333984375,
+    "massive_content_pc1_fraction_mean": 0.055053066462278366,
+    "massive_atoms_for_90pct_pc1_median": 1.0,
+    "massive_total_l1_mean": 72719.7578125,
+    "massive_reconstructed_pc1_coef_mean": 2971.068115234375,
+    "n_massive_specific_atoms": 59,
+    "massive_specific_by_class": {
+     "canonical": 2,
+     "band": 5,
+     "content": 52
+    }
+   },
+   "init_similarity": null,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 682.561767578125,
+     "fvu": 0.005157832987606525,
+     "l0": 60.334716796875
+    },
+    {
+     "step": 18000,
+     "mse": 700.5914306640625,
+     "fvu": 0.004556209780275822,
+     "l0": 62.315673828125
+    },
+    {
+     "step": 19000,
+     "mse": 669.6280517578125,
+     "fvu": 0.00655272277072072,
+     "l0": 60.197998046875
+    }
+   ]
+  },
+  {
+   "init_seed": 42,
+   "data_seed": 42,
+   "source": "archived",
+   "label": "archived i42 d42",
+   "l0_exact": 54.61517,
+   "rows": 100000,
+   "n_alive": 2906,
+   "n_never_fired": 83,
+   "fvu_total": 0.00487077797126888,
+   "fvu_content": 0.1488611995242415,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 53.83106,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2901,
+   "heldout_n_never_fired": 80,
+   "heldout_fvu_total": 0.004654216486854004,
+   "heldout_fvu_content": 0.14773516055651567,
+   "heldout_w1_rows": 0.9685018943786969,
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 0.0,
+    "massive_canonical_l1_mean": 0.0,
+    "massive_canonical_pc1_fraction_mean": 0.0,
+    "massive_band_active_atoms_mean": 59.568233489990234,
+    "massive_band_l1_mean": 15229.0107421875,
+    "massive_band_pc1_fraction_mean": 0.9995625019073486,
+    "massive_content_active_atoms_mean": 4.562266826629639,
+    "massive_content_l1_mean": 24.920368194580078,
+    "massive_content_pc1_fraction_mean": 0.0004374634299892932,
+    "massive_atoms_for_90pct_pc1_median": 46.0,
+    "massive_total_l1_mean": 15253.9326171875,
+    "massive_reconstructed_pc1_coef_mean": 2966.265380859375,
+    "n_massive_specific_atoms": 57,
+    "massive_specific_by_class": {
+     "canonical": 0,
+     "band": 57,
+     "content": 0
+    }
+   },
+   "init_similarity": null,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 616.0650634765625,
+     "fvu": 0.004430397879332304,
+     "l0": 55.720947265625
+    },
+    {
+     "step": 18000,
+     "mse": 611.8324584960938,
+     "fvu": 0.0046919588930904865,
+     "l0": 54.9638671875
+    },
+    {
+     "step": 19000,
+     "mse": 615.8887939453125,
+     "fvu": 0.004955709911882877,
+     "l0": 55.911865234375
+    }
+   ]
+  },
+  {
+   "init_seed": 0,
+   "data_seed": 42,
+   "source": "trained_here",
+   "label": "trained i0 d42",
+   "l0_exact": 54.6109,
+   "rows": 100000,
+   "n_alive": 2935,
+   "n_never_fired": 61,
+   "fvu_total": 0.004857047722345329,
+   "fvu_content": 0.14844190968227555,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 53.79734,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2934,
+   "heldout_n_never_fired": 52,
+   "heldout_fvu_total": 0.004640308139561799,
+   "heldout_fvu_content": 0.1472933791082313,
+   "heldout_w1_rows": 0.9685018943786969,
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 0.0,
+    "massive_canonical_l1_mean": 0.0,
+    "massive_canonical_pc1_fraction_mean": 0.0,
+    "massive_band_active_atoms_mean": 56.17897033691406,
+    "massive_band_l1_mean": 14813.61328125,
+    "massive_band_pc1_fraction_mean": 0.9997242093086243,
+    "massive_content_active_atoms_mean": 3.8844146728515625,
+    "massive_content_l1_mean": 21.720808029174805,
+    "massive_content_pc1_fraction_mean": 0.000275932892691344,
+    "massive_atoms_for_90pct_pc1_median": 43.0,
+    "massive_total_l1_mean": 14835.3349609375,
+    "massive_reconstructed_pc1_coef_mean": 2966.360107421875,
+    "n_massive_specific_atoms": 56,
+    "massive_specific_by_class": {
+     "canonical": 0,
+     "band": 56,
+     "content": 0
+    }
+   },
+   "init_similarity": null,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 613.4517822265625,
+     "fvu": 0.004411604721099138,
+     "l0": 55.934814453125
+    },
+    {
+     "step": 18000,
+     "mse": 609.148193359375,
+     "fvu": 0.004671373870223761,
+     "l0": 55.04541015625
+    },
+    {
+     "step": 19000,
+     "mse": 613.6189575195312,
+     "fvu": 0.004937445744872093,
+     "l0": 55.965087890625
+    }
+   ]
+  },
+  {
+   "init_seed": 42,
+   "data_seed": 0,
+   "source": "trained_here",
+   "label": "trained i42 d0",
+   "l0_exact": 54.48365,
+   "rows": 100000,
+   "n_alive": 2930,
+   "n_never_fired": 71,
+   "fvu_total": 0.004867504301403465,
+   "fvu_content": 0.14876194618126268,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 53.705885,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2929,
+   "heldout_n_never_fired": 61,
+   "heldout_fvu_total": 0.00465538830825038,
+   "heldout_fvu_content": 0.1477731977716187,
+   "heldout_w1_rows": 0.9685018943786969,
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 0.0,
+    "massive_canonical_l1_mean": 0.0,
+    "massive_canonical_pc1_fraction_mean": 0.0,
+    "massive_band_active_atoms_mean": 59.322147369384766,
+    "massive_band_l1_mean": 15159.62109375,
+    "massive_band_pc1_fraction_mean": 0.9992125034332275,
+    "massive_content_active_atoms_mean": 6.102908134460449,
+    "massive_content_l1_mean": 35.068214416503906,
+    "massive_content_pc1_fraction_mean": 0.0007875287556089461,
+    "massive_atoms_for_90pct_pc1_median": 46.0,
+    "massive_total_l1_mean": 15194.6904296875,
+    "massive_reconstructed_pc1_coef_mean": 2966.75732421875,
+    "n_massive_specific_atoms": 58,
+    "massive_specific_by_class": {
+     "canonical": 0,
+     "band": 58,
+     "content": 0
+    }
+   },
+   "init_similarity": null,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 610.71533203125,
+     "fvu": 0.004614919889718294,
+     "l0": 55.83544921875
+    },
+    {
+     "step": 18000,
+     "mse": 611.6483154296875,
+     "fvu": 0.003977779299020767,
+     "l0": 55.482177734375
+    },
+    {
+     "step": 19000,
+     "mse": 607.63232421875,
+     "fvu": 0.005946056451648474,
+     "l0": 54.505126953125
+    }
+   ]
+  },
+  {
+   "init_seed": 0,
+   "data_seed": 0,
+   "source": "trained_here",
+   "label": "trained i0 d0",
+   "l0_exact": 61.10245,
+   "rows": 100000,
+   "n_alive": 2284,
+   "n_never_fired": 741,
+   "fvu_total": 0.005797477900371942,
+   "fvu_content": 0.17652747242010688,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 60.47517,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2279,
+   "heldout_n_never_fired": 735,
+   "heldout_fvu_total": 0.005553063915099154,
+   "heldout_fvu_content": 0.17555629922338106,
+   "heldout_w1_rows": 0.9685018943786969,
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 3.0,
+    "massive_canonical_l1_mean": 9594.4931640625,
+    "massive_canonical_pc1_fraction_mean": 1.9854422807693481,
+    "massive_band_active_atoms_mean": 11.83370590209961,
+    "massive_band_l1_mean": 35425.92578125,
+    "massive_band_pc1_fraction_mean": -1.0404951572418213,
+    "massive_content_active_atoms_mean": 361.8023986816406,
+    "massive_content_l1_mean": 27699.333984375,
+    "massive_content_pc1_fraction_mean": 0.055053066462278366,
+    "massive_atoms_for_90pct_pc1_median": 1.0,
+    "massive_total_l1_mean": 72719.7578125,
+    "massive_reconstructed_pc1_coef_mean": 2971.068115234375,
+    "n_massive_specific_atoms": 59,
+    "massive_specific_by_class": {
+     "canonical": 2,
+     "band": 5,
+     "content": 52
+    }
+   },
+   "init_similarity": null,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 682.561767578125,
+     "fvu": 0.005157832987606525,
+     "l0": 60.334716796875
+    },
+    {
+     "step": 18000,
+     "mse": 700.5914306640625,
+     "fvu": 0.004556209780275822,
+     "l0": 62.315673828125
+    },
+    {
+     "step": 19000,
+     "mse": 669.6280517578125,
+     "fvu": 0.00655272277072072,
+     "l0": 60.197998046875
+    }
+   ]
+  }
+ ],
+ "minutes": 12.106610306104024
+}

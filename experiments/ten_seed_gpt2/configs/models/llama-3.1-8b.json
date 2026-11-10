@@ -1,0 +1,19 @@
+{
+  "name": "llama-3.1-8b",
+  "lm": {
+    "model_path": "meta-llama/Llama-3.1-8B",
+    "revision": "d04e592bb4f6aa9cfee91e2e20afa771667e1d4b",
+    "block_path": "model.layers",
+    "block_index": 16,
+    "dtype": "bfloat16",
+    "attn_implementation": "eager"
+  },
+  "provenance": "Model/hook/revision copied from supplied morning-bundle site.json. New campaign uses explicit bf16 + eager; historical results retain their own precision.",
+  "training": {
+    "width": 16384,
+    "k": 64,
+    "steps": 20000,
+    "batch": 4096,
+    "lr": 0.0003
+  }
+}

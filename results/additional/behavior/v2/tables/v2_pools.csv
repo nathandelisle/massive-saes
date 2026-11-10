@@ -1,0 +1,11 @@
+model,condition,archive_id_overlap,archive_of,spearman_over_common,status,note
+gemma-2-2b,standard,48,50,0.7597886016115276,CLOSE,"seed 42 only; membership defines the pool, ordering does not"
+gemma-2-2b,bypass,49,50,0.7391457255090249,CLOSE,"seed 42 only; membership defines the pool, ordering does not"
+gpt2,standard,50,50,0.9131507454003314,IDENTICAL,"seed 42 only; membership defines the pool, ordering does not"
+gpt2,bypass,49,50,0.8815045197797868,CLOSE,"seed 42 only; membership defines the pool, ordering does not"
+pythia-1.4b,standard,50,50,0.9781980230759455,IDENTICAL,"seed 42 only; membership defines the pool, ordering does not"
+pythia-1.4b,bypass,48,50,0.9709135179945592,CLOSE,"seed 42 only; membership defines the pool, ordering does not"
+pythia-160m,standard,49,50,0.5093271722759543,CLOSE,"seed 42 only; membership defines the pool, ordering does not"
+pythia-160m,bypass,44,50,0.38617506230002774,CLOSE,"seed 42 only; membership defines the pool, ordering does not"
+qwen-2.5-7b,standard,50,50,0.9928997114350218,IDENTICAL,"seed 42 only; membership defines the pool, ordering does not"
+qwen-2.5-7b,bypass,49,50,0.9900946118150863,CLOSE,"seed 42 only; membership defines the pool, ordering does not"

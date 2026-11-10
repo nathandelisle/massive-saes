@@ -1,0 +1,42 @@
+{
+  "std": {
+    "top50_share": {
+      "zero_ablation": 0.08,
+      "mean_ablation": 0.04,
+      "grad_x_input": 0.08,
+      "integrated_grads": 0.18
+    },
+    "top50_jaccard_vs_zero": {
+      "zero_ablation": 1.0,
+      "mean_ablation": 0.8867924528301887,
+      "grad_x_input": 0.6949152542372882,
+      "integrated_grads": 0.5384615384615384
+    },
+    "spearman_vs_zero": {
+      "zero_ablation": 1.0,
+      "mean_ablation": 0.9821623756418749,
+      "grad_x_input": 0.36196384466354836,
+      "integrated_grads": 0.4679751600577215
+    }
+  },
+  "byp": {
+    "top50_share": {
+      "zero_ablation": 0.92,
+      "mean_ablation": 0.9,
+      "grad_x_input": 0.92,
+      "integrated_grads": 0.98
+    },
+    "top50_jaccard_vs_zero": {
+      "zero_ablation": 1.0,
+      "mean_ablation": 0.9607843137254902,
+      "grad_x_input": 0.25,
+      "integrated_grads": 0.3698630136986301
+    },
+    "spearman_vs_zero": {
+      "zero_ablation": 1.0,
+      "mean_ablation": 0.9824725092978438,
+      "grad_x_input": 0.334286242797181,
+      "integrated_grads": 0.444957600212815
+    }
+  }
+}

@@ -1,0 +1,271 @@
+{
+ "gate1": {
+  "max_abs": 0.0,
+  "pass_": true,
+  "what": "prefix capture == hidden_states[b+1]"
+ },
+ "gate2": {
+  "identity_max_abs_logit": 0.0,
+  "proj_restore_max_abs_logit_info": 0.25,
+  "tol": 0.03,
+  "proj_restore_elements_beyond_rounding_bound": 0,
+  "proj_restore_frac_elements_changed": 0.00010454157745698467,
+  "pass_": true
+ },
+ "gate3_splice_equals_v3": {
+  "residual_elements_beyond_rounding_bound": 0,
+  "residual_frac_elements_differing": 0.0,
+  "residual_max_abs": 0.0,
+  "max_abs_logit_info": 0.0,
+  "pass_": true
+ },
+ "pc1_leakage": {
+  "mean_sq_recon_on_v1_over_mean_sq_coef": 34170.953125,
+  "mode": "standard",
+  "note": "bypass: the SAE output's PC1 component relative to the routed one"
+ },
+ "gate4": {
+  "max_row_support": 64,
+  "k": 64,
+  "l0_mean": 63.754150390625,
+  "n_targets": 590,
+  "pass_": true
+ },
+ "gate5": {
+  "finite": true,
+  "dtype": "torch.bfloat16",
+  "final_logit_softcapping": 30.0,
+  "attn_impl": "eager",
+  "pass_": true
+ },
+ "gate7": {
+  "max_abs": 0.000337749719619751,
+  "tol": 0.11037628173828125,
+  "noise_floor": 0.00048828125,
+  "pass_": true,
+  "features": [
+   {
+    "feature": 51,
+    "engine": -0.004759227856993675,
+    "full_forward": -0.004798613488674164,
+    "full_forward_per_seq": -0.004802338778972626,
+    "cls": "rare"
+   },
+   {
+    "feature": 53,
+    "engine": -0.056674592196941376,
+    "full_forward": -0.05665304511785507,
+    "full_forward_per_seq": -0.056677598506212234,
+    "cls": "rare"
+   },
+   {
+    "feature": 60,
+    "engine": -0.03483901172876358,
+    "full_forward": -0.03477063775062561,
+    "full_forward_per_seq": -0.03484494239091873,
+    "cls": "rare"
+   },
+   {
+    "feature": 66,
+    "engine": 0.0974104106426239,
+    "full_forward": 0.09744194149971008,
+    "full_forward_per_seq": 0.09746359288692474,
+    "cls": "rare"
+   },
+   {
+    "feature": 399,
+    "engine": 2.105238765478134,
+    "full_forward": 2.105304718017578,
+    "full_forward_per_seq": 2.105342671275139,
+    "cls": "dense"
+   },
+   {
+    "feature": 805,
+    "engine": -3.459959328174591,
+    "full_forward": -3.4601287841796875,
+    "full_forward_per_seq": -3.460250645875931,
+    "cls": "dense"
+   },
+   {
+    "feature": 4825,
+    "engine": 11.477283626794815,
+    "full_forward": 11.476945877075195,
+    "full_forward_per_seq": 11.476878255605698,
+    "cls": "dense"
+   },
+   {
+    "feature": 5759,
+    "engine": -0.05074945092201233,
+    "full_forward": -0.05077705532312393,
+    "full_forward_per_seq": -0.050718583166599274,
+    "cls": "random"
+   },
+   {
+    "feature": 6296,
+    "engine": 0.013111788779497147,
+    "full_forward": 0.012947620823979378,
+    "full_forward_per_seq": 0.012881041504442692,
+    "cls": "random"
+   },
+   {
+    "feature": 8132,
+    "engine": 108.91161632537842,
+    "full_forward": 108.91143798828125,
+    "full_forward_per_seq": 108.91094970703125,
+    "cls": "dense"
+   },
+   {
+    "feature": 8273,
+    "engine": 0.09759337222203612,
+    "full_forward": 0.09756288677453995,
+    "full_forward_per_seq": 0.09752494981512427,
+    "cls": "random"
+   },
+   {
+    "feature": 8695,
+    "engine": -0.15054114256054163,
+    "full_forward": -0.15036724507808685,
+    "full_forward_per_seq": -0.15041792951524258,
+    "cls": "random"
+   }
+  ],
+  "dtype": "torch.float32",
+  "precision_of_check": "float32 (upcast for the logic check)",
+  "half_precision_info": {
+   "max_abs": 2.7949600219726562,
+   "noise_floor": 1.9846231937408447,
+   "features": [
+    {
+     "feature": 24,
+     "engine": 1.788480281829834,
+     "full_forward": 2.0058178901672363,
+     "full_forward_per_seq": 1.945451259613037,
+     "cls": "rare"
+    },
+    {
+     "feature": 26,
+     "engine": -0.09914341568946838,
+     "full_forward": 0.5235503911972046,
+     "full_forward_per_seq": 0.2861306667327881,
+     "cls": "rare"
+    },
+    {
+     "feature": 399,
+     "engine": 3.1856610029935837,
+     "full_forward": 3.9069161415100098,
+     "full_forward_per_seq": 1.922292947769165,
+     "cls": "dense"
+    },
+    {
+     "feature": 805,
+     "engine": -4.833964824676514,
+     "full_forward": -4.3159613609313965,
+     "full_forward_per_seq": -2.6316591650247574,
+     "cls": "dense"
+    },
+    {
+     "feature": 4825,
+     "engine": 10.642531529068947,
+     "full_forward": 13.077434539794922,
+     "full_forward_per_seq": 12.917844265699387,
+     "cls": "dense"
+    },
+    {
+     "feature": 5758,
+     "engine": -0.19624263048171997,
+     "full_forward": -0.5094590187072754,
+     "full_forward_per_seq": 0.07497067749500275,
+     "cls": "random"
+    },
+    {
+     "feature": 6293,
+     "engine": -0.4133651554584503,
+     "full_forward": -1.1004167795181274,
+     "full_forward_per_seq": -0.7232948541641235,
+     "cls": "random"
+    },
+    {
+     "feature": 8132,
+     "engine": 107.74463653564453,
+     "full_forward": 110.53959655761719,
+     "full_forward_per_seq": 109.65546417236328,
+     "cls": "dense"
+    },
+    {
+     "feature": 8272,
+     "engine": 0.29462553560733795,
+     "full_forward": 1.3939998149871826,
+     "full_forward_per_seq": 2.001721553504467,
+     "cls": "random"
+    },
+    {
+     "feature": 8695,
+     "engine": -0.3035300299525261,
+     "full_forward": -0.26709434390068054,
+     "full_forward_per_seq": -0.31858349964022636,
+     "cls": "random"
+    },
+    {
+     "feature": 9194,
+     "engine": 0.1474394053220749,
+     "full_forward": 0.2925107479095459,
+     "full_forward_per_seq": 0.676510214805603,
+     "cls": "rare"
+    },
+    {
+     "feature": 9203,
+     "engine": 0.741867184638977,
+     "full_forward": 0.7176037430763245,
+     "full_forward_per_seq": 1.7610089778900146,
+     "cls": "rare"
+    }
+   ]
+  }
+ },
+ "archive_repro": {
+  "status": "compared",
+  "n_features": 80,
+  "pearson": 0.9998867329064198,
+  "max_abs_diff": 0.001886245341823252,
+  "median_abs_diff": 0.00015679999153132363,
+  "archived_scale": 0.15789266936094304,
+  "top16_mine": [
+   0.025783217618415923,
+   0.01715391881725264,
+   -1.870637322908145e-05,
+   -7.264784724164793e-05,
+   0.15854747335597305,
+   2.3282513306008902e-05,
+   9.133522060400062e-05,
+   0.0005956469373584154,
+   -2.0707164694487428e-05,
+   4.435211233150175e-05,
+   5.0765927478181244e-05,
+   0.042946714095797096,
+   -7.119024040299923e-05,
+   -3.205200618577663e-05,
+   0.00029585170752939263,
+   0.022154852789810577
+  ],
+  "top16_archived": [
+   0.02586898011732286,
+   0.017331529241119803,
+   -0.00016570833727547196,
+   -0.00010079248553740427,
+   0.15789266936094304,
+   7.391800930012238e-06,
+   -4.163167880877339e-05,
+   0.00045245741477906165,
+   0.00025844903965710486,
+   0.00020612564878907946,
+   -0.00027558217824141806,
+   0.04261465633616712,
+   -1.5417184796806538e-05,
+   0.0002394679508408437,
+   0.00014432491315696794,
+   0.02230359773734847
+  ],
+  "note": "archive used v3 fastabl on the same 64 sequences; differences reflect GPU numerics and our per-feature restriction to firing sequences"
+ },
+ "all_hard_pass": true
+}

@@ -1,0 +1,93 @@
+{
+ "gates.json": {
+  "kind": "gates",
+  "protocol": "b3bdee829f5ebdae",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T02:58:40Z"
+ },
+ "plan.json": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T08:13:32Z"
+ },
+ "chunks_rank": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "71001a11fc0b15ec",
+  "unpinned": false,
+  "utc": "2026-10-07T21:12:46Z"
+ },
+ "rank_zero.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T08:13:34Z"
+ },
+ "rank_grad.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T08:13:34Z"
+ },
+ "resample_universe.npy": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T08:13:41Z"
+ },
+ "rank_sp.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T15:38:00Z"
+ },
+ "rank_mg.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T07:26:28Z"
+ },
+ "rank_st.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T15:51:16Z"
+ },
+ "rank_mean.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "71001a11fc0b15ec",
+  "unpinned": false,
+  "utc": "2026-10-08T01:24:59Z"
+ },
+ "chunks_valid": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "71001a11fc0b15ec",
+  "unpinned": false,
+  "utc": "2026-10-08T01:25:01Z"
+ },
+ "valid_zero.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "71001a11fc0b15ec",
+  "unpinned": false,
+  "utc": "2026-10-08T04:01:35Z"
+ },
+ "valid_grad.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "71001a11fc0b15ec",
+  "unpinned": false,
+  "utc": "2026-10-08T04:42:40Z"
+ }
+}

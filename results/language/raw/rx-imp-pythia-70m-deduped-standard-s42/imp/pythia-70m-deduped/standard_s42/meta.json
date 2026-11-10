@@ -1,0 +1,23 @@
+{
+ "model": "pythia-70m-deduped",
+ "condition": "standard",
+ "seed": 42,
+ "config_hash": "67b585e8c9e19c6f",
+ "sae_sha256": "1087d7f1d14b879c73d65593c656e0643b2e7baddc6298b47c8e5636a7cbbc83",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-27-29.us-east-2.compute.internal",
+  "code_hash": "ab7cdf28f636d671",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A10G",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 3,
+ "hidden_state_index": 4,
+ "n_alive_archived_rule": 2016
+}

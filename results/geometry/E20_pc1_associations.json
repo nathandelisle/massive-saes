@@ -1,0 +1,118 @@
+{
+  "n_tokens": 65535,
+  "n_documents": 87,
+  "training_count_total": 5000000,
+  "evaluation_tokens_absent_from_training": 69,
+  "abs_cos_pc1_training_mean": 0.9490171563255477,
+  "strata": {
+    "all": {
+      "n_tokens": 65535,
+      "n_documents": 87,
+      "metrics": {
+        "norm_pearson_abs_r": 0.9998077180575182,
+        "norm_squared_pearson_r": 0.9996154730873819,
+        "abs_centered_pc1_vs_train_token_frequency_spearman": 0.5432899038632311
+      },
+      "document_bootstrap_95pct": {
+        "norm_pearson_abs_r": {
+          "lo": 0.9997857499406372,
+          "hi": 0.9998264793871895,
+          "valid_draws": 200,
+          "requested_draws": 200
+        },
+        "norm_squared_pearson_r": {
+          "lo": 0.999571545784376,
+          "hi": 0.9996529888838757,
+          "valid_draws": 200,
+          "requested_draws": 200
+        },
+        "abs_centered_pc1_vs_train_token_frequency_spearman": {
+          "lo": 0.5316120434395589,
+          "hi": 0.5534785380795778,
+          "valid_draws": 200,
+          "requested_draws": 200
+        }
+      }
+    },
+    "first_position": {
+      "n_tokens": 862,
+      "n_documents": 87,
+      "metrics": {
+        "norm_pearson_abs_r": 0.9999936983869027,
+        "norm_squared_pearson_r": 0.9999873968135157,
+        "abs_centered_pc1_vs_train_token_frequency_spearman": -0.6210651230839438
+      },
+      "document_bootstrap_95pct": {
+        "norm_pearson_abs_r": {
+          "lo": 0.9999930230322962,
+          "hi": 0.9999943359028868,
+          "valid_draws": 200,
+          "requested_draws": 200
+        },
+        "norm_squared_pearson_r": {
+          "lo": 0.9999860461132705,
+          "hi": 0.9999886718378557,
+          "valid_draws": 200,
+          "requested_draws": 200
+        },
+        "abs_centered_pc1_vs_train_token_frequency_spearman": {
+          "lo": -0.6843538524888232,
+          "hi": -0.567501754314042,
+          "valid_draws": 200,
+          "requested_draws": 200
+        }
+      }
+    },
+    "nonfirst_position": {
+      "n_tokens": 64673,
+      "n_documents": 87,
+      "metrics": {
+        "norm_pearson_abs_r": 0.9996159651736097,
+        "norm_squared_pearson_r": 0.9992320778299674,
+        "abs_centered_pc1_vs_train_token_frequency_spearman": 0.5520962455615852
+      },
+      "document_bootstrap_95pct": {
+        "norm_pearson_abs_r": {
+          "lo": 0.9995676934255957,
+          "hi": 0.9996561555067601,
+          "valid_draws": 200,
+          "requested_draws": 200
+        },
+        "norm_squared_pearson_r": {
+          "lo": 0.9991355737407451,
+          "hi": 0.9993124292425607,
+          "valid_draws": 200,
+          "requested_draws": 200
+        },
+        "abs_centered_pc1_vs_train_token_frequency_spearman": {
+          "lo": 0.5401298174239034,
+          "hi": 0.5620704514831227,
+          "valid_draws": 200,
+          "requested_draws": 200
+        }
+      }
+    }
+  },
+  "interpretation": "Descriptive association, token-weighted within the stated population. Squared Pearson correlation is NOT an outer-test regression R2 and does not establish absence of semantic information. CIs condition on the fitted PC1; first/nonfirst strata use the same PC1. Frequency is measured in the supplied training corpus, never estimated from test tokens.",
+  "population": "Pythia-1.4B, zero-based block 12 raw output (hidden_states[13]), RX a1test partition (65,535 tokens, 87 WikiText-103 train articles disjoint from SAE training), fp32; fixed RX-reconstructed training mean/PC1",
+  "provenance": {
+    "python": "3.13.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "files": [
+      {
+        "path": "PC1_RELEASE\\science_out\\inputs\\pythia14b_a1test\\geometry.npz",
+        "sha256": "4346c8884cdef0792535ed99abc248d523417dd28f1e7ebb3f0f35919be08d5e"
+      },
+      {
+        "path": "PC1_RELEASE\\science_out\\rx_prep\\pythia-1.4b\\unigram_counts.npy",
+        "sha256": "ca05e34b12c3833fa755e1e4f1d24dc43706feb5e3a7e74e76bd979038295af7"
+      },
+      {
+        "path": "PC1_RELEASE\\science_out\\E20_observations\\trained.npz",
+        "sha256": "4b0b685e4871c47fa4632851cf454bfd312a1d80395695ead5d8a551d84358e1"
+      }
+    ]
+  },
+  "experiment": "E20_remeasurement"
+}

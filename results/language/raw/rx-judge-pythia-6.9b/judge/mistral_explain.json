@@ -1,0 +1,3577 @@
+{
+ "pythia-6.9b:standard:42|227": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|586": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be at the start of a sentence or section, or are part of a section heading.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be at the start of a sentence or section, or are part of a section heading.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|637": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or specific titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or specific titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|718": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, particularly names of people.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, particularly names of people.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|731": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'for' when it is used as a preposition or part of a phrasal verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'for' when it is used as a preposition or part of a phrasal verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|989": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially proper nouns and names.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially proper nouns and names.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1059": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date, or a number-like sequence of characters.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date, or a number-like sequence of characters.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1062": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the prepositional phrase that follows the marked token, which indicates containment or covering.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the prepositional phrase that follows the marked token, which indicates containment or covering.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1069": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a symbol that indicates a number, or a word that indicates a number.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a symbol that indicates a number, or a word that indicates a number.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1071": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of the chemical element symbol 'Tm' for thulium.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of the chemical element symbol 'Tm' for thulium.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1127": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a quantity or amount, often in the context of comparisons or measurements.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a quantity or amount, often in the context of comparisons or measurements.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1271": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a large quantity or size, often preceded by words like 'large', 'huge', or 'many'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a large quantity or size, often preceded by words like 'large', 'huge', or 'many'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1327": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to months of the year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to months of the year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1335": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions and conjunctions that indicate location, time, or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions and conjunctions that indicate location, time, or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1485": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions that indicate location or position.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions that indicate location or position.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1514": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of the equals sign (=) before the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of the equals sign (=) before the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1637": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a person's name, specifically a male first name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a person's name, specifically a male first name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1821": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the start of a new section or topic, often indicated by a specific format or keyword.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the start of a new section or topic, often indicated by a specific format or keyword.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1826": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a continuation or result of a preceding action or state.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a continuation or result of a preceding action or state.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|1963": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2013": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a place or geographical location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a place or geographical location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2321": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a punctuation mark or symbol, or a sequence of symbols, at the end of a token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a punctuation mark or symbol, or a sequence of symbols, at the end of a token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2424": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a word that is often used as a conjunction or preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a word that is often used as a conjunction or preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2470": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2627": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate completeness or totality, often in the context of a process or state being fully realized.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate completeness or totality, often in the context of a process or state being fully realized.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2642": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates or years.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates or years.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2690": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2734": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2765": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions that indicate location or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions that indicate location or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|2977": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by a conjunction or preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by a conjunction or preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3026": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by specific punctuation or formatting.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by specific punctuation or formatting.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3143": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a name or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a name or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3179": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the absence or lack of something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the absence or lack of something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3213": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially names and places.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially names and places.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3321": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a title or heading.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a title or heading.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3347": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates in the format of 'Month Day' or 'Month Day, Year'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates in the format of 'Month Day' or 'Month Day, Year'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3432": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of a team or partnership, often in a wrestling or sports context, and the marked token is often the word 'team' or a similar concept.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of a team or partnership, often in a wrestling or sports context, and the marked token is often the word 'team' or a similar concept.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3473": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a form of the verb 'have' or 'had' or 'having' or 'has' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have'",
+   "{\"explanation\": \"The feature responds to the token being a form of the verb 'have' or 'had' or 'having' or 'has' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have'",
+   "{\"explanation\": \"The feature responds to the token being a form of the verb 'have' or 'had' or 'having' or 'has' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have'"
+  ],
+  "retries": 3,
+  "explanation": "{\"explanation\": \"The feature responds to the token being a form of the verb 'have' or 'had' or 'having' or 'has' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have' or 'had' or 'have'",
+  "no_pattern": null,
+  "parse_ok": false
+ },
+ "pythia-6.9b:standard:42|3542": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3631": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of punctuation or special characters, particularly when they are used to denote a section heading or a list item.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of punctuation or special characters, particularly when they are used to denote a section heading or a list item.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3705": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be part of a section header or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be part of a section header or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3878": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a clause or sentence, particularly commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a clause or sentence, particularly commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3918": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to units of speed, particularly wind speed.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to units of speed, particularly wind speed.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|3970": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4123": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a clause or phrase, often marked by a comma.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a clause or phrase, often marked by a comma.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4126": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a person, band, or character.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a person, band, or character.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4146": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized names of people or places.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized names of people or places.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4298": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a specific formatting style or a capitalized word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a specific formatting style or a capitalized word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4367": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be section headers or delimiters in text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be section headers or delimiters in text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4459": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, or a transition between ideas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, or a transition between ideas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4656": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a heading or a transition phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a heading or a transition phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4685": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a spatial boundary or transition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a spatial boundary or transition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4735": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a time period or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a time period or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4766": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a name or title, or a word that is part of a name or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a name or title, or a word that is part of a name or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4838": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a name or title, or a specific word that is often the end of a phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a name or title, or a specific word that is often the end of a phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4962": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or phrase, or a new topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or phrase, or a new topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|4984": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by symbols like '=' or '>' or the start of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by symbols like '=' or '>' or the start of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5083": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a linguistic term or concept, often related to language or phonetics.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a linguistic term or concept, often related to language or phonetics.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5089": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to start a new sentence or section.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to start a new sentence or section.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5201": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'All' when it is part of a proper noun or title, such as 'All-American' or 'All-State'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'All' when it is part of a proper noun or title, such as 'All-American' or 'All-State'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5361": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a section or topic heading, often indicated by equals signs or other formatting symbols.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a section or topic heading, often indicated by equals signs or other formatting symbols.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5382": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the need for a following word or phrase, often indicating a continuation or completion of a thought or sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the need for a following word or phrase, often indicating a continuation or completion of a thought or sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5398": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a preposition that introduces a prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a preposition that introduces a prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5641": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a transition or continuation, often marking the start of a new clause or phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a transition or continuation, often marking the start of a new clause or phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5659": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a phrase that is a title or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a phrase that is a title or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5713": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5863": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a specific genre of music, particularly metal and its subgenres.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a specific genre of music, particularly metal and its subgenres.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|5983": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or noun phrase that is the subject of a verb indicating a threat or danger.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or noun phrase that is the subject of a verb indicating a threat or danger.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6006": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a physical or geographical location or environment.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a physical or geographical location or environment.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6085": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a person's name, or a name-like string.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a person's name, or a name-like string.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6094": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, as indicated by the presence of punctuation marks.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, as indicated by the presence of punctuation marks.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6127": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a number-like sequence preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a number-like sequence preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6169": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized names or initials, or tokens that are part of a title or heading.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized names or initials, or tokens that are part of a title or heading.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6190": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a continuation or persistence of a state or condition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a continuation or persistence of a state or condition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6288": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the names of railroads, transportation companies, or related entities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the names of railroads, transportation companies, or related entities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6587": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6592": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'K' when it is capitalized and appears as a standalone word or at the end of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'K' when it is capitalized and appears as a standalone word or at the end of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6610": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a capital letter 'C' at the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a capital letter 'C' at the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6731": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized word or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized word or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|6755": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7002": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the context of a building or structure, particularly those related to government, public, or significant architectural entities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the context of a building or structure, particularly those related to government, public, or significant architectural entities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7010": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a mathematical or scientific term or concept, often involving specific symbols or technical language.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a mathematical or scientific term or concept, often involving specific symbols or technical language.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7045": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the need for a noun or noun phrase that follows a preposition or verb indicating location or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the need for a noun or noun phrase that follows a preposition or verb indicating location or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7084": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, especially when it is a period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, especially when it is a period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7116": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a quotation mark or a phrase that is being quoted.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a quotation mark or a phrase that is being quoted.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7125": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the measurement of land area, particularly in acres.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the measurement of land area, particularly in acres.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7197": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to phrases that describe a specific career or topic, often in the context of a person or subject's life or work.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to phrases that describe a specific career or topic, often in the context of a person or subject's life or work.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7258": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, specifically a location or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, specifically a location or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7316": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7350": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of an equal sign (=) immediately before the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of an equal sign (=) immediately before the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7506": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a punctuation mark or symbol, especially when it is the first or last character in a sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a punctuation mark or symbol, especially when it is the first or last character in a sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7519": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by formatting symbols or specific phrases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by formatting symbols or specific phrases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7545": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a sentence or phrase, or a token that is capitalized.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a sentence or phrase, or a token that is capitalized.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7854": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, or a transition between different parts of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, or a transition between different parts of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7887": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, often marked by a comma or period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, often marked by a comma or period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|7908": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to units of measurement or specific quantities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to units of measurement or specific quantities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8226": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a lap number in a race context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a lap number in a race context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8239": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to musical instruments or genres.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to musical instruments or genres.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8371": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are conjunctions or prepositions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are conjunctions or prepositions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8695": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words that are likely proper nouns or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words that are likely proper nouns or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8740": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and organizations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and organizations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8772": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a specific location, place, or area.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a specific location, place, or area.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8789": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the preposition 'in' when it is used to indicate the location of an event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the preposition 'in' when it is used to indicate the location of an event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8835": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a Spanish word or phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a Spanish word or phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8849": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a specific format or marker.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a specific format or marker.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8894": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being an indefinite article.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being an indefinite article.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8897": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'in' when it is used to introduce a context or a location, especially in mathematical or scientific contexts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'in' when it is used to introduce a context or a location, especially in mathematical or scientific contexts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|8975": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized letter 'P' at the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized letter 'P' at the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9039": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to units of measurement, particularly those related to mass, volume, and concentration.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to units of measurement, particularly those related to mass, volume, and concentration.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9047": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be the start of a sentence or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be the start of a sentence or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9204": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the context of a sports series or game sequence, particularly when the marked token indicates a specific part or stage of the series or game.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the context of a sports series or game sequence, particularly when the marked token indicates a specific part or stage of the series or game.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9390": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the current time or state, often indicated by the word 'now' or its context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the current time or state, often indicated by the word 'now' or its context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9468": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or specific terms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or specific terms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9515": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9777": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a noun or noun phrase that is a specific type of entity, such as a person, place, or thing.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a noun or noun phrase that is a specific type of entity, such as a person, place, or thing.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9794": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to nouns that are proper names or titles of people, places, or things.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to nouns that are proper names or titles of people, places, or things.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9837": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a quotation or direct speech.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a quotation or direct speech.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9851": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a section heading or title, often indicated by equals signs or angle brackets.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a section heading or title, often indicated by equals signs or angle brackets.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9894": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the action or result of a penalty shot or attempt.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the action or result of a penalty shot or attempt.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|9923": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of characters or entities in a narrative or story.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of characters or entities in a narrative or story.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10090": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'of' when it is part of a prepositional phrase indicating possession, association, or membership.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'of' when it is part of a prepositional phrase indicating possession, association, or membership.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10149": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by specific formatting or transitional phrases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by specific formatting or transitional phrases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10193": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10370": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a specific named entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a specific named entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10394": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a compound noun or noun phrase describing a mechanism or system, often involving motion or power transmission.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a compound noun or noun phrase describing a mechanism or system, often involving motion or power transmission.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10499": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a capitalized word at the beginning of a sentence or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a capitalized word at the beginning of a sentence or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10583": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be the start of a new section or topic, often indicated by equals signs or other delimiters.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be the start of a new section or topic, often indicated by equals signs or other delimiters.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10726": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to words that indicate a range, variety, or multitude of different things.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to words that indicate a range, variety, or multitude of different things.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10807": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a noun phrase, often indicating a specific object or concept.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a noun phrase, often indicating a specific object or concept.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10837": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, or a significant transition in the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, or a significant transition in the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10851": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a location, specifically a city name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a location, specifically a city name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10944": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a heading or a transition phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a heading or a transition phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|10989": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a punctuation mark or symbol that is part of a number or currency.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a punctuation mark or symbol that is part of a number or currency.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11000": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be the start of a sentence or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be the start of a sentence or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11021": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, often marked by a comma or period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, often marked by a comma or period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11082": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a mathematical or technical sentence or clause, often where a period or comma is expected.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a mathematical or technical sentence or clause, often where a period or comma is expected.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11521": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and things.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and things.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11600": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a double equals sign or a capitalized word at the beginning of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a double equals sign or a capitalized word at the beginning of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11628": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person, often an actor or actress.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person, often an actor or actress.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11656": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11738": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of punctuation marks, specifically the greater than symbol '>'\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of punctuation marks, specifically the greater than symbol '>'",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11740": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to possessive pronouns or determiners that introduce a noun phrase describing a known attribute or characteristic of the subject.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to possessive pronouns or determiners that introduce a noun phrase describing a known attribute or characteristic of the subject.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|11815": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12134": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a phrase or clause, often marked by punctuation or a transition to a new topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a phrase or clause, often marked by punctuation or a transition to a new topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12387": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially names and locations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially names and locations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12393": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word, especially when it is a proper noun or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word, especially when it is a proper noun or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12407": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a single uppercase letter or a specific sequence of symbols.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a single uppercase letter or a specific sequence of symbols.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12457": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are the start of a sentence or a clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are the start of a sentence or a clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12541": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to conjunctions, especially those that indicate a pairing or alternative.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to conjunctions, especially those that indicate a pairing or alternative.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12575": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words that are proper nouns or names.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words that are proper nouns or names.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12694": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12750": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the temporal sequence of events, with the marked token indicating a later point in time.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the temporal sequence of events, with the marked token indicating a later point in time.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|12948": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to periods at the end of sentences.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to periods at the end of sentences.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13054": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to years or dates.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to years or dates.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13093": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a specific format of section headings, often containing equals signs and spaces.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a specific format of section headings, often containing equals signs and spaces.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13108": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a conjunction or a preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a conjunction or a preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13141": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the past participle form of verbs, especially those related to creation or formation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the past participle form of verbs, especially those related to creation or formation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13175": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be section headers or titles, often containing capitalized words or special characters.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be section headers or titles, often containing capitalized words or special characters.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13248": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of specific rooms or enclosed spaces, particularly those typically found in buildings.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of specific rooms or enclosed spaces, particularly those typically found in buildings.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13318": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, especially when it is a title or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, especially when it is a title or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13324": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13381": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the receipt of an award, prize, or recognition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the receipt of an award, prize, or recognition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13443": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun that is part of a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun that is part of a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13689": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the act of gathering or collecting information, often through scientific means.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the act of gathering or collecting information, often through scientific means.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13758": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13914": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a place, especially a city or town.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a place, especially a city or town.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|13941": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a person's name, especially when it is a surname or a stage name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a person's name, especially when it is a surname or a stage name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14016": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a collision or impact.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a collision or impact.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14205": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'German' or 'Germany' when it is used as a national adjective or noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'German' or 'Germany' when it is used as a national adjective or noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14354": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new operation, project, or event, or the start of a new phase of an existing one.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new operation, project, or event, or the start of a new phase of an existing one.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14371": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14577": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or a specific named entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or a specific named entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14716": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by symbols like '=>' or '=' or the start of a new sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by symbols like '=>' or '=' or the start of a new sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14722": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of an indefinite article (a or an) that is not part of a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of an indefinite article (a or an) that is not part of a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14744": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the phrase preceding the marked token, which is a time period or a specific season.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the phrase preceding the marked token, which is a time period or a specific season.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14865": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or specific titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or specific titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|14890": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a transfer of ownership or acquisition of something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a transfer of ownership or acquisition of something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15013": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a section or topic, often marked by a closing parenthesis or a period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a section or topic, often marked by a closing parenthesis or a period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15060": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be section headers or titles, or are in all caps.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be section headers or titles, or are in all caps.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15109": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15156": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a specific format or marker.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a specific format or marker.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15210": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially proper nouns and names.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially proper nouns and names.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15221": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'camera' or its variations, and the context in which it is used.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'camera' or its variations, and the context in which it is used.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15385": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to conjunctions that introduce a contrast or exception.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to conjunctions that introduce a contrast or exception.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15442": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15466": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the start or occurrence of an event, action, or period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the start or occurrence of an event, action, or period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15630": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of the word 'also' in a sentence, especially when it is used to add additional information or examples.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of the word 'also' in a sentence, especially when it is used to add additional information or examples.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15653": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token marking the start of a time period or location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token marking the start of a time period or location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15836": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those with commas as thousand separators.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those with commas as thousand separators.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15956": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, or a new section of text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, or a new section of text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|15968": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the action of making something available to the public, often in written or recorded form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the action of making something available to the public, often in written or recorded form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|16123": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to ordinal numbers, both spelled out and in numerical form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to ordinal numbers, both spelled out and in numerical form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|16199": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or section, or to the first word of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or section, or to the first word of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|16258": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a date or time expression.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a date or time expression.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|16355": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a word that is a noun or verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a word that is a noun or verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|16357": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a sentence or phrase, or a token that is capitalized.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a sentence or phrase, or a token that is capitalized.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|16374": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a quantity or a group of items.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a quantity or a group of items.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:standard:42|16380": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the definite article 'the' when it is followed by a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the definite article 'the' when it is followed by a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|214": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a person who directed a film or episode.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a person who directed a film or episode.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|416": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word or a phrase, often indicating a boundary or a transition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word or a phrase, often indicating a boundary or a transition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|530": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a name or proper noun, often a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a name or proper noun, often a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|544": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or noun phrase that is a specific, concrete object or concept.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or noun phrase that is a specific, concrete object or concept.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|626": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'Heaven' or 'Heavens' and its variations, and the context of the word 'Heaven' or 'Heavens' in the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'Heaven' or 'Heavens' and its variations, and the context of the word 'Heaven' or 'Heavens' in the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|644": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions or words that indicate a relationship or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions or words that indicate a relationship or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|692": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date, or a token that is part of a date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date, or a token that is part of a date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|735": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|847": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, including names of people, places, and things.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, including names of people, places, and things.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|965": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of a duration or period of time, often marked by a specific time frame or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of a duration or period of time, often marked by a specific time frame or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1078": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a title or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a title or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1103": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a phrase or clause, often marked by punctuation or a significant word boundary.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a phrase or clause, often marked by punctuation or a significant word boundary.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1131": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized names of people.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized names of people.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1144": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1167": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a missing or unknown word or phrase, often indicated by '<unk' or other placeholders.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a missing or unknown word or phrase, often indicated by '<unk' or other placeholders.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1201": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to words that indicate a place or location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to words that indicate a place or location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1384": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a closing punctuation mark or a closing bracket.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a closing punctuation mark or a closing bracket.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1453": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1705": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate uncertainty or possibility.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate uncertainty or possibility.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1825": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those that are measurements or dimensions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those that are measurements or dimensions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|1906": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date, or a number and a unit of measurement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date, or a number and a unit of measurement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2053": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first name of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first name of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2150": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, or a transition between different parts of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, or a transition between different parts of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2164": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2272": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a place, location, or geographical feature.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a place, location, or geographical feature.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2286": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2347": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the need for a determiner or a pronoun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the need for a determiner or a pronoun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2361": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a noun phrase, specifically the first word of a noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a noun phrase, specifically the first word of a noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2433": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a book title, or a title of a work.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a book title, or a title of a work.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2470": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, especially commas and periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, especially commas and periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2553": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a plural noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a plural noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|2882": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a place, especially a city or town.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a place, especially a city or town.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3067": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a word or phrase, especially when it is capitalized or in a specific context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a word or phrase, especially when it is capitalized or in a specific context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3106": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the passive voice construction, specifically the verb 'to be' in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the passive voice construction, specifically the verb 'to be' in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3127": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun or a noun phrase that is a title or name of a place, person, or thing.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun or a noun phrase that is a title or name of a place, person, or thing.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3189": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or location name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or location name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3314": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, particularly when it is a proper noun or a noun that is the subject of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, particularly when it is a proper noun or a noun that is the subject of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3370": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first instance of a specific achievement or record being mentioned.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first instance of a specific achievement or record being mentioned.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3374": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the names of Canadian provinces and territories.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the names of Canadian provinces and territories.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3522": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are nouns related to actions or processes, often involving human activities or decisions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are nouns related to actions or processes, often involving human activities or decisions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3540": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the transfer of goods or services, often involving a sale or exchange.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the transfer of goods or services, often involving a sale or exchange.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3604": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being an indefinite article.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being an indefinite article.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3688": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to conjunctions or words that connect phrases or clauses.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to conjunctions or words that connect phrases or clauses.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3706": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the appearance of a person or character in a context, often in the form of a guest appearance or role.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the appearance of a person or character in a context, often in the form of a guest appearance or role.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3722": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a number-like sequence preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a number-like sequence preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3734": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are types of animals, especially domesticated ones.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are types of animals, especially domesticated ones.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3766": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3808": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, specifically distances, lengths, or measurements.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, specifically distances, lengths, or measurements.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|3990": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs that indicate a change of state or action, often involving a transition or transformation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs that indicate a change of state or action, often involving a transition or transformation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4041": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'under' when it is followed by a noun or noun phrase that indicates a location or a state of being beneath something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'under' when it is followed by a noun or noun phrase that indicates a location or a state of being beneath something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4046": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions that indicate location or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions that indicate location or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4107": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a special character sequence preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a special character sequence preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4120": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a noun phrase describing a collection of educational offerings or activities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a noun phrase describing a collection of educational offerings or activities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4158": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a stage of life or development, often related to maturity or aging.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a stage of life or development, often related to maturity or aging.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4320": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a statistic or metric, particularly those related to performance or measurement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a statistic or metric, particularly those related to performance or measurement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4376": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a date or time expression.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a date or time expression.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4379": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a surname or last name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a surname or last name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4442": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4524": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to directional words or phrases, particularly those indicating a change in direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to directional words or phrases, particularly those indicating a change in direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4542": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the type of noun or noun phrase that follows, particularly those that are proper nouns or specific terms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the type of noun or noun phrase that follows, particularly those that are proper nouns or specific terms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4560": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a specific, well-known location or organization.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a specific, well-known location or organization.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4844": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a person's full name or a well-known individual.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a person's full name or a well-known individual.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|4915": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a date or time expression.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a date or time expression.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5053": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, specifically a surname or a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, specifically a surname or a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5065": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5336": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to past participles or verbs in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to past participles or verbs in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5355": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5373": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5421": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the intensity or degree of a quality, often indicated by words like 'high', 'strong', 'very', 'far', 'huge', 'vast', 'complete', 'massive', 'unique', 'poorly', 'frequent', 'large', 'fast', 'nearly', 'accurately', 'simple', 'lower', 'negative', 'flat', 'more', 'complete', 'highly', 'strongly', 'high'\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the intensity or degree of a quality, often indicated by words like 'high', 'strong', 'very', 'far', 'huge', 'vast', 'complete', 'massive', 'unique', 'poorly', 'frequent', 'large', 'fast', 'nearly', 'accurately', 'simple', 'lower', 'negative', 'flat', 'more', 'complete', 'highly', 'strongly', 'high'",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5695": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized word or abbreviation that is part of a proper noun or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized word or abbreviation that is part of a proper noun or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5720": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5749": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new clause or phrase, often indicated by a conjunction, preposition, or relative pronoun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new clause or phrase, often indicated by a conjunction, preposition, or relative pronoun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5756": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a continuation or follow-up to a previously mentioned topic or action.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a continuation or follow-up to a previously mentioned topic or action.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5770": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs that are often followed by a prepositional phrase or a clause starting with 'on' or 'in'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs that are often followed by a prepositional phrase or a clause starting with 'on' or 'in'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5824": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a verb phrase or indicate an action.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a verb phrase or indicate an action.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|5889": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate future tense or future plans.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate future tense or future plans.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6050": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6174": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a word or a word that is a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a word or a word that is a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6191": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capital letter 'C' at the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capital letter 'C' at the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6307": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6395": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun, often a type of animal or plant.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun, often a type of animal or plant.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6512": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a section title or heading, especially those with a hierarchical structure.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a section title or heading, especially those with a hierarchical structure.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6521": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are nouns, often related to organizations, behaviors, or central concepts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are nouns, often related to organizations, behaviors, or central concepts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6844": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'Barb' or 'Bar' in the context of 'Barbary' or 'Barbarian'\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'Barb' or 'Bar' in the context of 'Barbary' or 'Barbarian'",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|6945": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the preposition 'in' when it is used to indicate a location or context within which something occurs.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the preposition 'in' when it is used to indicate a location or context within which something occurs.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7010": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that introduce examples or instances.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that introduce examples or instances.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7065": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a countable item or entity, often preceded by a quantity or a possessive.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a countable item or entity, often preceded by a quantity or a possessive.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7183": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to Dutch words or phrases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to Dutch words or phrases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7257": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the initials 'E' or 'J.E' in the context of names or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the initials 'E' or 'J.E' in the context of names or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7321": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a specific award or title, often military-related.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a specific award or title, often military-related.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7377": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a temporal clause or phrase, often marked by a comma.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a temporal clause or phrase, often marked by a comma.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7486": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7558": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a noun phrase that is capitalized.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a noun phrase that is capitalized.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7561": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a section or topic heading, often indicated by the use of equal signs or other formatting.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a section or topic heading, often indicated by the use of equal signs or other formatting.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7594": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a form of punishment or penalty, often involving death or severe consequences.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a form of punishment or penalty, often involving death or severe consequences.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7598": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7758": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a specific, often unique, category or classification, such as a location, time, or specific group.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a specific, often unique, category or classification, such as a location, time, or specific group.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7892": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of tourism or tourist-related activities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of tourism or tourist-related activities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7930": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by a capitalized word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by a capitalized word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|7936": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'observation' or its variations, and related words like 'observed' and 'observing'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'observation' or its variations, and related words like 'observed' and 'observing'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8018": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a noun or noun phrase that is the object of a preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a noun or noun phrase that is the object of a preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8022": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a negation or a word that can be used to negate or contradict.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a negation or a word that can be used to negate or contradict.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8032": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a conjunction or a preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a conjunction or a preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8126": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8350": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the category or domain of the marked token, which is often a noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the category or domain of the marked token, which is often a noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8380": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are often preceded by a quantifier or a time reference.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are often preceded by a quantifier or a time reference.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8428": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the context of the marked token being a fictional or imaginary concept.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the context of the marked token being a fictional or imaginary concept.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8474": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, including numbers with units, percentages, and currency.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, including numbers with units, percentages, and currency.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8523": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a phrase or sentence, or a punctuation mark.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a phrase or sentence, or a punctuation mark.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8590": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to superlative adjectives or adverbs (e.g., funniest, best, worst, most, etc.) and their comparative forms (e.g., more, less, etc.)\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to superlative adjectives or adverbs (e.g., funniest, best, worst, most, etc.) and their comparative forms (e.g., more, less, etc.)",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8616": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a word or phrase that is likely to be completed by a specific, well-known term or phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a word or phrase that is likely to be completed by a specific, well-known term or phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8634": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word, especially when it is a suffix or part of a suffix.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word, especially when it is a suffix or part of a suffix.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8640": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a phrase or clause, often marked by punctuation or a transition word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a phrase or clause, often marked by punctuation or a transition word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8833": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or noun phrase that is a physical object or structure.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or noun phrase that is a physical object or structure.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8892": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a date or time expression.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a date or time expression.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8924": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or a specific named entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or a specific named entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|8941": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a missing or unknown word, as indicated by the <unk> token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a missing or unknown word, as indicated by the <unk> token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9137": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions that indicate location or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions that indicate location or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9174": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the completion or finality of a process or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the completion or finality of a process or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9210": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of the word 'water' or its chemical formula 'H2O' in the context of chemical reactions or compounds.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of the word 'water' or its chemical formula 'H2O' in the context of chemical reactions or compounds.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9464": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a record or mark being set, broken, or surpassed.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a record or mark being set, broken, or surpassed.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9476": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or noun phrase that is part of a descriptive phrase or idiom.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or noun phrase that is part of a descriptive phrase or idiom.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9690": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a copula verb (a form of 'to be') or a verb indicating existence or presence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a copula verb (a form of 'to be') or a verb indicating existence or presence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9695": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the second of two items in a list or sequence, or the second of two items being compared or contrasted.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the second of two items in a list or sequence, or the second of two items being compared or contrasted.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9715": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new topic or subject.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new topic or subject.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9718": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a city or location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a city or location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9852": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9920": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a name or character.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a name or character.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|9959": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun, specifically a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun, specifically a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|10144": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are verbs, particularly those indicating actions or states of being.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are verbs, particularly those indicating actions or states of being.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|10251": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are the object of a verb or preposition, or are part of a noun phrase that is the object of a verb or preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are the object of a verb or preposition, or are part of a noun phrase that is the object of a verb or preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|10372": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that follows a number or a number range, which is often a measurement or a statistic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that follows a number or a number range, which is often a measurement or a statistic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|10533": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to directional or positional terms, especially when they are preceded by 'passing' or 'passes'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to directional or positional terms, especially when they are preceded by 'passing' or 'passes'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|10604": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun or acronym.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun or acronym.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|10663": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a compound word or a word that is part of a compound word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a compound word or a word that is part of a compound word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|10956": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a specific event or time period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a specific event or time period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11050": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to tokens that are likely to be part of a command or instruction, often preceded by '=' or '=>' and often related to plotting or data handling.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to tokens that are likely to be part of a command or instruction, often preceded by '=' or '=>' and often related to plotting or data handling.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11216": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun that is a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun that is a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11251": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a continuation or follow-up to a preceding action or topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a continuation or follow-up to a preceding action or topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11299": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of an Australian state or territory, or a region within one.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of an Australian state or territory, or a region within one.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11398": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11408": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11503": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the definite article 'the' when it is followed by a noun that is the subject of the sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the definite article 'the' when it is followed by a noun that is the subject of the sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11565": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that represent a sequence of events, stages, or proceedings, often in a chronological or procedural context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that represent a sequence of events, stages, or proceedings, often in a chronological or procedural context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11604": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11703": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person, especially a racing driver.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person, especially a racing driver.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11796": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a specific group or organization, often a political or governmental body.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a specific group or organization, often a political or governmental body.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11828": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the duration of a person's career or the lifespan of an entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the duration of a person's career or the lifespan of an entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11830": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|11906": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a surname or last name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a surname or last name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12064": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates, times, or other temporal expressions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates, times, or other temporal expressions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12094": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a conjunction or a preposition that connects two clauses or phrases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a conjunction or a preposition that connects two clauses or phrases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12121": {
+  "raw": [
+   "```json\n{\"explanation\": \"The feature responds to the presence of a surname or last name.\", \"no_pattern\": false}\n```"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a surname or last name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12183": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a state or region in the United States.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a state or region in the United States.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12230": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a prepositional phrase that indicates an agent or source of an action.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a prepositional phrase that indicates an agent or source of an action.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12457": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12510": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12518": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12546": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12667": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a noun phrase, often indicating the end of a title or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a noun phrase, often indicating the end of a title or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12687": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to commas that follow a list of items or examples.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to commas that follow a list of items or examples.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12707": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a compound noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a compound noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12758": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|12896": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the type of document or text that the marked token is part of, such as a script, play, or screenplay.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the type of document or text that the marked token is part of, such as a script, play, or screenplay.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13036": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a large quantity or excess of something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a large quantity or excess of something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13113": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13163": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the second of two proper nouns in a sequence, often indicating a contrast or comparison.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the second of two proper nouns in a sequence, often indicating a contrast or comparison.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13216": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun, specifically a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun, specifically a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13385": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a city or location name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a city or location name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13425": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a comma that follows a location or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a comma that follows a location or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13474": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or acronym.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or acronym.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13548": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word or a token that is part of a proper noun or a specific name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word or a token that is part of a proper noun or a specific name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13633": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13659": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'baseball' when it is used as a noun to refer to the sport.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'baseball' when it is used as a noun to refer to the sport.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13660": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13864": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first occurrence of a number or ordinal number in a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first occurrence of a number or ordinal number in a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|13981": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to words that are types of blades or cutting tools.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to words that are types of blades or cutting tools.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14074": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and organizations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and organizations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14100": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those that are temperatures, depths, ages, or other measurements.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those that are temperatures, depths, ages, or other measurements.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14121": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun, specifically a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun, specifically a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14166": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the past tense of the verb 'to be'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the past tense of the verb 'to be'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14251": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to commas that follow a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to commas that follow a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14286": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a continuation or following of an action or sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a continuation or following of an action or sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14409": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or a clause, especially when the token is a punctuation mark or a word that can end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or a clause, especially when the token is a punctuation mark or a word that can end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14414": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a specific type of music release, such as an album, EP, or record.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a specific type of music release, such as an album, EP, or record.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14454": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a person's name, especially when it is a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a person's name, especially when it is a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14553": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|14907": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a source of information or reporting.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a source of information or reporting.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15088": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15256": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of proper nouns or specific named entities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of proper nouns or specific named entities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15369": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that is a verb in the past tense, indicating a direct quote or statement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that is a verb in the past tense, indicating a direct quote or statement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15451": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to currency symbols and their associated values.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to currency symbols and their associated values.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15567": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a verb in the passive voice or a past participle.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a verb in the passive voice or a past participle.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15574": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15590": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new clause or phrase, often marked by a conjunction, preposition, or relative pronoun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new clause or phrase, often marked by a conjunction, preposition, or relative pronoun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15601": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a television show or series, or a person's name, especially when it is a well-known name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a television show or series, or a person's name, especially when it is a well-known name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15650": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or a title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or a title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|15945": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a group of people or an organization, often in the context of sports, games, or professions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a group of people or an organization, often in the context of sports, games, or professions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "pythia-6.9b:bypass:42|16205": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the type of noun that follows the marked token, which is often a determiner or quantifier.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the type of noun that follows the marked token, which is often a determiner or quantifier.",
+  "no_pattern": false,
+  "parse_ok": true
+ }
+}

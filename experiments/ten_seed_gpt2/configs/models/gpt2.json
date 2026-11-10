@@ -1,0 +1,19 @@
+{
+  "name": "gpt2",
+  "lm": {
+    "model_path": "openai-community/gpt2",
+    "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+    "block_path": "transformer.h",
+    "block_index": 6,
+    "dtype": "bfloat16",
+    "attn_implementation": "eager"
+  },
+  "provenance": "Model/hook/revision copied from supplied morning-bundle site.json. New campaign uses explicit bf16 + eager; historical results retain their own precision.",
+  "training": {
+    "width": 3072,
+    "k": 64,
+    "steps": 20000,
+    "batch": 4096,
+    "lr": 0.0003
+  }
+}

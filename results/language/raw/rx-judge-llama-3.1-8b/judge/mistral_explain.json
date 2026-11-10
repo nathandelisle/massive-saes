@@ -1,0 +1,3586 @@
+{
+ "llama-3.1-8b:standard:42|58": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a noun that is part of a proper noun or a specific entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a noun that is part of a proper noun or a specific entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|77": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|130": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, often marked by punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, often marked by punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|184": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a word or phrase that is a proper noun or a specific name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a word or phrase that is a proper noun or a specific name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|185": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|201": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a definite article.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a definite article.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|342": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those with commas or decimal points.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those with commas or decimal points.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|474": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|600": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|646": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates or times, especially when they are part of a specific event or celebration.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates or times, especially when they are part of a specific event or celebration.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|661": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a text or sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a text or sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|802": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to words related to bodies of water, especially the sea.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to words related to bodies of water, especially the sea.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|836": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'it' when it is a pronoun referring to a previously mentioned noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'it' when it is a pronoun referring to a previously mentioned noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|860": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a chemical element or compound, often in the context of scientific or medical discussion.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a chemical element or compound, often in the context of scientific or medical discussion.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|904": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, especially those with commas or decimal points.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, especially those with commas or decimal points.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1029": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a title or name, often following a capitalized word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a title or name, often following a capitalized word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1032": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the end of a state, process, or existence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the end of a state, process, or existence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1044": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the arrival or appearance of something or someone.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the arrival or appearance of something or someone.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1250": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates or time periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates or time periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1433": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, particularly when it is a key entity or concept in the context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, particularly when it is a key entity or concept in the context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1506": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the phrase 'According to' preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the phrase 'According to' preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1560": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to superlative adjectives or adverbs (e.g., most, best, highest) and their associated nouns or verbs.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to superlative adjectives or adverbs (e.g., most, best, highest) and their associated nouns or verbs.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1790": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1805": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1807": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1824": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are people or person-related entities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are people or person-related entities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1825": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|1914": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a specific part of a proper noun or a specific type of noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a specific part of a proper noun or a specific type of noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2075": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2113": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that indicates a location or geographical area.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that indicates a location or geographical area.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2126": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun or a specific name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun or a specific name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2178": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, often a name or place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, often a name or place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2180": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a specific award or ranking category.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a specific award or ranking category.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2280": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a quotation mark or similar punctuation that indicates the start or end of a quoted phrase or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a quotation mark or similar punctuation that indicates the start or end of a quoted phrase or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2299": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2559": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions indicating contact, proximity, or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions indicating contact, proximity, or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2581": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to conjunctions or words that connect phrases or clauses.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to conjunctions or words that connect phrases or clauses.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2765": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, often a title or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, often a title or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|2956": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those that are part of measurements or distances.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those that are part of measurements or distances.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3027": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3039": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the second person pronoun or the implied second person pronoun in the sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the second person pronoun or the implied second person pronoun in the sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3198": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3265": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a prepositional phrase or a conjunction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a prepositional phrase or a conjunction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3288": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a negation word or phrase, such as 'no', 'not', 'neither', 'none', or 'little'\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a negation word or phrase, such as 'no', 'not', 'neither', 'none', or 'little'",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3405": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'to' when it is part of an infinitive verb form, especially when it follows a verb indicating intent, purpose, or goal.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'to' when it is part of an infinitive verb form, especially when it follows a verb indicating intent, purpose, or goal.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3473": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to pronouns or words that could be pronouns.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to pronouns or words that could be pronouns.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3480": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3582": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of the verb 'to be' in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of the verb 'to be' in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3694": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often marked by punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often marked by punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3804": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a state of disrepair, deterioration, or decline.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a state of disrepair, deterioration, or decline.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3807": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a noun or noun phrase that is the object of a preposition or verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a noun or noun phrase that is the object of a preposition or verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3855": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|3942": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a magazine or publication name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a magazine or publication name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4007": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4014": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a highway or road designation, such as 'SH' or 'M', and the token marked is the number that follows it.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a highway or road designation, such as 'SH' or 'M', and the token marked is the number that follows it.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4094": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a name or proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a name or proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4191": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to tokens that are part of a location or place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to tokens that are part of a location or place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4226": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to pairs or duality, often in the form of two related or contrasting items.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to pairs or duality, often in the form of two related or contrasting items.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4286": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first occurrence of a capitalized word in the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first occurrence of a capitalized word in the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4372": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the verb 'to be' in various forms, including 'is', 'are', 'was', 'were', and 'am'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the verb 'to be' in various forms, including 'is', 'are', 'was', 'were', and 'am'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4409": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4510": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are titles or roles of people, especially in a professional or official capacity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are titles or roles of people, especially in a professional or official capacity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4703": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a word that starts with 'ch'\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a word that starts with 'ch'",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|4749": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or phrase, often indicated by a capital letter or a specific punctuation mark.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or phrase, often indicated by a capital letter or a specific punctuation mark.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|5024": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new word or phrase, often a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new word or phrase, often a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|5160": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|5211": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a title or proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a title or proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|5255": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that indicates the start of a date or a year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that indicates the start of a date or a year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|5473": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word or phrase, often a proper noun or specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word or phrase, often a proper noun or specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|5819": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|5822": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6017": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6084": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a last name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a last name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6100": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6134": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions that indicate accompaniment or association.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions that indicate accompaniment or association.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6336": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those that are cardinal numbers.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those that are cardinal numbers.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6415": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being the start of a noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being the start of a noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6438": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6476": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the conjunctions and/or the end of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the conjunctions and/or the end of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6524": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6680": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6697": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new topic or subject, often indicated by a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new topic or subject, often indicated by a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|6995": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7101": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a proper noun or a noun phrase that follows a comparative phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a proper noun or a noun phrase that follows a comparative phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7157": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, such as a person's name or a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, such as a person's name or a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7172": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized letter 'B' at the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized letter 'B' at the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7337": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a definite article or a definite article with a noun following it.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a definite article or a definite article with a noun following it.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7382": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7400": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'soldier' or its plural form, regardless of the context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'soldier' or its plural form, regardless of the context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7609": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7673": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7973": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a legal or official proceeding, often involving courts or cases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a legal or official proceeding, often involving courts or cases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7985": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, or organizations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, or organizations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|7993": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a location or placement, often following a preposition or verb that suggests location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a location or placement, often following a preposition or verb that suggests location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8013": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person, often a notable figure.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person, often a notable figure.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8131": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a word or phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a word or phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8147": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'the' when it is used as a definite article to introduce a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'the' when it is used as a definite article to introduce a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8149": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by a pronoun or subject.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by a pronoun or subject.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8209": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8295": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the action of firing a weapon or projectile.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the action of firing a weapon or projectile.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8418": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a date or numerical value preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a date or numerical value preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8553": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions that indicate a source or origin.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions that indicate a source or origin.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8690": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of the verb 'to be' in various tenses and forms, including 'is', 'are', 'was', 'were', 'being', and 'been'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of the verb 'to be' in various tenses and forms, including 'is', 'are', 'was', 'were', 'being', and 'been'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|8905": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9025": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a name or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a name or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9054": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the pronoun 'she' when it is the subject of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the pronoun 'she' when it is the subject of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9080": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the removal or alteration of content, often due to external constraints or decisions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the removal or alteration of content, often due to external constraints or decisions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9281": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9291": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, especially commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, especially commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9379": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9492": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9502": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9534": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9675": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a specific, often critical, moment or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a specific, often critical, moment or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9785": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9840": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a possessive pronoun or a pronoun that indicates possession.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a possessive pronoun or a pronoun that indicates possession.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9843": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun, often a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun, often a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9922": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by a capital letter.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by a capital letter.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|9934": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10162": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a cardinal direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a cardinal direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10198": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to nouns that are part of a prepositional phrase or a noun phrase that follows a verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to nouns that are part of a prepositional phrase or a noun phrase that follows a verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10206": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10279": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that follows a production or creation context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that follows a production or creation context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10378": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10412": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'this' when it is used to refer to a specific time or location mentioned earlier in the sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'this' when it is used to refer to a specific time or location mentioned earlier in the sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10735": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values or quantities, especially when they are preceded by a specific context that indicates a count or measurement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values or quantities, especially when they are preceded by a specific context that indicates a count or measurement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10870": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|10896": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11067": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a list or a comparison, often marked by the word 'and' or similar conjunctions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a list or a comparison, often marked by the word 'and' or similar conjunctions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11133": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or phrase, often marked by a capital letter.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or phrase, often marked by a capital letter.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11194": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11244": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or named entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or named entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11325": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11391": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a word, especially when it is a proper noun or a technical term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a word, especially when it is a proper noun or a technical term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11478": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a word or a phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a word or a phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11611": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11729": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the positive outcome or achievement of an action or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the positive outcome or achievement of an action or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11765": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a conjunction or transition word that connects two clauses or ideas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a conjunction or transition word that connects two clauses or ideas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11801": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a location, or a location name that is part of a larger phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a location, or a location name that is part of a larger phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11906": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to ordinal numbers, specifically those that are spelled out.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to ordinal numbers, specifically those that are spelled out.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11921": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to legal actions or proceedings, particularly lawsuits and related terms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to legal actions or proceedings, particularly lawsuits and related terms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|11997": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12001": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate direction or movement around or along something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate direction or movement around or along something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12187": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly ages, numbers, and monetary amounts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly ages, numbers, and monetary amounts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12197": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12229": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first occurrence of a specific noun or pronoun in a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first occurrence of a specific noun or pronoun in a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12242": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to years in the format YYYY.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to years in the format YYYY.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12327": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to a pronoun that refers to a previously mentioned noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to a pronoun that refers to a previously mentioned noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12647": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to directional adverbs or adverbial phrases that indicate the direction of movement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to directional adverbs or adverbial phrases that indicate the direction of movement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12775": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to units of measurement or numerical values, especially when they are part of a measurement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to units of measurement or numerical values, especially when they are part of a measurement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12791": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'in' when it is used as a preposition to indicate a location or time period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'in' when it is used as a preposition to indicate a location or time period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|12961": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13086": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13225": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or location name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or location name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13250": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized letter at the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized letter at the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13338": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a date or time period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a date or time period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13369": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13392": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a city or location, especially when it follows a possessive or prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a city or location, especially when it follows a possessive or prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13420": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13431": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13434": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13661": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a definite article (the).\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a definite article (the).",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|13875": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14045": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14121": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a person's name, especially when it is a character in a story or film.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a person's name, especially when it is a character in a story or film.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14158": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates in the format of day followed by month.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates in the format of day followed by month.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14192": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a word or phrase, often a noun or proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a word or phrase, often a noun or proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14307": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person, often a musician or songwriter, that is mentioned in the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person, often a musician or songwriter, that is mentioned in the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14317": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'strike' or its derivatives, and the context in which it is used.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'strike' or its derivatives, and the context in which it is used.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14353": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14354": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a place or location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a place or location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14472": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14496": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a transition or change in the subject or topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a transition or change in the subject or topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14552": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14701": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a noun that is often used in the context of art and exhibitions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a noun that is often used in the context of art and exhibitions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14799": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are related to Jewish culture, religion, or ethnicity, or are directly preceded by such context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are related to Jewish culture, religion, or ethnicity, or are directly preceded by such context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14870": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country or region, particularly when it is preceded by 'South' or 'off South'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country or region, particularly when it is preceded by 'South' or 'off South'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14886": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a conjunction or a preposition that connects two clauses or phrases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a conjunction or a preposition that connects two clauses or phrases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14971": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the role of a person in the production of music or media, especially in the context of recording, mixing, or engineering.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the role of a person in the production of music or media, especially in the context of recording, mixing, or engineering.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14986": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions indicating spatial relationships or positions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions indicating spatial relationships or positions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|14992": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the capitalized letter 'G' or words starting with 'G'\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the capitalized letter 'G' or words starting with 'G'",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15008": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being an indefinite article or a demonstrative pronoun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being an indefinite article or a demonstrative pronoun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15018": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a text or a line, as it is activated by the first token in each excerpt.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a text or a line, as it is activated by the first token in each excerpt.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15117": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a letter or symbol that is part of a word or phrase, and is often used to denote a specific category or classification.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a letter or symbol that is part of a word or phrase, and is often used to denote a specific category or classification.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15162": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15172": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those that are measurements or distances.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those that are measurements or distances.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15247": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a word, especially when it is capitalized or at the start of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a word, especially when it is capitalized or at the start of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15460": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15504": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs that are followed by a clause starting with 'that' or 'where' or a prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs that are followed by a clause starting with 'that' or 'where' or a prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15505": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15657": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to be proper nouns or specific titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to be proper nouns or specific titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15687": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a television channel or network.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a television channel or network.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|15878": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, particularly names of people and places.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, particularly names of people and places.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|16040": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a future or upcoming action or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a future or upcoming action or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|16133": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the context of death and burial, activating on the token that indicates the final disposition of the deceased.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the context of death and burial, activating on the token that indicates the final disposition of the deceased.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|16164": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the creation or availability of physical space or opportunity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the creation or availability of physical space or opportunity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|16303": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last number in a sequence of numbers.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last number in a sequence of numbers.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|16340": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun, specifically a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun, specifically a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:standard:42|16349": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun, often a name or place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun, often a name or place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|182": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, often a proper noun or a noun with a determiner.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, often a proper noun or a noun with a determiner.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|254": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a person, place, or deity, especially when it is a proper noun or a name that is capitalized.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a person, place, or deity, especially when it is a proper noun or a name that is capitalized.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|368": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|606": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|608": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word or a token that is a suffix.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word or a token that is a suffix.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|712": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to military ranks, titles, or related terms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to military ranks, titles, or related terms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|877": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a sentence or clause, or a pronoun that is the subject of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a sentence or clause, or a pronoun that is the subject of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|969": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun, often a person's name or a place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun, often a person's name or a place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|974": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a noun that is part of a compound noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a noun that is part of a compound noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|996": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a state, condition, or quality, often related to spiritual or divine concepts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a state, condition, or quality, often related to spiritual or divine concepts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1010": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or phrase, often marked by a capital letter.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or phrase, often marked by a capital letter.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1060": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or a noun phrase that is a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or a noun phrase that is a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1086": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1279": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a specific word or phrase, particularly names and places, and the token is often the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a specific word or phrase, particularly names and places, and the token is often the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1288": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of an event or process.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of an event or process.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1315": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date, or a token that is part of a date or number.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date, or a token that is part of a date or number.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1332": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the purpose or intent of the preceding clause, often in the form of a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the purpose or intent of the preceding clause, often in the form of a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1337": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1389": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name, often a place name or a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name, often a place name or a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1429": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a preposition or a conjunction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a preposition or a conjunction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1458": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically periods and commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically periods and commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1645": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'by' or 'By' in various contexts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'by' or 'By' in various contexts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1681": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate similarity or comparison, often preceding a noun or noun phrase that is being compared to something else.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate similarity or comparison, often preceding a noun or noun phrase that is being compared to something else.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1700": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, often a name or place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, often a name or place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1895": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to Japanese names and words, especially those that are proper nouns.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to Japanese names and words, especially those that are proper nouns.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1914": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to nouns that are part of a compound noun or noun phrase, often indicating a specific type or category.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to nouns that are part of a compound noun or noun phrase, often indicating a specific type or category.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|1978": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a date or year, often marked by a comma.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a date or year, often marked by a comma.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2071": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a section or topic, often indicated by '=' or '=' signs, or the start of a new text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a section or topic, often indicated by '=' or '=' signs, or the start of a new text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2147": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2148": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being an advertisement or advertisement-related term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being an advertisement or advertisement-related term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2170": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2210": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a diacritical mark on the token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a diacritical mark on the token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2225": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2299": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the pronoun 'she' or 'her' when it refers to a specific female individual previously mentioned in the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the pronoun 'she' or 'her' when it refers to a specific female individual previously mentioned in the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2352": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a spatial or geographical boundary or area.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a spatial or geographical boundary or area.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2404": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or noun phrase that is a countable object or entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or noun phrase that is a countable object or entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2504": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a specific place, often a city or neighborhood, that is part of New York.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a specific place, often a city or neighborhood, that is part of New York.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2546": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate a pause or end of a clause, especially commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate a pause or end of a clause, especially commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2624": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2759": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a quantity or a proportion, often following words like 'percent', 'most', 'more', 'many', 'few', 'some', 'all', 'none', 'any', 'several', 'fewer', 'less', 'half', 'quarter', 'third', 'eighth', 'sixth', 'eighteenth', 'sixth', 'eighteenth', 'fifth', 'tenth', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', '",
+   "{\"explanation\": \"The feature responds to tokens that indicate a quantity or a proportion, often following words like 'percent', 'most', 'more', 'many', 'few', 'some', 'all', 'none', 'any', 'several', 'fewer', 'less', 'half', 'quarter', 'third', 'eighth', 'sixth', 'eighteenth', 'fifth', 'tenth', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', '",
+   "{\"explanation\": \"The feature responds to tokens that indicate a quantity or a proportion, often following words like 'percent', 'most', 'more', 'many', 'few', 'some', 'all', 'none', 'any', 'several', 'fewer', 'less', 'half', 'quarter', 'third', 'eighth', 'sixth', 'eighteenth', 'fifth', 'tenth', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', '"
+  ],
+  "retries": 3,
+  "explanation": "{\"explanation\": \"The feature responds to tokens that indicate a quantity or a proportion, often following words like 'percent', 'most', 'more', 'many', 'few', 'some', 'all', 'none', 'any', 'several', 'fewer', 'less', 'half', 'quarter', 'third', 'eighth', 'sixth', 'eighteenth', 'fifth', 'tenth', 'twelfth', 'thirteenth', 'fourteenth', 'fifteenth', 'sixteenth', 'seventeenth', '",
+  "no_pattern": null,
+  "parse_ok": false
+ },
+ "llama-3.1-8b:bypass:42|2861": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a word that introduces a new piece of information or evidence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a word that introduces a new piece of information or evidence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|2944": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate employment or work-related activities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate employment or work-related activities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|3220": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a person, place, or thing of Greek origin or related to Greek culture.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a person, place, or thing of Greek origin or related to Greek culture.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|3405": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that follows a verb in the infinitive form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that follows a verb in the infinitive form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|3459": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of musical instruments, particularly drums.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of musical instruments, particularly drums.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|3550": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a comma or punctuation mark that follows a list or a series of items.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a comma or punctuation mark that follows a list or a series of items.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|3582": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'was' when it is used as an auxiliary verb in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'was' when it is used as an auxiliary verb in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|3798": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or a phrase, especially when the token is a proper noun or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or a phrase, especially when the token is a proper noun or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|3926": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a noun phrase that is a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a noun phrase that is a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4009": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized word that is a proper noun or an abbreviation of a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized word that is a proper noun or an abbreviation of a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4047": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capital letter at the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capital letter at the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4102": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by punctuation or specific phrases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by punctuation or specific phrases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4206": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a team or group, often in the context of sports.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a team or group, often in the context of sports.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4251": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the role or title of a person or entity, often indicated by the preceding context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the role or title of a person or entity, often indicated by the preceding context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4397": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a part of a compound noun or a noun phrase that describes a physical location or path.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a part of a compound noun or a noun phrase that describes a physical location or path.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4463": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, or a comma that separates two independent clauses.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, or a comma that separates two independent clauses.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4497": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a verb in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a verb in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4549": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or digit immediately before the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or digit immediately before the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4589": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'Jewish' or its context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'Jewish' or its context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4602": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a location or place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a location or place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4605": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a hyphenated word or a word that is part of a hyphenated compound.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a hyphenated word or a word that is part of a hyphenated compound.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4830": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'Netherlands' or 'Dutch' and its variations, as well as the name 'Van Gogh' and its variations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'Netherlands' or 'Dutch' and its variations, as well as the name 'Van Gogh' and its variations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|4879": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often marked by punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often marked by punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5160": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a sentence or text, often activating on the first word or symbol.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a sentence or text, often activating on the first word or symbol.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5170": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a prepositional phrase or a list.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a prepositional phrase or a list.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5182": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'a' when it is an indefinite article preceding a noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'a' when it is an indefinite article preceding a noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5254": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that is the start of a section title or heading, often indicated by the use of equal signs.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that is the start of a section title or heading, often indicated by the use of equal signs.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5320": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new section or topic, often indicated by a capitalized word or a specific marker like 'Reviews' or 'God'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new section or topic, often indicated by a capitalized word or a specific marker like 'Reviews' or 'God'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5649": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of acronyms or abbreviations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of acronyms or abbreviations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5717": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are related to logistics, supply chains, and transportation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are related to logistics, supply chains, and transportation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5735": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a return to a previous state or condition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a return to a previous state or condition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5833": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the back or rear of something, or the end of a sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the back or rear of something, or the end of a sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|5862": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the definite article 'the' when it is preceded by a noun or a noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the definite article 'the' when it is preceded by a noun or a noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6058": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, often marked by a comma or period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, often marked by a comma or period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6123": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a media franchise or series.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a media franchise or series.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6550": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6566": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new subject or action, often indicated by a pronoun or proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new subject or action, often indicated by a pronoun or proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6656": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of death or the end of life, often in the context of historical figures or saints.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of death or the end of life, often in the context of historical figures or saints.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6743": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a surname or last name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a surname or last name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6862": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to German words or phrases, particularly those related to historical or military contexts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to German words or phrases, particularly those related to historical or military contexts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6880": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically last names or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically last names or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|6953": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7016": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'pre' or 'pre-' when it is used as a prefix meaning 'before' or 'preceding'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'pre' or 'pre-' when it is used as a prefix meaning 'before' or 'preceding'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7044": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7126": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a direction or destination, often following a verb of motion or progress.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a direction or destination, often following a verb of motion or progress.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7150": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a consequence or result, often following a cause or action.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a consequence or result, often following a cause or action.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7214": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a phrase that describes a characteristic or attribute of a noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a phrase that describes a characteristic or attribute of a noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7224": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a number-like sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a number-like sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7226": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a competition or comparison between two or more entities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a competition or comparison between two or more entities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7329": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a person, place, or thing that is the subject of the sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a person, place, or thing that is the subject of the sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7362": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a currency symbol or a number indicating currency.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a currency symbol or a number indicating currency.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7398": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a location name or a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a location name or a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7409": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a conjunction or a preposition that connects two clauses or phrases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a conjunction or a preposition that connects two clauses or phrases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7697": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a noun phrase, often indicating the end of a subject or object in a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a noun phrase, often indicating the end of a subject or object in a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7715": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7729": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a verb phrase or a prepositional phrase that follows a verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a verb phrase or a prepositional phrase that follows a verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7907": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a verb phrase, specifically an infinitive verb form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a verb phrase, specifically an infinitive verb form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7956": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a verb in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a verb in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|7993": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a noun phrase that is the object of a verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a noun phrase that is the object of a verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8062": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a phrase or word that indicates a strong positive or negative sentiment.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a phrase or word that indicates a strong positive or negative sentiment.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8099": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a pronoun or a word that could be a pronoun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a pronoun or a word that could be a pronoun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8118": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate perception, opinion, or judgment, often preceded by verbs like 'see', 'view', 'consider', 'describe', 'believe', 'think', 'interpret', 'regard', 'feel', or 'said'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate perception, opinion, or judgment, often preceded by verbs like 'see', 'view', 'consider', 'describe', 'believe', 'think', 'interpret', 'regard', 'feel', or 'said'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8177": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically last names or names of places.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically last names or names of places.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8178": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, especially commas and periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, especially commas and periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8356": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8515": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs or actions that are dynamic, physical, or involve movement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs or actions that are dynamic, physical, or involve movement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8610": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, or organizations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, or organizations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8701": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, often a person's name or a place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, often a person's name or a place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8744": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a capitalized word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a capitalized word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8784": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8906": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'interview' or its derivatives, or the word 'interview' in the context of a specific person or entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'interview' or its derivatives, or the word 'interview' in the context of a specific person or entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|8987": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new clause or sentence, often introduced by a pronoun or conjunction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new clause or sentence, often introduced by a pronoun or conjunction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9156": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to years in the 20th century.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to years in the 20th century.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9204": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the past tense of the verb 'to lay' or 'to launch' when referring to ships.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the past tense of the verb 'to lay' or 'to launch' when referring to ships.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9313": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a phrase indicating a requirement, rule, or obligation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a phrase indicating a requirement, rule, or obligation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9333": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a phrase indicating a desire or intention, often following a verb or a preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a phrase indicating a desire or intention, often following a verb or a preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9351": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to last names, especially those that are well-known or have a specific cultural or historical significance.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to last names, especially those that are well-known or have a specific cultural or historical significance.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9616": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to relative pronouns that introduce a relative clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to relative pronouns that introduce a relative clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9621": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a text or a capitalized word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a text or a capitalized word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9688": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a romantic or intimate relationship.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a romantic or intimate relationship.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9696": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a person's name, especially when it is a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a person's name, especially when it is a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9752": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate direction or movement, often following a reference to a road or highway.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate direction or movement, often following a reference to a road or highway.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9765": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|9811": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the completion or achievement of an action or goal.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the completion or achievement of an action or goal.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10013": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10125": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a part of a list or enumeration, often following a comma or other punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a part of a list or enumeration, often following a comma or other punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10213": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a sports team or league that the subject of the text is associated with.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a sports team or league that the subject of the text is associated with.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10396": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a verb in the third person singular present tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a verb in the third person singular present tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10501": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that refer to a group of people, often in the context of a cast, ensemble, or collective.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that refer to a group of people, often in the context of a cast, ensemble, or collective.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10650": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are past tense verbs.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are past tense verbs.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10737": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of merging, combining, or transforming one thing into another.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of merging, combining, or transforming one thing into another.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10820": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the type of group or collective that the marked token refers to, especially when it is the object of a verb or preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the type of group or collective that the marked token refers to, especially when it is the object of a verb or preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10826": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a parenthetical statement or abbreviation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a parenthetical statement or abbreviation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|10893": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates or time-related expressions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates or time-related expressions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11238": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and brands.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and brands.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11244": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the need for a word that completes a prepositional phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the need for a word that completes a prepositional phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11381": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11388": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being an indefinite article.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being an indefinite article.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11485": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11511": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a text or a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a text or a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11526": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the modal verb 'would' and its variations, indicating future or hypothetical actions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the modal verb 'would' and its variations, indicating future or hypothetical actions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|11816": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, often a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, often a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12020": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, often marked by punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, often marked by punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12122": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a word or phrase that is likely to be a definite article, pronoun, or adjective.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a word or phrase that is likely to be a definite article, pronoun, or adjective.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12187": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly ages or years.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly ages or years.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12195": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or date preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or date preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12264": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to words that are often associated with the end of a sentence or phrase, or are part of a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to words that are often associated with the end of a sentence or phrase, or are part of a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12282": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a quotation or direct speech.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a quotation or direct speech.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12294": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or noun phrase that is often the subject or topic of a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or noun phrase that is often the subject or topic of a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12332": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year in the YYYY format.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year in the YYYY format.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12381": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a location, specifically a country or region.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a location, specifically a country or region.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12441": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a specific location or direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a specific location or direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12475": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12582": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12632": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, particularly when it is a specific noun or proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, particularly when it is a specific noun or proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12636": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new argument, position, or response in a text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new argument, position, or response in a text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12670": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, often a person's last name or a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, often a person's last name or a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12752": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a specific, often technical, threshold or limit.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a specific, often technical, threshold or limit.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12775": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often marked by punctuation or a transition to a new topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often marked by punctuation or a transition to a new topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12791": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that is the start of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that is the start of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12832": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12856": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country or region, especially when it is related to a conflict or military context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country or region, especially when it is related to a conflict or military context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|12936": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that is the subject of a question or clause that expects a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that is the subject of a question or clause that expects a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13039": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13098": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a relationship or association, often involving a preposition or verb that connects two entities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a relationship or association, often involving a preposition or verb that connects two entities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13152": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun, often a person's name or a place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun, often a person's name or a place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13307": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13321": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized 'H' at the beginning of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized 'H' at the beginning of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13388": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically last names or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically last names or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13449": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a location name or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a location name or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13769": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a title or proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a title or proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13833": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the part of speech of the marked token, which is a noun in all cases.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the part of speech of the marked token, which is a noun in all cases.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|13965": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new action or event, often indicated by the verb 'begin' or similar words.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new action or event, often indicated by the verb 'begin' or similar words.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14066": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to words that are often used to describe a form of humor or imitation, often in the context of media or entertainment.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to words that are often used to describe a form of humor or imitation, often in the context of media or entertainment.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14076": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a title or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a title or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14121": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person, often a character or actor.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person, often a character or actor.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14192": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of the word 'use' or its derivatives, and the context in which it is used.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of the word 'use' or its derivatives, and the context in which it is used.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14201": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a clause or sentence, often marked by a comma or period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a clause or sentence, often marked by a comma or period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14204": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs that indicate an action or event that is about to happen or is in progress.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs that indicate an action or event that is about to happen or is in progress.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14222": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by a capital letter.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by a capital letter.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14270": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a specific name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a specific name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14441": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|14932": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to acronyms or initialisms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to acronyms or initialisms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15009": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, particularly those with commas or decimal points.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, particularly those with commas or decimal points.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15155": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the activity or process of creating or performing something, often related to a specific field or art form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the activity or process of creating or performing something, often related to a specific field or art form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15231": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15317": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a form of government or political structure.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a form of government or political structure.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15362": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a person's name or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a person's name or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15432": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to units of measurement, particularly those involving feet.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to units of measurement, particularly those involving feet.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15452": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the start of a contract or agreement, or the beginning of a new role or position.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the start of a contract or agreement, or the beginning of a new role or position.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15501": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a sentence or text, as it is activated by the first token in each excerpt.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a sentence or text, as it is activated by the first token in each excerpt.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15537": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a section or topic, often indicated by equals signs or specific keywords.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a section or topic, often indicated by equals signs or specific keywords.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15665": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a singular or plural noun referring to a young male human.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a singular or plural noun referring to a young male human.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15936": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a past tense verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a past tense verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|15984": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|16014": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and fictional entities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and fictional entities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|16059": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a specific named entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a specific named entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|16152": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a choice or selection being made.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a choice or selection being made.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "llama-3.1-8b:bypass:42|16174": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are verbs related to managing, controlling, or dealing with something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are verbs related to managing, controlling, or dealing with something.",
+  "no_pattern": false,
+  "parse_ok": true
+ }
+}

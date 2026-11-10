@@ -1,0 +1,242 @@
+{
+ "role": "route",
+ "arch": "gated_mag_w",
+ "beta": 0.1,
+ "l1_coef": 5.62397,
+ "seeds": [
+  42,
+  137,
+  0
+ ],
+ "cell": {
+  "top50_mean": 0.1,
+  "top50_std": 0.0,
+  "dictwide_mean": 0.4776170798898072,
+  "dictwide_std": 0.002066115702479332,
+  "dense_importance_share": 0.8657302066125926,
+  "dense_importance_share_signed": 0.8702344411122085,
+  "dense_importance_denominator": 7.805095743949659,
+  "dense_importance_n_evaluated": 1500,
+  "l0_measured": [
+   58.32709884643555,
+   58.44631576538086,
+   58.65018844604492
+  ],
+  "l0_measured_mean": 58.474534352620445,
+  "l0_train_log_stale": [
+   56.186767578125,
+   54.71875,
+   55.27099609375
+  ],
+  "fvu": 0.0049647074192762375,
+  "l0_matched": true,
+  "top50_dense_frac": 1.0,
+  "top50_shared_dense": 0.1,
+  "top50_shared_content": null,
+  "top50_dce_max": 0.5282363001925194,
+  "top50_dce_min": 0.05065877681518138,
+  "dce_p99_over_median": 194.3908796135882,
+  "n_cand": 1500,
+  "n_screened": 1500,
+  "screen": 1500,
+  "n_alive": 2904,
+  "jumprelu_testability": null
+ },
+ "composition": {
+  "top50": 0.1,
+  "dictwide": 0.4776170798898072,
+  "top50_frac_canonical": 0.02,
+  "top50_sharing_canonical": 1.0,
+  "n_canonical": 2,
+  "sharing_canonical": 1.0,
+  "top50_frac_band": 0.98,
+  "top50_sharing_band": 0.08163265306122448,
+  "n_band": 80,
+  "sharing_band": 0.25,
+  "top50_frac_content": 0.0,
+  "top50_sharing_content": null,
+  "n_content": 2822,
+  "sharing_content": 0.4836995038979447
+ },
+ "per_seed": [
+  {
+   "seed": 42,
+   "l0_exact": 54.83883,
+   "rows": 100000,
+   "n_alive": 2898,
+   "n_never_fired": 93,
+   "fvu_total": 0.0048825981602954325,
+   "fvu_content": 0.14914523701547397,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 54.009825,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2896,
+   "heldout_n_never_fired": 91,
+   "heldout_fvu_total": 0.004666627122846192,
+   "heldout_fvu_content": 0.14805551515976556,
+   "heldout_w1_rows": 0.9685018943786969,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 616.916259765625,
+     "fvu": 0.0044365194626152515,
+     "l0": 56.18505859375
+    },
+    {
+     "step": 18000,
+     "mse": 612.9129638671875,
+     "fvu": 0.0047002448700368404,
+     "l0": 55.332763671875
+    },
+    {
+     "step": 19000,
+     "mse": 617.0069580078125,
+     "fvu": 0.0049647074192762375,
+     "l0": 56.186767578125
+    }
+   ],
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 0.0,
+    "massive_canonical_l1_mean": 0.0,
+    "massive_canonical_pc1_fraction_mean": 0.0,
+    "massive_band_active_atoms_mean": 56.2117805480957,
+    "massive_band_l1_mean": 14471.49609375,
+    "massive_band_pc1_fraction_mean": 0.9995446801185608,
+    "massive_content_active_atoms_mean": 4.217748165130615,
+    "massive_content_l1_mean": 24.12470245361328,
+    "massive_content_pc1_fraction_mean": 0.0004552680184133351,
+    "massive_atoms_for_90pct_pc1_median": 43.0,
+    "massive_total_l1_mean": 14495.62109375,
+    "massive_reconstructed_pc1_coef_mean": 2968.62744140625,
+    "n_massive_specific_atoms": 54,
+    "massive_specific_by_class": {
+     "canonical": 0,
+     "band": 54,
+     "content": 0
+    }
+   },
+   "top50_frac_massive_specific": 0.86
+  },
+  {
+   "seed": 137,
+   "l0_exact": 54.94836,
+   "rows": 100000,
+   "n_alive": 2912,
+   "n_never_fired": 77,
+   "fvu_total": 0.004890075093413715,
+   "fvu_content": 0.14931770424627366,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 54.22574,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2915,
+   "heldout_n_never_fired": 72,
+   "heldout_fvu_total": 0.004671783374324515,
+   "heldout_fvu_content": 0.14815912320364708,
+   "heldout_w1_rows": 0.9685018943786969,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 617.9300537109375,
+     "fvu": 0.005176926963031292,
+     "l0": 56.038818359375
+    },
+    {
+     "step": 18000,
+     "mse": 615.75244140625,
+     "fvu": 0.005432147067040205,
+     "l0": 55.956787109375
+    },
+    {
+     "step": 19000,
+     "mse": 604.630126953125,
+     "fvu": 0.0043501583859324455,
+     "l0": 54.71875
+    }
+   ],
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 0.0,
+    "massive_canonical_l1_mean": 0.0,
+    "massive_canonical_pc1_fraction_mean": 0.0,
+    "massive_band_active_atoms_mean": 63.005218505859375,
+    "massive_band_l1_mean": 15405.7275390625,
+    "massive_band_pc1_fraction_mean": 0.9996377229690552,
+    "massive_content_active_atoms_mean": 4.9105143547058105,
+    "massive_content_l1_mean": 23.964902877807617,
+    "massive_content_pc1_fraction_mean": 0.0003623185330070555,
+    "massive_atoms_for_90pct_pc1_median": 51.0,
+    "massive_total_l1_mean": 15429.6943359375,
+    "massive_reconstructed_pc1_coef_mean": 2968.108154296875,
+    "n_massive_specific_atoms": 62,
+    "massive_specific_by_class": {
+     "canonical": 0,
+     "band": 62,
+     "content": 0
+    }
+   }
+  },
+  {
+   "seed": 0,
+   "l0_exact": 55.13725,
+   "rows": 100000,
+   "n_alive": 2936,
+   "n_never_fired": 48,
+   "fvu_total": 0.00485202981467224,
+   "fvu_content": 0.14815802770865916,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 54.22866,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2941,
+   "heldout_n_never_fired": 40,
+   "heldout_fvu_total": 0.004638061912674559,
+   "heldout_fvu_content": 0.14709196181509498,
+   "heldout_w1_rows": 0.9685018943786969,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 607.395751953125,
+     "fvu": 0.0045898351818323135,
+     "l0": 56.121826171875
+    },
+    {
+     "step": 18000,
+     "mse": 609.3999633789062,
+     "fvu": 0.003963157534599304,
+     "l0": 55.941650390625
+    },
+    {
+     "step": 19000,
+     "mse": 604.8314208984375,
+     "fvu": 0.00591864762827754,
+     "l0": 55.27099609375
+    }
+   ],
+   "massive_rows": {
+    "n_massive_rows": 1341,
+    "n_ordinary_rows": 98659,
+    "massive_canonical_active_atoms_mean": 0.0,
+    "massive_canonical_l1_mean": 0.0,
+    "massive_canonical_pc1_fraction_mean": 0.0,
+    "massive_band_active_atoms_mean": 54.010440826416016,
+    "massive_band_l1_mean": 14575.1201171875,
+    "massive_band_pc1_fraction_mean": 0.9996803998947144,
+    "massive_content_active_atoms_mean": 4.264727592468262,
+    "massive_content_l1_mean": 25.71072769165039,
+    "massive_content_pc1_fraction_mean": 0.000319636455969885,
+    "massive_atoms_for_90pct_pc1_median": 42.0,
+    "massive_total_l1_mean": 14600.8310546875,
+    "massive_reconstructed_pc1_coef_mean": 2969.4541015625,
+    "n_massive_specific_atoms": 52,
+    "massive_specific_by_class": {
+     "canonical": 0,
+     "band": 52,
+     "content": 0
+    }
+   }
+  }
+ ],
+ "minutes": 25.55730370283127
+}

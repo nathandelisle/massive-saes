@@ -1,0 +1,11 @@
+{
+  "documented_convention_checkpoints": 44,
+  "documented_convention_n_ratio_gt_2": 8,
+  "documented_convention_median_ratio": 1.0560005496740006,
+  "excluded_from_headline": {
+    "Qwen Scope": "Fixed calibration threshold; release norm cutoff unspecified.",
+    "EleutherAI Pythia": "no published evaluation recipe; standardized protocol only",
+    "Qwen2.5 filtered BatchTopK": "only the position half of its documented filter is reproduced"
+  },
+  "note": "Counts use checkpoints with documented evaluation conventions."
+}

@@ -1,0 +1,35 @@
+{
+  "v3_path": "/opt/work/pc1_research_package/pc1_v3",
+  "activations": "/mnt/nvme/workdir/acts/gpt2_wikitext/acts.npy",
+  "training_split": "train",
+  "mean_path": "/mnt/nvme/workdir/acts/gpt2_wikitext/mean.npy",
+  "pc1_path": "/mnt/nvme/workdir/acts/gpt2_wikitext/pc1.npy",
+  "d_sae": 3072,
+  "conditions": [
+    "standard",
+    "bypass"
+  ],
+  "k_values": [
+    64
+  ],
+  "seeds": [
+    42,
+    137,
+    0,
+    1,
+    2
+  ],
+  "betas": [
+    0.0,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "steps": 20000,
+  "batch_size": 4096,
+  "lr": 0.0003,
+  "data_order_seed": 20260906,
+  "checkpoint_every": 500,
+  "device": "cuda",
+  "deterministic": true
+}

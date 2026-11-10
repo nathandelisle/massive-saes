@@ -1,0 +1,150 @@
+{
+ "model": "llama-3.1-8b",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-28-68.us-east-2.compute.internal",
+  "code_hash": "288106b3f13e8f80",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "n_gpu": 1
+ },
+ "site_block": 16,
+ "hidden_state_index": 17,
+ "store": {
+  "mode": "full re-stream",
+  "n_written": 5000000,
+  "last_row": 105411,
+  "precedes_partitions": true
+ },
+ "pc1": {
+  "pc1_var_explained": 0.9686386042435509,
+  "pc2_var_explained": 0.0008439243160258442,
+  "spectral_gap": 1147.778996113068,
+  "cos_pc1_mean": 0.789611137615307
+ },
+ "alive_rules": {
+  "primary": "archived counter: firing counts over the first 106,496 store rows / 100,000 (reproduces every archived ranking universe)",
+  "corrected": "stated rule: firing rate over the first 100,000 rows > 1e-3",
+  "n_alive_corrected": {
+   "bypass_s0": 11656,
+   "bypass_s1": 11784,
+   "bypass_s2": 11678,
+   "bypass_s42": 11697,
+   "bypass_s137": 11658,
+   "standard_s0": 9368,
+   "standard_s1": 9512,
+   "standard_s2": 9527,
+   "standard_s42": 9576,
+   "standard_s137": 9393
+  }
+ },
+ "n_alive": {
+  "bypass_s0": 11945,
+  "bypass_s1": 12042,
+  "bypass_s2": 11920,
+  "bypass_s42": 11996,
+  "bypass_s137": 11942,
+  "standard_s0": 9566,
+  "standard_s1": 9726,
+  "standard_s2": 9742,
+  "standard_s42": 9795,
+  "standard_s137": 9591
+ },
+ "n_alive_cal": {
+  "bypass_s0": 11819,
+  "bypass_s1": 11951,
+  "bypass_s2": 11849,
+  "bypass_s42": 11849,
+  "bypass_s137": 11856,
+  "standard_s0": 9439,
+  "standard_s1": 9567,
+  "standard_s2": 9538,
+  "standard_s42": 9612,
+  "standard_s137": 9474
+ },
+ "partition_cal": {
+  "name": "cal",
+  "n_seqs": 868,
+  "n_docs": 88,
+  "n_tokens": 66559,
+  "n_targets": 65691
+ },
+ "gate3": {
+  "status": "PASS",
+  "pc1_share_now": 0.9686386042435509,
+  "pc1_share_archived": 0.9686386042435503,
+  "abs_diff_pc1": 5.551115123125783e-16,
+  "alive_now_vs_archived": {
+   "bypass_s0": [
+    11945,
+    11945,
+    0.0
+   ],
+   "bypass_s1": [
+    12042,
+    12042,
+    0.0
+   ],
+   "bypass_s2": [
+    11920,
+    11920,
+    0.0
+   ],
+   "bypass_s42": [
+    11996,
+    11996,
+    0.0
+   ],
+   "bypass_s137": [
+    11942,
+    11942,
+    0.0
+   ],
+   "standard_s0": [
+    9566,
+    9566,
+    0.0
+   ],
+   "standard_s1": [
+    9726,
+    9726,
+    0.0
+   ],
+   "standard_s2": [
+    9742,
+    9742,
+    0.0
+   ],
+   "standard_s42": [
+    9795,
+    9795,
+    0.0
+   ],
+   "standard_s137": [
+    9591,
+    9591,
+    0.0
+   ]
+  },
+  "worst_alive_rel_diff": 0.0,
+  "tolerance": {
+   "pc1_abs": 0.002,
+   "alive_rel": 0.005
+  },
+  "note": "alive counts under the ARCHIVED counter (106,496 rows / 100,000)"
+ },
+ "sites": {
+  "pre_rise_block": 7,
+  "post_fall_block": 31,
+  "canonical_block": 16,
+  "rule": "fallback-early-late",
+  "threshold": 0.5,
+  "pc1_share_pre": 0.9906933951085348,
+  "pc1_share_canonical": 0.9657595012191476,
+  "pc1_share_post": 0.11244255830138614
+ }
+}

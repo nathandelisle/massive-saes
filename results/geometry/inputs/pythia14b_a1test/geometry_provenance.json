@@ -1,0 +1,9 @@
+{
+ "source": "RX prep (rx-shared/pythia-1.4b/prep): mean.npy + pca.npz['v1'], recomputed by exact replay of the v3 5M-token store; gate 3 matched the archived v3 PC1 to |dpc1| ~ 1e-15",
+ "label": "RX-reconstructed training geometry (not the original archived file)",
+ "site_block_zero_based": 12,
+ "hidden_state_index": 13,
+ "mean_sha256": "06b747eae00a89c78d173055db3f34b8532e4ac0d6e2f59e472a07f09dc79ae3",
+ "pca_sha256": "e3e8fa27d6475d041751fe5631c3f042cad9d53ab47a13f95f689f3b750ad1e5",
+ "unigram_counts_sha256": "ca05e34b12c3833fa755e1e4f1d24dc43706feb5e3a7e74e76bd979038295af7"
+}

@@ -1,0 +1,864 @@
+{
+ "gpt2": {
+  "massive_threshold": 752.4099731445312,
+  "massive_row_fraction": 0.01341,
+  "massive_share_of_pc1_energy": 0.9853681037899847,
+  "models": {
+   "gated": {
+    "per_seed": [
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 59.56897735595703,
+      "massive_band_l1_mean": 15228.99609375,
+      "massive_band_pc1_fraction_mean": 0.9995625019073486,
+      "massive_content_active_atoms_mean": 4.563012599945068,
+      "massive_content_l1_mean": 24.918493270874023,
+      "massive_content_pc1_fraction_mean": 0.00043742076377384365,
+      "massive_atoms_for_90pct_pc1_median": 46.0,
+      "massive_total_l1_mean": 15253.9150390625,
+      "massive_reconstructed_pc1_coef_mean": 2966.26220703125,
+      "n_massive_specific_atoms": 57,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 57,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 65.0,
+      "massive_band_l1_mean": 15688.4609375,
+      "massive_band_pc1_fraction_mean": 0.9996227622032166,
+      "massive_content_active_atoms_mean": 5.044742584228516,
+      "massive_content_l1_mean": 24.78011703491211,
+      "massive_content_pc1_fraction_mean": 0.00037731771590188146,
+      "massive_atoms_for_90pct_pc1_median": 52.0,
+      "massive_total_l1_mean": 15713.2421875,
+      "massive_reconstructed_pc1_coef_mean": 2966.002685546875,
+      "n_massive_specific_atoms": 64,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 64,
+       "content": 0
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 3.0,
+      "massive_canonical_l1_mean": 9594.4521484375,
+      "massive_canonical_pc1_fraction_mean": 1.9854422807693481,
+      "massive_band_active_atoms_mean": 11.83370590209961,
+      "massive_band_l1_mean": 35425.7734375,
+      "massive_band_pc1_fraction_mean": -1.0404959917068481,
+      "massive_content_active_atoms_mean": 361.80535888671875,
+      "massive_content_l1_mean": 27699.275390625,
+      "massive_content_pc1_fraction_mean": 0.05505373328924179,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 72719.5,
+      "massive_reconstructed_pc1_coef_mean": 2971.057861328125,
+      "n_massive_specific_atoms": 59,
+      "massive_specific_by_class": {
+       "canonical": 2,
+       "band": 5,
+       "content": 52
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 0.015625
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 0.01694915254237288
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 0.01694915254237288
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.88
+   },
+   "relu_l1": {
+    "per_seed": [
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 2968.869140625,
+      "massive_canonical_pc1_fraction_mean": 0.9995414018630981,
+      "massive_band_active_atoms_mean": 1.800894856452942,
+      "massive_band_l1_mean": 12.002033233642578,
+      "massive_band_pc1_fraction_mean": 0.0005194349796511233,
+      "massive_content_active_atoms_mean": 0.43102163076400757,
+      "massive_content_l1_mean": 1.9028222560882568,
+      "massive_content_pc1_fraction_mean": -6.087578731239773e-05,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 2982.773681640625,
+      "massive_reconstructed_pc1_coef_mean": 2970.182861328125,
+      "n_massive_specific_atoms": 1,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 0,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 2.0,
+      "massive_canonical_l1_mean": 2981.69384765625,
+      "massive_canonical_pc1_fraction_mean": 0.9995905756950378,
+      "massive_band_active_atoms_mean": 1.1886651515960693,
+      "massive_band_l1_mean": 5.602301597595215,
+      "massive_band_pc1_fraction_mean": 0.00021390931215137243,
+      "massive_content_active_atoms_mean": 0.7598806619644165,
+      "massive_content_l1_mean": 7.096812725067139,
+      "massive_content_pc1_fraction_mean": 0.0001955504558281973,
+      "massive_atoms_for_90pct_pc1_median": 2.0,
+      "massive_total_l1_mean": 2994.392578125,
+      "massive_reconstructed_pc1_coef_mean": 2970.6591796875,
+      "n_massive_specific_atoms": 2,
+      "massive_specific_by_class": {
+       "canonical": 2,
+       "band": 0,
+       "content": 0
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 2.0,
+      "massive_canonical_l1_mean": 2981.25634765625,
+      "massive_canonical_pc1_fraction_mean": 0.9999011158943176,
+      "massive_band_active_atoms_mean": 1.1401939392089844,
+      "massive_band_l1_mean": 6.438563346862793,
+      "massive_band_pc1_fraction_mean": -3.378372639417648e-05,
+      "massive_content_active_atoms_mean": 0.47651007771492004,
+      "massive_content_l1_mean": 4.494654178619385,
+      "massive_content_pc1_fraction_mean": 0.0001326644269283861,
+      "massive_atoms_for_90pct_pc1_median": 2.0,
+      "massive_total_l1_mean": 2992.189453125,
+      "massive_reconstructed_pc1_coef_mean": 2970.376953125,
+      "n_massive_specific_atoms": 2,
+      "massive_specific_by_class": {
+       "canonical": 2,
+       "band": 0,
+       "content": 0
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 1.0
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.02
+   },
+   "topk": {
+    "per_seed": [
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 63.27740478515625,
+      "massive_band_l1_mean": 15877.4462890625,
+      "massive_band_pc1_fraction_mean": 1.0000303983688354,
+      "massive_content_active_atoms_mean": 0.7225950956344604,
+      "massive_content_l1_mean": 9.454463958740234,
+      "massive_content_pc1_fraction_mean": -3.0391502150450833e-05,
+      "massive_atoms_for_90pct_pc1_median": 55.0,
+      "massive_total_l1_mean": 15886.90234375,
+      "massive_reconstructed_pc1_coef_mean": 2966.701416015625,
+      "n_massive_specific_atoms": 63,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 63,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 63.0,
+      "massive_band_l1_mean": 16108.017578125,
+      "massive_band_pc1_fraction_mean": 0.9999457597732544,
+      "massive_content_active_atoms_mean": 1.0,
+      "massive_content_l1_mean": 16.260705947875977,
+      "massive_content_pc1_fraction_mean": 5.417729335022159e-05,
+      "massive_atoms_for_90pct_pc1_median": 55.0,
+      "massive_total_l1_mean": 16124.27734375,
+      "massive_reconstructed_pc1_coef_mean": 2967.095458984375,
+      "n_massive_specific_atoms": 63,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 63,
+       "content": 0
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 63.27740478515625,
+      "massive_band_l1_mean": 15630.83984375,
+      "massive_band_pc1_fraction_mean": 1.0000449419021606,
+      "massive_content_active_atoms_mean": 0.7225950956344604,
+      "massive_content_l1_mean": 8.409815788269043,
+      "massive_content_pc1_fraction_mean": -4.4993121264269575e-05,
+      "massive_atoms_for_90pct_pc1_median": 55.0,
+      "massive_total_l1_mean": 15639.2529296875,
+      "massive_reconstructed_pc1_coef_mean": 2966.52978515625,
+      "n_massive_specific_atoms": 62,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 62,
+       "content": 0
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 0.0
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.94
+   },
+   "gated_magl1_beta0.03": {
+    "per_seed": [
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 21.064876556396484,
+      "massive_band_l1_mean": 6661.19140625,
+      "massive_band_pc1_fraction_mean": 0.9997602105140686,
+      "massive_content_active_atoms_mean": 2.5324385166168213,
+      "massive_content_l1_mean": 17.302921295166016,
+      "massive_content_pc1_fraction_mean": 0.00023987007443793118,
+      "massive_atoms_for_90pct_pc1_median": 13.0,
+      "massive_total_l1_mean": 6678.49462890625,
+      "massive_reconstructed_pc1_coef_mean": 2968.015380859375,
+      "n_massive_specific_atoms": 20,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 20,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 22.619686126708984,
+      "massive_band_l1_mean": 6835.99853515625,
+      "massive_band_pc1_fraction_mean": 0.9998918771743774,
+      "massive_content_active_atoms_mean": 2.552572727203369,
+      "massive_content_l1_mean": 17.008800506591797,
+      "massive_content_pc1_fraction_mean": 0.00010813504923135042,
+      "massive_atoms_for_90pct_pc1_median": 11.0,
+      "massive_total_l1_mean": 6853.0068359375,
+      "massive_reconstructed_pc1_coef_mean": 2968.464599609375,
+      "n_massive_specific_atoms": 22,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 22,
+       "content": 0
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 3101.583984375,
+      "massive_canonical_pc1_fraction_mean": 0.647499144077301,
+      "massive_band_active_atoms_mean": 132.11782836914062,
+      "massive_band_l1_mean": 9861.8623046875,
+      "massive_band_pc1_fraction_mean": 0.38154008984565735,
+      "massive_content_active_atoms_mean": 214.13795471191406,
+      "massive_content_l1_mean": 21774.421875,
+      "massive_content_pc1_fraction_mean": -0.029039187356829643,
+      "massive_atoms_for_90pct_pc1_median": 30.0,
+      "massive_total_l1_mean": 34737.8671875,
+      "massive_reconstructed_pc1_coef_mean": 2964.81787109375,
+      "n_massive_specific_atoms": 60,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 44,
+       "content": 16
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 0.016666666666666666
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 0.016666666666666666
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.4
+   },
+   "gated_magl1_beta0.1": {
+    "per_seed": [
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 3.0,
+      "massive_canonical_l1_mean": 3789.533447265625,
+      "massive_canonical_pc1_fraction_mean": 0.9999178647994995,
+      "massive_band_active_atoms_mean": 0.41237881779670715,
+      "massive_band_l1_mean": 3.0746734142303467,
+      "massive_band_pc1_fraction_mean": 6.701451184198959e-06,
+      "massive_content_active_atoms_mean": 3.1551082134246826,
+      "massive_content_l1_mean": 24.967660903930664,
+      "massive_content_pc1_fraction_mean": 7.548189023509622e-05,
+      "massive_atoms_for_90pct_pc1_median": 3.0,
+      "massive_total_l1_mean": 3817.57568359375,
+      "massive_reconstructed_pc1_coef_mean": 2970.22509765625,
+      "n_massive_specific_atoms": 3,
+      "massive_specific_by_class": {
+       "canonical": 3,
+       "band": 0,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 5.00447416305542,
+      "massive_canonical_l1_mean": 4017.650146484375,
+      "massive_canonical_pc1_fraction_mean": 1.000061273574829,
+      "massive_band_active_atoms_mean": 0.23266218602657318,
+      "massive_band_l1_mean": 1.6645493507385254,
+      "massive_band_pc1_fraction_mean": -0.0001033564331009984,
+      "massive_content_active_atoms_mean": 3.2766592502593994,
+      "massive_content_l1_mean": 25.475025177001953,
+      "massive_content_pc1_fraction_mean": 4.208371683489531e-05,
+      "massive_atoms_for_90pct_pc1_median": 4.0,
+      "massive_total_l1_mean": 4044.7900390625,
+      "massive_reconstructed_pc1_coef_mean": 2969.923095703125,
+      "n_massive_specific_atoms": 5,
+      "massive_specific_by_class": {
+       "canonical": 5,
+       "band": 0,
+       "content": 0
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 5.0,
+      "massive_canonical_l1_mean": 3867.2021484375,
+      "massive_canonical_pc1_fraction_mean": 1.000168800354004,
+      "massive_band_active_atoms_mean": 0.45786726474761963,
+      "massive_band_l1_mean": 7.17342472076416,
+      "massive_band_pc1_fraction_mean": -0.0002853423648048192,
+      "massive_content_active_atoms_mean": 2.8993289470672607,
+      "massive_content_l1_mean": 20.044462203979492,
+      "massive_content_pc1_fraction_mean": 0.0001165373032563366,
+      "massive_atoms_for_90pct_pc1_median": 4.0,
+      "massive_total_l1_mean": 3894.419921875,
+      "massive_reconstructed_pc1_coef_mean": 2970.34375,
+      "n_massive_specific_atoms": 5,
+      "massive_specific_by_class": {
+       "canonical": 5,
+       "band": 0,
+       "content": 0
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 0.0
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.06
+   },
+   "gated_magl1_beta1": {
+    "per_seed": [
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 2964.75439453125,
+      "massive_canonical_pc1_fraction_mean": 0.9980734586715698,
+      "massive_band_active_atoms_mean": 3.017151355743408,
+      "massive_band_l1_mean": 25.568443298339844,
+      "massive_band_pc1_fraction_mean": 0.001934989937581122,
+      "massive_content_active_atoms_mean": 0.40044742822647095,
+      "massive_content_l1_mean": 0.9581469893455505,
+      "massive_content_pc1_fraction_mean": -8.413961040787399e-06,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 2991.281005859375,
+      "massive_reconstructed_pc1_coef_mean": 2970.3876953125,
+      "n_massive_specific_atoms": 3,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 2,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 2968.007568359375,
+      "massive_canonical_pc1_fraction_mean": 0.9989257454872131,
+      "massive_band_active_atoms_mean": 2.0402684211730957,
+      "massive_band_l1_mean": 19.659374237060547,
+      "massive_band_pc1_fraction_mean": 0.0010889952536672354,
+      "massive_content_active_atoms_mean": 0.5294556021690369,
+      "massive_content_l1_mean": 1.3032779693603516,
+      "massive_content_pc1_fraction_mean": -1.473323573009111e-05,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 2988.970458984375,
+      "massive_reconstructed_pc1_coef_mean": 2971.144775390625,
+      "n_massive_specific_atoms": 1,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 0,
+       "content": 0
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 1341,
+      "n_ordinary_rows": 98659,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 2964.5693359375,
+      "massive_canonical_pc1_fraction_mean": 0.9979704022407532,
+      "massive_band_active_atoms_mean": 2.4198360443115234,
+      "massive_band_l1_mean": 23.758548736572266,
+      "massive_band_pc1_fraction_mean": 0.0020487967412918806,
+      "massive_content_active_atoms_mean": 0.5853840708732605,
+      "massive_content_l1_mean": 1.334594488143921,
+      "massive_content_pc1_fraction_mean": -1.9113009329885244e-05,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 2989.66259765625,
+      "massive_reconstructed_pc1_coef_mean": 2970.51220703125,
+      "n_massive_specific_atoms": 2,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 1,
+       "content": 0
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 0.3333333333333333
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 0.3333333333333333
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 0.5
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 0.5
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.02
+   }
+  }
+ },
+ "pythia-1.4b": {
+  "massive_threshold": 525.7087326049805,
+  "massive_row_fraction": 0.02657,
+  "massive_share_of_pc1_energy": 0.9684955200655023,
+  "models": {
+   "gated": {
+    "per_seed": [
+     {
+      "n_massive_rows": 2657,
+      "n_ordinary_rows": 97343,
+      "massive_canonical_active_atoms_mean": 2.399322509765625,
+      "massive_canonical_l1_mean": 1287.0177001953125,
+      "massive_canonical_pc1_fraction_mean": 0.942197859287262,
+      "massive_band_active_atoms_mean": 2.0015053749084473,
+      "massive_band_l1_mean": 185.0274200439453,
+      "massive_band_pc1_fraction_mean": 0.0586809478700161,
+      "massive_content_active_atoms_mean": 2.991719961166382,
+      "massive_content_l1_mean": 22.9169979095459,
+      "massive_content_pc1_fraction_mean": -0.0008787992410361767,
+      "massive_atoms_for_90pct_pc1_median": 2.0,
+      "massive_total_l1_mean": 1494.9620361328125,
+      "massive_reconstructed_pc1_coef_mean": -1196.8905029296875,
+      "n_massive_specific_atoms": 3,
+      "massive_specific_by_class": {
+       "canonical": 2,
+       "band": 1,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 2657,
+      "n_ordinary_rows": 97343,
+      "massive_canonical_active_atoms_mean": 1.0605946779251099,
+      "massive_canonical_l1_mean": 1114.515380859375,
+      "massive_canonical_pc1_fraction_mean": 0.7664307951927185,
+      "massive_band_active_atoms_mean": 3.8325178623199463,
+      "massive_band_l1_mean": 746.8526000976562,
+      "massive_band_pc1_fraction_mean": 0.233663871884346,
+      "massive_content_active_atoms_mean": 2.6326684951782227,
+      "massive_content_l1_mean": 9.365829467773438,
+      "massive_content_pc1_fraction_mean": -9.468974167248234e-05,
+      "massive_atoms_for_90pct_pc1_median": 2.0,
+      "massive_total_l1_mean": 1870.73388671875,
+      "massive_reconstructed_pc1_coef_mean": -1196.8984375,
+      "n_massive_specific_atoms": 4,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 3,
+       "content": 0
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 2657,
+      "n_ordinary_rows": 97343,
+      "massive_canonical_active_atoms_mean": 0.0,
+      "massive_canonical_l1_mean": 0.0,
+      "massive_canonical_pc1_fraction_mean": 0.0,
+      "massive_band_active_atoms_mean": 66.91832733154297,
+      "massive_band_l1_mean": 7057.54150390625,
+      "massive_band_pc1_fraction_mean": 0.8931428790092468,
+      "massive_content_active_atoms_mean": 93.25103759765625,
+      "massive_content_l1_mean": 18776.0546875,
+      "massive_content_pc1_fraction_mean": 0.10685714334249496,
+      "massive_atoms_for_90pct_pc1_median": 8.0,
+      "massive_total_l1_mean": 25833.599609375,
+      "massive_reconstructed_pc1_coef_mean": -1189.787353515625,
+      "n_massive_specific_atoms": 91,
+      "massive_specific_by_class": {
+       "canonical": 0,
+       "band": 40,
+       "content": 51
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 0.3333333333333333
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 0.25
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 0.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 0.17582417582417584
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 0.16483516483516483
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.06
+   },
+   "relu_l1": {
+    "per_seed": [
+     {
+      "n_massive_rows": 2657,
+      "n_ordinary_rows": 97343,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 1197.5718994140625,
+      "massive_canonical_pc1_fraction_mean": 0.9961886405944824,
+      "massive_band_active_atoms_mean": 1.8464434146881104,
+      "massive_band_l1_mean": 18.157251358032227,
+      "massive_band_pc1_fraction_mean": 0.001989554613828659,
+      "massive_content_active_atoms_mean": 1.6025593280792236,
+      "massive_content_l1_mean": 31.080442428588867,
+      "massive_content_pc1_fraction_mean": 0.0018217756878584623,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 1246.8095703125,
+      "massive_reconstructed_pc1_coef_mean": -1201.8502197265625,
+      "n_massive_specific_atoms": 2,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 1,
+       "content": 0
+      },
+      "seed": 42
+     },
+     {
+      "n_massive_rows": 2657,
+      "n_ordinary_rows": 97343,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 1197.9693603515625,
+      "massive_canonical_pc1_fraction_mean": 0.9965494871139526,
+      "massive_band_active_atoms_mean": 1.6228829622268677,
+      "massive_band_l1_mean": 8.226031303405762,
+      "massive_band_pc1_fraction_mean": 0.0009523386252112687,
+      "massive_content_active_atoms_mean": 1.6251411437988281,
+      "massive_content_l1_mean": 39.390071868896484,
+      "massive_content_pc1_fraction_mean": 0.002498120767995715,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 1245.5855712890625,
+      "massive_reconstructed_pc1_coef_mean": -1201.9210205078125,
+      "n_massive_specific_atoms": 2,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 0,
+       "content": 1
+      },
+      "seed": 137
+     },
+     {
+      "n_massive_rows": 2657,
+      "n_ordinary_rows": 97343,
+      "massive_canonical_active_atoms_mean": 1.0,
+      "massive_canonical_l1_mean": 1198.2127685546875,
+      "massive_canonical_pc1_fraction_mean": 0.9965975880622864,
+      "massive_band_active_atoms_mean": 1.2100112438201904,
+      "massive_band_l1_mean": 6.344352722167969,
+      "massive_band_pc1_fraction_mean": 0.0006666689296253026,
+      "massive_content_active_atoms_mean": 1.2092585563659668,
+      "massive_content_l1_mean": 40.34318542480469,
+      "massive_content_pc1_fraction_mean": 0.002735781017690897,
+      "massive_atoms_for_90pct_pc1_median": 1.0,
+      "massive_total_l1_mean": 1244.900146484375,
+      "massive_reconstructed_pc1_coef_mean": -1202.0599365234375,
+      "n_massive_specific_atoms": 2,
+      "massive_specific_by_class": {
+       "canonical": 1,
+       "band": 0,
+       "content": 1
+      },
+      "seed": 0
+     }
+    ],
+    "massive_specific_pairwise": [
+     {
+      "source": 42,
+      "target": 137,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 42,
+      "target": 0,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 137,
+      "target": 42,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 137,
+      "target": 0,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 0,
+      "target": 42,
+      "massive_specific_sharing": 1.0
+     },
+     {
+      "source": 0,
+      "target": 137,
+      "massive_specific_sharing": 1.0
+     }
+    ],
+    "top50_frac_massive_specific_s42": 0.02
+   }
+  }
+ }
+}

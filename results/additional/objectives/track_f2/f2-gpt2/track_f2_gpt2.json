@@ -1,0 +1,1988 @@
+{
+ "model": "gpt2",
+ "cohort": "manuscript_gpt2_beta_sweep",
+ "betas": [
+  0.0,
+  0.03,
+  0.1,
+  0.3
+ ],
+ "seeds": [
+  42,
+  137
+ ],
+ "retain_thresholds": [
+  0.01,
+  0.001,
+  0.05
+ ],
+ "primary_retain": 0.01,
+ "top": 50,
+ "ranking_source": "ARCHIVED imp_zero from b2_l1_phase; no re-ranking here",
+ "massive_threshold": 2959.014337662722,
+ "n_valid_tokens": 4609,
+ "n_ordinary_tokens": 4545,
+ "nulls": [
+  "identity_permutation (must be 1.0)",
+  "independent_random",
+  "pc1_preserving_random",
+  "shuffled_activations"
+ ],
+ "cells": {
+  "beta=0": {
+   "status": "measured",
+   "archived_ranking": "feat_gpt2_topk_l1_0.npz",
+   "sae_hashes": {
+    "42": "22be30e2bea00e60",
+    "137": "ed7bf33078ee83f9"
+   },
+   "activation_agreement_42_137": {
+    "applied_retain_threshold": 0.01,
+    "n_pairs": 50,
+    "n_top50": 50,
+    "n_excluded_small_remainder": 0,
+    "excluded_feature_ids": [],
+    "n_zero_variance": 1,
+    "n_zero_variance_ordinary": 45,
+    "pearson_mean": 0.31570073653762654,
+    "pearson_median": -0.007441412279232861,
+    "pearson_mean_ordinary_tokens": 0.5669157952089579,
+    "jaccard_mean": 0.30536876367345606,
+    "jaccard_mean_ordinary_tokens": 0.06841619835652873,
+    "null_token_permutation_pearson_mean": 0.006696424440890134,
+    "null_token_permutation_jaccard_mean": 0.03675421116160908,
+    "null_name": "token_permutation",
+    "null_note": "the TARGET activation matrix's token rows are permuted, which preserves each feature's overall firing rate and destroys temporal correspondence. It is NOT the firing-rate-stratified feature-pair shuffle an earlier docstring named.",
+    "per_pair": [
+     {
+      "src": 2502,
+      "tgt": 1220,
+      "pearson": 0.9688945259874805,
+      "pearson_ordinary": 0.9688559349236184,
+      "jaccard": 0.8766816143497758,
+      "src_var": 31.599693298339844,
+      "tgt_var": 40.11871337890625
+     },
+     {
+      "src": 1799,
+      "tgt": 1462,
+      "pearson": -0.015927952394473945,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1978.699951171875,
+      "tgt_var": 4.156074047088623
+     },
+     {
+      "src": 2874,
+      "tgt": 1329,
+      "pearson": null,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 2470.489990234375,
+      "tgt_var": 0.0
+     },
+     {
+      "src": 2611,
+      "tgt": 975,
+      "pearson": 0.9999905877544317,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 1290.117431640625,
+      "tgt_var": 1048.6629638671875
+     },
+     {
+      "src": 51,
+      "tgt": 2155,
+      "pearson": -0.015028080901437453,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1199.46044921875,
+      "tgt_var": 0.43160322308540344
+     },
+     {
+      "src": 1871,
+      "tgt": 1319,
+      "pearson": -0.007441396937322218,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 935.5604248046875,
+      "tgt_var": 0.07665349543094635
+     },
+     {
+      "src": 10,
+      "tgt": 2780,
+      "pearson": 0.9999881398252443,
+      "pearson_ordinary": null,
+      "jaccard": 0.8,
+      "src_var": 1204.015869140625,
+      "tgt_var": 748.2351684570312
+     },
+     {
+      "src": 1285,
+      "tgt": 1047,
+      "pearson": -0.004644340470993583,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 844.11279296875,
+      "tgt_var": 0.08395247161388397
+     },
+     {
+      "src": 495,
+      "tgt": 3015,
+      "pearson": -0.024137297516967953,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 928.759033203125,
+      "tgt_var": 2.41241192817688
+     },
+     {
+      "src": 2452,
+      "tgt": 1046,
+      "pearson": -0.011283087784133757,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1495.6806640625,
+      "tgt_var": 0.1849435418844223
+     },
+     {
+      "src": 790,
+      "tgt": 2877,
+      "pearson": -0.010018827699448821,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1029.6148681640625,
+      "tgt_var": 0.13318516314029694
+     },
+     {
+      "src": 1530,
+      "tgt": 157,
+      "pearson": 0.9999792231266761,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 1018.7791137695312,
+      "tgt_var": 1009.8565063476562
+     },
+     {
+      "src": 2139,
+      "tgt": 674,
+      "pearson": -0.012819632005892829,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 836.40380859375,
+      "tgt_var": 0.29259219765663147
+     },
+     {
+      "src": 2377,
+      "tgt": 1205,
+      "pearson": -0.028993625794196,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 777.4578247070312,
+      "tgt_var": 0.6750521063804626
+     },
+     {
+      "src": 601,
+      "tgt": 2958,
+      "pearson": -0.008681646000977936,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 850.2208862304688,
+      "tgt_var": 0.14359281957149506
+     },
+     {
+      "src": 2650,
+      "tgt": 2065,
+      "pearson": -0.016318125056506472,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 840.6182250976562,
+      "tgt_var": 1.8807481527328491
+     },
+     {
+      "src": 1515,
+      "tgt": 2240,
+      "pearson": -0.005151678546807171,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1072.1436767578125,
+      "tgt_var": 0.03307337313890457
+     },
+     {
+      "src": 2459,
+      "tgt": 2717,
+      "pearson": -0.021911761900078645,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 779.0615844726562,
+      "tgt_var": 1.1009211540222168
+     },
+     {
+      "src": 659,
+      "tgt": 1368,
+      "pearson": 0.9156554890318503,
+      "pearson_ordinary": 0.9036086339298719,
+      "jaccard": 0.9986795774647887,
+      "src_var": 72.63594055175781,
+      "tgt_var": 115.8292236328125
+     },
+     {
+      "src": 1657,
+      "tgt": 396,
+      "pearson": 0.9999952059536352,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 1033.110107421875,
+      "tgt_var": 865.8743896484375
+     },
+     {
+      "src": 2071,
+      "tgt": 2057,
+      "pearson": -0.00863413685450175,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 777.0225219726562,
+      "tgt_var": 0.864320695400238
+     },
+     {
+      "src": 2774,
+      "tgt": 2808,
+      "pearson": 0.999966681628947,
+      "pearson_ordinary": null,
+      "jaccard": 0.810126582278481,
+      "src_var": 1180.3868408203125,
+      "tgt_var": 676.7467041015625
+     },
+     {
+      "src": 83,
+      "tgt": 2452,
+      "pearson": 0.9645445023836992,
+      "pearson_ordinary": 0.9643981855269832,
+      "jaccard": 0.7928705440900563,
+      "src_var": 66.63703155517578,
+      "tgt_var": 53.04586410522461
+     },
+     {
+      "src": 1559,
+      "tgt": 1838,
+      "pearson": -0.009262819734863236,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 777.237060546875,
+      "tgt_var": 0.4122254252433777
+     },
+     {
+      "src": 611,
+      "tgt": 544,
+      "pearson": 0.9999382380117865,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 968.003662109375,
+      "tgt_var": 808.6166381835938
+     },
+     {
+      "src": 1585,
+      "tgt": 1319,
+      "pearson": -0.007441412279232861,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1119.399169921875,
+      "tgt_var": 0.07665349543094635
+     },
+     {
+      "src": 1732,
+      "tgt": 2609,
+      "pearson": -0.009867094537838239,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 675.3800048828125,
+      "tgt_var": 1.836226463317871
+     },
+     {
+      "src": 699,
+      "tgt": 1599,
+      "pearson": -0.003438708037381533,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 802.1582641601562,
+      "tgt_var": 0.07117655128240585
+     },
+     {
+      "src": 2025,
+      "tgt": 157,
+      "pearson": 0.9999855247241584,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 767.046875,
+      "tgt_var": 1009.8565063476562
+     },
+     {
+      "src": 2744,
+      "tgt": 1854,
+      "pearson": -0.007551990819386588,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1711.8336181640625,
+      "tgt_var": 0.03527585044503212
+     },
+     {
+      "src": 2939,
+      "tgt": 2907,
+      "pearson": -0.008394784387892738,
+      "pearson_ordinary": -0.0014572444874910047,
+      "jaccard": 0.0,
+      "src_var": 808.5801391601562,
+      "tgt_var": 0.17513704299926758
+     },
+     {
+      "src": 70,
+      "tgt": 2404,
+      "pearson": -0.007818498340933414,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 948.2636108398438,
+      "tgt_var": 0.07864468544721603
+     },
+     {
+      "src": 2390,
+      "tgt": 74,
+      "pearson": -0.01037120927270615,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 741.765380859375,
+      "tgt_var": 0.21692483127117157
+     },
+     {
+      "src": 1800,
+      "tgt": 2808,
+      "pearson": 0.9999785550716704,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 505.6219482421875,
+      "tgt_var": 676.7467041015625
+     },
+     {
+      "src": 1000,
+      "tgt": 2201,
+      "pearson": 0.9999785521424942,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 554.0040893554688,
+      "tgt_var": 1700.444091796875
+     },
+     {
+      "src": 1396,
+      "tgt": 229,
+      "pearson": -0.009176896071778589,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 770.3584594726562,
+      "tgt_var": 1.3344460725784302
+     },
+     {
+      "src": 1554,
+      "tgt": 2052,
+      "pearson": -0.006566894780208717,
+      "pearson_ordinary": -0.0008265338481932116,
+      "jaccard": 0.0,
+      "src_var": 595.1864624023438,
+      "tgt_var": 0.06703899800777435
+     },
+     {
+      "src": 2433,
+      "tgt": 809,
+      "pearson": 0.9999891535031062,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 626.8978271484375,
+      "tgt_var": 964.598388671875
+     },
+     {
+      "src": 725,
+      "tgt": 995,
+      "pearson": 0.9999632847540973,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 745.21826171875,
+      "tgt_var": 1082.604736328125
+     },
+     {
+      "src": 1519,
+      "tgt": 1338,
+      "pearson": 0.9999830710373006,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 788.3717651367188,
+      "tgt_var": 748.0363159179688
+     },
+     {
+      "src": 563,
+      "tgt": 690,
+      "pearson": -0.02000847056689257,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 828.5830688476562,
+      "tgt_var": 0.5341299772262573
+     },
+     {
+      "src": 559,
+      "tgt": 2450,
+      "pearson": -0.007694870152927798,
+      "pearson_ordinary": null,
+      "jaccard": 0.00546448087431694,
+      "src_var": 792.526123046875,
+      "tgt_var": 0.5561031103134155
+     },
+     {
+      "src": 2206,
+      "tgt": 1164,
+      "pearson": -0.008929392350781743,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 1073.795166015625,
+      "tgt_var": 0.4716169834136963
+     },
+     {
+      "src": 2777,
+      "tgt": 1063,
+      "pearson": -0.0063394997969144625,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 987.9642944335938,
+      "tgt_var": 0.4087540805339813
+     },
+     {
+      "src": 813,
+      "tgt": 1123,
+      "pearson": -0.007292183145882387,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 635.1483764648438,
+      "tgt_var": 0.22893017530441284
+     },
+     {
+      "src": 1941,
+      "tgt": 1702,
+      "pearson": -0.01226678242214524,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 711.3767700195312,
+      "tgt_var": 0.3575884699821472
+     },
+     {
+      "src": 1211,
+      "tgt": 1132,
+      "pearson": -0.032308930219006465,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 671.830322265625,
+      "tgt_var": 1.9113236665725708
+     },
+     {
+      "src": 2326,
+      "tgt": 909,
+      "pearson": 0.9999797382407836,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 861.6336669921875,
+      "tgt_var": 577.4103393554688
+     },
+     {
+      "src": 1403,
+      "tgt": 1179,
+      "pearson": -0.007703041729297155,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 669.3870849609375,
+      "tgt_var": 0.15946277976036072
+     },
+     {
+      "src": 1152,
+      "tgt": 2470,
+      "pearson": -0.006049314323854032,
+      "pearson_ordinary": null,
+      "jaccard": 0.0,
+      "src_var": 649.7406005859375,
+      "tgt_var": 0.05381016433238983
+     }
+    ],
+    "n_valid_tokens": 4609,
+    "note": "matches fixed by raw decoder geometry at the PRIMARY retain threshold; correlations on valid tokens, and separately on ordinary tokens because shared outlier positions can carry a raw correlation"
+   },
+   "skipped": [
+    {
+     "source_seed": 137,
+     "target_seed": 42,
+     "reason": "missing_source_ranking",
+     "note": "archived imp_zero/alive/pc1_cos2 belong to seed 42; feature IDs do not correspond across independently trained dictionaries"
+    }
+   ]
+  },
+  "beta=0.03": {
+   "status": "measured",
+   "archived_ranking": "feat_gpt2_topk_l1_0p03.npz",
+   "sae_hashes": {
+    "42": "84ce7f47632a5487",
+    "137": "7b2a7aaecc55ff64"
+   },
+   "activation_agreement_42_137": {
+    "applied_retain_threshold": 0.01,
+    "n_pairs": 50,
+    "n_top50": 50,
+    "n_excluded_small_remainder": 0,
+    "excluded_feature_ids": [],
+    "n_zero_variance": 0,
+    "n_zero_variance_ordinary": 41,
+    "pearson_mean": 0.9713198431717047,
+    "pearson_median": 0.9999234805973405,
+    "pearson_mean_ordinary_tokens": 0.9393521860562761,
+    "jaccard_mean": 0.9501071469380691,
+    "jaccard_mean_ordinary_tokens": 0.5345888969419706,
+    "null_token_permutation_pearson_mean": -0.01066734221423523,
+    "null_token_permutation_jaccard_mean": 0.05711743794248916,
+    "null_name": "token_permutation",
+    "null_note": "the TARGET activation matrix's token rows are permuted, which preserves each feature's overall firing rate and destroys temporal correspondence. It is NOT the firing-rate-stratified feature-pair shuffle an earlier docstring named.",
+    "per_pair": [
+     {
+      "src": 2874,
+      "tgt": 1839,
+      "pearson": 0.999983436065268,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 2665.5673828125,
+      "tgt_var": 832.3450317382812
+     },
+     {
+      "src": 1799,
+      "tgt": 1360,
+      "pearson": 0.9999874833033012,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 1791.9986572265625,
+      "tgt_var": 1523.7960205078125
+     },
+     {
+      "src": 2611,
+      "tgt": 975,
+      "pearson": 0.9999539314931224,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 740.5921020507812,
+      "tgt_var": 461.2010192871094
+     },
+     {
+      "src": 83,
+      "tgt": 2452,
+      "pearson": 0.9748533282534853,
+      "pearson_ordinary": 0.9747723398512761,
+      "jaccard": 0.7819778541428026,
+      "src_var": 65.48855590820312,
+      "tgt_var": 46.60538864135742
+     },
+     {
+      "src": 51,
+      "tgt": 2895,
+      "pearson": 0.999988198750166,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 584.8057861328125,
+      "tgt_var": 866.7210693359375
+     },
+     {
+      "src": 2744,
+      "tgt": 13,
+      "pearson": 0.9998826634670936,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 1530.5977783203125,
+      "tgt_var": 149.10842895507812
+     },
+     {
+      "src": 2452,
+      "tgt": 1192,
+      "pearson": 0.9999879075570236,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 1004.0166015625,
+      "tgt_var": 550.0115966796875
+     },
+     {
+      "src": 790,
+      "tgt": 2284,
+      "pearson": 0.9998660859246081,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 516.0623168945312,
+      "tgt_var": 41.89676284790039
+     },
+     {
+      "src": 2502,
+      "tgt": 1220,
+      "pearson": 0.9636600120901655,
+      "pearson_ordinary": 0.9636274719592574,
+      "jaccard": 0.922879177377892,
+      "src_var": 6.86368465423584,
+      "tgt_var": 13.151083946228027
+     },
+     {
+      "src": 10,
+      "tgt": 2780,
+      "pearson": 0.9999630411997112,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 573.3348388671875,
+      "tgt_var": 334.619384765625
+     },
+     {
+      "src": 1530,
+      "tgt": 157,
+      "pearson": 0.9999470978625397,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 563.5875244140625,
+      "tgt_var": 467.76702880859375
+     },
+     {
+      "src": 1871,
+      "tgt": 2202,
+      "pearson": 0.9999770689618845,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 404.65399169921875,
+      "tgt_var": 153.3695526123047
+     },
+     {
+      "src": 2774,
+      "tgt": 2808,
+      "pearson": 0.9999236105400107,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 647.0372314453125,
+      "tgt_var": 125.43423461914062
+     },
+     {
+      "src": 495,
+      "tgt": 1668,
+      "pearson": 0.9999659340131434,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 391.8804016113281,
+      "tgt_var": 194.033203125
+     },
+     {
+      "src": 1285,
+      "tgt": 2120,
+      "pearson": 0.5446029196064732,
+      "pearson_ordinary": null,
+      "jaccard": 0.296875,
+      "src_var": 294.8138427734375,
+      "tgt_var": 2.2373054027557373
+     },
+     {
+      "src": 1515,
+      "tgt": 1823,
+      "pearson": 0.9999491244033004,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 467.4638671875,
+      "tgt_var": 850.6829833984375
+     },
+     {
+      "src": 1657,
+      "tgt": 396,
+      "pearson": 0.9999535507045961,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 497.0198669433594,
+      "tgt_var": 182.36148071289062
+     },
+     {
+      "src": 699,
+      "tgt": 2284,
+      "pearson": 0.9997667054325284,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 410.0845642089844,
+      "tgt_var": 41.89676284790039
+     },
+     {
+      "src": 659,
+      "tgt": 1368,
+      "pearson": 0.9057918477269227,
+      "pearson_ordinary": 0.8979341071926421,
+      "jaccard": 0.994919372652971,
+      "src_var": 68.63899230957031,
+      "tgt_var": 100.4708023071289
+     },
+     {
+      "src": 601,
+      "tgt": 975,
+      "pearson": 0.9999069982755197,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 287.156005859375,
+      "tgt_var": 461.2010192871094
+     },
+     {
+      "src": 2650,
+      "tgt": 1338,
+      "pearson": 0.9999334793461904,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 278.860595703125,
+      "tgt_var": 281.73394775390625
+     },
+     {
+      "src": 2189,
+      "tgt": 2378,
+      "pearson": 0.9980107425890877,
+      "pearson_ordinary": 0.9980094074593012,
+      "jaccard": 0.9344978165938864,
+      "src_var": 29.20427703857422,
+      "tgt_var": 26.716434478759766
+     },
+     {
+      "src": 559,
+      "tgt": 2780,
+      "pearson": 0.9998936317705633,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 392.7310485839844,
+      "tgt_var": 334.619384765625
+     },
+     {
+      "src": 2071,
+      "tgt": 2202,
+      "pearson": 0.9999233506546702,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 280.8681335449219,
+      "tgt_var": 153.3695526123047
+     },
+     {
+      "src": 231,
+      "tgt": 2158,
+      "pearson": 0.9999478251622272,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 543.6992797851562,
+      "tgt_var": 134.23580932617188
+     },
+     {
+      "src": 2139,
+      "tgt": 2589,
+      "pearson": 0.9998530408559563,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 218.8457794189453,
+      "tgt_var": 208.12648010253906
+     },
+     {
+      "src": 2206,
+      "tgt": 2833,
+      "pearson": 0.999964214622895,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 604.9136352539062,
+      "tgt_var": 182.70237731933594
+     },
+     {
+      "src": 1585,
+      "tgt": 2201,
+      "pearson": 0.9999572066614962,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 369.629638671875,
+      "tgt_var": 1251.3702392578125
+     },
+     {
+      "src": 2140,
+      "tgt": 564,
+      "pearson": 0.9735053475337135,
+      "pearson_ordinary": 0.9734219031852146,
+      "jaccard": 0.7988606485539,
+      "src_var": 42.224205017089844,
+      "tgt_var": 62.286258697509766
+     },
+     {
+      "src": 813,
+      "tgt": 157,
+      "pearson": 0.9999541177331966,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 255.386962890625,
+      "tgt_var": 467.76702880859375
+     },
+     {
+      "src": 2459,
+      "tgt": 1839,
+      "pearson": 0.99993581465994,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 237.8290252685547,
+      "tgt_var": 832.3450317382812
+     },
+     {
+      "src": 2777,
+      "tgt": 1370,
+      "pearson": 0.9999181513179043,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 461.7662048339844,
+      "tgt_var": 99.93064880371094
+     },
+     {
+      "src": 2025,
+      "tgt": 157,
+      "pearson": 0.9999777794939125,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 243.71514892578125,
+      "tgt_var": 467.76702880859375
+     },
+     {
+      "src": 70,
+      "tgt": 1839,
+      "pearson": 0.999969378386086,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 328.6226806640625,
+      "tgt_var": 832.3450317382812
+     },
+     {
+      "src": 563,
+      "tgt": 2120,
+      "pearson": 0.5452428380868055,
+      "pearson_ordinary": null,
+      "jaccard": 0.296875,
+      "src_var": 308.5026550292969,
+      "tgt_var": 2.2373054027557373
+     },
+     {
+      "src": 2678,
+      "tgt": 1752,
+      "pearson": 0.9648443241863043,
+      "pearson_ordinary": 0.9647232603632955,
+      "jaccard": 0.8556149732620321,
+      "src_var": 10.376984596252441,
+      "tgt_var": 10.257320404052734
+     },
+     {
+      "src": 611,
+      "tgt": 544,
+      "pearson": 0.9998431634609214,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 286.6970520019531,
+      "tgt_var": 159.43734741210938
+     },
+     {
+      "src": 2415,
+      "tgt": 1218,
+      "pearson": 0.9966908416440595,
+      "pearson_ordinary": 0.9966869382264577,
+      "jaccard": 0.9242424242424242,
+      "src_var": 10.523239135742188,
+      "tgt_var": 11.304328918457031
+     },
+     {
+      "src": 725,
+      "tgt": 995,
+      "pearson": 0.9997813610249194,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 149.2426300048828,
+      "tgt_var": 483.9638671875
+     },
+     {
+      "src": 1916,
+      "tgt": 184,
+      "pearson": 0.9998916822753936,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 202.3181915283203,
+      "tgt_var": 194.6078338623047
+     },
+     {
+      "src": 2377,
+      "tgt": 779,
+      "pearson": 0.999852132476921,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 139.3018798828125,
+      "tgt_var": 80.31942749023438
+     },
+     {
+      "src": 2287,
+      "tgt": 228,
+      "pearson": 0.998025033913602,
+      "pearson_ordinary": 0.9980240274428538,
+      "jaccard": 0.8549019607843137,
+      "src_var": 5.2447123527526855,
+      "tgt_var": 5.273346900939941
+     },
+     {
+      "src": 777,
+      "tgt": 1641,
+      "pearson": 0.9999635227543678,
+      "pearson_ordinary": null,
+      "jaccard": 0.9696969696969697,
+      "src_var": 544.0074462890625,
+      "tgt_var": 561.6349487304688
+     },
+     {
+      "src": 1941,
+      "tgt": 1091,
+      "pearson": 0.9998957277421753,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 129.64932250976562,
+      "tgt_var": 344.4875793457031
+     },
+     {
+      "src": 1152,
+      "tgt": 975,
+      "pearson": 0.9999483371036983,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 137.05462646484375,
+      "tgt_var": 461.2010192871094
+     },
+     {
+      "src": 1559,
+      "tgt": 775,
+      "pearson": 0.9998776281408116,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 173.141845703125,
+      "tgt_var": 144.8319549560547
+     },
+     {
+      "src": 1519,
+      "tgt": 1338,
+      "pearson": 0.9999527222743527,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 201.33377075195312,
+      "tgt_var": 281.73394775390625
+     },
+     {
+      "src": 2326,
+      "tgt": 909,
+      "pearson": 0.999965304966526,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 255.04486083984375,
+      "tgt_var": 81.0007095336914
+     },
+     {
+      "src": 2390,
+      "tgt": 1839,
+      "pearson": 0.9999478614455505,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 145.0807647705078,
+      "tgt_var": 832.3450317382812
+     },
+     {
+      "src": 2771,
+      "tgt": 1368,
+      "pearson": 0.7036146506701223,
+      "pearson_ordinary": 0.6869702188261866,
+      "jaccard": 0.950939226519337,
+      "src_var": 32.923736572265625,
+      "tgt_var": 100.4708023071289
+     }
+    ],
+    "n_valid_tokens": 4609,
+    "note": "matches fixed by raw decoder geometry at the PRIMARY retain threshold; correlations on valid tokens, and separately on ordinary tokens because shared outlier positions can carry a raw correlation"
+   },
+   "skipped": [
+    {
+     "source_seed": 137,
+     "target_seed": 42,
+     "reason": "missing_source_ranking",
+     "note": "archived imp_zero/alive/pc1_cos2 belong to seed 42; feature IDs do not correspond across independently trained dictionaries"
+    }
+   ]
+  },
+  "beta=0.1": {
+   "status": "measured",
+   "archived_ranking": "feat_gpt2_topk_l1_0p1.npz",
+   "sae_hashes": {
+    "42": "3a54bf17fbff9666",
+    "137": "d9ced52ca5b93c77"
+   },
+   "activation_agreement_42_137": {
+    "applied_retain_threshold": 0.01,
+    "n_pairs": 50,
+    "n_top50": 50,
+    "n_excluded_small_remainder": 0,
+    "excluded_feature_ids": [],
+    "n_zero_variance": 0,
+    "n_zero_variance_ordinary": 23,
+    "pearson_mean": 0.973721602977268,
+    "pearson_median": 0.9884216682047975,
+    "pearson_mean_ordinary_tokens": 0.8509844207454721,
+    "jaccard_mean": 0.896459353870237,
+    "jaccard_mean_ordinary_tokens": 0.39427657781380465,
+    "null_token_permutation_pearson_mean": -0.008610099374460535,
+    "null_token_permutation_jaccard_mean": 0.06439032525201895,
+    "null_name": "token_permutation",
+    "null_note": "the TARGET activation matrix's token rows are permuted, which preserves each feature's overall firing rate and destroys temporal correspondence. It is NOT the firing-rate-stratified feature-pair shuffle an earlier docstring named.",
+    "per_pair": [
+     {
+      "src": 2874,
+      "tgt": 2120,
+      "pearson": 0.9889948658504941,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 5624.400390625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 1799,
+      "tgt": 2120,
+      "pearson": 0.9890861433082989,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 3516.40966796875,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2744,
+      "tgt": 2120,
+      "pearson": 0.9886556734554502,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 3065.783447265625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2611,
+      "tgt": 2120,
+      "pearson": 0.9880797434351549,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 964.9783935546875,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2452,
+      "tgt": 2120,
+      "pearson": 0.9884328087033445,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 1346.947021484375,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 560,
+      "tgt": 2120,
+      "pearson": 0.9988754036285221,
+      "pearson_ordinary": -0.00022007042253520764,
+      "jaccard": 0.9696969696969697,
+      "src_var": 542.5148315429688,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2774,
+      "tgt": 2120,
+      "pearson": 0.9888947644551248,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 831.4856567382812,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 790,
+      "tgt": 2120,
+      "pearson": 0.9880945194726161,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 522.6011962890625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 1530,
+      "tgt": 2120,
+      "pearson": 0.9881346292522185,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 583.6400756835938,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 699,
+      "tgt": 2120,
+      "pearson": 0.9883095737266246,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 562.9725341796875,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 51,
+      "tgt": 2120,
+      "pearson": 0.9879725415340815,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 439.6129150390625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 1318,
+      "tgt": 1220,
+      "pearson": 0.9859804113912564,
+      "pearson_ordinary": 0.9859690085151102,
+      "jaccard": 0.943502824858757,
+      "src_var": 5.812999725341797,
+      "tgt_var": 5.703790664672852
+     },
+     {
+      "src": 1871,
+      "tgt": 2120,
+      "pearson": 0.9892950656211814,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 345.38836669921875,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2140,
+      "tgt": 564,
+      "pearson": 0.9949027761281161,
+      "pearson_ordinary": 0.9948705864068269,
+      "jaccard": 0.9545049063336307,
+      "src_var": 58.209190368652344,
+      "tgt_var": 58.02919387817383
+     },
+     {
+      "src": 659,
+      "tgt": 1368,
+      "pearson": 0.9961617295773778,
+      "pearson_ordinary": 0.995988449924566,
+      "jaccard": 0.9957042731177933,
+      "src_var": 77.84207916259766,
+      "tgt_var": 78.74515533447266
+     },
+     {
+      "src": 231,
+      "tgt": 2120,
+      "pearson": 0.9884105277062506,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 741.1865844726562,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 83,
+      "tgt": 2452,
+      "pearson": 0.9863792906032416,
+      "pearson_ordinary": 0.9863556536563448,
+      "jaccard": 0.7668374816983895,
+      "src_var": 51.883846282958984,
+      "tgt_var": 44.560203552246094
+     },
+     {
+      "src": 559,
+      "tgt": 2120,
+      "pearson": 0.9888123180860995,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 370.67291259765625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2206,
+      "tgt": 2120,
+      "pearson": 0.9879820051167731,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 575.2398681640625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2189,
+      "tgt": 272,
+      "pearson": 0.9587781731524117,
+      "pearson_ordinary": 0.9587525665560067,
+      "jaccard": 0.8983050847457628,
+      "src_var": 25.47039222717285,
+      "tgt_var": 18.38371467590332
+     },
+     {
+      "src": 813,
+      "tgt": 2120,
+      "pearson": 0.9880123382960797,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 291.9153747558594,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 495,
+      "tgt": 2120,
+      "pearson": 0.9881584712674042,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 202.27259826660156,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2678,
+      "tgt": 1752,
+      "pearson": 0.9813518424180424,
+      "pearson_ordinary": 0.9812762061309511,
+      "jaccard": 0.8955847255369929,
+      "src_var": 10.614936828613281,
+      "tgt_var": 10.914132118225098
+     },
+     {
+      "src": 2513,
+      "tgt": 2127,
+      "pearson": 0.9985212767096764,
+      "pearson_ordinary": 0.9985203141486579,
+      "jaccard": 0.9551569506726457,
+      "src_var": 28.175399780273438,
+      "tgt_var": 28.522855758666992
+     },
+     {
+      "src": 2415,
+      "tgt": 1739,
+      "pearson": 0.9867753581536883,
+      "pearson_ordinary": 0.9878231072663245,
+      "jaccard": 0.8235294117647058,
+      "src_var": 9.51891803741455,
+      "tgt_var": 9.461610794067383
+     },
+     {
+      "src": 10,
+      "tgt": 2120,
+      "pearson": 0.9889273404741985,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 203.8145294189453,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2287,
+      "tgt": 228,
+      "pearson": 0.9970343940523331,
+      "pearson_ordinary": 0.9970329100853244,
+      "jaccard": 0.8288973384030418,
+      "src_var": 5.1156816482543945,
+      "tgt_var": 4.9654717445373535
+     },
+     {
+      "src": 1515,
+      "tgt": 2120,
+      "pearson": 0.9886313182303132,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 215.5657196044922,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2777,
+      "tgt": 2120,
+      "pearson": 0.9887048396876504,
+      "pearson_ordinary": -0.00022007042253521848,
+      "jaccard": 0.9696969696969697,
+      "src_var": 314.90045166015625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 1657,
+      "tgt": 2120,
+      "pearson": 0.9890473977859489,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 202.57705688476562,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 777,
+      "tgt": 2120,
+      "pearson": 0.9883533220423053,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 432.9142761230469,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 1386,
+      "tgt": 1322,
+      "pearson": 0.9610480142990901,
+      "pearson_ordinary": 0.9591647459584658,
+      "jaccard": 0.9679831736387007,
+      "src_var": 22.317642211914062,
+      "tgt_var": 18.549514770507812
+     },
+     {
+      "src": 1285,
+      "tgt": 2120,
+      "pearson": 0.989011393039781,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 59.06328582763672,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2025,
+      "tgt": 2120,
+      "pearson": 0.9868298484386634,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 76.84054565429688,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 353,
+      "tgt": 2923,
+      "pearson": 0.9889611372969244,
+      "pearson_ordinary": 0.9888976133963043,
+      "jaccard": 0.905144694533762,
+      "src_var": 10.479705810546875,
+      "tgt_var": 9.423344612121582
+     },
+     {
+      "src": 1413,
+      "tgt": 1864,
+      "pearson": 0.9982878694707429,
+      "pearson_ordinary": 0.9982883313679256,
+      "jaccard": 0.8489208633093526,
+      "src_var": 16.53092384338379,
+      "tgt_var": 15.355751037597656
+     },
+     {
+      "src": 366,
+      "tgt": 2572,
+      "pearson": 0.9940670776795085,
+      "pearson_ordinary": 0.9940657837540692,
+      "jaccard": 0.7672955974842768,
+      "src_var": 5.732043266296387,
+      "tgt_var": 5.523195743560791
+     },
+     {
+      "src": 1853,
+      "tgt": 2232,
+      "pearson": 0.9903511031283121,
+      "pearson_ordinary": 0.9903566483638595,
+      "jaccard": 0.8520408163265306,
+      "src_var": 5.888487339019775,
+      "tgt_var": 5.424627780914307
+     },
+     {
+      "src": 1144,
+      "tgt": 1452,
+      "pearson": 0.9979115349512157,
+      "pearson_ordinary": 0.9979988465126889,
+      "jaccard": 0.8909090909090909,
+      "src_var": 13.270833969116211,
+      "tgt_var": 17.01079750061035
+     },
+     {
+      "src": 327,
+      "tgt": 954,
+      "pearson": 0.7918316218830309,
+      "pearson_ordinary": 0.7916261687991233,
+      "jaccard": 0.548440065681445,
+      "src_var": 10.931290626525879,
+      "tgt_var": 4.847775936126709
+     },
+     {
+      "src": 2712,
+      "tgt": 2204,
+      "pearson": 0.975736787154419,
+      "pearson_ordinary": 0.9780071820000531,
+      "jaccard": 0.4166666666666667,
+      "src_var": 3.4153289794921875,
+      "tgt_var": 2.6991055011749268
+     },
+     {
+      "src": 255,
+      "tgt": 2721,
+      "pearson": 0.9964826437778449,
+      "pearson_ordinary": 0.996484002465088,
+      "jaccard": 0.9215017064846417,
+      "src_var": 6.974812984466553,
+      "tgt_var": 6.50661563873291
+     },
+     {
+      "src": 1565,
+      "tgt": 1477,
+      "pearson": 0.9990162645484085,
+      "pearson_ordinary": 0.9990162175558004,
+      "jaccard": 0.7297297297297297,
+      "src_var": 9.686898231506348,
+      "tgt_var": 10.65826416015625
+     },
+     {
+      "src": 2071,
+      "tgt": 2120,
+      "pearson": 0.986431442395543,
+      "pearson_ordinary": null,
+      "jaccard": 0.9846153846153847,
+      "src_var": 101.99078369140625,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 563,
+      "tgt": 2120,
+      "pearson": 0.989437169217954,
+      "pearson_ordinary": -0.00022007042253521065,
+      "jaccard": 0.9696969696969697,
+      "src_var": 74.36676788330078,
+      "tgt_var": 241.73004150390625
+     },
+     {
+      "src": 2647,
+      "tgt": 60,
+      "pearson": 0.9715926473652519,
+      "pearson_ordinary": 0.9715820695117215,
+      "jaccard": 0.6016260162601627,
+      "src_var": 3.6931228637695312,
+      "tgt_var": 3.2212324142456055
+     },
+     {
+      "src": 383,
+      "tgt": 509,
+      "pearson": 0.8723232485014042,
+      "pearson_ordinary": 0.8722628014896322,
+      "jaccard": 0.6434426229508197,
+      "src_var": 2.577308416366577,
+      "tgt_var": 1.5199806690216064
+     },
+     {
+      "src": 2357,
+      "tgt": 273,
+      "pearson": 0.9866332346659205,
+      "pearson_ordinary": 0.9866324201724846,
+      "jaccard": 0.6451612903225806,
+      "src_var": 3.861325263977051,
+      "tgt_var": 2.9382147789001465
+     },
+     {
+      "src": 1894,
+      "tgt": 2582,
+      "pearson": 0.748394492213297,
+      "pearson_ordinary": 0.7483045758651922,
+      "jaccard": 0.5822222222222222,
+      "src_var": 7.94913387298584,
+      "tgt_var": 2.775108814239502
+     },
+     {
+      "src": 2003,
+      "tgt": 698,
+      "pearson": 0.8179817555138148,
+      "pearson_ordinary": 0.8179633614928316,
+      "jaccard": 0.8846153846153846,
+      "src_var": 1.5460840463638306,
+      "tgt_var": 0.42348572611808777
+     }
+    ],
+    "n_valid_tokens": 4609,
+    "note": "matches fixed by raw decoder geometry at the PRIMARY retain threshold; correlations on valid tokens, and separately on ordinary tokens because shared outlier positions can carry a raw correlation"
+   },
+   "skipped": [
+    {
+     "source_seed": 137,
+     "target_seed": 42,
+     "reason": "missing_source_ranking",
+     "note": "archived imp_zero/alive/pc1_cos2 belong to seed 42; feature IDs do not correspond across independently trained dictionaries"
+    }
+   ]
+  },
+  "beta=0.3": {
+   "status": "measured",
+   "archived_ranking": "feat_gpt2_topk_l1_0p3.npz",
+   "sae_hashes": {
+    "42": "a49ee9693d7f6987",
+    "137": "74585cc81fc33220"
+   },
+   "activation_agreement_42_137": {
+    "applied_retain_threshold": 0.01,
+    "n_pairs": 50,
+    "n_top50": 50,
+    "n_excluded_small_remainder": 0,
+    "excluded_feature_ids": [],
+    "n_zero_variance": 0,
+    "n_zero_variance_ordinary": 4,
+    "pearson_mean": 0.9410521111844065,
+    "pearson_median": 0.9777019377752489,
+    "pearson_mean_ordinary_tokens": 0.9359796855372755,
+    "jaccard_mean": 0.7525437987470011,
+    "jaccard_mean_ordinary_tokens": 0.7180913989979387,
+    "null_token_permutation_pearson_mean": -0.0007580821427631335,
+    "null_token_permutation_jaccard_mean": 0.05748915629699751,
+    "null_name": "token_permutation",
+    "null_note": "the TARGET activation matrix's token rows are permuted, which preserves each feature's overall firing rate and destroys temporal correspondence. It is NOT the firing-rate-stratified feature-pair shuffle an earlier docstring named.",
+    "per_pair": [
+     {
+      "src": 560,
+      "tgt": 2120,
+      "pearson": 0.9999988610327318,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 35023.58203125,
+      "tgt_var": 45229.16015625
+     },
+     {
+      "src": 2874,
+      "tgt": 2120,
+      "pearson": 0.9997682954840889,
+      "pearson_ordinary": null,
+      "jaccard": 0.9696969696969697,
+      "src_var": 7304.029296875,
+      "tgt_var": 45229.16015625
+     },
+     {
+      "src": 1799,
+      "tgt": 2120,
+      "pearson": 0.999643915463253,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 2616.6259765625,
+      "tgt_var": 45229.16015625
+     },
+     {
+      "src": 2744,
+      "tgt": 2120,
+      "pearson": 0.9995544099384834,
+      "pearson_ordinary": null,
+      "jaccard": 1.0,
+      "src_var": 2410.494140625,
+      "tgt_var": 45229.16015625
+     },
+     {
+      "src": 2140,
+      "tgt": 1424,
+      "pearson": 0.9962211751102729,
+      "pearson_ordinary": 0.996194663316288,
+      "jaccard": 0.922824302134647,
+      "src_var": 60.866661071777344,
+      "tgt_var": 61.668338775634766
+     },
+     {
+      "src": 83,
+      "tgt": 1322,
+      "pearson": 0.8861257642112802,
+      "pearson_ordinary": 0.884819870835058,
+      "jaccard": 0.8540913572132763,
+      "src_var": 49.21357727050781,
+      "tgt_var": 28.59541130065918
+     },
+     {
+      "src": 2678,
+      "tgt": 1752,
+      "pearson": 0.9759386756647199,
+      "pearson_ordinary": 0.9758230830634709,
+      "jaccard": 0.9158147925435959,
+      "src_var": 10.166399955749512,
+      "tgt_var": 9.269367218017578
+     },
+     {
+      "src": 2287,
+      "tgt": 228,
+      "pearson": 0.9967421355966417,
+      "pearson_ordinary": 0.9967409408436698,
+      "jaccard": 0.7854251012145749,
+      "src_var": 4.552106857299805,
+      "tgt_var": 4.431499481201172
+     },
+     {
+      "src": 2415,
+      "tgt": 1218,
+      "pearson": 0.9781187416360316,
+      "pearson_ordinary": 0.978141022901046,
+      "jaccard": 0.8643326039387309,
+      "src_var": 7.474161624908447,
+      "tgt_var": 7.4572014808654785
+     },
+     {
+      "src": 1268,
+      "tgt": 1220,
+      "pearson": 0.975347538928919,
+      "pearson_ordinary": 0.9753337247443843,
+      "jaccard": 0.8576388888888888,
+      "src_var": 2.5315592288970947,
+      "tgt_var": 2.9426627159118652
+     },
+     {
+      "src": 1144,
+      "tgt": 1452,
+      "pearson": 0.9971955891725778,
+      "pearson_ordinary": 0.99720662195262,
+      "jaccard": 0.8972602739726028,
+      "src_var": 16.18161392211914,
+      "tgt_var": 15.11153793334961
+     },
+     {
+      "src": 659,
+      "tgt": 1368,
+      "pearson": 0.9857187322419404,
+      "pearson_ordinary": 0.9855821343156352,
+      "jaccard": 0.9199260856174931,
+      "src_var": 46.78129577636719,
+      "tgt_var": 40.619384765625
+     },
+     {
+      "src": 1873,
+      "tgt": 480,
+      "pearson": 0.9954857078418309,
+      "pearson_ordinary": 0.9954811785448252,
+      "jaccard": 0.961864406779661,
+      "src_var": 19.692197799682617,
+      "tgt_var": 20.19458770751953
+     },
+     {
+      "src": 1853,
+      "tgt": 2232,
+      "pearson": 0.9903832206837487,
+      "pearson_ordinary": 0.9903889994456753,
+      "jaccard": 0.8578947368421053,
+      "src_var": 5.452436923980713,
+      "tgt_var": 4.854187965393066
+     },
+     {
+      "src": 2189,
+      "tgt": 2712,
+      "pearson": 0.8669130104968862,
+      "pearson_ordinary": 0.8668549731640363,
+      "jaccard": 0.7841409691629956,
+      "src_var": 9.439824104309082,
+      "tgt_var": 1.8211963176727295
+     },
+     {
+      "src": 773,
+      "tgt": 2923,
+      "pearson": 0.9860572239262849,
+      "pearson_ordinary": 0.9859785727505571,
+      "jaccard": 0.8912579957356077,
+      "src_var": 9.361120223999023,
+      "tgt_var": 8.747812271118164
+     },
+     {
+      "src": 2092,
+      "tgt": 2623,
+      "pearson": 0.9229325725589144,
+      "pearson_ordinary": 0.9229061204414527,
+      "jaccard": 0.87248322147651,
+      "src_var": 11.027372360229492,
+      "tgt_var": 7.313150882720947
+     },
+     {
+      "src": 366,
+      "tgt": 724,
+      "pearson": 0.9972364413039823,
+      "pearson_ordinary": 0.9972358095780792,
+      "jaccard": 0.7839506172839507,
+      "src_var": 5.240314483642578,
+      "tgt_var": 5.082526683807373
+     },
+     {
+      "src": 1413,
+      "tgt": 410,
+      "pearson": 0.9987650664053976,
+      "pearson_ordinary": 0.9987646878410449,
+      "jaccard": 0.8656716417910447,
+      "src_var": 15.370445251464844,
+      "tgt_var": 15.43661880493164
+     },
+     {
+      "src": 1049,
+      "tgt": 563,
+      "pearson": 0.8982050350333426,
+      "pearson_ordinary": 0.898200660509752,
+      "jaccard": 0.40350877192982454,
+      "src_var": 7.809111595153809,
+      "tgt_var": 3.0936410427093506
+     },
+     {
+      "src": 255,
+      "tgt": 2721,
+      "pearson": 0.9953876313609544,
+      "pearson_ordinary": 0.9953853838056813,
+      "jaccard": 0.9018867924528302,
+      "src_var": 5.675382614135742,
+      "tgt_var": 5.465798854827881
+     },
+     {
+      "src": 2357,
+      "tgt": 273,
+      "pearson": 0.9991121507464015,
+      "pearson_ordinary": 0.999112095188769,
+      "jaccard": 0.696969696969697,
+      "src_var": 4.0811309814453125,
+      "tgt_var": 3.7590014934539795
+     },
+     {
+      "src": 613,
+      "tgt": 381,
+      "pearson": 0.9979779420045681,
+      "pearson_ordinary": 0.9979778230779415,
+      "jaccard": 0.7663551401869159,
+      "src_var": 6.010632038116455,
+      "tgt_var": 6.012843132019043
+     },
+     {
+      "src": 383,
+      "tgt": 3057,
+      "pearson": 0.8330423492346827,
+      "pearson_ordinary": 0.8329454672402419,
+      "jaccard": 0.45652173913043476,
+      "src_var": 1.1915228366851807,
+      "tgt_var": 1.024558186531067
+     },
+     {
+      "src": 1894,
+      "tgt": 2129,
+      "pearson": 0.9542122973273856,
+      "pearson_ordinary": 0.9542005834596544,
+      "jaccard": 0.6201117318435754,
+      "src_var": 7.849816799163818,
+      "tgt_var": 4.998905658721924
+     },
+     {
+      "src": 2647,
+      "tgt": 60,
+      "pearson": 0.9600539920965431,
+      "pearson_ordinary": 0.9600352942160034,
+      "jaccard": 0.6183745583038869,
+      "src_var": 3.1148693561553955,
+      "tgt_var": 2.9003050327301025
+     },
+     {
+      "src": 1803,
+      "tgt": 2709,
+      "pearson": 0.9592875490332662,
+      "pearson_ordinary": 0.9592842766009188,
+      "jaccard": 0.7857142857142857,
+      "src_var": 10.018749237060547,
+      "tgt_var": 6.731863975524902
+     },
+     {
+      "src": 327,
+      "tgt": 2269,
+      "pearson": 0.5444484618941069,
+      "pearson_ordinary": 0.5441180211031778,
+      "jaccard": 0.35547576301615796,
+      "src_var": 8.341346740722656,
+      "tgt_var": 1.4704142808914185
+     },
+     {
+      "src": 2585,
+      "tgt": 2307,
+      "pearson": 0.8597271522400348,
+      "pearson_ordinary": 0.859686880756962,
+      "jaccard": 0.559322033898305,
+      "src_var": 1.491759181022644,
+      "tgt_var": 1.0989502668380737
+     },
+     {
+      "src": 642,
+      "tgt": 221,
+      "pearson": 0.8088552421645538,
+      "pearson_ordinary": 0.8087404217037775,
+      "jaccard": 0.6818181818181818,
+      "src_var": 3.2848494052886963,
+      "tgt_var": 3.257080554962158
+     },
+     {
+      "src": 1386,
+      "tgt": 2782,
+      "pearson": 0.9730176980170664,
+      "pearson_ordinary": 0.9727308468258161,
+      "jaccard": 0.9114349775784754,
+      "src_var": 12.493139266967773,
+      "tgt_var": 11.727442741394043
+     },
+     {
+      "src": 506,
+      "tgt": 482,
+      "pearson": 0.9033315704390679,
+      "pearson_ordinary": 0.9033257599424119,
+      "jaccard": 0.5789473684210527,
+      "src_var": 2.8472745418548584,
+      "tgt_var": 1.0279000997543335
+     },
+     {
+      "src": 1492,
+      "tgt": 2328,
+      "pearson": 0.9902367879065902,
+      "pearson_ordinary": 0.9902363998399647,
+      "jaccard": 0.7727272727272727,
+      "src_var": 4.598307132720947,
+      "tgt_var": 2.8196752071380615
+     },
+     {
+      "src": 137,
+      "tgt": 147,
+      "pearson": 0.9772851339144664,
+      "pearson_ordinary": 0.9772735180490579,
+      "jaccard": 0.7851851851851852,
+      "src_var": 1.5489459037780762,
+      "tgt_var": 1.6565933227539062
+     },
+     {
+      "src": 2111,
+      "tgt": 2204,
+      "pearson": 0.9413690608044083,
+      "pearson_ordinary": 0.9413667913680694,
+      "jaccard": 0.7777777777777778,
+      "src_var": 1.3726723194122314,
+      "tgt_var": 0.9907491207122803
+     },
+     {
+      "src": 1041,
+      "tgt": 1745,
+      "pearson": 0.9927721686808456,
+      "pearson_ordinary": 0.9927660185041459,
+      "jaccard": 0.851380042462845,
+      "src_var": 6.243468761444092,
+      "tgt_var": 5.988237380981445
+     },
+     {
+      "src": 2039,
+      "tgt": 666,
+      "pearson": 0.937876720491082,
+      "pearson_ordinary": 0.9378648998881388,
+      "jaccard": 0.5333333333333333,
+      "src_var": 7.630094528198242,
+      "tgt_var": 3.923043727874756
+     },
+     {
+      "src": 2828,
+      "tgt": 1569,
+      "pearson": 0.9790506769701286,
+      "pearson_ordinary": 0.9792277033886989,
+      "jaccard": 0.7853658536585366,
+      "src_var": 2.2339088916778564,
+      "tgt_var": 2.5175552368164062
+     },
+     {
+      "src": 1114,
+      "tgt": 1364,
+      "pearson": 0.8309768556650681,
+      "pearson_ordinary": 0.8309705007715475,
+      "jaccard": 0.4375,
+      "src_var": 1.3831788301467896,
+      "tgt_var": 0.6383095979690552
+     },
+     {
+      "src": 2412,
+      "tgt": 3003,
+      "pearson": 0.9187515711721135,
+      "pearson_ordinary": 0.9187214110851069,
+      "jaccard": 0.7897196261682243,
+      "src_var": 4.289897441864014,
+      "tgt_var": 10.936610221862793
+     },
+     {
+      "src": 1868,
+      "tgt": 343,
+      "pearson": 0.9964690928261242,
+      "pearson_ordinary": 0.9964689720158739,
+      "jaccard": 0.8148148148148148,
+      "src_var": 2.751648426055908,
+      "tgt_var": 2.4862685203552246
+     },
+     {
+      "src": 1264,
+      "tgt": 3003,
+      "pearson": 0.7466134678355972,
+      "pearson_ordinary": 0.7464928799826313,
+      "jaccard": 0.673728813559322,
+      "src_var": 0.9079218506813049,
+      "tgt_var": 10.936610221862793
+     },
+     {
+      "src": 2475,
+      "tgt": 1315,
+      "pearson": 0.8786754605432798,
+      "pearson_ordinary": 0.8786587296461915,
+      "jaccard": 0.41358024691358025,
+      "src_var": 2.0709948539733887,
+      "tgt_var": 2.7907063961029053
+     },
+     {
+      "src": 1029,
+      "tgt": 2311,
+      "pearson": 0.9956365094087862,
+      "pearson_ordinary": 0.9956351835481643,
+      "jaccard": 0.803088803088803,
+      "src_var": 4.084815979003906,
+      "tgt_var": 3.8224406242370605
+     },
+     {
+      "src": 1344,
+      "tgt": 786,
+      "pearson": 0.9078087328629454,
+      "pearson_ordinary": 0.9077501754838633,
+      "jaccard": 0.5771028037383178,
+      "src_var": 2.307419538497925,
+      "tgt_var": 2.9604556560516357
+     },
+     {
+      "src": 825,
+      "tgt": 1558,
+      "pearson": 0.9823338759758673,
+      "pearson_ordinary": 0.9831337720558116,
+      "jaccard": 0.5540540540540541,
+      "src_var": 8.302982330322266,
+      "tgt_var": 3.701648712158203
+     },
+     {
+      "src": 2176,
+      "tgt": 806,
+      "pearson": 0.9788712047077548,
+      "pearson_ordinary": 0.9788551785420893,
+      "jaccard": 0.8064516129032258,
+      "src_var": 2.4301090240478516,
+      "tgt_var": 2.230799674987793
+     },
+     {
+      "src": 2007,
+      "tgt": 2906,
+      "pearson": 0.99360566067643,
+      "pearson_ordinary": 0.9936052141174425,
+      "jaccard": 0.7450980392156863,
+      "src_var": 8.43253231048584,
+      "tgt_var": 9.537688255310059
+     },
+     {
+      "src": 2809,
+      "tgt": 145,
+      "pearson": 0.895417373760044,
+      "pearson_ordinary": 0.8988296852338306,
+      "jaccard": 0.45918367346938777,
+      "src_var": 1.2505360841751099,
+      "tgt_var": 0.8842295408248901
+     },
+     {
+      "src": 1035,
+      "tgt": 2837,
+      "pearson": 0.8740490557288361,
+      "pearson_ordinary": 0.8740125830250985,
+      "jaccard": 0.7063829787234043,
+      "src_var": 1.5936442613601685,
+      "tgt_var": 2.347777843475342
+     }
+    ],
+    "n_valid_tokens": 4609,
+    "note": "matches fixed by raw decoder geometry at the PRIMARY retain threshold; correlations on valid tokens, and separately on ordinary tokens because shared outlier positions can carry a raw correlation"
+   },
+   "skipped": [
+    {
+     "source_seed": 137,
+     "target_seed": 42,
+     "reason": "missing_source_ranking",
+     "note": "archived imp_zero/alive/pc1_cos2 belong to seed 42; feature IDs do not correspond across independently trained dictionaries"
+    }
+   ]
+  }
+ },
+ "missing": [],
+ "utc": "2026-09-22T21:12:19Z",
+ "wall_minutes": 0.4040599226951599
+}

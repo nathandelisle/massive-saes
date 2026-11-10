@@ -1,0 +1,176 @@
+{
+ "gate1": {
+  "max_abs": 0.0,
+  "pass_": true,
+  "what": "prefix capture == hidden_states[b+1]"
+ },
+ "gate2": {
+  "identity_max_abs_logit": 0.0,
+  "proj_restore_max_abs_logit_info": 0.0,
+  "tol": 0.03,
+  "proj_restore_elements_beyond_rounding_bound": 0,
+  "proj_restore_frac_elements_changed": 0.00012467741908039898,
+  "pass_": true
+ },
+ "gate3_splice_equals_v3": {
+  "residual_elements_beyond_rounding_bound": 0,
+  "residual_frac_elements_differing": 7.647499296581373e-05,
+  "residual_max_abs": 0.03125,
+  "max_abs_logit_info": 3.8125,
+  "pass_": true
+ },
+ "pc1_leakage": {
+  "mean_sq_recon_on_v1_over_mean_sq_coef": 9.856314591161208e-07,
+  "mode": "bypass",
+  "note": "bypass: the SAE output's PC1 component relative to the routed one"
+ },
+ "gate4": {
+  "max_row_support": 64,
+  "k": 64,
+  "l0_mean": 63.81561279296875,
+  "n_targets": 590,
+  "pass_": true
+ },
+ "gate5": {
+  "finite": true,
+  "dtype": "torch.bfloat16",
+  "final_logit_softcapping": 30.0,
+  "attn_impl": "eager",
+  "pass_": true
+ },
+ "gate7": {
+  "max_abs": 1.2590977288782597,
+  "tol": 9.094115169733763,
+  "noise_floor": 3.0277938283979893,
+  "pass_": true,
+  "features": [
+   {
+    "feature": 1940,
+    "engine": 1.6033412665128708,
+    "full_forward": 0.8173633217811584,
+    "full_forward_per_seq": 2.982201486825943,
+    "cls": "dense"
+   },
+   {
+    "feature": 7911,
+    "engine": -0.805969662964344,
+    "full_forward": 0.3214590549468994,
+    "full_forward_per_seq": -2.70633477345109,
+    "cls": "dense"
+   },
+   {
+    "feature": 8000,
+    "engine": 0.11570797115564346,
+    "full_forward": 0.1706729531288147,
+    "full_forward_per_seq": 0.37290942668914795,
+    "cls": "rare"
+   },
+   {
+    "feature": 8014,
+    "engine": -0.09438303112983704,
+    "full_forward": -0.2639896273612976,
+    "full_forward_per_seq": -0.018821638077497482,
+    "cls": "rare"
+   },
+   {
+    "feature": 8016,
+    "engine": -0.05512458458542824,
+    "full_forward": 0.20069611072540283,
+    "full_forward_per_seq": 0.035714201629161835,
+    "cls": "rare"
+   },
+   {
+    "feature": 8874,
+    "engine": 0.5985895097255707,
+    "full_forward": -0.03945419192314148,
+    "full_forward_per_seq": -0.05887710303068161,
+    "cls": "random"
+   },
+   {
+    "feature": 9242,
+    "engine": -9.584468260407448,
+    "full_forward": -10.733684539794922,
+    "full_forward_per_seq": -11.646496593952179,
+    "cls": "dense"
+   },
+   {
+    "feature": 9713,
+    "engine": 0.2416524589061737,
+    "full_forward": 0.4617559015750885,
+    "full_forward_per_seq": 0.5423638820648193,
+    "cls": "random"
+   },
+   {
+    "feature": 12137,
+    "engine": -1.3500602580606937,
+    "full_forward": -0.09096252918243408,
+    "full_forward_per_seq": -1.638956941664219,
+    "cls": "dense"
+   },
+   {
+    "feature": 12763,
+    "engine": -0.12581384181976318,
+    "full_forward": 0.14921990036964417,
+    "full_forward_per_seq": -0.012848272919654846,
+    "cls": "random"
+   },
+   {
+    "feature": 13494,
+    "engine": 0.08603667467832565,
+    "full_forward": 0.07068558037281036,
+    "full_forward_per_seq": -0.5223676413297653,
+    "cls": "random"
+   },
+   {
+    "feature": 14309,
+    "engine": -0.0757685974240303,
+    "full_forward": -0.07886102050542831,
+    "full_forward_per_seq": -0.02225581184029579,
+    "cls": "rare"
+   }
+  ],
+  "dtype": "torch.bfloat16",
+  "precision_of_check": "torch.bfloat16 (fp32 upcast does not fit; weak check)"
+ },
+ "all_hard_pass": true,
+ "gate9": {
+  "fd": {
+   "checks": [
+    {
+     "pos": 111,
+     "feature": 5688,
+     "autograd": -0.002610637340694666,
+     "finite_diff": -1.55792236328125
+    },
+    {
+     "pos": 123,
+     "feature": 193,
+     "autograd": 0.00013656794908456504,
+     "finite_diff": 0.77056884765625
+    },
+    {
+     "pos": 53,
+     "feature": 13445,
+     "autograd": 0.0012649899581447244,
+     "finite_diff": 3.38134765625
+    }
+   ],
+   "max_rel": 0.999822769958194,
+   "pass_": false,
+   "note": "loose tolerance: half-precision suffix, central difference eps=0.01"
+  },
+  "ig_convergence": [
+   {
+    "steps": 16,
+    "completeness_rel_error": 0.0027416075980696525,
+    "top50_overlap_prev": null
+   },
+   {
+    "steps": 32,
+    "completeness_rel_error": 0.000584984296500466,
+    "top50_overlap_prev": 1.0
+   }
+  ],
+  "ig_converged": true
+ }
+}

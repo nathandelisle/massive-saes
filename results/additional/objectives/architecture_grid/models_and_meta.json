@@ -1,0 +1,144 @@
+{
+ "models_ordered_by_w1": [
+  [
+   "Gemma-2-9B",
+   0.6999419169339764
+  ],
+  [
+   "Gemma-2-2B",
+   0.7814936910523037
+  ],
+  [
+   "Pythia-160M",
+   0.9342973183836806
+  ],
+  [
+   "Pythia-6.9B",
+   0.9568455376264012
+  ],
+  [
+   "Pythia-1.4B",
+   0.96394907893272
+  ],
+  [
+   "Llama-3.1-8B",
+   0.9686386042435503
+  ],
+  [
+   "GPT-2",
+   0.9702074853199549
+  ],
+  [
+   "Qwen-2.5-7B",
+   0.9988994768328849
+  ]
+ ],
+ "w1_source": "exp_b1 _meta.pc1_var_explained = v3 estimate_pcs on the first 50k rows of each model training store",
+ "meta_per_model": {
+  "gemma-2-9b": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 45,
+   "pc1_var_explained": 0.6999419169339764,
+   "complete": true,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "b1v2-g9b"
+  },
+  "gemma-2-2b": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 45,
+   "pc1_var_explained": 0.7814936910523037,
+   "complete": true,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "b1v2-gemma"
+  },
+  "pythia-160m": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 64,
+   "pc1_var_explained": 0.9342973183836806,
+   "complete": true,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "b1v2-small"
+  },
+  "pythia-6.9b": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 64,
+   "pc1_var_explained": 0.9568455376264012,
+   "complete": true,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "gi-p69-gated-c7"
+  },
+  "pythia-1.4b": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 64,
+   "pc1_var_explained": 0.96394907893272,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "f1b2-g9b"
+  },
+  "llama-3.1-8b": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 64,
+   "pc1_var_explained": 0.9686386042435503,
+   "complete": true,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "b1v2-l8b"
+  },
+  "gpt2": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 64,
+   "pc1_var_explained": 0.9702074853199549,
+   "complete": true,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "b1v2-gpt2"
+  },
+  "qwen-2.5-7b": {
+   "target_l0": 64.0,
+   "l0_tol": 0.25,
+   "eval_seqs": 64,
+   "chunk": 64,
+   "pc1_var_explained": 0.9988994768328849,
+   "complete": true,
+   "sparsity_matched": true,
+   "unmatched_cells": [],
+   "untestable_cells": [],
+   "publishable": true,
+   "chosen_meta_prefix": "b1v2-qwen"
+  }
+ },
+ "n_cells": 80,
+ "l0_inflation_factor": 1.06496
+}

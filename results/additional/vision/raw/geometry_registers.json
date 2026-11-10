@@ -1,0 +1,25 @@
+{
+ "arm": "registers",
+ "model": "facebook/dinov2-with-registers-base",
+ "site": 9,
+ "grid": 256,
+ "patch_geometry": {
+  "median_patch_norm": 17.625915108915656,
+  "max_over_median": 1.71373872967536,
+  "frac_norm_gt_3x": 0.0,
+  "frac_norm_gt_10x": 0.0,
+  "pc1_var_share": 0.0399852213081176,
+  "outlier_pc1_energy_frac": null,
+  "n_rows": 131072
+ },
+ "prefix_token_geometry_separate": {
+  "median_patch_norm": 40.04617265070557,
+  "max_over_median": 3.7657888006605997,
+  "frac_norm_gt_3x": 0.20007815957069397,
+  "frac_norm_gt_10x": 0.0,
+  "pc1_var_share": 0.9626356197511672,
+  "outlier_pc1_energy_frac": 0.7951888037552401,
+  "n_rows": 2559
+ },
+ "note": "patch tokens only; CLS and the 4 learned registers excluded (archive kept the registers)"
+}

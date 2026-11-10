@@ -1,0 +1,53 @@
+{
+  "L3": {
+    "pc1_pct": 93.82274823924097,
+    "conditions": {
+      "standard": {
+        "n_alive": 8028,
+        "dict_wide_share": 0.3000747263431549,
+        "top50_share": 0.14,
+        "base_ce": 3.2524887445404773
+      },
+      "bypass": {
+        "n_alive": 8123,
+        "dict_wide_share": 0.23021051287651062,
+        "top50_share": 0.68,
+        "base_ce": 3.2416862427718995
+      }
+    }
+  },
+  "L23": {
+    "pc1_pct": 11.094722934706532,
+    "conditions": {
+      "standard": {
+        "n_alive": 8169,
+        "dict_wide_share": 0.6462235450744629,
+        "top50_share": 0.96,
+        "base_ce": 3.6712257205031986
+      },
+      "bypass": {
+        "n_alive": 8185,
+        "dict_wide_share": 0.6371411085128784,
+        "top50_share": 0.92,
+        "base_ce": 3.6696820597010333
+      }
+    }
+  },
+  "L12": {
+    "pc1_pct": 92.95382511131184,
+    "conditions": {
+      "standard": {
+        "n_alive": 7819,
+        "dict_wide_share": 0.6317943334579468,
+        "top50_share": 0.08,
+        "base_ce": 3.229810819851132
+      },
+      "bypass": {
+        "n_alive": 7850,
+        "dict_wide_share": 0.6235668659210205,
+        "top50_share": 0.92,
+        "base_ce": 3.2240701510211616
+      }
+    }
+  }
+}

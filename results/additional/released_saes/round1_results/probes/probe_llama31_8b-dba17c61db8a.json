@@ -1,0 +1,134 @@
+{
+ "job_id": "llama31_8b-dba17c61db8a",
+ "model": "meta-llama/Llama-3.1-8B",
+ "sae_id": "l6r_8x",
+ "declared_layer": 6,
+ "probe_layers": [
+  5,
+  6,
+  7
+ ],
+ "scales": {
+  "as_released_raw": 1.0,
+  "times_documented_norm_scaling_factor": 11.976608187134502,
+  "divided_by_documented_norm_scaling_factor": 0.08349609375
+ },
+ "rows": 19842,
+ "normalization_reported_by_loader": "none",
+ "cells": [
+  {
+   "layer": 5,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.6081952356139558,
+   "fvu_content": 0.6081177847090541,
+   "content_over_total": 0.9998726545353096,
+   "w1": 0.000357828283857331,
+   "declared": false
+  },
+  {
+   "layer": 5,
+   "scale": "times_documented_norm_scaling_factor",
+   "scale_value": 11.976608187134502,
+   "fvu_total": 0.6662421612653979,
+   "fvu_content": 0.6660992408687101,
+   "content_over_total": 0.9997854828094092,
+   "w1": 0.00035782828363295494,
+   "declared": false
+  },
+  {
+   "layer": 5,
+   "scale": "divided_by_documented_norm_scaling_factor",
+   "scale_value": 0.08349609375,
+   "fvu_total": 2.3379128206883846,
+   "fvu_content": 2.3379458326254343,
+   "content_over_total": 1.0000141202600703,
+   "w1": 0.000357828283727879,
+   "declared": false
+  },
+  {
+   "layer": 6,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.396721297979319,
+   "fvu_content": 0.3967105258206111,
+   "content_over_total": 0.999972847037044,
+   "w1": 0.00031668777430637896,
+   "declared": true
+  },
+  {
+   "layer": 6,
+   "scale": "times_documented_norm_scaling_factor",
+   "scale_value": 11.976608187134502,
+   "fvu_total": 0.38269474692607086,
+   "fvu_content": 0.38257708331996726,
+   "content_over_total": 0.999692539270401,
+   "w1": 0.000316687774391311,
+   "declared": true
+  },
+  {
+   "layer": 6,
+   "scale": "divided_by_documented_norm_scaling_factor",
+   "scale_value": 0.08349609375,
+   "fvu_total": 1.9078113295858208,
+   "fvu_content": 1.9077469177490047,
+   "content_over_total": 0.9999662378371398,
+   "w1": 0.00031668777429394446,
+   "declared": true
+  },
+  {
+   "layer": 7,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.6044127041641308,
+   "fvu_content": 0.6044412715362911,
+   "content_over_total": 1.0000472646785274,
+   "w1": 0.0003427541057748895,
+   "declared": false
+  },
+  {
+   "layer": 7,
+   "scale": "times_documented_norm_scaling_factor",
+   "scale_value": 11.976608187134502,
+   "fvu_total": 0.9013343172452003,
+   "fvu_content": 0.9007191567351481,
+   "content_over_total": 0.9993175001791429,
+   "w1": 0.00034275410600348444,
+   "declared": false
+  },
+  {
+   "layer": 7,
+   "scale": "divided_by_documented_norm_scaling_factor",
+   "scale_value": 0.08349609375,
+   "fvu_total": 1.8407678694005287,
+   "fvu_content": 1.840781386247946,
+   "content_over_total": 1.0000073430483234,
+   "w1": 0.0003427541055194272,
+   "declared": false
+  }
+ ],
+ "verdict": {
+  "best": {
+   "layer": 6,
+   "scale": "times_documented_norm_scaling_factor",
+   "scale_value": 11.976608187134502,
+   "fvu_total": 0.38269474692607086,
+   "fvu_content": 0.38257708331996726,
+   "content_over_total": 0.999692539270401,
+   "w1": 0.000316687774391311,
+   "declared": true
+  },
+  "declared": {
+   "layer": 6,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.396721297979319,
+   "fvu_content": 0.3967105258206111,
+   "content_over_total": 0.999972847037044,
+   "w1": 0.00031668777430637896,
+   "declared": true
+  },
+  "ratio_declared_over_best": 1.0366520605937604,
+  "note": "A neighbouring layer or a documented scale is dramatically better than the declared convention only if this ratio is large; report it as a convention finding, never as a fit."
+ }
+}

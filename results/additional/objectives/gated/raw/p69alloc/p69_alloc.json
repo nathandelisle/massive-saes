@@ -1,0 +1,471 @@
+{
+ "model": "pythia-6.9b",
+ "massive_geometry": {
+  "n_rows": 100000,
+  "n_massive": 2688,
+  "massive_fraction": 0.02688,
+  "median_row_norm": 118.680419921875,
+  "massive_norm_median": 2574.228515625,
+  "massive_norm_over_median": 21.690423048044188,
+  "cos_to_massive_mean_median": 0.9996759295463562,
+  "cos_to_massive_mean_p10": 0.9992045640945435,
+  "uncentered_energy_top1": 0.9991148114204407,
+  "uncentered_energy_top5": 0.9999063611030579,
+  "centered_var_top1": 0.8923750519752502,
+  "centered_var_top5": 0.982352614402771,
+  "centered_participation_ratio": 1.2482648091881174,
+  "within_massive_var_over_mean_sq": 0.004824455115853622,
+  "pc1_coef_massive_median": -2573.6590767708667,
+  "pc1_coef_massive_cv": 0.06271984102606284,
+  "pc1_coef_over_rms_norm": 6.033951407487239
+ },
+ "objectives": {
+  "relu_l1": {
+   "per_seed": [
+    {
+     "label": "relu_l1 s42",
+     "key": "b1v2-p69/saes/57b92fb9cdfaa10f.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 1.0,
+     "massive_canonical_l1_mean": 2490.427734375,
+     "massive_canonical_pc1_fraction_mean": 0.9947863221168518,
+     "massive_band_active_atoms_mean": 1.5033482313156128,
+     "massive_band_l1_mean": 54.06709289550781,
+     "massive_band_pc1_fraction_mean": 0.004880707710981369,
+     "massive_content_active_atoms_mean": 0.8962053656578064,
+     "massive_content_l1_mean": 18.144515991210938,
+     "massive_content_pc1_fraction_mean": 0.0003329860919620842,
+     "massive_atoms_for_90pct_pc1_median": 1.0,
+     "massive_total_l1_mean": 2562.63916015625,
+     "massive_reconstructed_pc1_coef_mean": -2501.8955078125,
+     "n_massive_specific_atoms": 0,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 0,
+      "content": 0
+     },
+     "l0_exact": 54.69007,
+     "rows": 100000,
+     "n_alive": 8256,
+     "n_never_fired": 5284,
+     "fvu_total": 0.016572894808531316,
+     "fvu_content": 0.34451635879976394,
+     "w1_rows": 0.9521649041560867,
+     "seed": 42
+    },
+    {
+     "label": "relu_l1 s137",
+     "key": "b1v2-p69/saes/394439460eacac02.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 1.0,
+     "massive_canonical_l1_mean": 2491.32568359375,
+     "massive_canonical_pc1_fraction_mean": 0.9953370094299316,
+     "massive_band_active_atoms_mean": 1.7708333730697632,
+     "massive_band_l1_mean": 52.55908203125,
+     "massive_band_pc1_fraction_mean": 0.00434510363265872,
+     "massive_content_active_atoms_mean": 0.8954613208770752,
+     "massive_content_l1_mean": 17.994556427001953,
+     "massive_content_pc1_fraction_mean": 0.00031794619280844927,
+     "massive_atoms_for_90pct_pc1_median": 1.0,
+     "massive_total_l1_mean": 2561.87939453125,
+     "massive_reconstructed_pc1_coef_mean": -2501.54052734375,
+     "n_massive_specific_atoms": 0,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 0,
+      "content": 0
+     },
+     "l0_exact": 54.94325,
+     "rows": 100000,
+     "n_alive": 8275,
+     "n_never_fired": 5322,
+     "fvu_total": 0.016572583607799497,
+     "fvu_content": 0.3444193237408946,
+     "w1_rows": 0.9521649041560867,
+     "seed": 137
+    },
+    {
+     "label": "relu_l1 s0",
+     "key": "b1v2-p69/saes/5bc34af926c9e0d8.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 1.0,
+     "massive_canonical_l1_mean": 2492.54541015625,
+     "massive_canonical_pc1_fraction_mean": 0.9955342411994934,
+     "massive_band_active_atoms_mean": 1.4787946939468384,
+     "massive_band_l1_mean": 52.745582580566406,
+     "massive_band_pc1_fraction_mean": 0.004177712835371494,
+     "massive_content_active_atoms_mean": 0.8504464030265808,
+     "massive_content_l1_mean": 16.053709030151367,
+     "massive_content_pc1_fraction_mean": 0.0002880436950363219,
+     "massive_atoms_for_90pct_pc1_median": 1.0,
+     "massive_total_l1_mean": 2561.3447265625,
+     "massive_reconstructed_pc1_coef_mean": -2502.36279296875,
+     "n_massive_specific_atoms": 0,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 0,
+      "content": 0
+     },
+     "l0_exact": 54.29776,
+     "rows": 100000,
+     "n_alive": 8207,
+     "n_never_fired": 5321,
+     "fvu_total": 0.016616737643871785,
+     "fvu_content": 0.3455013538648003,
+     "w1_rows": 0.9521649041560867,
+     "seed": 0
+    }
+   ],
+   "massive_specific_pairwise": [
+    {
+     "source": 42,
+     "target": 137,
+     "massive_specific_sharing": null
+    },
+    {
+     "source": 42,
+     "target": 0,
+     "massive_specific_sharing": null
+    },
+    {
+     "source": 137,
+     "target": 42,
+     "massive_specific_sharing": null
+    },
+    {
+     "source": 137,
+     "target": 0,
+     "massive_specific_sharing": null
+    },
+    {
+     "source": 0,
+     "target": 42,
+     "massive_specific_sharing": null
+    },
+    {
+     "source": 0,
+     "target": 137,
+     "massive_specific_sharing": null
+    }
+   ],
+   "top50_frac_massive_specific_s42": 0.0,
+   "composition": {
+    "top50": 0.97,
+    "dictwide": 0.8447474988089566,
+    "top50_frac_canonical": 0.04,
+    "top50_sharing_canonical": 1.0,
+    "n_canonical": 2,
+    "sharing_canonical": 1.0,
+    "top50_frac_band": 0.82,
+    "top50_sharing_band": 0.9634146341463414,
+    "n_band": 6902,
+    "sharing_band": 0.8472906403940886,
+    "top50_frac_content": 0.14,
+    "top50_sharing_content": 1.0,
+    "n_content": 1492,
+    "sharing_content": 0.832774798927614
+   }
+  },
+  "topk": {
+   "per_seed": [
+    {
+     "label": "topk s42",
+     "key": "b1v2-p69/saes/f471967010fc2f4c.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 0.0,
+     "massive_canonical_l1_mean": 0.0,
+     "massive_canonical_pc1_fraction_mean": 0.0,
+     "massive_band_active_atoms_mean": 63.41629409790039,
+     "massive_band_l1_mean": 8942.962890625,
+     "massive_band_pc1_fraction_mean": 0.9997482299804688,
+     "massive_content_active_atoms_mean": 0.5833333134651184,
+     "massive_content_l1_mean": 7.137925148010254,
+     "massive_content_pc1_fraction_mean": 0.00025183436810038984,
+     "massive_atoms_for_90pct_pc1_median": 51.0,
+     "massive_total_l1_mean": 8950.1015625,
+     "massive_reconstructed_pc1_coef_mean": -2487.791015625,
+     "n_massive_specific_atoms": 63,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 63,
+      "content": 0
+     },
+     "l0_exact": 63.99999,
+     "rows": 100000,
+     "n_alive": 8905,
+     "n_never_fired": 595,
+     "fvu_total": 0.01339388169191212,
+     "fvu_content": 0.279849038196423,
+     "w1_rows": 0.9521649041560867,
+     "seed": 42
+    },
+    {
+     "label": "topk s137",
+     "key": "b1v2-p69/saes/23a33b13a3765fd8.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 0.0,
+     "massive_canonical_l1_mean": 0.0,
+     "massive_canonical_pc1_fraction_mean": 0.0,
+     "massive_band_active_atoms_mean": 63.524925231933594,
+     "massive_band_l1_mean": 9069.25,
+     "massive_band_pc1_fraction_mean": 0.9999025464057922,
+     "massive_content_active_atoms_mean": 0.4750744104385376,
+     "massive_content_l1_mean": 3.485197067260742,
+     "massive_content_pc1_fraction_mean": 9.740103996591642e-05,
+     "massive_atoms_for_90pct_pc1_median": 50.0,
+     "massive_total_l1_mean": 9072.736328125,
+     "massive_reconstructed_pc1_coef_mean": -2494.503662109375,
+     "n_massive_specific_atoms": 64,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 64,
+      "content": 0
+     },
+     "l0_exact": 64.0,
+     "rows": 100000,
+     "n_alive": 8958,
+     "n_never_fired": 513,
+     "fvu_total": 0.01336517714147197,
+     "fvu_content": 0.2793813932621614,
+     "w1_rows": 0.9521649041560867,
+     "seed": 137
+    },
+    {
+     "label": "topk s0",
+     "key": "b1v2-p69/saes/ddd39dcc2f68e04d.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 0.0,
+     "massive_canonical_l1_mean": 0.0,
+     "massive_canonical_pc1_fraction_mean": 0.0,
+     "massive_band_active_atoms_mean": 63.115325927734375,
+     "massive_band_l1_mean": 9081.9287109375,
+     "massive_band_pc1_fraction_mean": 0.9999750852584839,
+     "massive_content_active_atoms_mean": 0.1752232164144516,
+     "massive_content_l1_mean": 0.9578146934509277,
+     "massive_content_pc1_fraction_mean": 2.490636325092055e-05,
+     "massive_atoms_for_90pct_pc1_median": 51.0,
+     "massive_total_l1_mean": 9082.88671875,
+     "massive_reconstructed_pc1_coef_mean": -2495.02001953125,
+     "n_massive_specific_atoms": 63,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 63,
+      "content": 0
+     },
+     "l0_exact": 63.98093,
+     "rows": 100000,
+     "n_alive": 8895,
+     "n_never_fired": 682,
+     "fvu_total": 0.013386730486314566,
+     "fvu_content": 0.27983058060787896,
+     "w1_rows": 0.9521649041560867,
+     "seed": 0
+    }
+   ],
+   "massive_specific_pairwise": [
+    {
+     "source": 42,
+     "target": 137,
+     "massive_specific_sharing": 0.015873015873015872
+    },
+    {
+     "source": 42,
+     "target": 0,
+     "massive_specific_sharing": 0.015873015873015872
+    },
+    {
+     "source": 137,
+     "target": 42,
+     "massive_specific_sharing": 0.015625
+    },
+    {
+     "source": 137,
+     "target": 0,
+     "massive_specific_sharing": 0.015625
+    },
+    {
+     "source": 0,
+     "target": 42,
+     "massive_specific_sharing": 0.015873015873015872
+    },
+    {
+     "source": 0,
+     "target": 137,
+     "massive_specific_sharing": 0.015873015873015872
+    }
+   ],
+   "top50_frac_massive_specific_s42": 0.9,
+   "composition": {
+    "top50": 0.1,
+    "dictwide": 0.6216646535631931,
+    "top50_frac_canonical": 0.02,
+    "top50_sharing_canonical": 1.0,
+    "n_canonical": 1,
+    "sharing_canonical": 1.0,
+    "top50_frac_band": 0.9,
+    "top50_sharing_band": 0.0,
+    "n_band": 66,
+    "sharing_band": 0.030303030303030304,
+    "top50_frac_content": 0.08,
+    "top50_sharing_content": 1.0,
+    "n_content": 9040,
+    "sharing_content": 0.6259402654867257
+   }
+  },
+  "gated_c8": {
+   "per_seed": [
+    {
+     "label": "gated_c8 s42",
+     "key": "p69g-c8f-s42/saes/5f1f2ef7580a73b5.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 5.510416507720947,
+     "massive_canonical_l1_mean": 3570.79052734375,
+     "massive_canonical_pc1_fraction_mean": 1.0006248950958252,
+     "massive_band_active_atoms_mean": 1.0558035373687744,
+     "massive_band_l1_mean": 41.25621795654297,
+     "massive_band_pc1_fraction_mean": -0.0004289334756322205,
+     "massive_content_active_atoms_mean": 2.121279716491699,
+     "massive_content_l1_mean": 33.314266204833984,
+     "massive_content_pc1_fraction_mean": -0.00019594121840782464,
+     "massive_atoms_for_90pct_pc1_median": 5.0,
+     "massive_total_l1_mean": 3645.36083984375,
+     "massive_reconstructed_pc1_coef_mean": -2493.727294921875,
+     "n_massive_specific_atoms": 6,
+     "massive_specific_by_class": {
+      "canonical": 6,
+      "band": 0,
+      "content": 0
+     },
+     "l0_exact": 54.9551,
+     "rows": 100000,
+     "n_alive": 8103,
+     "n_never_fired": 1499,
+     "fvu_total": 0.014121620490630846,
+     "fvu_content": 0.2951977097654255,
+     "w1_rows": 0.9521649041560867,
+     "seed": 42
+    },
+    {
+     "label": "gated_c8 s137",
+     "key": "p69g-c8-s137/saes/8418aff0975ce232.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 0.0,
+     "massive_canonical_l1_mean": 0.0,
+     "massive_canonical_pc1_fraction_mean": 0.0,
+     "massive_band_active_atoms_mean": 52.689361572265625,
+     "massive_band_l1_mean": 47727.8828125,
+     "massive_band_pc1_fraction_mean": 1.2335081100463867,
+     "massive_content_active_atoms_mean": 48.423736572265625,
+     "massive_content_l1_mean": 19728.2734375,
+     "massive_content_pc1_fraction_mean": -0.23350822925567627,
+     "massive_atoms_for_90pct_pc1_median": 1.0,
+     "massive_total_l1_mean": 67456.15625,
+     "massive_reconstructed_pc1_coef_mean": -2489.537109375,
+     "n_massive_specific_atoms": 84,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 41,
+      "content": 43
+     },
+     "l0_exact": 58.65621,
+     "rows": 100000,
+     "n_alive": 6984,
+     "n_never_fired": 5194,
+     "fvu_total": 0.017147993020782897,
+     "fvu_content": 0.3568087861330083,
+     "w1_rows": 0.9521649041560867,
+     "seed": 137
+    },
+    {
+     "label": "gated_c8 s0",
+     "key": "p69g-c8-s0/saes/e1266e002d9bfcdc.pt",
+     "n_massive_rows": 2688,
+     "n_ordinary_rows": 97312,
+     "massive_canonical_active_atoms_mean": 0.0,
+     "massive_canonical_l1_mean": 0.0,
+     "massive_canonical_pc1_fraction_mean": 0.0,
+     "massive_band_active_atoms_mean": 19.449405670166016,
+     "massive_band_l1_mean": 30126.794921875,
+     "massive_band_pc1_fraction_mean": 0.9185587763786316,
+     "massive_content_active_atoms_mean": 79.80915069580078,
+     "massive_content_l1_mean": 13179.2724609375,
+     "massive_content_pc1_fraction_mean": 0.0814412459731102,
+     "massive_atoms_for_90pct_pc1_median": 1.0,
+     "massive_total_l1_mean": 43306.06640625,
+     "massive_reconstructed_pc1_coef_mean": -2485.412109375,
+     "n_massive_specific_atoms": 81,
+     "massive_specific_by_class": {
+      "canonical": 0,
+      "band": 15,
+      "content": 66
+     },
+     "l0_exact": 59.47787,
+     "rows": 100000,
+     "n_alive": 6831,
+     "n_never_fired": 5497,
+     "fvu_total": 0.015572161823319197,
+     "fvu_content": 0.32436013618036996,
+     "w1_rows": 0.9521649041560867,
+     "seed": 0
+    }
+   ],
+   "massive_specific_pairwise": [
+    {
+     "source": 42,
+     "target": 137,
+     "massive_specific_sharing": 0.0
+    },
+    {
+     "source": 42,
+     "target": 0,
+     "massive_specific_sharing": 0.0
+    },
+    {
+     "source": 137,
+     "target": 42,
+     "massive_specific_sharing": 0.11904761904761904
+    },
+    {
+     "source": 137,
+     "target": 0,
+     "massive_specific_sharing": 0.16666666666666666
+    },
+    {
+     "source": 0,
+     "target": 42,
+     "massive_specific_sharing": 0.07407407407407407
+    },
+    {
+     "source": 0,
+     "target": 137,
+     "massive_specific_sharing": 0.04938271604938271
+    }
+   ],
+   "top50_frac_massive_specific_s42": 0.1,
+   "composition": {
+    "top50": 0.77,
+    "dictwide": 0.5610475617098134,
+    "top50_frac_canonical": 0.12,
+    "top50_sharing_canonical": 0.16666666666666666,
+    "n_canonical": 7,
+    "sharing_canonical": 0.14285714285714285,
+    "top50_frac_band": 0.0,
+    "top50_sharing_band": null,
+    "n_band": 5,
+    "sharing_band": 0.0,
+    "top50_frac_content": 0.88,
+    "top50_sharing_content": 0.8522727272727273,
+    "n_content": 8293,
+    "sharing_content": 0.561738815868805
+   }
+  }
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "model": "gpt2",
+ "role": "k63",
+ "massive_threshold": 752.4514007568359,
+ "taus": [
+  0.003,
+  0.01,
+  0.03,
+  0.1,
+  0.3
+ ],
+ "heldout": {
+  "corpus": "wikitext-103",
+  "split": "test",
+  "n_tokens": 200000
+ },
+ "runs": [
+  {
+   "seed": 42,
+   "condition": "standard",
+   "k": 64,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.14080221401574777,
+   "store_content_fvu": 0.14212445542379118,
+   "heldout_l0_exact": 64.0,
+   "store_l0_exact": 64.0,
+   "store_n_alive": 2959
+  },
+  {
+   "seed": 42,
+   "condition": "bypass",
+   "k": 64,
+   "scalars_per_token": 65,
+   "heldout_content_fvu": 0.13727545314494188,
+   "store_content_fvu": 0.13878160594534494,
+   "heldout_l0_exact": 63.79813,
+   "store_l0_exact": 63.78712,
+   "store_n_alive": 3070
+  },
+  {
+   "seed": 42,
+   "condition": "bypass",
+   "k": 63,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.13806896484098483,
+   "store_content_fvu": 0.13948245827229236,
+   "heldout_l0_exact": 62.787265,
+   "store_l0_exact": 62.77452,
+   "store_n_alive": 3069
+  },
+  {
+   "seed": 137,
+   "condition": "standard",
+   "k": 64,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.14065364256620816,
+   "store_content_fvu": 0.14202609873009814,
+   "heldout_l0_exact": 64.0,
+   "store_l0_exact": 64.0,
+   "store_n_alive": 2982
+  },
+  {
+   "seed": 137,
+   "condition": "bypass",
+   "k": 64,
+   "scalars_per_token": 65,
+   "heldout_content_fvu": 0.13742449024258796,
+   "store_content_fvu": 0.138689862994056,
+   "heldout_l0_exact": 63.844855,
+   "store_l0_exact": 63.83699,
+   "store_n_alive": 3070
+  },
+  {
+   "seed": 137,
+   "condition": "bypass",
+   "k": 63,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.13816441700792548,
+   "store_content_fvu": 0.13942627184477016,
+   "heldout_l0_exact": 62.81632,
+   "store_l0_exact": 62.80734,
+   "store_n_alive": 3070
+  },
+  {
+   "seed": 0,
+   "condition": "standard",
+   "k": 64,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.14020366803574524,
+   "store_content_fvu": 0.14165501569822805,
+   "heldout_l0_exact": 64.0,
+   "store_l0_exact": 64.0,
+   "store_n_alive": 3019
+  },
+  {
+   "seed": 0,
+   "condition": "bypass",
+   "k": 64,
+   "scalars_per_token": 65,
+   "heldout_content_fvu": 0.13756329366802203,
+   "store_content_fvu": 0.13890234622067762,
+   "heldout_l0_exact": 63.80386,
+   "store_l0_exact": 63.79511,
+   "store_n_alive": 3070
+  },
+  {
+   "seed": 0,
+   "condition": "bypass",
+   "k": 63,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.1382308236903216,
+   "store_content_fvu": 0.1395541538390116,
+   "heldout_l0_exact": 62.84508,
+   "store_l0_exact": 62.83684,
+   "store_n_alive": 3072
+  },
+  {
+   "seed": 1,
+   "condition": "standard",
+   "k": 64,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.14081400854745435,
+   "store_content_fvu": 0.14210347125368342,
+   "heldout_l0_exact": 64.0,
+   "store_l0_exact": 64.0,
+   "store_n_alive": 2952
+  },
+  {
+   "seed": 1,
+   "condition": "bypass",
+   "k": 64,
+   "scalars_per_token": 65,
+   "heldout_content_fvu": 0.137524055510324,
+   "store_content_fvu": 0.13887163054674023,
+   "heldout_l0_exact": 63.84423,
+   "store_l0_exact": 63.83691,
+   "store_n_alive": 3072
+  },
+  {
+   "seed": 1,
+   "condition": "bypass",
+   "k": 63,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.13831829408230845,
+   "store_content_fvu": 0.1396713636736173,
+   "heldout_l0_exact": 62.82105,
+   "store_l0_exact": 62.81421,
+   "store_n_alive": 3071
+  },
+  {
+   "seed": 2,
+   "condition": "standard",
+   "k": 64,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.14031136680072667,
+   "store_content_fvu": 0.14169292490657498,
+   "heldout_l0_exact": 64.0,
+   "store_l0_exact": 64.0,
+   "store_n_alive": 2984
+  },
+  {
+   "seed": 2,
+   "condition": "bypass",
+   "k": 64,
+   "scalars_per_token": 65,
+   "heldout_content_fvu": 0.13751346516573915,
+   "store_content_fvu": 0.13882823598530605,
+   "heldout_l0_exact": 63.819195,
+   "store_l0_exact": 63.80937,
+   "store_n_alive": 3071
+  },
+  {
+   "seed": 2,
+   "condition": "bypass",
+   "k": 63,
+   "scalars_per_token": 64,
+   "heldout_content_fvu": 0.13834061438316136,
+   "store_content_fvu": 0.13971624570714705,
+   "heldout_l0_exact": 62.8225,
+   "store_l0_exact": 62.81369,
+   "store_n_alive": 3071
+  }
+ ],
+ "minutes": 18.91038352648417
+}

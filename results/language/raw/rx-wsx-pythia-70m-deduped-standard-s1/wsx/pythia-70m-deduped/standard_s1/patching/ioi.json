@@ -1,0 +1,113 @@
+{
+ "task": "ioi",
+ "meta": {
+  "status": "ok",
+  "per_split": {
+   "calibration": {
+    "n_items": 240,
+    "templates": [
+     "met",
+     "went"
+    ],
+    "n_names": 6,
+    "n_places": 2,
+    "n_objects": 2
+   },
+   "train": {
+    "n_items": 6000,
+    "templates": [
+     "stayed",
+     "waited",
+     "walked"
+    ],
+    "n_names": 18,
+    "n_places": 6,
+    "n_objects": 6
+   },
+   "validation": {
+    "n_items": 1296,
+    "templates": [
+     "cleaned",
+     "worked"
+    ],
+    "n_names": 9,
+    "n_places": 3,
+    "n_objects": 3
+   },
+   "test": {
+    "n_items": 6000,
+    "templates": [
+     "arrived",
+     "returned",
+     "visited"
+    ],
+    "n_names": 26,
+    "n_places": 9,
+    "n_objects": 9
+   }
+  },
+  "n_single_token_names": 59
+ },
+ "disjointness": {
+  "template_family": {
+   "disjoint": true,
+   "violations": []
+  },
+  "place": {
+   "disjoint": true,
+   "violations": []
+  },
+  "obj": {
+   "disjoint": true,
+   "violations": []
+  },
+  "names": {
+   "disjoint": true,
+   "violations": []
+  },
+  "all_disjoint": true
+ },
+ "condition": "standard",
+ "aligned_counts": {
+  "calibration": 240,
+  "train": 6000,
+  "validation": 1296,
+  "test": 6000
+ },
+ "native": {
+  "calibration": {
+   "n": 240,
+   "donor_acc": 0.5875,
+   "recipient_acc": 0.05,
+   "foil_acc": 0.5875,
+   "eligible": 0
+  },
+  "train": {
+   "n": 2048,
+   "donor_acc": 0.3349609375,
+   "recipient_acc": 0.15673828125,
+   "foil_acc": 0.322265625,
+   "eligible": 2
+  },
+  "validation": {
+   "n": 1024,
+   "donor_acc": 0.2138671875,
+   "recipient_acc": 0.1259765625,
+   "foil_acc": 0.20703125,
+   "eligible": 0
+  },
+  "test": {
+   "n": 4096,
+   "donor_acc": 0.274169921875,
+   "recipient_acc": 0.132080078125,
+   "foil_acc": 0.266357421875,
+   "eligible": 3
+  }
+ },
+ "competence_threshold": 0.6,
+ "status": "UNSUPPORTED_TASK",
+ "why": {
+  "calibration_recipient_acc": 0.05,
+  "eligible_test": 3
+ }
+}

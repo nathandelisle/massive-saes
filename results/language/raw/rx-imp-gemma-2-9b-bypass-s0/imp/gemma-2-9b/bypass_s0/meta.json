@@ -1,0 +1,23 @@
+{
+ "model": "gemma-2-9b",
+ "condition": "bypass",
+ "seed": 0,
+ "config_hash": "918d056bf4a429ee",
+ "sae_sha256": "fb1f01eed7f5d59b33634373243942325a9dd9693154040d8189b06dbee85038",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-85-150.ec2.internal",
+  "code_hash": "1e499583cae6494d",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 21,
+ "hidden_state_index": 22,
+ "n_alive_archived_rule": 10274
+}

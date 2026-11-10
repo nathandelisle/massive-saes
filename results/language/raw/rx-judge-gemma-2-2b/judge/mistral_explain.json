@@ -1,0 +1,3558 @@
+{
+ "gemma-2-2b:standard:42|40": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by the beginning of a new thought or topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by the beginning of a new thought or topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|153": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first token of a sentence or phrase, often at the beginning of a new context or definition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first token of a sentence or phrase, often at the beginning of a new context or definition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|171": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|173": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a preposition or a conjunction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a preposition or a conjunction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|232": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the genre or category of the subject being described.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the genre or category of the subject being described.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|265": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the preposition 'of' when it is part of a phrase indicating possession, association, or relation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the preposition 'of' when it is part of a phrase indicating possession, association, or relation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|280": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a date range or period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a date range or period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|369": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or measurement unit immediately preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or measurement unit immediately preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|382": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|399": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|413": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of the indefinite article 'an' preceding a word that starts with a vowel sound.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of the indefinite article 'an' preceding a word that starts with a vowel sound.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|481": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|483": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|553": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the end of a time period or sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the end of a time period or sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|612": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|624": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name 'Frank' when it is a person's name, and not a part of another word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name 'Frank' when it is a person's name, and not a part of another word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|660": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|679": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a number-like sequence preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a number-like sequence preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|680": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'considered' when it is used to describe something that is widely regarded or thought of in a certain way.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'considered' when it is used to describe something that is widely regarded or thought of in a certain way.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|741": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and mythical characters.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and mythical characters.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|805": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a sequence, as it is strongly activated by the <bos> token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a sequence, as it is strongly activated by the <bos> token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|848": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|880": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year, especially when it is a four-digit year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year, especially when it is a four-digit year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|972": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a preposition or a determiner.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a preposition or a determiner.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1034": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by the beginning of a new sentence or a specific punctuation mark.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by the beginning of a new sentence or a specific punctuation mark.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1046": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a U.S. state or a proper noun that is a place name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a U.S. state or a proper noun that is a place name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1051": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are proper nouns or names.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are proper nouns or names.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1113": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of the letter 'K' or 'k' in the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of the letter 'K' or 'k' in the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1177": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'friend' or 'friends' when it is preceded by a possessive or a preposition indicating a relationship.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'friend' or 'friends' when it is preceded by a possessive or a preposition indicating a relationship.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1220": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a specific type of noun that is a member of a group or category.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a specific type of noun that is a member of a group or category.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1303": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are geographical locations, especially those related to bodies of water or coasts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are geographical locations, especially those related to bodies of water or coasts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1311": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the execution or performance of an action.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the execution or performance of an action.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1317": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of casualties or losses in a military context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of casualties or losses in a military context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1334": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'God' or its variations, especially when used in a religious or divine context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'God' or its variations, especially when used in a religious or divine context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1436": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a movie, song, or TV show title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a movie, song, or TV show title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1497": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the start of a sentence or phrase, as it is activated by the beginning of a sentence token <bos> and the first word of the sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the start of a sentence or phrase, as it is activated by the beginning of a sentence token <bos> and the first word of the sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1505": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the type of location or place being described.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the type of location or place being described.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1512": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new clause or phrase, often indicated by a pronoun or conjunction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new clause or phrase, often indicated by a pronoun or conjunction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1523": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1547": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1611": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to country names or regions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to country names or regions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1638": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'row' or 'rowing' when it is preceded by a word that is related to the context of rowing or rowing events.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'row' or 'rowing' when it is preceded by a word that is related to the context of rowing or rowing events.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1664": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the number of goals scored in a match.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the number of goals scored in a match.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1765": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by a comma or conjunction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by a comma or conjunction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1778": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a person, place, or thing that is being introduced or mentioned for the first time.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a person, place, or thing that is being introduced or mentioned for the first time.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1786": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a question word or phrase that starts a question.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a question word or phrase that starts a question.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1789": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of extraterrestrial or otherworldly entities or concepts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of extraterrestrial or otherworldly entities or concepts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1880": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1903": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the occurrence of a conjunction or a transition word that connects two clauses or sentences.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the occurrence of a conjunction or a transition word that connects two clauses or sentences.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|1954": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2058": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the conjunction 'and' that follows the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the conjunction 'and' that follows the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2085": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2092": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of the verb 'to be' in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of the verb 'to be' in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2135": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and brands.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and brands.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2149": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a quotation mark that is part of a quotation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a quotation mark that is part of a quotation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2150": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the definite article 'the' when it is the first word of a noun phrase that is the object of a preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the definite article 'the' when it is the first word of a noun phrase that is the object of a preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2161": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to positive outcomes or achievements, often related to success, acclaim, or positive performance.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to positive outcomes or achievements, often related to success, acclaim, or positive performance.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2198": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, often marked by a capital letter or a specific punctuation mark.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, often marked by a capital letter or a specific punctuation mark.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2243": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a capitalized letter, especially when it is the first letter of a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a capitalized letter, especially when it is the first letter of a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2246": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often marked by punctuation or a transition to a new topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often marked by punctuation or a transition to a new topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2248": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2278": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and characters.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and characters.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2304": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'through' or its variations, especially when it indicates passage or transition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'through' or its variations, especially when it indicates passage or transition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2319": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and fictional characters.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and fictional characters.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2331": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, especially periods and commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, especially periods and commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2345": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the temporal order or sequence of events.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the temporal order or sequence of events.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2442": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first letter of a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first letter of a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2454": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numbers, especially those that are cardinal numbers.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numbers, especially those that are cardinal numbers.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2459": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a section or topic heading, often related to a specific subject or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a section or topic heading, often related to a specific subject or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2505": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2525": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2579": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a common phrase or idiom.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a common phrase or idiom.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2600": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, or a noun phrase that is the subject of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, or a noun phrase that is the subject of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2613": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2650": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a year in the 1900s.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a year in the 1900s.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2720": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate direction or movement, especially around or in a circular manner.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate direction or movement, especially around or in a circular manner.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2723": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last word of a noun phrase, often the object of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last word of a noun phrase, often the object of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2859": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a last name or a name with a title or honorific.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a last name or a name with a title or honorific.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2944": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|2997": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3088": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'to' when it is part of an infinitive verb form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'to' when it is part of an infinitive verb form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3096": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a punctuation mark or a special character that is not a letter or a number.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a punctuation mark or a special character that is not a letter or a number.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3141": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a geographical location or region.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a geographical location or region.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3173": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the definite article 'the' when it is part of a noun phrase that refers to a specific entity or concept previously mentioned or implied.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the definite article 'the' when it is part of a noun phrase that refers to a specific entity or concept previously mentioned or implied.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3196": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3295": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs that indicate an action being performed or initiated.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs that indicate an action being performed or initiated.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3320": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a person's name or a pronoun referring to a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a person's name or a pronoun referring to a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3358": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a legislative body or a specific part of a legislative body.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a legislative body or a specific part of a legislative body.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3410": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to possessive pronouns and the context preceding them.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to possessive pronouns and the context preceding them.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3590": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the part of speech of the marked token, specifically nouns.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the part of speech of the marked token, specifically nouns.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3630": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a proper noun that is a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a proper noun that is a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3663": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a species name or a specific noun that is a species name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a species name or a specific noun that is a species name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3808": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a symbol that looks like a number.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a symbol that looks like a number.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3817": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, specifically a name or a place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, specifically a name or a place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|3891": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4040": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to verbs that indicate an action or process that is being performed or will be performed.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to verbs that indicate an action or process that is being performed or will be performed.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4058": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the start of a sentence, as it is activated by the beginning of sequence token <bos> followed by a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the start of a sentence, as it is activated by the beginning of sequence token <bos> followed by a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4155": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically place names, people, and brands.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically place names, people, and brands.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4360": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4447": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of the token as a preposition or part of a phrasal verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of the token as a preposition or part of a phrasal verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4577": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or location name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or location name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4599": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4600": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a sentence or sequence, as it is consistently activated at the start of the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a sentence or sequence, as it is consistently activated at the start of the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4636": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'after' when it is used to indicate a sequence of events in time.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'after' when it is used to indicate a sequence of events in time.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4663": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a musical instrument, specifically a guitar.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a musical instrument, specifically a guitar.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4671": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4719": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'maintain' and its variations, as well as other words that imply continuity or persistence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'maintain' and its variations, as well as other words that imply continuity or persistence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4721": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens related to gambling or random chance.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens related to gambling or random chance.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4789": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are proper nouns starting with 'W' or 'w'\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are proper nouns starting with 'W' or 'w'",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4825": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a digit.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a digit.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4887": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that indicates a contrast or change in expectation, often marked by words like 'but', 'before', 'though', 'while', 'except', 'however', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', 'though', '",
+   "{\"explanation\": \"The feature responds to conjunctions that indicate a contrast or change in expectation.\", \"no_pattern\": false}"
+  ],
+  "retries": 1,
+  "explanation": "The feature responds to conjunctions that indicate a contrast or change in expectation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4902": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country or region that is part of a larger political entity, such as a state or province.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country or region that is part of a larger political entity, such as a state or province.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4915": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a specific religious or political leader, particularly the Pope or other high-ranking religious figures, or the mention of a king or queen.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a specific religious or political leader, particularly the Pope or other high-ranking religious figures, or the mention of a king or queen.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4929": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the start of a new event, action, or state change.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the start of a new event, action, or state change.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4945": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last word of a proper noun or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last word of a proper noun or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|4993": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a sentence or phrase, often indicated by the beginning of a new line or a specific symbol.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a sentence or phrase, often indicated by the beginning of a new line or a specific symbol.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5039": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the occurrence of a word that indicates possibility, occurrence, or existence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the occurrence of a word that indicates possibility, occurrence, or existence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5086": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are nouns representing ideas, concepts, or viewpoints, often used in academic or formal contexts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are nouns representing ideas, concepts, or viewpoints, often used in academic or formal contexts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5107": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5118": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate small size or quantity, or are related to smallness.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate small size or quantity, or are related to smallness.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5143": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are often used to describe a preliminary or early version of something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are often used to describe a preliminary or early version of something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5246": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a place, often a county, city, or state.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a place, often a county, city, or state.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5283": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token marking the end of a year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token marking the end of a year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5377": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values, especially those with commas or special characters.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values, especially those with commas or special characters.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5532": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5590": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5636": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized names of people, places, or things.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized names of people, places, or things.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5778": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new clause or phrase, often marked by a conjunction or transition word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new clause or phrase, often marked by a conjunction or transition word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5804": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically last names or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically last names or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5835": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are nouns related to formal or official processes, often involving discussions, decisions, or legal proceedings.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are nouns related to formal or official processes, often involving discussions, decisions, or legal proceedings.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5848": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5851": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of destiny, fate, or a predetermined outcome, often in the context of a character or situation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of destiny, fate, or a predetermined outcome, often in the context of a character or situation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5893": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5925": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, or a period of punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, or a period of punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5928": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'game' or its variations, especially when it is the subject of the sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'game' or its variations, especially when it is the subject of the sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|5943": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a noun phrase, or a noun phrase that is the subject of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a noun phrase, or a noun phrase that is the subject of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6092": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are related to religious or ceremonial rituals, or to the specific context of rituals.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are related to religious or ceremonial rituals, or to the specific context of rituals.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6162": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a comparison or differentiation, often involving the words 'distinguish' or 'distinction' or synonyms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a comparison or differentiation, often involving the words 'distinguish' or 'distinction' or synonyms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6414": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a verb in the present perfect tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a verb in the present perfect tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6522": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a state or region, specifically 'Georgia' or 'Georgian' in this case.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a state or region, specifically 'Georgia' or 'Georgian' in this case.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6544": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6555": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of a spatial orientation or direction, often involving angles or inclinations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of a spatial orientation or direction, often involving angles or inclinations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6564": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to years or dates, especially those in the 13th century.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to years or dates, especially those in the 13th century.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6576": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a country or region name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a country or region name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6639": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to acronyms or initialisms, especially those that follow a specific pattern of capitalization and punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to acronyms or initialisms, especially those that follow a specific pattern of capitalization and punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6729": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a quotation mark or punctuation mark that indicates the end of a quote or dialogue.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a quotation mark or punctuation mark that indicates the end of a quote or dialogue.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6743": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6822": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, particularly when the noun is a specific type of action, genre, or location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, particularly when the noun is a specific type of action, genre, or location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6834": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6881": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a time period or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a time period or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6909": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates, specifically the month in a date format.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates, specifically the month in a date format.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6926": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values or tokens that represent quantities.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values or tokens that represent quantities.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|6984": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the need for a continuation or completion of a phrase or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the need for a continuation or completion of a phrase or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7093": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often marked by punctuation or a closing parenthesis.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often marked by punctuation or a closing parenthesis.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7122": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last word of a name, especially when it is a proper noun or a title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last word of a name, especially when it is a proper noun or a title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7148": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7290": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a time period or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a time period or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7305": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first name of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first name of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7353": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date, or a name that is closely associated with a date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date, or a name that is closely associated with a date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7358": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token marking the beginning of a subordinate clause, often introduced by 'while' or similar conjunctions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token marking the beginning of a subordinate clause, often introduced by 'while' or similar conjunctions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7538": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7597": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country, specifically Germany.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country, specifically Germany.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7641": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a number or a number-like word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a number or a number-like word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7659": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, often a name or place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, often a name or place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7691": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a mathematical or technical term, often indicating a transition to a new concept or the end of a definition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a mathematical or technical term, often indicating a transition to a new concept or the end of a definition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7692": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the possessive form of a noun or pronoun, or a pronoun that indicates possession.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the possessive form of a noun or pronoun, or a pronoun that indicates possession.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7815": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, especially names of people and places.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, especially names of people and places.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7891": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of chemical elements or compounds, particularly those related to environmental or scientific contexts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of chemical elements or compounds, particularly those related to environmental or scientific contexts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7946": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7974": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a citation or attribution, typically indicated by phrases like 'According to' or 'As of' preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a citation or attribution, typically indicated by phrases like 'According to' or 'As of' preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|7995": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8004": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8011": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the phrase 'all of' or 'some of' preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the phrase 'all of' or 'some of' preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8094": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'on' when it is used as a preposition to indicate a surface, position, or state.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'on' when it is used as a preposition to indicate a surface, position, or state.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8132": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a sentence or text, as it is strongly activated by the <bos> token, which stands for 'beginning of sequence' in language models.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a sentence or text, as it is strongly activated by the <bos> token, which stands for 'beginning of sequence' in language models.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8159": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the start of a sentence with a capitalized word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the start of a sentence with a capitalized word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8262": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word, especially when it is a noun or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word, especially when it is a noun or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8301": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of Greek text or words derived from Greek.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of Greek text or words derived from Greek.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8420": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the noun 'occupied' or 'occupation' when it is used to describe a place or location that is inhabited or controlled by someone.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the noun 'occupied' or 'occupation' when it is used to describe a place or location that is inhabited or controlled by someone.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8444": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a meeting or visit, or are part of a date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a meeting or visit, or are part of a date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8520": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first letter of a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first letter of a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8530": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a compound noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a compound noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8569": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'archives' or 'documents' when it is preceded by a possessive or descriptive phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'archives' or 'documents' when it is preceded by a possessive or descriptive phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8603": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the beginning of a sequence, as it is consistently activated by the <bos> token, which stands for 'beginning of sequence'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8605": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8611": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8648": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often marked by punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often marked by punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8671": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically last names or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically last names or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8730": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the context of replacing or substituting something, often involving people, objects, or systems.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the context of replacing or substituting something, often involving people, objects, or systems.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8750": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that describe a state of disrepair, decay, or decline.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that describe a state of disrepair, decay, or decline.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8755": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country, specifically India.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country, specifically India.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8795": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, particularly when the marked token is a noun or pronoun that could be the subject of the next sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, particularly when the marked token is a noun or pronoun that could be the subject of the next sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8799": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a sports team, organization, or company.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a sports team, organization, or company.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8891": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country, region, or location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country, region, or location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|8998": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words that are proper nouns or specific titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words that are proper nouns or specific titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|9059": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'in' when it is used as a preposition to indicate a location or time period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'in' when it is used as a preposition to indicate a location or time period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|9120": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:standard:42|9189": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a noun or noun phrase that follows a specific pattern or context, often indicating a standard, procedure, or common practice.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a noun or noun phrase that follows a specific pattern or context, often indicating a standard, procedure, or common practice.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|116": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that introduce uncertainty or open-ended questions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that introduce uncertainty or open-ended questions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|171": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a word, especially when it is a proper noun or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a word, especially when it is a proper noun or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|187": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a future or hypothetical scenario, often involving a desire or intention.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a future or hypothetical scenario, often involving a desire or intention.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|202": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values or tokens that represent quantities or measurements.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values or tokens that represent quantities or measurements.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|208": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|261": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|294": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a date or year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a date or year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|301": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a sequence of numbers, especially when they are part of a date, time, or measurement.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a sequence of numbers, especially when they are part of a date, time, or measurement.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|350": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a quantity or range, often preceded by 'a' or 'the' and followed by a noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a quantity or range, often preceded by 'a' or 'the' and followed by a noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|370": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|382": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|493": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a verb in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a verb in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|519": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a time period or event.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a time period or event.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|541": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|545": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being the start of a noun phrase, often with a determiner preceding it.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being the start of a noun phrase, often with a determiner preceding it.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|590": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country, specifically Japan.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country, specifically Japan.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|600": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or clause, or a transition between different topics or ideas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or clause, or a transition between different topics or ideas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|636": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|659": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a proper noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a proper noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|702": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that introduces an example or a list of examples.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that introduces an example or a list of examples.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|741": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a specific name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a specific name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|773": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|830": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sequence of numbers or letters, often indicating an abbreviation or a code.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sequence of numbers or letters, often indicating an abbreviation or a code.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|833": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1057": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the start of a sentence, as indicated by the <bos> token, and the first token of the sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the start of a sentence, as indicated by the <bos> token, and the first token of the sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1081": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a name or abbreviation that is often associated with a person, place, or organization.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a name or abbreviation that is often associated with a person, place, or organization.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1233": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the destruction or removal of something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the destruction or removal of something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1289": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a process or action that is ongoing or continuous.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a process or action that is ongoing or continuous.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1294": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a percentage or proportion.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a percentage or proportion.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1303": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to words that describe a body of water, especially the sea or ocean.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to words that describe a body of water, especially the sea or ocean.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1424": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions or words that introduce a phrase describing a state, condition, or context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions or words that introduce a phrase describing a state, condition, or context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1440": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a diacritical mark or special character in the token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a diacritical mark or special character in the token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1465": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates, years, or time periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates, years, or time periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1505": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a noun phrase that is a title or a specific place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a noun phrase that is a title or a specific place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1547": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words that are proper nouns or acronyms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words that are proper nouns or acronyms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1563": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to units of measurement, particularly those related to physical dimensions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to units of measurement, particularly those related to physical dimensions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1623": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1702": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a conjunction or a preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a conjunction or a preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1722": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to titles or high-ranking positions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to titles or high-ranking positions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1895": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a university, specifically 'Oxford' or 'Cambridge'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a university, specifically 'Oxford' or 'Cambridge'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1943": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'each' when it is used as a pronoun or adjective to refer to individual items within a group.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'each' when it is used as a pronoun or adjective to refer to individual items within a group.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1977": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a comma or a period preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a comma or a period preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|1978": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the year in the context of a date range or specific year mentioned in the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the year in the context of a date range or specific year mentioned in the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2078": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate or describe a shape, form, or structure.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate or describe a shape, form, or structure.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2102": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person, often in the context of racing or sports.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person, often in the context of racing or sports.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2116": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a verb in the past tense.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a verb in the past tense.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2126": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a new sentence or section, often marked by punctuation or specific formatting.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a new sentence or section, often marked by punctuation or specific formatting.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2129": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'Squadron' when it is preceded by a number and optionally other text, such as 'No.' or '='.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'Squadron' when it is preceded by a number and optionally other text, such as 'No.' or '='.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2144": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, specifically a place name or a name of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, specifically a place name or a name of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2243": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, specifically a name or place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, specifically a name or place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2248": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2252": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, especially names of people, places, and organizations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, especially names of people, places, and organizations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2268": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun or acronym.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun or acronym.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2281": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a sequence of numbers preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a sequence of numbers preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2326": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and brands.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and brands.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2422": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or a number that could be a year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or a number that could be a year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2480": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to possessive pronouns or possessive forms of nouns.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to possessive pronouns or possessive forms of nouns.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2522": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to years, especially those in the 1900s.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to years, especially those in the 1900s.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2600": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of military units or groups, especially soldiers or troops.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of military units or groups, especially soldiers or troops.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2622": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a comparison or contrast, often preceding a comparison phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a comparison or contrast, often preceding a comparison phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2648": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the conjunction 'and' when it is used to connect two items or ideas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the conjunction 'and' when it is used to connect two items or ideas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2682": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a pronoun that is the object of a verb or preposition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a pronoun that is the object of a verb or preposition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2795": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, and titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, and titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2858": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun, often a person's name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun, often a person's name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2859": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2927": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a capitalized word that is a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a capitalized word that is a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|2949": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to specific military units or special forces, particularly those associated with naval or elite combat roles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to specific military units or special forces, particularly those associated with naval or elite combat roles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3011": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, or a noun phrase that is the subject of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, or a noun phrase that is the subject of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3063": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'of' when it is part of a prepositional phrase that follows a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'of' when it is part of a prepositional phrase that follows a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3070": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'women' or 'Women' when it is the subject of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'women' or 'Women' when it is the subject of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3088": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'to' when it is part of an infinitive verb form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'to' when it is part of an infinitive verb form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3096": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, especially commas and periods.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, especially commas and periods.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3163": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a preposition or prepositional phrase that indicates location or context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a preposition or prepositional phrase that indicates location or context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3210": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the number of items or entities mentioned or implied by the preceding text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the number of items or entities mentioned or implied by the preceding text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3339": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate continuation or resumption of an activity or state, often following an interruption or delay.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate continuation or resumption of an activity or state, often following an interruption or delay.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3412": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to dates or years.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to dates or years.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3428": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a place, often a city or town.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a place, often a city or town.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3449": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to identifiers, such as codes, numbers, or specific labels that follow a specific format or pattern.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to identifiers, such as codes, numbers, or specific labels that follow a specific format or pattern.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3454": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to possessive pronouns or pronouns that indicate possession.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to possessive pronouns or pronouns that indicate possession.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3572": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3602": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of the word 'bolete' or 'Boletus' in the preceding text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of the word 'bolete' or 'Boletus' in the preceding text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3630": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to female pronouns or words that imply a female subject.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to female pronouns or words that imply a female subject.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3688": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'only' when it is used as a determiner or quantifier, often preceding a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'only' when it is used as a determiner or quantifier, often preceding a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3805": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the noun being a specific type of media or creative work, such as a film, television show, or game.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the noun being a specific type of media or creative work, such as a film, television show, or game.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3819": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the last name of a person, often a notable figure or public official.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the last name of a person, often a notable figure or public official.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3834": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often indicated by punctuation or a transition to a new topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often indicated by punctuation or a transition to a new topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3904": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the duration of time, in years or decades, that precedes the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the duration of time, in years or decades, that precedes the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|3965": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are nouns referring to a physical structure or object that serves as a remembrance or tribute to someone or something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are nouns referring to a physical structure or object that serves as a remembrance or tribute to someone or something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4015": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or pronoun that refers to a person or group of people who are fans or enthusiasts of something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or pronoun that refers to a person or group of people who are fans or enthusiasts of something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4113": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people and places.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people and places.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4155": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4168": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the first token of a name, especially when it is a surname or part of a surname.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the first token of a name, especially when it is a surname or part of a surname.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4236": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a preposition, especially 'at' or 'in'.\"}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a preposition, especially 'at' or 'in'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4354": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a change, improvement, or transition.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a change, improvement, or transition.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4393": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to brand names or proper nouns that are part of a larger organization or entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to brand names or proper nouns that are part of a larger organization or entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4419": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that indicate the end of a clause or sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that indicate the end of a clause or sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4458": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions that indicate a direction or a source.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions that indicate a direction or a source.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4476": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a name or title, often following a descriptive phrase or context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a name or title, often following a descriptive phrase or context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4477": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4698": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a time period or sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a time period or sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4712": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a highway designation or route number, often preceded by terms related to highways or roads.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a highway designation or route number, often preceded by terms related to highways or roads.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4750": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a specific place, often a city or province.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a specific place, often a city or province.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4946": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|4993": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5135": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of low temperature or coldness, either directly or indirectly through related words like 'cool' or 'icy'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of low temperature or coldness, either directly or indirectly through related words like 'cool' or 'icy'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5217": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a number-like token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a number-like token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5230": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a noun or pronoun that is the object of a preposition or verb, or is the subject of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a noun or pronoun that is the object of a preposition or verb, or is the subject of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5237": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words, especially those that are proper nouns or specific names.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words, especially those that are proper nouns or specific names.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5257": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5329": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year in the YYYY format, or a date in the YYYY-MM-DD format.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year in the YYYY format, or a date in the YYYY-MM-DD format.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5342": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or a number-like sequence preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or a number-like sequence preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5356": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that is a verb in the present participle form.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that is a verb in the present participle form.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5403": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are part of a record or record-breaking context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are part of a record or record-breaking context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5420": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the concept of division or splitting into parts, either literally or metaphorically.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the concept of division or splitting into parts, either literally or metaphorically.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5586": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5620": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the definite article 'the' when it is preceded by a noun or a noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the definite article 'the' when it is preceded by a noun or a noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5628": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5661": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of a specific, well-known entity or concept.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of a specific, well-known entity or concept.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5794": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of the <bos> token, which is the beginning of a sequence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of the <bos> token, which is the beginning of a sequence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5804": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically last names or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically last names or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5842": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are likely to start a sentence or a phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are likely to start a sentence or a phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5848": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to nouns that are often the subject of a sentence or a clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to nouns that are often the subject of a sentence or a clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5893": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically last names or titles.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically last names or titles.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5902": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to directional words or phrases, particularly those indicating a cardinal direction.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to directional words or phrases, particularly those indicating a cardinal direction.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5943": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, often a proper noun or a noun with a determiner.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, often a proper noun or a noun with a determiner.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5977": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically commas.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically commas.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|5991": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a definite article or a demonstrative pronoun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a definite article or a demonstrative pronoun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6198": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the verb 'take' or its conjugations, especially when used in the context of acquiring, assuming, or undertaking something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the verb 'take' or its conjugations, especially when used in the context of acquiring, assuming, or undertaking something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6250": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'British' when it is used as an adjective or noun referring to the United Kingdom, its people, or its institutions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'British' when it is used as an adjective or noun referring to the United Kingdom, its people, or its institutions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6292": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year in the YYYY format.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year in the YYYY format.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6322": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a noun phrase, or the start of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a noun phrase, or the start of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6391": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to visual or descriptive elements, often related to imagery, shots, or detailed descriptions.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to visual or descriptive elements, often related to imagery, shots, or detailed descriptions.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6408": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the start of a sentence or phrase, as it is activated by the beginning of a sentence token <bos> followed by a word.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the start of a sentence or phrase, as it is activated by the beginning of a sentence token <bos> followed by a word.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6476": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to prepositions or words that indicate location, direction, or time.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to prepositions or words that indicate location, direction, or time.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6535": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the definite article 'the' when it is the first word of a noun phrase that is the object of a preposition or a verb.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the definite article 'the' when it is the first word of a noun phrase that is the object of a preposition or a verb.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6684": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a specific location or place.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a specific location or place.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6734": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the start of a sentence, as it is activated by the beginning of a sentence token <bos> and the definite article 'The' that often follows it.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the start of a sentence, as it is activated by the beginning of a sentence token <bos> and the definite article 'The' that often follows it.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6818": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a number or measurement preceding the marked token.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a number or measurement preceding the marked token.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6834": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6837": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words that are proper nouns or acronyms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words that are proper nouns or acronyms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6890": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6919": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the mention of Turkey or Turkish-related terms.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the mention of Turkey or Turkish-related terms.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6923": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that indicates the purpose or goal of an action or situation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that indicates the purpose or goal of an action or situation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6943": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that indicates a boundary or a location, often a preposition or a conjunction that connects two locations or spaces.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that indicates a boundary or a location, often a preposition or a conjunction that connects two locations or spaces.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6962": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|6989": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token '20' or '200' when it is part of a year.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token '20' or '200' when it is part of a year.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7122": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or title.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or title.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7191": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate the continuation or completion of a process or event, often related to time or survival.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate the continuation or completion of a process or event, often related to time or survival.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7219": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to directional or opposing concepts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to directional or opposing concepts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7222": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a road name or a location name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a road name or a location name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7275": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being the start of a noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being the start of a noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7302": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a part of a Jewish-related context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a part of a Jewish-related context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7312": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks, specifically commas, at the end of a sentence or clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks, specifically commas, at the end of a sentence or clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7375": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country, region, or location.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country, region, or location.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7476": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to punctuation marks that end a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to punctuation marks that end a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7575": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, especially nicknames, titles, or specific names of people, places, or things.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, especially nicknames, titles, or specific names of people, places, or things.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7588": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that are the subject of a sentence or clause, often referring to a person or family member.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that are the subject of a sentence or clause, often referring to a person or family member.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7690": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the phrase 'early' or 'early life' and the context of the text preceding it.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the phrase 'early' or 'early life' and the context of the text preceding it.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7692": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to possessive pronouns or prepositions that indicate possession or association.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to possessive pronouns or prepositions that indicate possession or association.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7701": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'of' when it is part of a prepositional phrase that follows a noun or noun phrase.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'of' when it is part of a prepositional phrase that follows a noun or noun phrase.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7702": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the word 'rankings' or 'ranked' when it is preceded by a city or location, or when it is used to describe a list of items.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the word 'rankings' or 'ranked' when it is preceded by a city or location, or when it is used to describe a list of items.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7706": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that starts a new sentence or clause, often indicated by the beginning of a new subject or action.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that starts a new sentence or clause, often indicated by the beginning of a new subject or action.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7710": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7730": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate a passage of time, especially when referring to a duration or period.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate a passage of time, especially when referring to a duration or period.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7787": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to numerical values or sequences.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to numerical values or sequences.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7819": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a word, especially when it is a proper noun or a significant term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a word, especially when it is a proper noun or a significant term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7892": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that represent the purpose or aim of an action, often indicated by words like 'goal', 'objective', or 'purpose'.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that represent the purpose or aim of an action, often indicated by words like 'goal', 'objective', or 'purpose'.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7919": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a state or region abbreviation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a state or region abbreviation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7941": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to capitalized words that are proper nouns or specific names.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to capitalized words that are proper nouns or specific names.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|7995": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or clause, often marked by punctuation.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or clause, often marked by punctuation.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8000": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a surname or a proper noun that is a surname.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a surname or a proper noun that is a surname.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8069": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the action or event that the marked token is performing or initiating.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the action or event that the marked token is performing or initiating.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8159": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the beginning of a proper noun, often a place name or a person's last name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the beginning of a proper noun, often a place name or a person's last name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8166": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word, especially when it is a proper noun or a specific term.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word, especially when it is a proper noun or a specific term.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8259": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token that follows a conjunction or a preposition that introduces a continuation or addition to the previous clause.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token that follows a conjunction or a preposition that introduces a continuation or addition to the previous clause.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8262": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a word, especially when it is a noun or a proper noun.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a word, especially when it is a noun or a proper noun.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8270": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to tokens that indicate obscurity, lack of recognition, or being forgotten.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to tokens that indicate obscurity, lack of recognition, or being forgotten.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8280": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being a noun that is often used in the context of a specific category or genre, such as music, weather, or sports.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being a noun that is often used in the context of a specific category or genre, such as music, weather, or sports.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8300": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the start of a proper noun or name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the start of a proper noun or name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8366": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a person, specifically a queen or a royal figure, or a name that is a title of a person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a person, specifically a queen or a royal figure, or a name that is a title of a person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8387": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token being the start of a proper noun, specifically a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token being the start of a proper noun, specifically a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8433": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of a year or date.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of a year or date.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8487": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to negative or critical sentiments expressed in the text.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to negative or critical sentiments expressed in the text.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8511": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a proper noun or a name.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a proper noun or a name.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8604": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the role of the marked token as a person or character in the context.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the role of the marked token as a person or character in the context.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8648": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the end of a sentence or phrase, often marked by punctuation or a transition to a new topic.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the end of a sentence or phrase, often marked by punctuation or a transition to a new topic.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8662": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a specific organization, institution, or entity, particularly when it is a well-known or official entity.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a specific organization, institution, or entity, particularly when it is a well-known or official entity.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8734": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country or region, specifically the Dutch East Indies or the Netherlands.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country or region, specifically the Dutch East Indies or the Netherlands.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8744": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to proper nouns, specifically names of people, places, or organizations.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to proper nouns, specifically names of people, places, or organizations.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8839": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the type of content or subject matter that the marked token is describing, particularly in the context of media, art, or entertainment.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the type of content or subject matter that the marked token is describing, particularly in the context of media, art, or entertainment.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|8891": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the name of a country, specifically the United Kingdom or UK, or a location within the UK.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the name of a country, specifically the United Kingdom or UK, or a location within the UK.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|9015": {
+  "raw": [
+   "{\"explanation\": \"This feature responds to the presence of proper nouns, capitalized words, and punctuation marks at the beginning of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "This feature responds to the presence of proper nouns, capitalized words, and punctuation marks at the beginning of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|9059": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the token 'in' when it is used as a preposition to indicate a location or a state of being within something.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the token 'in' when it is used as a preposition to indicate a location or a state of being within something.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|9073": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the use of a pronoun in the second person.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the use of a pronoun in the second person.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|9101": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the presence of proper nouns and specific keywords at the beginning of a sentence.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the presence of proper nouns and specific keywords at the beginning of a sentence.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|9175": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the '@' symbol, which is often used to denote a username or handle in social media contexts.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the '@' symbol, which is often used to denote a username or handle in social media contexts.",
+  "no_pattern": false,
+  "parse_ok": true
+ },
+ "gemma-2-2b:bypass:42|9177": {
+  "raw": [
+   "{\"explanation\": \"The feature responds to the marked token being a noun that is a specific type of thing, place, or concept.\", \"no_pattern\": false}"
+  ],
+  "retries": 0,
+  "explanation": "The feature responds to the marked token being a noun that is a specific type of thing, place, or concept.",
+  "no_pattern": false,
+  "parse_ok": true
+ }
+}

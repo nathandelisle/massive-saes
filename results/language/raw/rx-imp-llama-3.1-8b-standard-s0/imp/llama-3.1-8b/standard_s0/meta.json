@@ -1,0 +1,23 @@
+{
+ "model": "llama-3.1-8b",
+ "condition": "standard",
+ "seed": 0,
+ "config_hash": "00b879901353de3c",
+ "sae_sha256": "ddeed8555087c8428a69cabde7572c3ddbbab0aa1b2d523810b4d0678cf4cbf9",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-41-225.ec2.internal",
+  "code_hash": "1e499583cae6494d",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L4",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 16,
+ "hidden_state_index": 17,
+ "n_alive_archived_rule": 9566
+}

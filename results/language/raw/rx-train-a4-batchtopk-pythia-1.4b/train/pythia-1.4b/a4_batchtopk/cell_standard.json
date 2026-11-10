@@ -1,0 +1,111 @@
+{
+ "arch": "batchtopk",
+ "condition": "standard",
+ "layer": null,
+ "kwargs": {
+  "k": 64
+ },
+ "screen": 0,
+ "l0_measured": [
+  67.61408996582031,
+  67.2406997680664,
+  67.57673645019531,
+  67.46977233886719,
+  67.42394256591797
+ ],
+ "l0_matched_pm5": false,
+ "fvu_final_log": [
+  0.009634286165237427,
+  0.008908313699066639,
+  0.008676777593791485,
+  0.00841759517788887,
+  0.011358118616044521
+ ],
+ "by_source": [
+  {
+   "seed": 42,
+   "top50_shared_mean": 0.14,
+   "top50_shared_std": 0.0,
+   "dictwide_mean": 0.6187429126842702,
+   "top50_dense_frac": 0.94,
+   "dense_importance_share": 0.8008992701754275,
+   "n_dense": 1296,
+   "n_alive": 6173
+  },
+  {
+   "seed": 137,
+   "top50_shared_mean": 0.12,
+   "top50_shared_std": 0.0,
+   "dictwide_mean": 0.6189993512812196,
+   "top50_dense_frac": 0.92,
+   "dense_importance_share": 0.7763418368316842,
+   "n_dense": 1258,
+   "n_alive": 6166
+  },
+  {
+   "seed": 0,
+   "top50_shared_mean": 0.22999999999999998,
+   "top50_shared_std": 0.017320508075688763,
+   "dictwide_mean": 0.628559804719284,
+   "top50_dense_frac": 0.88,
+   "dense_importance_share": 0.7455970373977451,
+   "n_dense": 1173,
+   "n_alive": 6145
+  },
+  {
+   "seed": 1,
+   "top50_shared_mean": 0.155,
+   "top50_shared_std": 0.008660254037844381,
+   "dictwide_mean": 0.6253241491085899,
+   "top50_dense_frac": 0.94,
+   "dense_importance_share": 0.7465866399397961,
+   "n_dense": 1271,
+   "n_alive": 6170
+  },
+  {
+   "seed": 2,
+   "top50_shared_mean": 0.14,
+   "top50_shared_std": 0.0,
+   "dictwide_mean": 0.6228559870550161,
+   "top50_dense_frac": 0.94,
+   "dense_importance_share": 0.7542895354822645,
+   "n_dense": 1229,
+   "n_alive": 6180
+  }
+ ],
+ "top50_shared_mean_over_sources": 0.157,
+ "top50_shared_sd_over_sources": 0.03815756805667782,
+ "calibration_ok": true,
+ "reused_archived": [
+  [
+   "standard",
+   42,
+   "1872b9f5d3ffa30b"
+  ],
+  [
+   "standard",
+   137,
+   "21a8a6313fd11b52"
+  ],
+  [
+   "standard",
+   0,
+   "eaddfc87c8a20167"
+  ],
+  [
+   "bypass",
+   42,
+   "da5e96de9a9569c8"
+  ],
+  [
+   "bypass",
+   137,
+   "3f4d70130d6ec6aa"
+  ],
+  [
+   "bypass",
+   0,
+   "9a0e09bfdd569d68"
+  ]
+ ]
+}

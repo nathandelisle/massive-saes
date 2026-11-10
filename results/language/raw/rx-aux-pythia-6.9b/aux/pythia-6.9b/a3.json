@@ -1,0 +1,99 @@
+{
+ "rows": {
+  "native": 2.967543405090259,
+  "pc1_delete_centred": 3.378951625374203,
+  "pc1_delete_uncentred_direction": 7.626521740770944,
+  "pc1_coef_to_training_mean_zero": 3.378951625374203,
+  "pc1_coef_to_position_mean": 3.271353732702108,
+  "abtt_D40_mean_kept": 4.322585004448748,
+  "abtt_D40_strict_mean_removed": 11.067852564785943,
+  "pc2_delete_centred": 3.0461665946569982,
+  "pc5_delete_centred": 2.9901982304188004,
+  "pc10_delete_centred": 2.9835882826454743,
+  "random_dir_delete_0": 2.968158270982184,
+  "random_dir_delete_1": 2.967040637559269,
+  "random_dir_delete_2": 2.964804461109748,
+  "random_dir_delete_3": 2.9739124800740644,
+  "random_dir_delete_4": 2.9710635152225287,
+  "splice_standard_s42": 3.2582012264362485,
+  "splice_bypass_s42": 3.2392464405822614
+ },
+ "D_abtt": 40,
+ "n_targets": 32611,
+ "note": "pc1_coef_to_training_mean_zero equals centred deletion by construction: the training mean of the centred coefficient is 0. The position-conditioned mean replacement is the informative variant. An exact projection-and-restore identity is not an SAE reconstruction result.",
+ "writers": {
+  "candidates": [
+   4,
+   5
+  ],
+  "conditions": {
+   "native": {
+    "ce": 2.9687314205024045,
+    "site_pc1_abs_coef": 155.75393079674762,
+    "sink_mass_block_b1": 0.6549574685269508
+   },
+   "suppress_b4": {
+    "ce": 3.209011516189119,
+    "site_pc1_abs_coef": 127.79731639917345,
+    "sink_mass_block_b1": 0.4681431417879851
+   },
+   "suppress_b4_pos0_only": {
+    "ce": 3.1985346344444263,
+    "site_pc1_abs_coef": 138.42499144180962,
+    "sink_mass_block_b1": 0.46408656844194385
+   },
+   "suppress_b4_nonfirst_only": {
+    "ce": 2.9803581919761784,
+    "site_pc1_abs_coef": 145.12414075326228,
+    "sink_mass_block_b1": 0.6632789589356685
+   },
+   "suppress_b4_random_direction": {
+    "ce": 2.9677624604925055,
+    "site_pc1_abs_coef": 155.77453159940416,
+    "sink_mass_block_b1": 0.6546820449656334
+   },
+   "suppress_b4_restore_same_site": {
+    "ce": 2.9687314205024045,
+    "site_pc1_abs_coef": 155.75393079674762,
+    "sink_mass_block_b1": 0.6549574685269508
+   },
+   "suppress_b4_restore_at_site": {
+    "ce": 3.027638795678426,
+    "site_pc1_abs_coef": 127.79731639917345,
+    "sink_mass_block_b1": 0.6259749225084332
+   },
+   "suppress_b5": {
+    "ce": 3.120658859304867,
+    "site_pc1_abs_coef": 139.8900610882303,
+    "sink_mass_block_b1": 0.575676479201386
+   },
+   "suppress_b5_pos0_only": {
+    "ce": 3.0982886800397225,
+    "site_pc1_abs_coef": 146.56814243482506,
+    "sink_mass_block_b1": 0.5706288356711899
+   },
+   "suppress_b5_nonfirst_only": {
+    "ce": 2.9866781932794195,
+    "site_pc1_abs_coef": 149.01868704090947,
+    "sink_mass_block_b1": 0.6610228134238202
+   },
+   "suppress_b5_random_direction": {
+    "ce": 2.9698290594886503,
+    "site_pc1_abs_coef": 155.72842749996462,
+    "sink_mass_block_b1": 0.6556547443935836
+   },
+   "suppress_b5_restore_same_site": {
+    "ce": 2.9687314205024045,
+    "site_pc1_abs_coef": 155.75393079674762,
+    "sink_mass_block_b1": 0.6549574685269508
+   },
+   "suppress_b5_restore_at_site": {
+    "ce": 2.980163035194341,
+    "site_pc1_abs_coef": 139.8900610882303,
+    "sink_mass_block_b1": 0.6513414758702983
+   }
+  },
+  "note": "restore_same_site = suppression followed immediately by adding the removed component back at the writer's output (an algebra check: must equal native). restore_at_site = native PC1 coefficient restored at the SAE site; tests propagation and can include mediated effects. If the sink link is only correlational here, that is what it is reported as."
+ },
+ "seconds": 347.2548797130585
+}

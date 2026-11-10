@@ -1,0 +1,466 @@
+{
+ "model": "gpt2",
+ "hf_id": "openai-community/gpt2",
+ "layer": 6,
+ "target_l0": 64.0,
+ "tolerance": "+/-10%",
+ "cal_seed": 1009,
+ "steps": 20000,
+ "batch": 4096,
+ "normalization": {
+  "name": "scalarnorm",
+  "scalar": 359.5281173330095,
+  "n_fit_rows": 200000,
+  "per_token_scalars": 0,
+  "definition": "single dataset-level scalar giving E||x/s||^2 = 1",
+  "source": "Rajamanoharan et al. 2407.14435 App. I; Gemma Scope App. A"
+ },
+ "scheduled_variant_note": "the archived JumpReLU re-seats theta from a pre-activation quantile every 250 steps; its sparsity is set by that schedule, not by the L0 penalty. It is reproduced here as a comparator and labelled 'scheduled threshold' everywhere.",
+ "theta_init_note": "theta is set ONCE at step 0 from the pre-activation quantile at the target L0 and is learned thereafter. The literal 1e-3 of the reference is calibrated to its own encoder init; measured here it left GPT-2 at L0 = 899 with theta rate-limited to 1.11x in 1,000 steps.",
+ "arms": {
+  "jumprelu_learned": {
+   "cells": {
+    "42": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 446.2841987609863,
+     "l0_distribution": {
+      "mean": 58.537353515625,
+      "p10": 23.0,
+      "p50": 45.0,
+      "p90": 100.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "theta_init_mean": 0.01085326261818409,
+      "theta_final_mean": 0.009444748982787132,
+      "theta_moved_x": 0.8702220995705877
+     },
+     "l0_within_tolerance": true,
+     "frac_alive_above_0p01": 0.031575520833333336,
+     "splice_ce": 4.1354089315181515,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.005232352338158885,
+     "fvu_content": 0.16415438578016445,
+     "w1": 0.9681556702780559,
+     "epsilon": 0.0009490859466588511,
+     "own_space_fvu": 0.005232352087061731,
+     "l0": 58.0804946843133,
+     "n_alive": 2055,
+     "n_any_positive": 2104
+    },
+    "137": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 446.0374927520752,
+     "l0_distribution": {
+      "mean": 57.652557373046875,
+      "p10": 23.0,
+      "p50": 44.0,
+      "p90": 99.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "theta_init_mean": 0.0109336469322443,
+      "theta_final_mean": 0.009273046627640724,
+      "theta_moved_x": 0.8481201821410276
+     },
+     "l0_within_tolerance": true,
+     "frac_alive_above_0p01": 0.03515625,
+     "splice_ce": 4.12460507769527,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.005207920710669276,
+     "fvu_content": 0.16350322867527248,
+     "w1": 0.9681556702780559,
+     "epsilon": 0.0002438566564328932,
+     "own_space_fvu": 0.005207920961816556,
+     "l0": 57.49381644608375,
+     "n_alive": 2043,
+     "n_any_positive": 2095
+    },
+    "0": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 446.08734917640686,
+     "l0_distribution": {
+      "mean": 55.95733642578125,
+      "p10": 22.0,
+      "p50": 42.0,
+      "p90": 95.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "theta_init_mean": 0.010862165130674839,
+      "theta_final_mean": 0.008371995761990547,
+      "theta_moved_x": 0.7707483417231401
+     },
+     "l0_within_tolerance": false,
+     "frac_alive_above_0p01": 0.03515625,
+     "splice_ce": 4.117645592684268,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.0051853137796944076,
+     "fvu_content": 0.16245859667699508,
+     "w1": 0.9681556702780559,
+     "epsilon": 0.00230047041599584,
+     "own_space_fvu": 0.0051853140563320405,
+     "l0": 55.3931438489911,
+     "n_alive": 2242,
+     "n_any_positive": 2295
+    }
+   },
+   "bypass": false,
+   "l0_coef": 3.162277660168379e-05,
+   "theta_init_l0": 256.0,
+   "calibration_status": "calibrated"
+  },
+  "jumprelu_learned_bypass": {
+   "cells": {
+    "42": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 448.0714545249939,
+     "l0_distribution": {
+      "mean": 69.44790649414062,
+      "p10": 31.0,
+      "p50": 56.0,
+      "p90": 131.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "theta_init_mean": 0.0088437395170331,
+      "theta_final_mean": 0.004500068258494139,
+      "theta_moved_x": 0.508842243694195
+     },
+     "l0_within_tolerance": false,
+     "frac_alive_above_0p01": 0.0,
+     "splice_ce": 4.090358996837184,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.003829492829248018,
+     "fvu_content": 0.12025649922754057,
+     "w1": 0.9681556702780559,
+     "epsilon": 1.3622272533637104e-06,
+     "own_space_fvu": 0.120256031569408,
+     "l0": 67.73812106747667,
+     "n_alive": 2815,
+     "n_any_positive": 3037
+    },
+    "137": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 448.5127897262573,
+     "l0_distribution": {
+      "mean": 69.63214111328125,
+      "p10": 31.0,
+      "p50": 56.0,
+      "p90": 132.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "theta_init_mean": 0.008804656565189362,
+      "theta_final_mean": 0.004493252374231815,
+      "theta_moved_x": 0.5103268186514642
+     },
+     "l0_within_tolerance": false,
+     "frac_alive_above_0p01": 0.0,
+     "splice_ce": 4.081298129812981,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.003798956909409515,
+     "fvu_content": 0.11929766635041805,
+     "w1": 0.9681556702780559,
+     "epsilon": 7.073226650959417e-07,
+     "own_space_fvu": 0.11929711617414882,
+     "l0": 68.83293556085918,
+     "n_alive": 2829,
+     "n_any_positive": 3040
+    },
+    "0": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 448.53266167640686,
+     "l0_distribution": {
+      "mean": 69.54550170898438,
+      "p10": 30.0,
+      "p50": 56.0,
+      "p90": 134.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "theta_init_mean": 0.0088324761018157,
+      "theta_final_mean": 0.004485893528908491,
+      "theta_moved_x": 0.5078862911371277
+     },
+     "l0_within_tolerance": false,
+     "frac_alive_above_0p01": 0.0,
+     "splice_ce": 4.085304507013201,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.0038081241915033817,
+     "fvu_content": 0.1195854873041343,
+     "w1": 0.9681556702780559,
+     "epsilon": 1.1826902014877987e-06,
+     "own_space_fvu": 0.11958499096183786,
+     "l0": 68.46691256237796,
+     "n_alive": 2844,
+     "n_any_positive": 3040
+    }
+   },
+   "bypass": true,
+   "l0_coef": 1.7782794100389226e-05,
+   "theta_init_l0": 252.0,
+   "calibration_status": "INCOMPLETE_nearest_operating_point"
+  },
+  "jumprelu_scheduled": {
+   "cells": {
+    "42": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 446.8005120754242,
+     "l0_distribution": {
+      "mean": 65.96478271484375,
+      "p10": 26.0,
+      "p50": 49.0,
+      "p90": 118.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "variant": "scheduled threshold"
+     },
+     "l0_within_tolerance": true,
+     "frac_alive_above_0p01": 0.038736979166666664,
+     "splice_ce": 4.106187689081408,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.004461164406178251,
+     "fvu_content": 0.14003192118271043,
+     "w1": 0.9681556702780559,
+     "epsilon": 0.0004352532796235881,
+     "own_space_fvu": 0.004461164406178251,
+     "l0": 65.35799522673031,
+     "n_alive": 2707,
+     "n_any_positive": 2895
+    },
+    "137": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 446.7154130935669,
+     "l0_distribution": {
+      "mean": 65.43597412109375,
+      "p10": 26.0,
+      "p50": 48.0,
+      "p90": 117.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "variant": "scheduled threshold"
+     },
+     "l0_within_tolerance": true,
+     "frac_alive_above_0p01": 0.037434895833333336,
+     "splice_ce": 4.094039208608361,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.004444420657572351,
+     "fvu_content": 0.13952868563362011,
+     "w1": 0.9681556702780559,
+     "epsilon": 0.0002752184548016472,
+     "own_space_fvu": 0.004444420657572351,
+     "l0": 65.25992623128661,
+     "n_alive": 2701,
+     "n_any_positive": 2895
+    },
+    "0": {
+     "status": "measured",
+     "source": "trained",
+     "seconds": 446.6857633590698,
+     "l0_distribution": {
+      "mean": 65.61529541015625,
+      "p10": 26.0,
+      "p50": 48.0,
+      "p90": 118.0,
+      "frac_zero": 0.0
+     },
+     "theta": {
+      "variant": "scheduled threshold"
+     },
+     "l0_within_tolerance": true,
+     "frac_alive_above_0p01": 0.038411458333333336,
+     "splice_ce": 4.095806690044005,
+     "n_ce_tokens": 4545,
+     "rows": 4609,
+     "fvu_total": 0.004479724771775754,
+     "fvu_content": 0.14059964918932724,
+     "w1": 0.9681556702780559,
+     "epsilon": 0.0005409225621208456,
+     "own_space_fvu": 0.004479724771775754,
+     "l0": 65.09351269255804,
+     "n_alive": 2713,
+     "n_any_positive": 2902
+    }
+   },
+   "bypass": false,
+   "l0_coef": null,
+   "theta_init_l0": null,
+   "calibration_status": null
+  }
+ },
+ "utc": "2026-09-22T19:35:04Z",
+ "calibration": {
+  "jumprelu_learned": {
+   "target_l0": 64.0,
+   "trace": [
+    {
+     "stage": "stage1_init",
+     "init_l0": 64.0,
+     "l0_coef": 0.0,
+     "l0": 32.74639892578125,
+     "theta_moved_x": 0.5884206931918045,
+     "status": "ok"
+    },
+    {
+     "stage": "stage1_init",
+     "init_l0": 256.0,
+     "l0_coef": 0.0,
+     "l0": 78.92129516601562,
+     "theta_moved_x": 0.6347176926919981,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 256.0,
+     "l0_coef": 1e-06,
+     "l0": 72.24966430664062,
+     "theta_moved_x": 0.6437152623581004,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 256.0,
+     "l0_coef": 9.999999999999999e-06,
+     "l0": 73.11868286132812,
+     "theta_moved_x": 0.6972149171500736,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 256.0,
+     "l0_coef": 9.999999999999999e-05,
+     "l0": 25.7706298828125,
+     "theta_moved_x": 1.0675667517832856,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 256.0,
+     "l0_coef": 3.162277660168379e-05,
+     "l0": 58.069854736328125,
+     "theta_moved_x": 0.8127844063115823,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 256.0,
+     "l0_coef": 1.7782794100389226e-05,
+     "l0": 72.91726684570312,
+     "theta_moved_x": 0.7437952760276444,
+     "status": "ok"
+    }
+   ],
+   "chosen": {
+    "stage": "stage2_penalty",
+    "init_l0": 256.0,
+    "l0_coef": 3.162277660168379e-05,
+    "l0": 58.069854736328125,
+    "theta_moved_x": 0.8127844063115823,
+    "status": "ok"
+   },
+   "stage1_headroom": [
+    256.0,
+    78.92129516601562
+   ],
+   "bracketed": true,
+   "status": "calibrated",
+   "note": "two-stage: the theta initialization is chosen on the calibration seed so the UNPENALIZED endpoint clears the target, then the L0 penalty is bracketed down to it, so the penalty sets sparsity. Both are frozen across the measurement seeds. The short-probe L0 estimates the full-length value; the full-length L0 is reported per seed and is the number that must be compared."
+  },
+  "jumprelu_learned_bypass": {
+   "target_l0": 63.0,
+   "trace": [
+    {
+     "stage": "stage1_init",
+     "init_l0": 63.0,
+     "l0_coef": 0.0,
+     "l0": 33.635284423828125,
+     "theta_moved_x": 0.4962309204833554,
+     "status": "ok"
+    },
+    {
+     "stage": "stage1_init",
+     "init_l0": 252.0,
+     "l0_coef": 0.0,
+     "l0": 92.05389404296875,
+     "theta_moved_x": 0.4846697576296236,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 252.0,
+     "l0_coef": 1e-06,
+     "l0": 74.35049438476562,
+     "theta_moved_x": 0.5000576537863132,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 252.0,
+     "l0_coef": 9.999999999999999e-06,
+     "l0": 73.73574829101562,
+     "theta_moved_x": 0.5017125662806775,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 252.0,
+     "l0_coef": 9.999999999999999e-05,
+     "l0": 18.31024169921875,
+     "theta_moved_x": 1.0928481139852944,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 252.0,
+     "l0_coef": 3.162277660168379e-05,
+     "l0": 46.01214599609375,
+     "theta_moved_x": 0.6158428157664523,
+     "status": "ok"
+    },
+    {
+     "stage": "stage2_penalty",
+     "init_l0": 252.0,
+     "l0_coef": 1.7782794100389226e-05,
+     "l0": 69.7674560546875,
+     "theta_moved_x": 0.5090187674986388,
+     "status": "ok"
+    }
+   ],
+   "chosen": {
+    "stage": "stage2_penalty",
+    "init_l0": 252.0,
+    "l0_coef": 1.7782794100389226e-05,
+    "l0": 69.7674560546875,
+    "theta_moved_x": 0.5090187674986388,
+    "status": "ok"
+   },
+   "stage1_headroom": [
+    252.0,
+    92.05389404296875
+   ],
+   "bracketed": true,
+   "status": "INCOMPLETE_nearest_operating_point",
+   "note": "two-stage: the theta initialization is chosen on the calibration seed so the UNPENALIZED endpoint clears the target, then the L0 penalty is bracketed down to it, so the penalty sets sparsity. Both are frozen across the measurement seeds. The short-probe L0 estimates the full-length value; the full-length L0 is reported per seed and is the number that must be compared."
+  }
+ },
+ "wall_minutes": 171.50231524308523
+}

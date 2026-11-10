@@ -1,0 +1,179 @@
+{
+ "gate1": {
+  "max_abs": 0.0,
+  "pass_": true,
+  "what": "prefix capture == hidden_states[b+1]"
+ },
+ "gate2": {
+  "identity_max_abs_logit": 0.0,
+  "proj_restore_max_abs_logit_info": 0.0,
+  "tol": 0.032375,
+  "proj_restore_elements_beyond_rounding_bound": 0,
+  "proj_restore_frac_elements_changed": 0.0,
+  "pass_": true
+ },
+ "gate3_splice_equals_v3": {
+  "residual_elements_beyond_rounding_bound": 0,
+  "residual_frac_elements_differing": 0.0029690121300518513,
+  "residual_max_abs": 0.015625,
+  "max_abs_logit_info": 0.0625,
+  "pass_": true
+ },
+ "pc1_leakage": {
+  "mean_sq_recon_on_v1_over_mean_sq_coef": 1.0141982809130923e-09,
+  "mode": "bypass",
+  "note": "bypass: the SAE output's PC1 component relative to the routed one"
+ },
+ "gate4": {
+  "max_row_support": 64,
+  "k": 64,
+  "l0_mean": 63.9479866027832,
+  "n_targets": 584,
+  "pass_": true
+ },
+ "gate5": {
+  "finite": true,
+  "dtype": "torch.float16",
+  "pass_": true
+ },
+ "gate7": {
+  "max_abs": 0.21036337316036224,
+  "tol": 1.0224540138840674,
+  "noise_floor": 0.3404846712946892,
+  "pass_": true,
+  "features": [
+   {
+    "feature": 3201,
+    "engine": 0.0857090950012207,
+    "full_forward": 0.03946540504693985,
+    "full_forward_per_seq": 0.03078511357307434,
+    "cls": "rare"
+   },
+   {
+    "feature": 3233,
+    "engine": 0.001890420913696289,
+    "full_forward": 0.011391639709472656,
+    "full_forward_per_seq": 0.004202306270599365,
+    "cls": "rare"
+   },
+   {
+    "feature": 4190,
+    "engine": 0.04593977332115173,
+    "full_forward": -0.05381710082292557,
+    "full_forward_per_seq": 0.024792373180389404,
+    "cls": "dense"
+   },
+   {
+    "feature": 4749,
+    "engine": 0.06509033590555191,
+    "full_forward": -0.0283818319439888,
+    "full_forward_per_seq": 0.2725318744778633,
+    "cls": "dense"
+   },
+   {
+    "feature": 6868,
+    "engine": -0.10679574310779572,
+    "full_forward": -0.31715911626815796,
+    "full_forward_per_seq": -0.0019405484199523926,
+    "cls": "dense"
+   },
+   {
+    "feature": 8186,
+    "engine": 0.4000566005706787,
+    "full_forward": 0.3880466818809509,
+    "full_forward_per_seq": 0.34924226999282837,
+    "cls": "rare"
+   },
+   {
+    "feature": 8925,
+    "engine": -0.04495660029351711,
+    "full_forward": -0.016150571405887604,
+    "full_forward_per_seq": 0.007149623706936836,
+    "cls": "random"
+   },
+   {
+    "feature": 9778,
+    "engine": -0.20539087057113647,
+    "full_forward": -0.17794448137283325,
+    "full_forward_per_seq": -0.1843494176864624,
+    "cls": "random"
+   },
+   {
+    "feature": 10963,
+    "engine": -0.017585616558790207,
+    "full_forward": -0.022961825132369995,
+    "full_forward_per_seq": -0.01581566408276558,
+    "cls": "rare"
+   },
+   {
+    "feature": 12902,
+    "engine": 0.32891093008220196,
+    "full_forward": 0.31932371854782104,
+    "full_forward_per_seq": 0.35326555743813515,
+    "cls": "random"
+   },
+   {
+    "feature": 13509,
+    "engine": 0.04179773014038801,
+    "full_forward": 0.01422705128788948,
+    "full_forward_per_seq": -0.04803227074444294,
+    "cls": "random"
+   },
+   {
+    "feature": 13815,
+    "engine": 0.012566432356834412,
+    "full_forward": -0.12542836368083954,
+    "full_forward_per_seq": 0.21505630761384964,
+    "cls": "dense"
+   }
+  ],
+  "dtype": "torch.float16",
+  "precision_of_check": "torch.float16 (fp32 upcast does not fit; weak check)"
+ },
+ "archive_repro": {
+  "status": "compared",
+  "n_features": 80,
+  "pearson": 0.9999957251569691,
+  "max_abs_diff": 0.00023429452314358695,
+  "median_abs_diff": 2.0288851126231678e-05,
+  "archived_scale": 0.15804093830497568,
+  "top16_mine": [
+   0.013805095737884852,
+   -0.00012364141913757148,
+   0.021059423248705793,
+   0.022997967329142926,
+   2.7901812144928893e-05,
+   0.021603920086491004,
+   -0.0003228718843189858,
+   1.9982975550044385e-05,
+   1.828948969179017e-05,
+   -0.00041647043580152985,
+   -1.4288406697891797e-05,
+   8.230171127976151e-05,
+   0.0002720791929342871,
+   1.2309470874562439e-05,
+   0.026389777537540345,
+   1.2812574359703478e-06
+  ],
+  "top16_archived": [
+   0.013789126050705036,
+   -0.00012953752033606492,
+   0.02094816592665394,
+   0.022941460268099068,
+   6.577497966375745e-05,
+   0.021462423527318197,
+   -0.00039057204107928456,
+   5.2694126222441184e-06,
+   6.30211157792715e-06,
+   -0.0004334952464071229,
+   -1.6708539519960652e-05,
+   9.596156453373084e-05,
+   0.00021546336937383614,
+   1.8959293655029796e-05,
+   0.026458012049213497,
+   1.549048434101863e-05
+  ],
+  "note": "archive used v3 fastabl on the same 64 sequences; differences reflect GPU numerics and our per-feature restriction to firing sequences"
+ },
+ "all_hard_pass": true
+}

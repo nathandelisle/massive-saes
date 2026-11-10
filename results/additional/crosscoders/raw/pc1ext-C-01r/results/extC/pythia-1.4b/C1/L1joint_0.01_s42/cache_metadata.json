@@ -1,0 +1,50 @@
+{
+  "task": "crosscoder",
+  "coordinates": "raw_uncentered",
+  "output_widths": [
+    2048,
+    2048
+  ],
+  "cache_id": "pair-C1_scale_only_pc1x2_trainPC-735fa11c51",
+  "source": {
+    "stream_a": "pythia-1.4b-resid12-0bea2d5411",
+    "stream_b": "pythia-1.4b-resid12-0bea2d5411",
+    "label": "C1_scale_only_pc1x2_trainPC",
+    "a": {
+      "model": "pythia-1.4b",
+      "base_model": "EleutherAI/pythia-1.4b",
+      "layer": 12,
+      "dtype_stored": "float16",
+      "hooks": "output of block 12",
+      "splits": {
+        "train": "trainx",
+        "validation": "rank",
+        "test": "valid"
+      },
+      "train_rule": "trainx (ext/cache.py)",
+      "n_tokens": {
+        "train": 3001602,
+        "validation": 33058,
+        "test": 33176
+      }
+    },
+    "b": {
+      "model": "pythia-1.4b",
+      "base_model": "EleutherAI/pythia-1.4b",
+      "layer": 12,
+      "dtype_stored": "float16",
+      "hooks": "output of block 12",
+      "splits": {
+        "train": "trainx",
+        "validation": "rank",
+        "test": "valid"
+      },
+      "train_rule": "trainx (ext/cache.py)",
+      "n_tokens": {
+        "train": 3001602,
+        "validation": 33058,
+        "test": 33176
+      }
+    }
+  }
+}

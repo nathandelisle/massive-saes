@@ -1,0 +1,37 @@
+{
+ "families": {
+  "qwen": {
+   "name": "Qwen/Qwen2.5-32B-Instruct",
+   "revision": "5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd"
+  },
+  "mistral": {
+   "name": "mistralai/Mistral-Small-24B-Instruct-2501",
+   "revision": "9527884be6e5616bdd54de542f9ae13384489724"
+  }
+ },
+ "dicts": [
+  "gemma-2-2b:standard:42",
+  "gemma-2-2b:bypass:42"
+ ],
+ "explanations": {},
+ "scores": {},
+ "tokens": {
+  "qwen_explain": {
+   "prompt": 418125,
+   "generated": 12704
+  },
+  "mistral_explain": {
+   "prompt": 417822,
+   "generated": 12059
+  },
+  "mistral_judge": {
+   "prompt": 16943143,
+   "generated": 12059
+  },
+  "qwen_judge": {
+   "prompt": 7638029,
+   "generated": 0
+  }
+ },
+ "seconds": 4777.17230963707
+}

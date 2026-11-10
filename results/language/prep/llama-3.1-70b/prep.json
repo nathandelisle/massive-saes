@@ -1,0 +1,155 @@
+{
+ "model": "llama-3.1-70b",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-24-64.us-east-2.compute.internal",
+  "code_hash": "4874451bf68a7060",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "n_gpu": 2
+ },
+ "site_block": 40,
+ "hidden_state_index": 41,
+ "store": {
+  "mode": "archived mean (5M) + re-harvested first 100000 rows",
+  "n_written": 106496,
+  "last_row": 2176,
+  "precedes_partitions": true
+ },
+ "pca_vs_archived": {
+  "cos_v1": 0.9999999678503876,
+  "pc1_share_archived": 0.978031189416373,
+  "pc1_share_now": 0.9780225092439522
+ },
+ "pc1": {
+  "pc1_var_explained": 0.9780225092439522,
+  "pc2_var_explained": 0.000587015621522591,
+  "spectral_gap": 1666.0928148848482,
+  "cos_pc1_mean": 0.9140538822534341
+ },
+ "alive_rules": {
+  "primary": "archived counter: firing counts over the first 106,496 store rows / 100,000 (reproduces every archived ranking universe)",
+  "corrected": "stated rule: firing rate over the first 100,000 rows > 1e-3",
+  "n_alive_corrected": {
+   "bypass_s0": 13822,
+   "bypass_s1": 13802,
+   "bypass_s2": 13798,
+   "bypass_s42": 13864,
+   "bypass_s137": 13847,
+   "standard_s0": 4729,
+   "standard_s1": 7116,
+   "standard_s2": 6413,
+   "standard_s42": 4508,
+   "standard_s137": 6553
+  }
+ },
+ "n_alive": {
+  "bypass_s0": 14283,
+  "bypass_s1": 14230,
+  "bypass_s2": 14251,
+  "bypass_s42": 14321,
+  "bypass_s137": 14259,
+  "standard_s0": 4762,
+  "standard_s1": 7214,
+  "standard_s2": 6490,
+  "standard_s42": 4526,
+  "standard_s137": 6641
+ },
+ "n_alive_cal": {
+  "bypass_s0": 14191,
+  "bypass_s1": 14075,
+  "bypass_s2": 14117,
+  "bypass_s42": 14146,
+  "bypass_s137": 14120,
+  "standard_s0": 4801,
+  "standard_s1": 7252,
+  "standard_s2": 6556,
+  "standard_s42": 4566,
+  "standard_s137": 6696
+ },
+ "partition_cal": {
+  "name": "cal",
+  "n_seqs": 868,
+  "n_docs": 88,
+  "n_tokens": 66559,
+  "n_targets": 65691
+ },
+ "gate3": {
+  "status": "PASS",
+  "pc1_share_now": 0.9780225092439522,
+  "pc1_share_archived": 0.978031189416373,
+  "abs_diff_pc1": 8.680172420838517e-06,
+  "alive_now_vs_archived": {
+   "bypass_s0": [
+    14283,
+    14285,
+    0.0001400070003500175
+   ],
+   "bypass_s1": [
+    14230,
+    14235,
+    0.00035124692658939234
+   ],
+   "bypass_s2": [
+    14251,
+    14247,
+    0.0002807608619358461
+   ],
+   "bypass_s42": [
+    14321,
+    14321,
+    0.0
+   ],
+   "bypass_s137": [
+    14259,
+    14256,
+    0.00021043771043771043
+   ],
+   "standard_s0": [
+    4762,
+    4761,
+    0.00021003990758244065
+   ],
+   "standard_s1": [
+    7214,
+    7215,
+    0.0001386001386001386
+   ],
+   "standard_s2": [
+    6490,
+    6490,
+    0.0
+   ],
+   "standard_s42": [
+    4526,
+    4525,
+    0.00022099447513812155
+   ],
+   "standard_s137": [
+    6641,
+    6640,
+    0.00015060240963855423
+   ]
+  },
+  "worst_alive_rel_diff": 0.00035124692658939234,
+  "tolerance": {
+   "pc1_abs": 0.002,
+   "alive_rel": 0.005
+  },
+  "note": "alive counts under the ARCHIVED counter (106,496 rows / 100,000)"
+ },
+ "sites": {
+  "pre_rise_block": 19,
+  "post_fall_block": 79,
+  "canonical_block": 40,
+  "rule": "fallback-early-late",
+  "threshold": 0.5,
+  "pc1_share_pre": 0.9946830957288959,
+  "pc1_share_canonical": 0.9760708518784005,
+  "pc1_share_post": 0.25548628468628
+ }
+}

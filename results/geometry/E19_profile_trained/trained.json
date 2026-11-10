@@ -1,0 +1,167 @@
+{
+  "experiment": "E19_profile",
+  "input_metadata": {
+    "model_id": "EleutherAI/pythia-160m",
+    "model_revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+    "tokenizer_id": "EleutherAI/pythia-160m",
+    "tokenizer_revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+    "corpus": "wikitext-103-v1 train (HF Salesforce/wikitext)",
+    "partition": "RX cal partition (pkg_rx/partitions.json sha256 c0937c202102694d7c6c121009ce2b9959f348621c8e15207945d9f6ff0349af)",
+    "bos_rule": "tokenizer(text, add_special_tokens=True); the Pythia/GPT-NeoX tokenizer adds no BOS token, so position 0 is the first text token",
+    "train_eval_overlap": "RX partitions use WikiText-103 train articles starting after row 400,000; the SAE training store (first 5M tokens) ends before that row (asserted in rx/prep.py), so they are article-disjoint from SAE training. Overlap with the model's pretraining corpus (the Pile) is not controlled.",
+    "n_sequences": 868,
+    "n_tokens": 65705,
+    "n_articles": 88,
+    "snapshot": ".cache\\huggingface\\hub\\models--EleutherAI--pythia-160m\\snapshots\\50f5173d932e8e61f858120bcb800b97af589f46"
+  },
+  "mode": "profile",
+  "initialization": "trained",
+  "random_seed": null,
+  "dtype": "float32",
+  "attention": "eager",
+  "device": "cuda",
+  "batch_seqs": 32,
+  "max_tokens_requested": 65705,
+  "actual_tokens": 65705,
+  "n_documents": 88,
+  "sampling": "first valid tokens of supplied ordered cache; right padding excluded",
+  "pca": "exact centered covariance on ALL selected rows; FP64 Chan accumulation",
+  "layer_convention": "block_b_output = raw output of zero-based block b; final_norm_output is a DISTINCT site",
+  "result": {
+    "block_0_input": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.05016519776008983,
+      "pc2_variance_share": 0.04422978277595686,
+      "spectral_gap": 1.1341949838234213,
+      "abs_cos_pc1_mean": 0.011240208575297044,
+      "total_centered_variance": 0.514055112507555
+    },
+    "block_0_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.09823910109540322,
+      "pc2_variance_share": 0.042394881430518255,
+      "spectral_gap": 2.3172396709354897,
+      "abs_cos_pc1_mean": 0.6811177179153937,
+      "total_centered_variance": 69.79487099899936
+    },
+    "block_1_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.21021047310656144,
+      "pc2_variance_share": 0.046606350468217046,
+      "spectral_gap": 4.510339706815563,
+      "abs_cos_pc1_mean": 0.6883197880031129,
+      "total_centered_variance": 111.33377244990876
+    },
+    "block_2_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.5938948249149579,
+      "pc2_variance_share": 0.025268980828950047,
+      "spectral_gap": 23.502919604677814,
+      "abs_cos_pc1_mean": 0.6781921484864251,
+      "total_centered_variance": 316.25865662492527
+    },
+    "block_3_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.9270440280643427,
+      "pc2_variance_share": 0.008128902096478438,
+      "spectral_gap": 114.04295648559379,
+      "abs_cos_pc1_mean": 0.8868876737222475,
+      "total_centered_variance": 2370.828171101708
+    },
+    "block_4_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.932818775453381,
+      "pc2_variance_share": 0.007387406190656391,
+      "spectral_gap": 126.27148844654197,
+      "abs_cos_pc1_mean": 0.8844644542246717,
+      "total_centered_variance": 2465.538140114961
+    },
+    "block_5_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.9280443802415855,
+      "pc2_variance_share": 0.007945017449839244,
+      "spectral_gap": 116.80835015162403,
+      "abs_cos_pc1_mean": 0.9140922170380402,
+      "total_centered_variance": 2488.605507361511
+    },
+    "block_6_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.9240131340791876,
+      "pc2_variance_share": 0.006880469173094023,
+      "spectral_gap": 134.2950765178235,
+      "abs_cos_pc1_mean": 0.9174698768314435,
+      "total_centered_variance": 2495.430997892236
+    },
+    "block_7_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.9074864812727504,
+      "pc2_variance_share": 0.009023802706823137,
+      "spectral_gap": 100.5658601762842,
+      "abs_cos_pc1_mean": 0.932954290405349,
+      "total_centered_variance": 2492.803912798341
+    },
+    "block_8_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.8733038432375657,
+      "pc2_variance_share": 0.011520178627425643,
+      "spectral_gap": 75.80644983737709,
+      "abs_cos_pc1_mean": 0.8494491638451399,
+      "total_centered_variance": 2400.4507750536704
+    },
+    "block_9_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.7804793137958801,
+      "pc2_variance_share": 0.02029904701451485,
+      "spectral_gap": 38.44906183220315,
+      "abs_cos_pc1_mean": 0.672560366531526,
+      "total_centered_variance": 1856.3506357797914
+    },
+    "block_10_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.453862539618462,
+      "pc2_variance_share": 0.0796675539429994,
+      "spectral_gap": 5.696955876707246,
+      "abs_cos_pc1_mean": 0.475269788830173,
+      "total_centered_variance": 962.0492529384544
+    },
+    "block_11_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.6401379056730218,
+      "pc2_variance_share": 0.01897208700518424,
+      "spectral_gap": 33.741037846711336,
+      "abs_cos_pc1_mean": 0.9965171086230508,
+      "total_centered_variance": 1255.4504848559968
+    },
+    "final_norm_output": {
+      "n_tokens": 65705,
+      "pc1_variance_share": 0.0597337438039586,
+      "pc2_variance_share": 0.02194726395483736,
+      "spectral_gap": 2.721694327223544,
+      "abs_cos_pc1_mean": 0.2100255414784447,
+      "total_centered_variance": 1464.6171753145702
+    }
+  },
+  "provenance": {
+    "python": "3.13.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "files": [
+      {
+        "path": "PC1_RELEASE\\science_out\\inputs\\pythia160m_cal\\tokens.npz",
+        "sha256": "c3a387a2b9bdef873722aa284e15235f528d6be6f2c106849d6a990b14d99beb"
+      },
+      {
+        "path": "PC1_RELEASE\\science_out\\inputs\\pythia160m_cal\\input-meta.json",
+        "sha256": "013f09f7a3085b91cb5954cd8aecd4181b726cb4b332a7d2fcb5ec3cfb142692"
+      },
+      {
+        "path": ".cache\\huggingface\\hub\\models--EleutherAI--pythia-160m\\blobs\\b8368ff94f3bcf3088de5e9912251fc0208ae524",
+        "sha256": "76eb275107220e450d31258f792a2efcbee109d8b62ae0088260057dec06362f"
+      }
+    ],
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.6"
+  },
+  "seconds": 24.61838150024414,
+  "artifact_sha256": "385e39cc0b2c4d68736b8ffa2b72683707cb18197fe9fb21817560933f04b5e5"
+}

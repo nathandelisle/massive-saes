@@ -1,0 +1,14 @@
+# Dependencies recorded for the original language-model training code.
+# Install a PyTorch build compatible with your CUDA environment separately.
+transformers>=4.44,<5
+accelerate>=0.33,<2
+datasets>=2.20,<3
+numpy>=1.26,<2
+scipy>=1.11,<2
+scikit-learn>=1.4,<2
+matplotlib>=3.8,<4
+huggingface_hub>=0.24,<1
+pillow>=10,<12
+tqdm>=4.66,<5
+anthropic>=0.92,<1
+openai>=1.40,<2

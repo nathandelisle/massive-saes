@@ -1,0 +1,55 @@
+{
+  "n_tokens": 33176,
+  "n_documents": 75,
+  "total_mse_native": 1237.2535663810097,
+  "content_mse_native": 1236.997395338942,
+  "total_fvu_native": 0.015790195894517776,
+  "content_fvu_native": 0.36464290956549955,
+  "mean_l0": 63.978960694477934,
+  "alive_features": 947,
+  "mean_penalty": 0.0,
+  "dense_branch_pc_mse_over_train_centered_energy": 0.9995909225864492,
+  "pc_tail_cluster_active_fraction": 0.9977297008547008,
+  "pc_tail_token_count": 351,
+  "block_metrics": [
+    {
+      "block": 0,
+      "fvu": 0.01579007851087325,
+      "content_fvu": 0.3646403286387177
+    },
+    {
+      "block": 1,
+      "fvu": 0.015790313286899837,
+      "content_fvu": 0.36464538142705827
+    }
+  ],
+  "checkpoint_sha256": "a22bf4066232c92dc80294f00a93c4723f8f548839c6353195dd61a7c04bb6e2",
+  "selected_step": 20000,
+  "config": {
+    "activation": "topk",
+    "features": 8192,
+    "k": 64,
+    "data_seed": 101,
+    "scale_mode": "global",
+    "penalty": "joint",
+    "l1": 0.0,
+    "ridge": 1e-05,
+    "direction_seed": 101,
+    "fit_tokens": 50000,
+    "steps": 20000,
+    "batch_size": 4096,
+    "learning_rate": 0.0003,
+    "evaluate_every": 500,
+    "eval_batch_size": 1024,
+    "validation_tokens": 50000,
+    "task": "crosscoder",
+    "seed": 42,
+    "variant": "random_block",
+    "output_widths": [
+      2048,
+      2048
+    ]
+  },
+  "split": "test",
+  "caution": "Feature ablation is reconstruction MSE, not downstream causal loss."
+}

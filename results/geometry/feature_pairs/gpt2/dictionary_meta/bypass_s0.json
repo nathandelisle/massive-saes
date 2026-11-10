@@ -1,0 +1,19 @@
+{
+ "cohort_id": "v3core_rxzero",
+ "model_id": "gpt2",
+ "block_index": 6,
+ "condition": "bypass",
+ "seed": 0,
+ "checkpoint_sha256": "f3b73ede61a9a7ccf184ab591a4878aea1aaca3a19754142e433aa056ee58896",
+ "checkpoint_s3": "s3://ssup-research-079415246777/a2-interp/saes/c4b9163acbbfbb6e.pt",
+ "config_hash": "c4b9163acbbfbb6e",
+ "mean_sha256": "bc872584dfc1675ff56085ac4489b1a5cf6f508cf7c293e32a081c88689e9ec2",
+ "pc1_sha256": "bafead760c1451b18b7dd1b2e2887fc598c3c00508eeb87919aec09e37342a16",
+ "geometry_sha256": "9af2395d2abda18fa19cd529bb5f2819ff5eb761f0d94aa6779d20899d69999b",
+ "ranking_data_id": "RX rank partition, partitions.json sha256 c0937c202102694d7c6c121009ce2b9959f348621c8e15207945d9f6ff0349af",
+ "importance_protocol_id": "rx_zero imp-m1; summed dCE/valid targets; rank partition; status!=NOT_EVALUATED",
+ "alive_rule": "v3 archived counter: fires on (rows over first 106,496 store rows)/100,000 > 1e-3",
+ "n_importance_measured": 3070,
+ "n_alive": 3070,
+ "rank_zero_s3": "s3://ssup-research-079415246777/rx-imp-gpt2-bypass-s0/results/imp/gpt2/bypass_s0/rank_zero.npz"
+}

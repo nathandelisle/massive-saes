@@ -1,0 +1,23 @@
+{
+ "model": "pythia-160m",
+ "condition": "standard",
+ "seed": 1,
+ "config_hash": "e024415313f27186",
+ "sae_sha256": "7da73c016fb5ea01d0d550d25b073f99f4521e95e4c265cb86370db1c51a584c",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-15-196.ec2.internal",
+  "code_hash": "ab7cdf28f636d671",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA A10G",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 6,
+ "hidden_state_index": 7,
+ "n_alive_archived_rule": 3028
+}

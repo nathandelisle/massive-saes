@@ -1,0 +1,23 @@
+{
+ "model": "pythia-6.9b",
+ "condition": "standard",
+ "seed": 42,
+ "config_hash": "f471967010fc2f4c",
+ "sae_sha256": "76b10832726afa55cf24122f21c0000edcc4cd210280314d1c737c69caf72e4b",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-85-236.ec2.internal",
+  "code_hash": "f18e8081a9c8b2dd",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 16,
+ "hidden_state_index": 17,
+ "n_alive_archived_rule": 9107
+}

@@ -1,0 +1,10 @@
+{
+ "model": "gemma-2-2b",
+ "tag": "a2_pre_L2",
+ "cond": "bypass",
+ "seed": 1,
+ "npz": "topk_bypass_s1.npz",
+ "sae": "40f5198c3e6273e4.pt",
+ "protocol": "69cbd5fcf981a22d",
+ "layer": 2
+}

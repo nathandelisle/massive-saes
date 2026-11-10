@@ -1,0 +1,393 @@
+{
+ "role": "beta",
+ "beta": 0.03,
+ "l1_coef": 5.62397,
+ "seeds": [
+  42,
+  137,
+  0
+ ],
+ "cell": {
+  "top50_mean": 0.5700000000000001,
+  "top50_std": 0.02999999999999997,
+  "dictwide_mean": 0.4309199020636586,
+  "dictwide_std": 0.06086044071353622,
+  "dense_importance_share": 0.8941232325853001,
+  "dense_importance_share_signed": 0.9205304626877009,
+  "dense_importance_denominator": 5.426180469609847,
+  "dense_importance_n_evaluated": 1500,
+  "l0_measured": [
+   57.612518310546875,
+   57.62527084350586,
+   63.54815673828125
+  ],
+  "l0_measured_mean": 59.595315297444664,
+  "l0_train_log_stale": [
+   55.562255859375,
+   53.68505859375,
+   59.61962890625
+  ],
+  "fvu": 0.0049483077600598335,
+  "l0_matched": true,
+  "top50_dense_frac": 0.96,
+  "top50_shared_dense": 0.5729166666666666,
+  "top50_shared_content": 0.5,
+  "top50_dce_max": 1.0135601450770082,
+  "top50_dce_min": 0.009557635451045599,
+  "dce_p99_over_median": 262.584448742657,
+  "n_cand": 1500,
+  "n_screened": 1500,
+  "screen": 1500,
+  "n_alive": 2859,
+  "jumprelu_testability": null
+ },
+ "composition": {
+  "top50": 0.57,
+  "dictwide": 0.4309199020636586,
+  "top50_frac_canonical": 0.02,
+  "top50_sharing_canonical": 1.0,
+  "n_canonical": 1,
+  "sharing_canonical": 1.0,
+  "top50_frac_band": 0.6,
+  "top50_sharing_band": 0.31666666666666665,
+  "n_band": 42,
+  "sharing_band": 0.40476190476190477,
+  "top50_frac_content": 0.38,
+  "top50_sharing_content": 0.9473684210526315,
+  "n_content": 2816,
+  "sharing_content": 0.43110795454545453
+ },
+ "per_seed": [
+  {
+   "seed": 42,
+   "l0_exact": 54.1585,
+   "rows": 100000,
+   "n_alive": 2855,
+   "n_never_fired": 145,
+   "fvu_total": 0.004871792614618542,
+   "fvu_content": 0.14886411599998237,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 53.370505,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2850,
+   "heldout_n_never_fired": 136,
+   "heldout_fvu_total": 0.004655966898855161,
+   "heldout_fvu_content": 0.14776288549254268,
+   "heldout_w1_rows": 0.9685018943786969,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 615.4267578125,
+     "fvu": 0.004425807856023312,
+     "l0": 55.2978515625
+    },
+    {
+     "step": 18000,
+     "mse": 611.6600341796875,
+     "fvu": 0.0046906364150345325,
+     "l0": 54.6005859375
+    },
+    {
+     "step": 19000,
+     "mse": 614.9688720703125,
+     "fvu": 0.0049483077600598335,
+     "l0": 55.562255859375
+    }
+   ],
+   "gate_totals": {
+    "mse_per_token": 603.2360201630669,
+    "gate_penalty_per_token": 1636.3502189065307,
+    "aux_mse_per_token": 841.9576685265363,
+    "z_l1_per_token": 375.566929713387,
+    "gate_l1_per_token": 290.95998358926715,
+    "penalty_over_mse": 2.71262020869409,
+    "aggregate_price_per_unit_z": 4.357013595833124
+   },
+   "by_class": {
+    "canonical": {
+     "n": 1,
+     "median_fire_rate": 0.98641,
+     "median_mean_z_active": 35.98395324136457,
+     "median_mean_gate_active": 33.98114829905462,
+     "median_z_per_gate": 1.058938706976117,
+     "median_price_per_unit_z": 5.31094950345114,
+     "median_pc1_share": -31.976087850261262,
+     "sum_pc1_share": -31.976087850261262,
+     "median_exp_r_mag": 1.0049588680267334,
+     "median_b_enc": 0.5068138241767883,
+     "median_b_gate": -1.3209329843521118,
+     "median_rms_z_active": 37.37681194918754
+    },
+    "band": {
+     "n": 42,
+     "median_fire_rate": 0.01341,
+     "median_mean_z_active": 24.633780687679888,
+     "median_mean_gate_active": 23.40070305591395,
+     "median_z_per_gate": 1.048913914593301,
+     "median_price_per_unit_z": 5.361718830352309,
+     "median_pc1_share": 0.0572300487142452,
+     "sum_pc1_share": 35.71675086345977,
+     "median_exp_r_mag": 1.0005207061767578,
+     "median_b_enc": 0.29447871446609497,
+     "median_b_gate": -0.4492688477039337,
+     "median_rms_z_active": 33.839038807036665
+    },
+    "content": {
+     "n": 2812,
+     "median_fire_rate": 0.012754999999999999,
+     "median_mean_z_active": 3.967568118720722,
+     "median_mean_gate_active": 2.460836698434139,
+     "median_z_per_gate": 1.5979756620504175,
+     "median_price_per_unit_z": 3.5194342432911654,
+     "median_pc1_share": -0.00010119879824878335,
+     "sum_pc1_share": -2.7459006619950532,
+     "median_exp_r_mag": 0.9119275808334351,
+     "median_b_enc": 0.9387167692184448,
+     "median_b_gate": -0.8558740615844727,
+     "median_rms_z_active": 5.043096209077575
+    },
+    "top50": {
+     "n": 50,
+     "median_fire_rate": 0.025815,
+     "median_mean_z_active": 22.727094101562543,
+     "median_mean_gate_active": 21.384246189162184,
+     "median_z_per_gate": 1.0578938823575617,
+     "median_price_per_unit_z": 5.316200026927957,
+     "median_pc1_share": -0.006500439738308514,
+     "sum_pc1_share": 4.144136564924533,
+     "median_exp_r_mag": 1.0000684261322021,
+     "median_b_enc": 0.43063604831695557,
+     "median_b_gate": -0.5786697864532471,
+     "median_rms_z_active": 27.529752764344536
+    },
+    "top50_canonical": {
+     "n": 1,
+     "median_fire_rate": 0.98641,
+     "median_mean_z_active": 35.98395324136457,
+     "median_mean_gate_active": 33.98114829905462,
+     "median_z_per_gate": 1.058938706976117,
+     "median_price_per_unit_z": 5.31094950345114,
+     "median_pc1_share": -31.976087850261262,
+     "sum_pc1_share": -31.976087850261262,
+     "median_exp_r_mag": 1.0049588680267334,
+     "median_b_enc": 0.5068138241767883,
+     "median_b_gate": -1.3209329843521118,
+     "median_rms_z_active": 37.37681194918754
+    },
+    "top50_band": {
+     "n": 30,
+     "median_fire_rate": 0.01341,
+     "median_mean_z_active": 122.1484005745627,
+     "median_mean_gate_active": 121.63903471531216,
+     "median_z_per_gate": 1.0040325689798535,
+     "median_price_per_unit_z": 5.601383116519555,
+     "median_pc1_share": 0.5734194578734086,
+     "sum_pc1_share": 36.607098754098125,
+     "median_exp_r_mag": 1.0004551410675049,
+     "median_b_enc": 0.179429829120636,
+     "median_b_gate": -0.4308415949344635,
+     "median_rms_z_active": 122.17760927859163
+    },
+    "top50_content": {
+     "n": 19,
+     "median_fire_rate": 0.03945,
+     "median_mean_z_active": 8.57178037336507,
+     "median_mean_gate_active": 6.733875983292882,
+     "median_z_per_gate": 1.1970243917391656,
+     "median_price_per_unit_z": 4.698291896816649,
+     "median_pc1_share": -0.014485892727724086,
+     "sum_pc1_share": -0.4868743389123253,
+     "median_exp_r_mag": 0.9929127097129822,
+     "median_b_enc": 0.8976812362670898,
+     "median_b_gate": -0.8336458802223206,
+     "median_rms_z_active": 12.584865371657038
+    }
+   },
+   "top50_vs_archived_gated_s42": {
+    "frac_matched_in_old_dictionary": 1.0,
+    "frac_matched_to_old_top50": 0.5
+   }
+  },
+  {
+   "seed": 137,
+   "l0_exact": 54.16634,
+   "rows": 100000,
+   "n_alive": 2847,
+   "n_never_fired": 142,
+   "fvu_total": 0.0048680863387735645,
+   "fvu_content": 0.1487505967841992,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 53.3921,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2848,
+   "heldout_n_never_fired": 123,
+   "heldout_fvu_total": 0.004649957621929493,
+   "heldout_fvu_content": 0.14757145349282436,
+   "heldout_w1_rows": 0.9685018943786969,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 614.9473876953125,
+     "fvu": 0.005151938647031784,
+     "l0": 55.337158203125
+    },
+    {
+     "step": 18000,
+     "mse": 614.0538330078125,
+     "fvu": 0.005417162086814642,
+     "l0": 54.975830078125
+    },
+    {
+     "step": 19000,
+     "mse": 602.8790283203125,
+     "fvu": 0.004337559454143047,
+     "l0": 53.68505859375
+    }
+   ],
+   "gate_totals": {
+    "mse_per_token": 602.7771009792655,
+    "gate_penalty_per_token": 1647.6153773565027,
+    "aux_mse_per_token": 840.8430711414585,
+    "z_l1_per_token": 377.41259425338507,
+    "gate_l1_per_token": 292.9630452076563,
+    "penalty_over_mse": 2.73337420197251,
+    "aggregate_price_per_unit_z": 4.365554839567268
+   },
+   "by_class": {
+    "canonical": {
+     "n": 1,
+     "median_fire_rate": 0.98641,
+     "median_mean_z_active": 35.807988834983426,
+     "median_mean_gate_active": 33.778872067999785,
+     "median_z_per_gate": 1.0600705897727685,
+     "median_price_per_unit_z": 5.305278775072447,
+     "median_pc1_share": -27.15548023753272,
+     "sum_pc1_share": -27.15548023753272,
+     "median_exp_r_mag": 1.0043022632598877,
+     "median_b_enc": 0.5794742107391357,
+     "median_b_gate": -1.2987290620803833,
+     "median_rms_z_active": 37.193346462127366
+    },
+    "band": {
+     "n": 43,
+     "median_fire_rate": 0.01342,
+     "median_mean_z_active": 23.004553511494496,
+     "median_mean_gate_active": 22.2591758062605,
+     "median_z_per_gate": 1.0505095340989394,
+     "median_price_per_unit_z": 5.353563977716666,
+     "median_pc1_share": 0.02488983670014977,
+     "sum_pc1_share": 30.762257996166365,
+     "median_exp_r_mag": 1.000501275062561,
+     "median_b_enc": 0.3728061616420746,
+     "median_b_gate": -0.5064326524734497,
+     "median_rms_z_active": 25.75718007868136
+    },
+    "content": {
+     "n": 2803,
+     "median_fire_rate": 0.01263,
+     "median_mean_z_active": 3.9864776272962943,
+     "median_mean_gate_active": 2.4641664860149226,
+     "median_z_per_gate": 1.5960059086811487,
+     "median_price_per_unit_z": 3.523777681153661,
+     "median_pc1_share": -7.592606357502849e-05,
+     "sum_pc1_share": -2.611541806426237,
+     "median_exp_r_mag": 0.9128802418708801,
+     "median_b_enc": 0.9551783800125122,
+     "median_b_gate": -0.8491083383560181,
+     "median_rms_z_active": 5.0556491496787475
+    }
+   }
+  },
+  {
+   "seed": 0,
+   "l0_exact": 59.76877,
+   "rows": 100000,
+   "n_alive": 2326,
+   "n_never_fired": 678,
+   "fvu_total": 0.005314565807014068,
+   "fvu_content": 0.1618204376054947,
+   "w1_rows": 0.967285512098319,
+   "heldout_l0_exact": 59.19173,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2332,
+   "heldout_n_never_fired": 678,
+   "heldout_fvu_total": 0.005069313843139463,
+   "heldout_fvu_content": 0.16030958258396288,
+   "heldout_w1_rows": 0.9685018943786969,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 662.4041137695312,
+     "fvu": 0.0050055100582540035,
+     "l0": 64.389404296875
+    },
+    {
+     "step": 18000,
+     "mse": 669.4669189453125,
+     "fvu": 0.004353795200586319,
+     "l0": 62.283935546875
+    },
+    {
+     "step": 19000,
+     "mse": 656.1392211914062,
+     "fvu": 0.006420725956559181,
+     "l0": 59.61962890625
+    }
+   ],
+   "gate_totals": {
+    "mse_per_token": 658.0611655549519,
+    "gate_penalty_per_token": 3759.474077381776,
+    "aux_mse_per_token": 1112.5465320551984,
+    "z_l1_per_token": 797.7158365801084,
+    "gate_l1_per_token": 668.4733519883243,
+    "penalty_over_mse": 5.712955381907943,
+    "aggregate_price_per_unit_z": 4.712798599434902
+   },
+   "by_class": {
+    "canonical": {
+     "n": 4,
+     "median_fire_rate": 0.340395,
+     "median_mean_z_active": 41.49780351853494,
+     "median_mean_gate_active": 39.89347957874196,
+     "median_z_per_gate": 1.1055184094790111,
+     "median_price_per_unit_z": 5.08719894507867,
+     "median_pc1_share": 0.7860727658070649,
+     "sum_pc1_share": 5.314431636862431,
+     "median_exp_r_mag": 1.0112957954406738,
+     "median_b_enc": 0.8863362073898315,
+     "median_b_gate": -0.5957900285720825,
+     "median_rms_z_active": 42.38824343388965
+    },
+    "band": {
+     "n": 181,
+     "median_fire_rate": 0.01891,
+     "median_mean_z_active": 23.73114251539268,
+     "median_mean_gate_active": 23.817127061754274,
+     "median_z_per_gate": 1.028647737234438,
+     "median_price_per_unit_z": 5.467342994522378,
+     "median_pc1_share": -0.0233538796065775,
+     "sum_pc1_share": -4.775523461649733,
+     "median_exp_r_mag": 0.9503820538520813,
+     "median_b_enc": 0.9688486456871033,
+     "median_b_gate": -0.7344325184822083,
+     "median_rms_z_active": 29.935881608470325
+    },
+    "content": {
+     "n": 2141,
+     "median_fire_rate": 0.0188,
+     "median_mean_z_active": 4.2488742710921175,
+     "median_mean_gate_active": 2.615870644332497,
+     "median_z_per_gate": 1.588853456119277,
+     "median_price_per_unit_z": 3.5396404736635465,
+     "median_pc1_share": -4.5493651534683226e-05,
+     "sum_pc1_share": 0.46354216161923834,
+     "median_exp_r_mag": 0.9136650562286377,
+     "median_b_enc": 1.0695441961288452,
+     "median_b_gate": -0.8017650842666626,
+     "median_rms_z_active": 5.352748341432957
+    }
+   }
+  }
+ ],
+ "minutes": 13.493879973888397
+}

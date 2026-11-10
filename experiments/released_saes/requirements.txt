@@ -1,0 +1,5 @@
+numpy>=1.26,<3
+PyYAML>=6
+matplotlib>=3.8
+datasets>=3,<5
+sae-lens @ git+https://github.com/decoderesearch/SAELens.git@52c6c7fb676d7b394c2e5cd68b50ff5588b7435a

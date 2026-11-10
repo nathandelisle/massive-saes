@@ -1,0 +1,83 @@
+{
+ "job_id": "pythia160m-anchor-l6",
+ "model": "EleutherAI/pythia-160m",
+ "sae_id": "layers.6",
+ "declared_layer": 6,
+ "probe_layers": [
+  4,
+  5,
+  6,
+  7
+ ],
+ "scales": {
+  "as_released_raw": 1.0
+ },
+ "rows": 19842,
+ "normalization_reported_by_loader": "none",
+ "cells": [
+  {
+   "layer": 4,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.20267931006872283,
+   "fvu_content": 0.8882485844374015,
+   "content_over_total": 4.382532110140998,
+   "w1": 0.8360324015446778,
+   "declared": false
+  },
+  {
+   "layer": 5,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.16286164764808142,
+   "fvu_content": 0.6280476381278955,
+   "content_over_total": 3.8563261958703032,
+   "w1": 0.8225123178176496,
+   "declared": false
+  },
+  {
+   "layer": 6,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.1337914983082429,
+   "fvu_content": 0.45931897733569194,
+   "content_over_total": 3.4330953995108464,
+   "w1": 0.8119932091050056,
+   "declared": true
+  },
+  {
+   "layer": 7,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.1903193584268099,
+   "fvu_content": 0.6593061133120608,
+   "content_over_total": 3.464209414963989,
+   "w1": 0.7738375340984422,
+   "declared": false
+  }
+ ],
+ "verdict": {
+  "best": {
+   "layer": 6,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.1337914983082429,
+   "fvu_content": 0.45931897733569194,
+   "content_over_total": 3.4330953995108464,
+   "w1": 0.8119932091050056,
+   "declared": true
+  },
+  "declared": {
+   "layer": 6,
+   "scale": "as_released_raw",
+   "scale_value": 1.0,
+   "fvu_total": 0.1337914983082429,
+   "fvu_content": 0.45931897733569194,
+   "content_over_total": 3.4330953995108464,
+   "w1": 0.8119932091050056,
+   "declared": true
+  },
+  "ratio_declared_over_best": 1.0,
+  "note": "A neighbouring layer or a documented scale is dramatically better than the declared convention only if this ratio is large; report it as a convention finding, never as a fit."
+ }
+}

@@ -1,0 +1,402 @@
+{
+  "_meta": {
+    "target_l0": 64.0,
+    "l0_tol": 0.25,
+    "eval_seqs": 64,
+    "chunk": 64,
+    "pc1_var_explained": 0.9568455376264012,
+    "complete": true,
+    "sparsity_matched": true,
+    "unmatched_cells": [],
+    "untestable_cells": [],
+    "publishable": true
+  },
+  "topk": {
+    "prediction": "inversion (support-only) \u2014 v2 baseline",
+    "standard_kwargs": {
+      "k": 64
+    },
+    "standard_calibrated": true,
+    "standard": {
+      "top50_mean": 0.1,
+      "top50_std": 0.0,
+      "dictwide_mean": 0.6216646535631931,
+      "dictwide_std": 0.0018117931261666942,
+      "dense_importance_share": 0.6808393582555275,
+      "dense_importance_share_signed": 0.7240190117114723,
+      "dense_importance_denominator": 3.136939340776801,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        68.15742492675781,
+        68.15744018554688,
+        68.13739776611328
+      ],
+      "l0_measured_mean": 68.15075429280598,
+      "l0_train_log_stale": [
+        64.0,
+        63.9912109375,
+        63.982421875
+      ],
+      "fvu": 0.013611110858619213,
+      "l0_matched": true,
+      "top50_dense_frac": 0.94,
+      "top50_shared_dense": 0.0425531914893617,
+      "top50_shared_content": 1.0,
+      "top50_dce_max": 0.2945299536780972,
+      "top50_dce_min": 0.020096662403207954,
+      "dce_p99_over_median": 133.59753824760728,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 9107,
+      "jumprelu_testability": null
+    },
+    "bypass_kwargs": {
+      "k": 64
+    },
+    "bypass_calibrated": true,
+    "bypass": {
+      "top50_mean": 0.9,
+      "top50_std": 0.020000000000000018,
+      "dictwide_mean": 0.6095112155940836,
+      "dictwide_std": 0.0005387403271623348,
+      "dense_importance_share": 0.07444377433743425,
+      "dense_importance_share_signed": 0.03560233051641339,
+      "dense_importance_denominator": 0.5610958673260882,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        68.06997680664062,
+        68.03260040283203,
+        68.03239440917969
+      ],
+      "l0_measured_mean": 68.04499053955078,
+      "l0_train_log_stale": [
+        63.9267578125,
+        63.87060546875,
+        63.900146484375
+      ],
+      "fvu": 0.27802184224128723,
+      "l0_matched": true,
+      "top50_dense_frac": 0.04,
+      "top50_shared_dense": 1.0,
+      "top50_shared_content": 0.8958333333333334,
+      "top50_dce_max": 0.07056009748340708,
+      "top50_dce_min": 0.002470357439159354,
+      "dce_p99_over_median": 55.526655518360656,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 10209,
+      "jumprelu_testability": null
+    }
+  },
+  "batchtopk": {
+    "prediction": "inversion (support-only) \u2014 v2 App N",
+    "standard_kwargs": {
+      "k": 64
+    },
+    "standard_calibrated": true,
+    "standard": {
+      "top50_mean": 0.18,
+      "top50_std": 0.0,
+      "dictwide_mean": 0.670455949586062,
+      "dictwide_std": 0.002965525763005017,
+      "dense_importance_share": 0.7211342590092329,
+      "dense_importance_share_signed": 0.7477727659102986,
+      "dense_importance_denominator": 3.207409559941674,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        67.96512603759766,
+        67.59843444824219,
+        67.78125
+      ],
+      "l0_measured_mean": 67.78160349527995,
+      "l0_train_log_stale": [
+        64.0,
+        64.0,
+        64.0
+      ],
+      "fvu": 0.014476725831627846,
+      "l0_matched": true,
+      "top50_dense_frac": 0.9,
+      "top50_shared_dense": 0.08888888888888889,
+      "top50_shared_content": 1.0,
+      "top50_dce_max": 0.29092164166205725,
+      "top50_dce_min": 0.013915151410397897,
+      "dce_p99_over_median": 70.76863863868594,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 8093,
+      "jumprelu_testability": null
+    },
+    "bypass_kwargs": {
+      "k": 64
+    },
+    "bypass_calibrated": true,
+    "bypass": {
+      "top50_mean": 0.88,
+      "top50_std": 0.0,
+      "dictwide_mean": 0.604606431248767,
+      "dictwide_std": 0.0036989544288814624,
+      "dense_importance_share": 0.19126815482703735,
+      "dense_importance_share_signed": 0.19001897806115042,
+      "dense_importance_denominator": 0.5918744382605179,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        68.67131042480469,
+        68.79478454589844,
+        68.69607543945312
+      ],
+      "l0_measured_mean": 68.72072347005208,
+      "l0_train_log_stale": [
+        64.0,
+        64.0,
+        64.0
+      ],
+      "fvu": 0.2748476266860962,
+      "l0_matched": true,
+      "top50_dense_frac": 0.22,
+      "top50_shared_dense": 0.9090909090909091,
+      "top50_shared_content": 0.8717948717948718,
+      "top50_dce_max": 0.07750751866703531,
+      "top50_dce_min": 0.0028864767699117166,
+      "dce_p99_over_median": 60.190428441223474,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 10138,
+      "jumprelu_testability": null
+    }
+  },
+  "relu_l1": {
+    "prediction": "no inversion (magnitude penalty) \u2014 rebuttal",
+    "standard_kwargs": {
+      "l1_coef": 6.42717
+    },
+    "standard_calibrated": true,
+    "standard": {
+      "top50_mean": 0.97,
+      "top50_std": 0.010000000000000009,
+      "dictwide_mean": 0.8447474988089567,
+      "dictwide_std": 0.0020843258694616673,
+      "dense_importance_share": 0.19930475417692975,
+      "dense_importance_share_signed": 0.21238539946885945,
+      "dense_importance_denominator": 1.77555309734531,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        58.16872024536133,
+        58.421146392822266,
+        57.740169525146484
+      ],
+      "l0_measured_mean": 58.11001205444336,
+      "l0_train_log_stale": [
+        54.465087890625,
+        53.712158203125,
+        53.544677734375
+      ],
+      "fvu": 0.016922973096370697,
+      "l0_matched": true,
+      "top50_dense_frac": 0.04,
+      "top50_shared_dense": 1.0,
+      "top50_shared_content": 0.96875,
+      "top50_dce_max": 0.18805439366703558,
+      "top50_dce_min": 0.004998185149336365,
+      "dce_p99_over_median": 17.29041325966149,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 8396,
+      "jumprelu_testability": null
+    },
+    "bypass_kwargs": {
+      "l1_coef": 5.63856
+    },
+    "bypass_calibrated": true,
+    "bypass": {
+      "top50_mean": 0.96,
+      "top50_std": 0.020000000000000018,
+      "dictwide_mean": 0.8427220178665266,
+      "dictwide_std": 0.001734104046242746,
+      "dense_importance_share": 0.056314753539848,
+      "dense_importance_share_signed": 0.030871203978016154,
+      "dense_importance_denominator": 0.8190682470272161,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        56.7916374206543,
+        56.99623107910156,
+        56.65913772583008
+      ],
+      "l0_measured_mean": 56.81566874186198,
+      "l0_train_log_stale": [
+        52.367919921875,
+        52.48046875,
+        52.6142578125
+      ],
+      "fvu": 0.3225722908973694,
+      "l0_matched": true,
+      "top50_dense_frac": 0.02,
+      "top50_shared_dense": 1.0,
+      "top50_shared_content": 0.9591836734693877,
+      "top50_dce_max": 0.018963677060287676,
+      "top50_dce_min": 0.002819284084623952,
+      "dce_p99_over_median": 20.966169611293537,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 9515,
+      "jumprelu_testability": null
+    }
+  },
+  "jumprelu": {
+    "prediction": "PREDICT inversion (L0 is support-only)",
+    "standard_kwargs": {
+      "l0_coef": 0.0003,
+      "bandwidth": 0.001,
+      "target_l0": 64.0
+    },
+    "standard_calibrated": true,
+    "standard": {
+      "top50_mean": 0.26,
+      "top50_std": 0.0,
+      "dictwide_mean": 0.6445262296997313,
+      "dictwide_std": 0.000876270592358952,
+      "dense_importance_share": 0.7184908349130844,
+      "dense_importance_share_signed": 0.7447294709282911,
+      "dense_importance_denominator": 2.9762604569967537,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        70.80050659179688,
+        70.65624237060547,
+        70.04573059082031
+      ],
+      "l0_measured_mean": 70.50082651774089,
+      "l0_train_log_stale": [
+        66.281982421875,
+        67.043212890625,
+        64.310546875
+      ],
+      "fvu": 0.013913234695792198,
+      "l0_matched": true,
+      "top50_dense_frac": 0.88,
+      "top50_shared_dense": 0.1590909090909091,
+      "top50_shared_content": 1.0,
+      "top50_dce_max": 0.30941821073008846,
+      "top50_dce_min": 0.01268623824668147,
+      "dce_p99_over_median": 85.27421266701604,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 8559,
+      "jumprelu_testability": {
+        "gate_frac": 0.8166502394048731,
+        "theta_median": 2.2364048957824707,
+        "theta_max": 2.306914806365967,
+        "theta_moved_x": 122.10357003478966,
+        "pre_positive_sd": 10.895588874816895,
+        "theta_over_pre_sd": 0.20525782694972092,
+        "l0_from_theta": 67.34548950195312,
+        "l0_from_relu_only": 367.3061218261719,
+        "testable": true
+      }
+    },
+    "bypass_kwargs": {
+      "l0_coef": 0.0003,
+      "bandwidth": 0.001,
+      "target_l0": 64.0
+    },
+    "bypass_calibrated": true,
+    "bypass": {
+      "top50_mean": 0.9099999999999999,
+      "top50_std": 0.02999999999999997,
+      "dictwide_mean": 0.6062775870524767,
+      "dictwide_std": 0.00500245218244233,
+      "dense_importance_share": 0.19710986387656568,
+      "dense_importance_share_signed": 0.1838067756596272,
+      "dense_importance_denominator": 0.6221292951468103,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        72.48917388916016,
+        72.51925659179688,
+        73.11046600341797
+      ],
+      "l0_measured_mean": 72.706298828125,
+      "l0_train_log_stale": [
+        62.830078125,
+        63.502197265625,
+        63.868408203125
+      ],
+      "fvu": 0.27514755725860596,
+      "l0_matched": true,
+      "top50_dense_frac": 0.28,
+      "top50_shared_dense": 0.9285714285714286,
+      "top50_shared_content": 0.9027777777777778,
+      "top50_dce_max": 0.09721722898230123,
+      "top50_dce_min": 0.002693324806416264,
+      "dce_p99_over_median": 47.82361629872763,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 10195,
+      "jumprelu_testability": {
+        "gate_frac": 0.8314435906201089,
+        "theta_median": 2.0691463947296143,
+        "theta_max": 2.123187303543091,
+        "theta_moved_x": 112.97156529998698,
+        "pre_positive_sd": 2.692713499069214,
+        "theta_over_pre_sd": 0.7684242662447576,
+        "l0_from_theta": 67.98538208007812,
+        "l0_from_relu_only": 403.33905029296875,
+        "testable": true
+      }
+    }
+  },
+  "gated": {
+    "prediction": "PREDICT no inversion (L1 on gate path)",
+    "standard_kwargs": {
+      "l1_coef": 10.335
+    },
+    "standard_calibrated": false,
+    "standard": {
+      "skipped": "calibration_failed"
+    },
+    "bypass_kwargs": {
+      "l1_coef": 9.10518
+    },
+    "bypass_calibrated": true,
+    "bypass": {
+      "top50_mean": 0.92,
+      "top50_std": 0.0,
+      "dictwide_mean": 0.6911650593060636,
+      "dictwide_std": 0.0016627868307282911,
+      "dense_importance_share": 0.37649988664146317,
+      "dense_importance_share_signed": 0.39854644474968814,
+      "dense_importance_denominator": 0.9635314401272694,
+      "dense_importance_n_evaluated": 1500,
+      "l0_measured": [
+        49.326839447021484,
+        48.72283935546875,
+        49.22719955444336
+      ],
+      "l0_measured_mean": 49.09229278564453,
+      "l0_train_log_stale": [
+        45.88916015625,
+        45.18212890625,
+        46.04248046875
+      ],
+      "fvu": 0.29558107256889343,
+      "l0_matched": true,
+      "top50_dense_frac": 0.54,
+      "top50_shared_dense": 0.9444444444444444,
+      "top50_shared_content": 0.8913043478260869,
+      "top50_dce_max": 0.04811946902654851,
+      "top50_dce_min": 0.0042709485619467635,
+      "dce_p99_over_median": 49.05699389904307,
+      "n_cand": 1500,
+      "n_screened": 1500,
+      "screen": 1500,
+      "n_alive": 9021,
+      "jumprelu_testability": null
+    }
+  }
+}

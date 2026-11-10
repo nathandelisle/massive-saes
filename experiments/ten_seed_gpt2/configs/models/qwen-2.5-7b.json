@@ -1,0 +1,19 @@
+{
+  "name": "qwen-2.5-7b",
+  "lm": {
+    "model_path": "Qwen/Qwen2.5-7B",
+    "revision": "d149729398750b98c0af14eb82c78cfe92750796",
+    "block_path": "model.layers",
+    "block_index": 14,
+    "dtype": "bfloat16",
+    "attn_implementation": "eager"
+  },
+  "provenance": "Model/hook/revision copied from supplied morning-bundle site.json. New campaign uses explicit bf16 + eager; historical results retain their own precision.",
+  "training": {
+    "width": 14336,
+    "k": 64,
+    "steps": 20000,
+    "batch": 4096,
+    "lr": 0.0003
+  }
+}

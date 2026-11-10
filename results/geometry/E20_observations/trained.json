@@ -1,0 +1,61 @@
+{
+  "experiment": "E20_observations",
+  "input_metadata": {
+    "model_id": "EleutherAI/pythia-1.4b",
+    "model_revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+    "tokenizer_id": "EleutherAI/pythia-1.4b",
+    "tokenizer_revision": "fedc38a16eea3bd36a96b906d78d11d2ce18ed79",
+    "corpus": "wikitext-103-v1 train (HF Salesforce/wikitext)",
+    "partition": "RX a1test partition (pkg_rx/partitions.json sha256 c0937c202102694d7c6c121009ce2b9959f348621c8e15207945d9f6ff0349af)",
+    "bos_rule": "tokenizer(text, add_special_tokens=True); the Pythia/GPT-NeoX tokenizer adds no BOS token, so position 0 is the first text token",
+    "train_eval_overlap": "RX partitions use WikiText-103 train articles starting after row 400,000; the SAE training store (first 5M tokens) ends before that row (asserted in rx/prep.py), so they are article-disjoint from SAE training. Overlap with the model's pretraining corpus (the Pile) is not controlled.",
+    "n_sequences": 862,
+    "n_tokens": 65535,
+    "n_articles": 87,
+    "snapshot": ".cache\\huggingface\\hub\\models--EleutherAI--pythia-1.4b\\snapshots\\fedc38a16eea3bd36a96b906d78d11d2ce18ed79"
+  },
+  "mode": "characterize",
+  "initialization": "trained",
+  "random_seed": null,
+  "dtype": "float32",
+  "attention": "eager",
+  "device": "cuda",
+  "batch_seqs": 8,
+  "max_tokens_requested": 65535,
+  "actual_tokens": 65535,
+  "n_documents": 87,
+  "sampling": "first valid tokens of supplied ordered cache; right padding excluded",
+  "pca": "frozen supplied training mean and PC1",
+  "layer_convention": "block_b_output = raw output of zero-based block b; final_norm_output is a DISTINCT site",
+  "result": {
+    "n_tokens": 65535,
+    "block_index": 12
+  },
+  "provenance": {
+    "python": "3.13.0",
+    "numpy": "2.2.5",
+    "scipy": "1.15.2",
+    "files": [
+      {
+        "path": "PC1_RELEASE\\science_out\\inputs\\pythia14b_a1test\\tokens.npz",
+        "sha256": "b98beee00bf6549fd8142f95c714f11065d4ad2a8e57b9373b5ee8f9b35a331d"
+      },
+      {
+        "path": "PC1_RELEASE\\science_out\\inputs\\pythia14b_a1test\\input-meta.json",
+        "sha256": "a5143a2c2d49aa42df82a91e48ac78cb2667723072583167f1157a106b9bf7be"
+      },
+      {
+        "path": ".cache\\huggingface\\hub\\models--EleutherAI--pythia-1.4b\\blobs\\76f45dd29f6ae40ae5d4960a8df6386aa9cd8d5a",
+        "sha256": "6ea552aa42b7437f019ccdd30b7c9b83a32dccb5170ce31b9ddbe94d00f4671c"
+      },
+      {
+        "path": "PC1_RELEASE\\science_out\\inputs\\pythia14b_a1test\\geometry.npz",
+        "sha256": "4346c8884cdef0792535ed99abc248d523417dd28f1e7ebb3f0f35919be08d5e"
+      }
+    ],
+    "torch": "2.6.0+cu124",
+    "transformers": "4.57.6"
+  },
+  "seconds": 79.41707754135132,
+  "artifact_sha256": "4b0b685e4871c47fa4632851cf454bfd312a1d80395695ead5d8a551d84358e1"
+}

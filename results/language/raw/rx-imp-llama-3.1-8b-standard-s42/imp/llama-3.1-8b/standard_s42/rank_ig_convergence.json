@@ -1,0 +1,22 @@
+[
+ {
+  "steps": 16,
+  "completeness_rel_error": 0.2762956537044684,
+  "top50_overlap_prev": null
+ },
+ {
+  "steps": 32,
+  "completeness_rel_error": 0.014701530118465013,
+  "top50_overlap_prev": 0.78
+ },
+ {
+  "steps": 64,
+  "completeness_rel_error": 0.05373155688406829,
+  "top50_overlap_prev": 0.94
+ },
+ {
+  "steps": 128,
+  "completeness_rel_error": 0.0009286914615284184,
+  "top50_overlap_prev": 0.96
+ }
+]

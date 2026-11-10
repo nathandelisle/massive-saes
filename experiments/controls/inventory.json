@@ -1,0 +1,5072 @@
+{
+ "bucket": "ssup-research-079415246777",
+ "n_hashes_in_s3": 584,
+ "tiers": {
+  "core": {
+   "total": 80,
+   "present": 80
+  },
+  "deep_control": {
+   "total": 96,
+   "present": 24
+  },
+  "extension_70b": {
+   "total": 10,
+   "present": 0
+  }
+ },
+ "core_seeds_present": {
+  "gpt2": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "pythia-160m": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "pythia-1.4b": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "pythia-6.9b": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "qwen-2.5-7b": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "llama-3.1-8b": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "gemma-2-2b": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "gemma-2-9b": {
+   "standard": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ],
+   "bypass": [
+    0,
+    1,
+    2,
+    42,
+    137
+   ]
+  },
+  "llama-3.1-70b": {
+   "standard": [],
+   "bypass": []
+  }
+ },
+ "rows": [
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "907bd94cf884bfdf",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "9791a9435dbe56f2",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "ec845df4b2ec429c",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "bf284e9f903db93e",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "e7a779f301e0a37a",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "e8f91c7ceec24bbb",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "2089f01132083c2c",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "c4b9163acbbfbb6e",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "5e69f9f2b894acf6",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "f1920a5ed407f79d",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "5b4d3c2b998bfcfd",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "fe33b08ffa328e45",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "7ab4c68fdf9d6222",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "e024415313f27186",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "2f7bed01c0a16808",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "590d6ea0d6c4da75",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "a7d3bb0e7ca53d3f",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "39c0597423df1acd",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "b8802bac392a31f8",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-160m",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "b8d8351daf65aba0",
+   "cfg": {
+    "model": "pythia-160m",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-small"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "8ca097f30848d024",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "cd3fb421096b311f",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "b44ab504f1b0b2fe",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "b97f802b84fe1a75",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "6d42d7b9d202fe9b",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "23aa367bc6ff0e4f",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "45ce0822a0093c27",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "04535b977195babf",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "ddee59276ff9b5dc",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "95794a9e4feef2e5",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "f471967010fc2f4c",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-big1",
+    "a5-pythia69",
+    "a5-qwen7b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "23a33b13a3765fd8",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big1",
+    "a5-pythia69",
+    "a5-qwen7b",
+    "b1v2-p69"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "ddd39dcc2f68e04d",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big1",
+    "a5-pythia69",
+    "a5-qwen7b",
+    "b1v2-p69"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "8612a2426fc810ef",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-pythia69",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "b3ae6985ffbd6394",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-pythia69",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "60be4557052c15e3",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-pythia69",
+    "b1v2-p69",
+    "b2g-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "eb329bfa6c48c9b9",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-pythia69",
+    "b1v2-p69",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "1c271e8140510671",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-pythia69",
+    "b1v2-p69",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "278b19efe9d88039",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-pythia69",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-6.9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "2a86933604454a83",
+   "cfg": {
+    "model": "pythia-6.9b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-pythia69",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "a7aea6eb7584a091",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-big1",
+    "a5-pythia69",
+    "a5-qwen7b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "dc35f54ce47f5a86",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big1",
+    "a5-pythia69",
+    "a5-qwen7b",
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "6b9c02fac2486bba",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big1",
+    "a5-pythia69",
+    "a5-qwen7b",
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "ef0cd908dd6fc513",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big1",
+    "a5-pythia69",
+    "a5-qwen7b",
+    "b2g-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "f777441bb42367f0",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-qwen7b",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "e97e2caaa093127c",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-qwen7b",
+    "b1v2-qwen",
+    "b2g-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "600cf49b6f2de01e",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-qwen7b",
+    "b1v2-qwen",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "efd4a7fb62982003",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-qwen7b",
+    "b1v2-qwen",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "9368358a237cf87b",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-qwen7b",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "d06ad65cd6833b45",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-qwen7b",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "6031327407f73481",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "6fc210da93223814",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "00b879901353de3c",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "2c918f21c78e5ea1",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b2g-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "86d121a1ff726d61",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b2g-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "5713667f771fb8bc",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-llama8b",
+    "b1v2-l8b",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "d3a5378bdb6c4983",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-llama8b",
+    "b1v2-l8b",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "bcee89edad465db8",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-llama8b",
+    "b1v2-l8b",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "7bdb6226b56db6f1",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-llama8b",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-8b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "4eaf86329bf4bf87",
+   "cfg": {
+    "model": "llama-3.1-8b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 16,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 16384,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-llama8b",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "5c981d908c7d675f",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "1fd79a98bf7e44ed",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "7bdca391dff1906b",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "e3ba805eed8cd9c3",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "192865d9acb78645",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "a5-mid",
+    "a5-p70m",
+    "b1-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "0616bde9074f1813",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "98f2443430393fb3",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "9a485951d4759c4c",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "a4eb1bac8201354e",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "5dcdec03e27a1018",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a2-interp",
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "e1a339faae06d0b8",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "0412ea85724f8a7a",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "ebb41728f00dac17",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b1v2-g9b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "c546c204035aea04",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b2g-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "7bfc90f24a3b1411",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-big2",
+    "a5-gemma9b",
+    "a5-llama8b",
+    "b2g-gemma"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "core",
+   "config_hash": "6971f4d410f9bca3",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-gemma9b",
+    "b1v2-g9b",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "core",
+   "config_hash": "7a3d80b5a3dd08c6",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-gemma9b",
+    "b1v2-g9b",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "core",
+   "config_hash": "918d056bf4a429ee",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-gemma9b",
+    "b1v2-g9b",
+    "b2g-gemma",
+    "b2gen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "core",
+   "config_hash": "b39d35b0b1528b90",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-gemma9b",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-9b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "core",
+   "config_hash": "bb0f28940e87f247",
+   "cfg": {
+    "model": "gemma-2-9b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 21,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "a5-gemma9b",
+    "b2g-gemma",
+    "b2gen",
+    "c2-all9"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "dbceb7a164c11998",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "c4e2ec0ce5a5eb51",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "406027de7e6ddedc",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "8e7bd2a830dadc50",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "90e318416b90e31c",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "bd9bf1efa7894bf8",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "9cb17795dc0e2ffe",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "67508df0c2fad362",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "6b4808afbd412483",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "95d4049dcaadd7e4",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "6986ba08986cd050",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "c26ae8298ee8ab8b",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "76dd1742fc9450f9",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "e9e5c2f75f1b5920",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "1bf229902ed8b7fa",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "d8137ce2aba28113",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "390e3a7826f0fc49",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "81800d9461462ef3",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "9c3e1c79ec4a712a",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gpt2",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "cfb6224a69d54bbe",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gpt2",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "5fbee9df578f94dc",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gpt2",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "3d653268fe64a739",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gpt2",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "a6717d9d242c83e3",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gpt2",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gpt2",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "a6ff4d0357a3467d",
+   "cfg": {
+    "model": "gpt2",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 6,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 3072,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gpt2",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "a8803303dc3ee7f4",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "1667fddd700fab3f",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "efeb82117074feb6",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "ad508299a1cca320",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "698de8db2ec6942b",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "c43830a944286d4b",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "6f585903e7fb3e51",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "489e9be7776a77ea",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "33c2e0a2b71f2f41",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "847eaac2ad21e458",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "022c7e1d34bae94e",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "9b25c993077e5d66",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "43ad0d0022ce1a5c",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "14746b17ded421a0",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "02407720f12f83e5",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "abddba30ac6ca55b",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "435b38ce617b26da",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "18b39c815976d8c3",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "1872b9f5d3ffa30b",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "21a8a6313fd11b52",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "eaddfc87c8a20167",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "da5e96de9a9569c8",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "3f4d70130d6ec6aa",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "pythia-1.4b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "9a0e09bfdd569d68",
+   "cfg": {
+    "model": "pythia-1.4b",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 12,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 8192,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2",
+    "b1v2-l8b"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "bd0d47c84fed0395",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "a485aa4c64bd5052",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "bbab55b429bb0841",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "c7a31d9659fc57a2",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "53bf6233b4894b35",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "d493bfa23cfcd216",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "ca86d8aecc0b7330",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "129eb7c6522f0a38",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "66db25d7d927a050",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "8d4169eda8d53038",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "2bbb773f1d3310ba",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "c675933f21b6e299",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "025aba800d3c8b82",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "1f1daa7e1306c5da",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "b68dcf586e306705",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "54fa06f0635935ad",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "f4f91e488e8a3fcc",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "69e4d9167ec986f6",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "5c3fd40f88007be9",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "9b28a3918b5bec4a",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "8b1214f47b53ff82",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "ab9757e80ccd34ff",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "5bb55f1bb830929a",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "qwen-2.5-7b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "ec808de8dcd816c5",
+   "cfg": {
+    "model": "qwen-2.5-7b",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 14,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 14336,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1v2-qwen"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "883f5a69f045679f",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "037a20ec0aaaf671",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "relu_l1",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "4d0e49fb33fb7586",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "5052bceb935c210b",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "a7b6837f25ba56f7",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "relu_l1",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "8c58dcf33c64870b",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "relu_l1",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "7c0e3996357a36f6",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "2d1bcf7a2ff9d705",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "jumprelu",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "8b408516285502c7",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "b9d512fed77ccaa8",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "38925a223f692a32",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "jumprelu",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "655e8ffe2fb0c523",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "jumprelu",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "jr_sched": "recal100_full_v2"
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "9fa32304c88d9adf",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "addc02bc5d3d858c",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "gated",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "59358c32f3215313",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "5e4f024c37488352",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "ac5c7cb981e9def8",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "gated",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "6fa9a2b2bf9fdcc2",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "gated",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "ac6ab2e463d15c66",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "4faeb0e431741e69",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "batchtopk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "61b16216c4267b1a",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "deep_control",
+   "config_hash": "e60d87ffdbfa0475",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 42,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "deep_control",
+   "config_hash": "ed771fa96a9e3971",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 137,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "gemma-2-2b",
+   "arch": "batchtopk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "deep_control",
+   "config_hash": "cc3a767e66d1f852",
+   "cfg": {
+    "model": "gemma-2-2b",
+    "seed": 0,
+    "arch": "batchtopk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 13,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 9216,
+    "k": 64.0
+   },
+   "present": true,
+   "prefixes": [
+    "b1-gemma",
+    "b1v2-g9b",
+    "b1v2-gemma",
+    "b1v2-gpt2"
+   ],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 42,
+   "tier": "extension_70b",
+   "config_hash": "407e4fc3bbc7982c",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 42,
+   "tier": "extension_70b",
+   "config_hash": "d4cc6eee2bb44bc3",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 42,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 137,
+   "tier": "extension_70b",
+   "config_hash": "833293d769cb5fe2",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 137,
+   "tier": "extension_70b",
+   "config_hash": "50276c967c7ef145",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 137,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 0,
+   "tier": "extension_70b",
+   "config_hash": "fc57b544a68fbe7a",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 0,
+   "tier": "extension_70b",
+   "config_hash": "e8c102abf238dc34",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 0,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 1,
+   "tier": "extension_70b",
+   "config_hash": "fb070c4eededacf6",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 1,
+   "tier": "extension_70b",
+   "config_hash": "d81c8e353c4c59c1",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 1,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "standard",
+   "seed": 2,
+   "tier": "extension_70b",
+   "config_hash": "54df23b1dd216e05",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "standard",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  },
+  {
+   "model": "llama-3.1-70b",
+   "arch": "topk",
+   "condition": "bypass",
+   "seed": 2,
+   "tier": "extension_70b",
+   "config_hash": "afdf4cf4a0a148ac",
+   "cfg": {
+    "model": "llama-3.1-70b",
+    "seed": 2,
+    "arch": "topk",
+    "condition": "bypass",
+    "corpus": "wikitext",
+    "bos_free": false,
+    "layer": 40,
+    "steps": 20000,
+    "batch": 4096,
+    "d_sae": 32768,
+    "k": 64.0
+   },
+   "present": false,
+   "prefixes": [],
+   "size_bytes": null
+  }
+ ]
+}

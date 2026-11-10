@@ -1,0 +1,107 @@
+{
+ "gates.json": {
+  "kind": "gates",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T06:14:14Z"
+ },
+ "plan.json": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T06:14:23Z"
+ },
+ "chunks_rank": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T06:14:25Z"
+ },
+ "rank_zero.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T06:14:25Z"
+ },
+ "rank_grad.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T06:14:25Z"
+ },
+ "rank_sp.npz": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T06:14:25Z"
+ },
+ "resample_universe.npy": {
+  "kind": "imp",
+  "protocol": null,
+  "code": "1e499583cae6494d",
+  "unpinned": true,
+  "utc": "2026-10-06T06:14:25Z"
+ },
+ "rank_mg.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T06:44:00Z"
+ },
+ "rank_st.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T07:26:40Z"
+ },
+ "rank_mean.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T07:42:20Z"
+ },
+ "chunks_valid": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T07:42:22Z"
+ },
+ "valid_zero.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T07:51:26Z"
+ },
+ "valid_grad.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T07:52:02Z"
+ },
+ "valid_sp.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T08:32:21Z"
+ },
+ "valid_mg.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "1e499583cae6494d",
+  "unpinned": false,
+  "utc": "2026-10-06T09:25:24Z"
+ }
+}

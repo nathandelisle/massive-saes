@@ -1,0 +1,87 @@
+{
+  "sites": [
+    {
+      "name": "gpt2",
+      "manifest": "/mnt/pc1night/input/gpt2/site.json"
+    },
+    {
+      "name": "pythia-1.4b",
+      "manifest": "/mnt/pc1night/input/pythia-1.4b/site.json"
+    },
+    {
+      "name": "qwen-2.5-7b",
+      "manifest": "/mnt/pc1night/input/qwen-2.5-7b/site.json"
+    },
+    {
+      "name": "llama-3.1-8b",
+      "manifest": "/mnt/pc1night/input/llama-3.1-8b/site.json"
+    },
+    {
+      "name": "gemma-2-2b",
+      "manifest": "/mnt/pc1night/input/gemma-2-2b/site.json"
+    }
+  ],
+  "seeds": [
+    42,
+    137,
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "synthetic": true,
+  "synthetic_rows": 32768,
+  "synthetic_steps": 10000,
+  "synthetic_batch": 512,
+  "steps": 20000,
+  "batch": 4096,
+  "lr": 0.0003,
+  "checkpoint_every": 500,
+  "log_every": 500,
+  "grad_clip": 1.0,
+  "order_seed": 20260908,
+  "audit_rows": 8192,
+  "probe_rows": 512,
+  "oracle_rows": 128,
+  "oracle_steps": 100,
+  "truth_rows": 2048,
+  "bootstrap_draws": 2000,
+  "rank_arms": [
+    "baseline",
+    "beta_0.3",
+    "no_first",
+    "canonical_init",
+    "clip_restore",
+    "bypass"
+  ],
+  "rank_populations": [
+    "all",
+    "after_first",
+    "native"
+  ],
+  "selection_sequences": 64,
+  "test_sequences": 256,
+  "causal_sequences": 128,
+  "feature_batch": 4,
+  "sequence_batch": 1,
+  "seed_cohorts": {
+    "original_five": [
+      42,
+      137,
+      0,
+      1,
+      2
+    ],
+    "additional_five": [
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  }
+}

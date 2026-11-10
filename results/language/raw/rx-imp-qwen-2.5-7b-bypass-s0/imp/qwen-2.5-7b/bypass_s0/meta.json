@@ -1,0 +1,23 @@
+{
+ "model": "qwen-2.5-7b",
+ "condition": "bypass",
+ "seed": 0,
+ "config_hash": "efd4a7fb62982003",
+ "sae_sha256": "abf984b56c41ebe74ca1fc33a83fb89c2d0645125775448493c7fec1f92e7b32",
+ "env": {
+  "python": "3.11.16",
+  "host": "ip-172-31-20-122.us-east-2.compute.internal",
+  "code_hash": "1e499583cae6494d",
+  "torch": "2.11.0+cu128",
+  "transformers": "4.57.6",
+  "numpy": "2.2.5",
+  "datasets": "4.8.5",
+  "cuda": "12.8",
+  "gpu": "NVIDIA L40S",
+  "n_gpu": 1
+ },
+ "prep_gate3": "PASS",
+ "site_block": 14,
+ "hidden_state_index": 15,
+ "n_alive_archived_rule": 7612
+}

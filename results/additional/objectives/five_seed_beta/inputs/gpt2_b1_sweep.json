@@ -1,0 +1,5108 @@
+{
+ "experiment": "GPT-2 B1 bridge: TopK k=64 + beta*L1, standard and bypass conditions, 5 seeds, beta in {0, 0.03, 0.1, 0.3}",
+ "sources": {
+  "bridge_results": "results/additional/objectives/five_seed_beta/inputs/BRIDGE_RESULTS.json",
+  "protocol_id": "f5a892e2cc1928801f5f7ba970803c5a1c749484dc00a3c09dfad2addc1d4576",
+  "complete": true,
+  "missing_runs": [],
+  "per_run_fidelity": "s3://ssup-research-079415246777/{pc1b1-g2-s*,pc1fastb-*}/results/gpt2_b1_bf16/fidelity/<run>/{test,selection}.json",
+  "per_run_calibration": "s3://ssup-research-079415246777/{pc1b1-g2-s*,pc1fastb-*}/results/gpt2_b1_bf16/calibration/<run>.npz",
+  "grid_training": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/<run>/ (sae.pt, training.jsonl)",
+  "grid_evaluation_cells": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/evaluation/cells/<run>.json",
+  "trainer": "experiments/objectives/magnitude/train/experiments/train_objective_grid.py",
+  "evaluator": "pc1next (bridgecollect.tgz: pc1next/cache.py calibrate()/fidelity(), analysis.py analyze())"
+ },
+ "protocol": {
+  "model": "openai-community/gpt2 @ 607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "site": "Output of transformer.h[6] (zero-based block 6; hidden_states[7]).",
+  "evaluation_dtype": "bfloat16 LM forward, attn sdpa",
+  "training": {
+   "store": "v3 gpt2_wikitext store: first 5M tokens of WikiText-103-v1 train, one document per 128-token sequence, padding excluded",
+   "centering": "x - train mean (raw scale, no rescaling)",
+   "d_sae": 3072,
+   "k": 64,
+   "steps": 20000,
+   "batch": 4096,
+   "lr": 0.0003,
+   "optimizer": "Adam (torch defaults: betas 0.9/0.999, eps 1e-8)",
+   "data_order_seed": 20260906,
+   "init_seed": "torch.manual_seed(seed) and v3 BaseSAE tied init with Generator(seed)",
+   "seeds": [
+    42,
+    137,
+    0,
+    1,
+    2
+   ],
+   "loss": "mean_batch(sum_d (xhat - x)^2) + beta * mean_batch(sum_j |z_j|)",
+   "decoder": "rows renormalized to unit norm after every Adam step",
+   "grad_clip": null,
+   "bypass": "x - (x.v1) v1 with the train PC1 before encoding (bypass condition only)"
+  },
+  "splits": {
+   "policy": "article-level, no overlap (DATA_AUDIT.json)",
+   "calibration": {
+    "tokens": 75189,
+    "articles": 28,
+    "source": "WikiText-103 validation"
+   },
+   "selection": {
+    "tokens": 45120,
+    "articles": 15,
+    "source": "WikiText-103 validation (articles a00028+)"
+   },
+   "test": {
+    "tokens": 81534,
+    "articles": 25,
+    "source": "WikiText-103 test"
+   }
+  },
+  "alive": "calibration-alive = fired at least once on the calibration split. The bridge uses the FROZEN alive ids from the grid evaluator (identical sets, checked); fresh_alive is the bridge re-count on its own bfloat16 calibration pass.",
+  "importance": "signed single-feature zero-ablation dCE vs the unmodified model (\"model\" baseline), token-weighted over the ranking split; every calibration-alive feature evaluated (no screen)",
+  "top50": "top_ids: the 50 calibration-alive features with the largest dCE on the named split; ties broken by feature index",
+  "sharing": "for source seed a and each other seed b in the same (condition, beta): best = max over b's calibration-alive decoder rows of the signed cosine with a's decoder row. top50_pairwise_sharing(a) = fraction of (other seed, selected feature) pairs with best >= 0.7. Reported sharing = mean over the 5 source seeds. dictwide uses all of a's calibration-alive features instead of the top 50.",
+  "l0": "bridge fidelity(): total nonzero codes over the split's valid tokens / number of valid tokens (no row cap)",
+  "fvu": "fvu_total = sum||x - xhat||^2 / sum||x - mean_eval||^2; fvu_content (fvu_perp) = same on the complement of the train PC1; w1 = PC1 share of evaluation variance; identity fvu_total = w1*fvu_pc1 + (1-w1)*fvu_content holds to <3e-18",
+  "uncertainty": "sharing: article-resampled paired bootstrap (bridge paired_contrasts, ~1000 draws). L0/FVU/alive: across the 5 seeds (mean, SD, Student-t 95%); beta effects are PAIRED by seed (identical init seed and data order across beta)."
+ },
+ "per_seed": [
+  {
+   "condition": "standard",
+   "beta": 0.0,
+   "seed": 42,
+   "run": "standard_k64_s42_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s42_beta0/sae.pt",
+   "checkpoint_sha256": "3c3639b62033bd85ec2305f9c1696c7d1cb4d9bb0b168828a652223f37837e2f",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.45293538865201705,
+    "l0": 64.0,
+    "fvu_total": 0.004829753867215555,
+    "fvu_content": 0.1391357874973319,
+    "fvu_pc1": 1.690087270427747e-06,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.0624074824154377
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.45293538865201705,
+    "l0": 64.0,
+    "fvu_total": 0.005406136604785628,
+    "fvu_content": 0.14240833357173524,
+    "fvu_pc1": 2.0988323204369954e-06,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07646740972995758
+   },
+   "alive_frozen_calibration": 3049,
+   "alive_fresh_bridge_calibration": 3049,
+   "d_sae": 3072,
+   "structural_group_size": 407,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 64.0,
+    "test_fvu_content": 0.13884589709508496,
+    "test_fvu_total": 0.00485119729527595,
+    "calibration_l0": 64.0,
+    "calibration_fvu_content": 0.13882093464845796,
+    "test_mean_l1": 519.0488221261347,
+    "n_alive_calibration": 3049
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.0,
+   "seed": 137,
+   "run": "standard_k64_s137_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s137_beta0/sae.pt",
+   "checkpoint_sha256": "c731af932e7128afbca2da6274024f6c4dd1c10d78c28a0d56b3c99e78f2e166",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.08,
+    "top50_any_other_seed": 0.08,
+    "top50_no_other_seed_count": 46,
+    "dictwide_pairwise_sharing": 0.45714285714285713,
+    "l0": 64.0,
+    "fvu_total": 0.004831950094437874,
+    "fvu_content": 0.1392184199702131,
+    "fvu_pc1": 9.947740774460157e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06471123546361923
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.08,
+    "top50_any_other_seed": 0.08,
+    "top50_no_other_seed_count": 46,
+    "dictwide_pairwise_sharing": 0.45714285714285713,
+    "l0": 64.0,
+    "fvu_total": 0.005404808928986373,
+    "fvu_content": 0.14239185481080274,
+    "fvu_pc1": 1.368789538511655e-06,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07724680751562119
+   },
+   "alive_frozen_calibration": 3045,
+   "alive_fresh_bridge_calibration": 3045,
+   "d_sae": 3072,
+   "structural_group_size": 366,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 64.0,
+    "test_fvu_content": 0.13893454285282147,
+    "test_fvu_total": 0.004853621410505975,
+    "calibration_l0": 64.0,
+    "calibration_fvu_content": 0.13916487748772682,
+    "test_mean_l1": 521.3379356778141,
+    "n_alive_calibration": 3045
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.0,
+   "seed": 0,
+   "run": "standard_k64_s0_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s0_beta0/sae.pt",
+   "checkpoint_sha256": "d2189b2c852800fe2e2633a58841f636757b9f9d1d4cd4cbf62b90c2e4b5fa7e",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.45782637290365014,
+    "l0": 64.0,
+    "fvu_total": 0.00483410090723003,
+    "fvu_content": 0.139278448202409,
+    "fvu_pc1": 1.0649962606234111e-06,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06380504369735718
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.45782637290365014,
+    "l0": 64.0,
+    "fvu_total": 0.005406185691793467,
+    "fvu_content": 0.14242978316423524,
+    "fvu_pc1": 1.3037785583488715e-06,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07558831572532654
+   },
+   "alive_frozen_calibration": 3041,
+   "alive_fresh_bridge_calibration": 3041,
+   "d_sae": 3072,
+   "structural_group_size": 439,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 64.0,
+    "test_fvu_content": 0.13899423266038693,
+    "test_fvu_total": 0.004855744633043255,
+    "calibration_l0": 64.0,
+    "calibration_fvu_content": 0.1391849975047296,
+    "test_mean_l1": 522.478472553297,
+    "n_alive_calibration": 3041
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.0,
+   "seed": 1,
+   "run": "standard_k64_s1_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s1_beta0/sae.pt",
+   "checkpoint_sha256": "0b6721c25a5dfabcbe9f1d7f01db4cd42a75aa0d1966b909e134a0ad129cef75",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.4603373413493654,
+    "l0": 64.0,
+    "fvu_total": 0.0048571884553238265,
+    "fvu_content": 0.13999285244728266,
+    "fvu_pc1": 1.0225411466734356e-06,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06655535846948624
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.4603373413493654,
+    "l0": 64.0,
+    "fvu_total": 0.0054419863402716834,
+    "fvu_content": 0.14335508014836046,
+    "fvu_pc1": 1.3981933243764995e-06,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07817308604717255
+   },
+   "alive_frozen_calibration": 2994,
+   "alive_fresh_bridge_calibration": 2993,
+   "d_sae": 3072,
+   "structural_group_size": 377,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 64.0,
+    "test_fvu_content": 0.1397050680126285,
+    "test_fvu_total": 0.004880548425336904,
+    "calibration_l0": 64.0,
+    "calibration_fvu_content": 0.1399163734214074,
+    "test_mean_l1": 522.757390056239,
+    "n_alive_calibration": 2994
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.0,
+   "seed": 2,
+   "run": "standard_k64_s2_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s2_beta0/sae.pt",
+   "checkpoint_sha256": "657e5e349c3e0d8e23405e763a63f287681bf9d6212a6cc42d7681b3b8efc3cd",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.4626494023904382,
+    "l0": 64.0,
+    "fvu_total": 0.004838403145949757,
+    "fvu_content": 0.1394116204597988,
+    "fvu_pc1": 7.345862999923988e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06463884562253952
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.06,
+    "top50_any_other_seed": 0.06,
+    "top50_no_other_seed_count": 47,
+    "dictwide_pairwise_sharing": 0.4626494023904382,
+    "l0": 64.0,
+    "fvu_total": 0.005412304959835677,
+    "fvu_content": 0.142596212230785,
+    "fvu_pc1": 1.099642847841384e-06,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07575946301221848
+   },
+   "alive_frozen_calibration": 3012,
+   "alive_fresh_bridge_calibration": 3012,
+   "d_sae": 3072,
+   "structural_group_size": 407,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 64.0,
+    "test_fvu_content": 0.13912242697515534,
+    "test_fvu_total": 0.004859906691635792,
+    "calibration_l0": 64.0,
+    "calibration_fvu_content": 0.13909372424134897,
+    "test_mean_l1": 525.4798029818977,
+    "n_alive_calibration": 3012
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.03,
+   "seed": 42,
+   "run": "standard_k64_s42_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s42_beta0.03/sae.pt",
+   "checkpoint_sha256": "e6194d886bbaff9390eca16ac97c0d54414e992648fad91ddcaf2a02b22a49f9",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.12,
+    "top50_any_other_seed": 0.12,
+    "top50_no_other_seed_count": 44,
+    "dictwide_pairwise_sharing": 0.480548260013132,
+    "l0": 63.955172075453184,
+    "fvu_total": 0.00481947907196733,
+    "fvu_content": 0.1388203550177225,
+    "fvu_pc1": 4.092319019724208e-06,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.0642760843038559
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.18,
+    "top50_any_other_seed": 0.18,
+    "top50_no_other_seed_count": 41,
+    "dictwide_pairwise_sharing": 0.480548260013132,
+    "l0": 63.96232269503546,
+    "fvu_total": 0.005400265928052855,
+    "fvu_content": 0.14217224265941839,
+    "fvu_pc1": 4.694159684778562e-06,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07555151730775833
+   },
+   "alive_frozen_calibration": 3046,
+   "alive_fresh_bridge_calibration": 3046,
+   "d_sae": 3072,
+   "structural_group_size": 200,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.94989820197709,
+    "test_fvu_content": 0.13852973519919515,
+    "test_fvu_total": 0.00484224814618694,
+    "calibration_l0": 63.945164851241536,
+    "calibration_fvu_content": 0.13864684320178133,
+    "test_mean_l1": 413.7918416400591,
+    "n_alive_calibration": 3046
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.03,
+   "seed": 137,
+   "run": "standard_k64_s137_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s137_beta0.03/sae.pt",
+   "checkpoint_sha256": "92a6fa749eb46c5eadc4e7d2d7949a6c962d847697f81a685b346fcb81bdf44d",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.12,
+    "top50_any_other_seed": 0.12,
+    "top50_no_other_seed_count": 44,
+    "dictwide_pairwise_sharing": 0.47360197368421053,
+    "l0": 63.97363063261952,
+    "fvu_total": 0.004817415797008028,
+    "fvu_content": 0.13876606146244283,
+    "fvu_pc1": 3.905964626657125e-06,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06554560363292694
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.12,
+    "top50_any_other_seed": 0.12,
+    "top50_no_other_seed_count": 44,
+    "dictwide_pairwise_sharing": 0.47360197368421053,
+    "l0": 63.97783687943262,
+    "fvu_total": 0.005392137534037846,
+    "fvu_content": 0.14195486930611573,
+    "fvu_pc1": 4.820352771509308e-06,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07621980458498001
+   },
+   "alive_frozen_calibration": 3040,
+   "alive_fresh_bridge_calibration": 3040,
+   "d_sae": 3072,
+   "structural_group_size": 273,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.965719822405376,
+    "test_fvu_content": 0.13847913442043294,
+    "test_fvu_total": 0.004840297201248437,
+    "calibration_l0": 63.96248121400737,
+    "calibration_fvu_content": 0.13860969480282465,
+    "test_mean_l1": 415.07305448441406,
+    "n_alive_calibration": 3040
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.03,
+   "seed": 0,
+   "run": "standard_k64_s0_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s0_beta0.03/sae.pt",
+   "checkpoint_sha256": "44515da5b8f6fd96a2500a0a71a896cc0e2c11a12f01f0484221d84dd9ed6cfe",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.18,
+    "top50_any_other_seed": 0.18,
+    "top50_no_other_seed_count": 41,
+    "dictwide_pairwise_sharing": 0.47725779967159276,
+    "l0": 63.970993695881475,
+    "fvu_total": 0.004832436455319955,
+    "fvu_content": 0.13915306693492335,
+    "fvu_pc1": 3.847944516471361e-06,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06686742603778839
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.2,
+    "top50_any_other_seed": 0.2,
+    "top50_no_other_seed_count": 40,
+    "dictwide_pairwise_sharing": 0.47725779967159276,
+    "l0": 63.975620567375884,
+    "fvu_total": 0.005404137384966997,
+    "fvu_content": 0.14229322241288445,
+    "fvu_pc1": 4.561301471614096e-06,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07820862531661987
+   },
+   "alive_frozen_calibration": 3045,
+   "alive_fresh_bridge_calibration": 3045,
+   "d_sae": 3072,
+   "structural_group_size": 319,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.957809012191234,
+    "test_fvu_content": 0.13886322933256928,
+    "test_fvu_total": 0.004853636746587396,
+    "calibration_l0": 63.953823032624456,
+    "calibration_fvu_content": 0.13890749035457575,
+    "test_mean_l1": 413.83553843114765,
+    "n_alive_calibration": 3045
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.03,
+   "seed": 1,
+   "run": "standard_k64_s1_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s1_beta0.03/sae.pt",
+   "checkpoint_sha256": "42da3eb5c0397a0fd788aff4d6ae5233619801c3eb0c0486568c7d4186537e81",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.2,
+    "top50_any_other_seed": 0.2,
+    "top50_no_other_seed_count": 40,
+    "dictwide_pairwise_sharing": 0.485014985014985,
+    "l0": 63.970993695881475,
+    "fvu_total": 0.004835582859396784,
+    "fvu_content": 0.13930820636797336,
+    "fvu_pc1": 3.243627976829115e-06,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06538338959217072
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.235,
+    "top50_any_other_seed": 0.24,
+    "top50_no_other_seed_count": 38,
+    "dictwide_pairwise_sharing": 0.485014985014985,
+    "l0": 63.975620567375884,
+    "fvu_total": 0.005410241845265653,
+    "fvu_content": 0.14244881052216216,
+    "fvu_pc1": 4.153185869484846e-06,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.076418936252594
+   },
+   "alive_frozen_calibration": 3003,
+   "alive_fresh_bridge_calibration": 3003,
+   "d_sae": 3072,
+   "structural_group_size": 294,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.968356759143425,
+    "test_fvu_content": 0.13902321308098373,
+    "test_fvu_total": 0.004858665678682082,
+    "calibration_l0": 63.96536727446834,
+    "calibration_fvu_content": 0.13913727060704623,
+    "test_mean_l1": 413.7473521444758,
+    "n_alive_calibration": 3003
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.03,
+   "seed": 2,
+   "run": "standard_k64_s2_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s2_beta0.03/sae.pt",
+   "checkpoint_sha256": "c5528832a78800f7a6740af9f439f38f430a222e5e0e3bd3df60c0983514c9a0",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.12,
+    "top50_any_other_seed": 0.12,
+    "top50_no_other_seed_count": 44,
+    "dictwide_pairwise_sharing": 0.4773324572930355,
+    "l0": 63.963082885667326,
+    "fvu_total": 0.004813412775139206,
+    "fvu_content": 0.13863916596398831,
+    "fvu_pc1": 4.319143768542795e-06,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06499575823545456
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.16,
+    "top50_any_other_seed": 0.16,
+    "top50_no_other_seed_count": 42,
+    "dictwide_pairwise_sharing": 0.4773324572930355,
+    "l0": 63.968971631205676,
+    "fvu_total": 0.005383540980804418,
+    "fvu_content": 0.14172743969762838,
+    "fvu_pc1": 4.856631227229305e-06,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07685185968875885
+   },
+   "alive_frozen_calibration": 3044,
+   "alive_fresh_bridge_calibration": 3044,
+   "d_sae": 3072,
+   "structural_group_size": 234,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.965719822405376,
+    "test_fvu_content": 0.13834727176124995,
+    "test_fvu_total": 0.004836064651734094,
+    "calibration_l0": 63.96248121400737,
+    "calibration_fvu_content": 0.13855799696034735,
+    "test_mean_l1": 410.34287107233445,
+    "n_alive_calibration": 3044
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.1,
+   "seed": 42,
+   "run": "standard_k64_s42_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s42_beta0.1/sae.pt",
+   "checkpoint_sha256": "ac6aac6b8ff9847844004124907c5d9b0a96739f190618a30022ea4328245c67",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.455,
+    "top50_any_other_seed": 0.48,
+    "top50_no_other_seed_count": 26,
+    "dictwide_pairwise_sharing": 0.5115687561535937,
+    "l0": 63.79868521107759,
+    "fvu_total": 0.004817582604309651,
+    "fvu_content": 0.13856488488153765,
+    "fvu_pc1": 1.130814466388751e-05,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06441009789705276
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.445,
+    "top50_any_other_seed": 0.48,
+    "top50_no_other_seed_count": 26,
+    "dictwide_pairwise_sharing": 0.5115687561535937,
+    "l0": 63.82220744680851,
+    "fvu_total": 0.005389340506826653,
+    "fvu_content": 0.14167623674632251,
+    "fvu_pc1": 1.2904870507453431e-05,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07765623927116394
+   },
+   "alive_frozen_calibration": 3047,
+   "alive_fresh_bridge_calibration": 3047,
+   "d_sae": 3072,
+   "structural_group_size": 229,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.77303946819732,
+    "test_fvu_content": 0.13827174441930543,
+    "test_fvu_total": 0.004840092859467458,
+    "calibration_l0": 63.75181210017423,
+    "calibration_fvu_content": 0.13833533068544326,
+    "test_mean_l1": 350.377044353171,
+    "n_alive_calibration": 3047
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.1,
+   "seed": 137,
+   "run": "standard_k64_s137_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s137_beta0.1/sae.pt",
+   "checkpoint_sha256": "92745c7237e363199111a0d6c2b4bc07d6a7fe996f7b1718cdae73d31d90fbe2",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.45,
+    "top50_any_other_seed": 0.46,
+    "top50_no_other_seed_count": 27,
+    "dictwide_pairwise_sharing": 0.5100985221674876,
+    "l0": 63.82216008045723,
+    "fvu_total": 0.004818558042356919,
+    "fvu_content": 0.13858421488295472,
+    "fvu_pc1": 9.919849888996457e-06,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06291346997022629
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.425,
+    "top50_any_other_seed": 0.44,
+    "top50_no_other_seed_count": 28,
+    "dictwide_pairwise_sharing": 0.5100985221674876,
+    "l0": 63.84709663120567,
+    "fvu_total": 0.005388996701271879,
+    "fvu_content": 0.14171758498206927,
+    "fvu_pc1": 1.1529355153254988e-05,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07632239162921906
+   },
+   "alive_frozen_calibration": 3045,
+   "alive_fresh_bridge_calibration": 3045,
+   "d_sae": 3072,
+   "structural_group_size": 290,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.82036941643977,
+    "test_fvu_content": 0.13830356252073792,
+    "test_fvu_total": 0.00483990825320028,
+    "calibration_l0": 63.801939113434145,
+    "calibration_fvu_content": 0.13829617938534608,
+    "test_mean_l1": 355.23636866559207,
+    "n_alive_calibration": 3045
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.1,
+   "seed": 0,
+   "run": "standard_k64_s0_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s0_beta0.1/sae.pt",
+   "checkpoint_sha256": "214f58fb5b129836f152e736a92a952f85ca08b92384b26e1dcb299ee2b335ca",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.535,
+    "top50_any_other_seed": 0.58,
+    "top50_no_other_seed_count": 21,
+    "dictwide_pairwise_sharing": 0.5083716349310571,
+    "l0": 63.80880368925847,
+    "fvu_total": 0.004815315100894962,
+    "fvu_content": 0.1384923231138994,
+    "fvu_pc1": 9.86367660170595e-06,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06119782105088234
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.495,
+    "top50_any_other_seed": 0.54,
+    "top50_no_other_seed_count": 23,
+    "dictwide_pairwise_sharing": 0.5083716349310571,
+    "l0": 63.83585992907801,
+    "fvu_total": 0.005387017693199894,
+    "fvu_content": 0.1416784151354166,
+    "fvu_pc1": 1.101733593931881e-05,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07727758586406708
+   },
+   "alive_frozen_calibration": 3046,
+   "alive_fresh_bridge_calibration": 3045,
+   "d_sae": 3072,
+   "structural_group_size": 274,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.7871562783624,
+    "test_fvu_content": 0.13819436136135665,
+    "test_fvu_total": 0.004835985718801619,
+    "calibration_l0": 63.77141603160037,
+    "calibration_fvu_content": 0.13834778834985761,
+    "test_mean_l1": 349.5734142860401,
+    "n_alive_calibration": 3046
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.1,
+   "seed": 1,
+   "run": "standard_k64_s1_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s1_beta0.1/sae.pt",
+   "checkpoint_sha256": "9879d2fc814c74e20628bbe9e4a093227db5c73ba8b6cd23fd4ec4001f864051",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.645,
+    "top50_any_other_seed": 0.66,
+    "top50_no_other_seed_count": 17,
+    "dictwide_pairwise_sharing": 0.5195234943745863,
+    "l0": 63.79306792258444,
+    "fvu_total": 0.004825823709126913,
+    "fvu_content": 0.13881142989845066,
+    "fvu_pc1": 9.278727549801675e-06,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06313813477754593
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.62,
+    "top50_any_other_seed": 0.64,
+    "top50_no_other_seed_count": 18,
+    "dictwide_pairwise_sharing": 0.5195234943745863,
+    "l0": 63.81821808510638,
+    "fvu_total": 0.005398433753689958,
+    "fvu_content": 0.14198241310834137,
+    "fvu_pc1": 1.0892532550255195e-05,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07820489257574081
+   },
+   "alive_frozen_calibration": 3022,
+   "alive_fresh_bridge_calibration": 3021,
+   "d_sae": 3072,
+   "structural_group_size": 299,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.76921284372164,
+    "test_fvu_content": 0.13852158762421257,
+    "test_fvu_total": 0.00484695087381928,
+    "calibration_l0": 63.74384550931652,
+    "calibration_fvu_content": 0.13855663636365692,
+    "test_mean_l1": 350.75835274868416,
+    "n_alive_calibration": 3022
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.1,
+   "seed": 2,
+   "run": "standard_k64_s2_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s2_beta0.1/sae.pt",
+   "checkpoint_sha256": "ee7ab05b6cdaa04d800627c18ede1311362faaf5cc228de841dc6738e6af4e7b",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.52,
+    "top50_any_other_seed": 0.52,
+    "top50_no_other_seed_count": 24,
+    "dictwide_pairwise_sharing": 0.5090052875082617,
+    "l0": 63.76614663821228,
+    "fvu_total": 0.004823362764219438,
+    "fvu_content": 0.13877945101321496,
+    "fvu_pc1": 9.585478972300475e-06,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.061418212950229645
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.51,
+    "top50_any_other_seed": 0.52,
+    "top50_no_other_seed_count": 24,
+    "dictwide_pairwise_sharing": 0.5090052875082617,
+    "l0": 63.79390514184397,
+    "fvu_total": 0.005399876263819321,
+    "fvu_content": 0.14200837162797672,
+    "fvu_pc1": 1.0753736521259948e-05,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.0749167650938034
+   },
+   "alive_frozen_calibration": 3026,
+   "alive_fresh_bridge_calibration": 3026,
+   "d_sae": 3072,
+   "structural_group_size": 271,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.75888586356612,
+    "test_fvu_content": 0.1384921364175353,
+    "test_fvu_total": 0.004846267529805729,
+    "calibration_l0": 63.73391054542553,
+    "calibration_fvu_content": 0.1386308711269058,
+    "test_mean_l1": 350.9563120825045,
+    "n_alive_calibration": 3026
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.3,
+   "seed": 42,
+   "run": "standard_k64_s42_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s42_beta0.3/sae.pt",
+   "checkpoint_sha256": "f51dd9d54ae62b773b37912fb87343bd009fdafd121789f4befb28e65a554971",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.96,
+    "top50_any_other_seed": 0.98,
+    "top50_no_other_seed_count": 1,
+    "dictwide_pairwise_sharing": 0.5724160631994734,
+    "l0": 63.479235656290626,
+    "fvu_total": 0.0048246614871716356,
+    "fvu_content": 0.13855752857117098,
+    "fvu_pc1": 1.8905763226357107e-05,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06607291102409363
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.95,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.5724160631994734,
+    "l0": 63.53404255319149,
+    "fvu_total": 0.0053979637687129114,
+    "fvu_content": 0.14169307142700469,
+    "fvu_pc1": 2.1204196888125214e-05,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07825588434934616
+   },
+   "alive_frozen_calibration": 3038,
+   "alive_fresh_bridge_calibration": 3037,
+   "d_sae": 3072,
+   "structural_group_size": 206,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.440809968847354,
+    "test_fvu_content": 0.13828449815090357,
+    "test_fvu_total": 0.004848381478927687,
+    "calibration_l0": 63.40992698400032,
+    "calibration_fvu_content": 0.13817995020237184,
+    "test_mean_l1": 298.3445074300696,
+    "n_alive_calibration": 3038
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.3,
+   "seed": 137,
+   "run": "standard_k64_s137_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s137_beta0.3/sae.pt",
+   "checkpoint_sha256": "70881e146e7a27a8c29bb8270decbce6fab1ab6bda438ee3d1fe889f07063618",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.965,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5742020401447845,
+    "l0": 63.48417837957171,
+    "fvu_total": 0.0048363713328047715,
+    "fvu_content": 0.13879853645706433,
+    "fvu_pc1": 2.0669015954923558e-05,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.0663294643163681
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.975,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5742020401447845,
+    "l0": 63.540137411347516,
+    "fvu_total": 0.005407989850142093,
+    "fvu_content": 0.14192235919758342,
+    "fvu_pc1": 2.3194388680942458e-05,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07750779390335083
+   },
+   "alive_frozen_calibration": 3039,
+   "alive_fresh_bridge_calibration": 3040,
+   "d_sae": 3072,
+   "structural_group_size": 181,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.45197095690141,
+    "test_fvu_content": 0.13852735588855733,
+    "test_fvu_total": 0.004858534779997404,
+    "calibration_l0": 63.42048703932756,
+    "calibration_fvu_content": 0.1385397115727968,
+    "test_mean_l1": 297.06954599047015,
+    "n_alive_calibration": 3039
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.3,
+   "seed": 0,
+   "run": "standard_k64_s0_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s0_beta0.3/sae.pt",
+   "checkpoint_sha256": "b65576fd9f2a9121dc1ae04f22784a0e40b17be6a1dcc12a42e130980fd5f3fe",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.94,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5719347396176665,
+    "l0": 63.47596094880663,
+    "fvu_total": 0.004836321152918272,
+    "fvu_content": 0.13885260278862063,
+    "fvu_pc1": 2.0380788997834712e-05,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06665903329849243
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.95,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5719347396176665,
+    "l0": 63.535150709219856,
+    "fvu_total": 0.005414597975185604,
+    "fvu_content": 0.14208584897671905,
+    "fvu_pc1": 2.2999775944906928e-05,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.08166177570819855
+   },
+   "alive_frozen_calibration": 3034,
+   "alive_fresh_bridge_calibration": 3033,
+   "d_sae": 3072,
+   "structural_group_size": 188,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.44614516643364,
+    "test_fvu_content": 0.13857001032279861,
+    "test_fvu_total": 0.004859748213150898,
+    "calibration_l0": 63.421125430581604,
+    "calibration_fvu_content": 0.13869965642237259,
+    "test_mean_l1": 295.29474362878585,
+    "n_alive_calibration": 3034
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.3,
+   "seed": 1,
+   "run": "standard_k64_s1_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s1_beta0.3/sae.pt",
+   "checkpoint_sha256": "875399375ea1716c12a01c8e07ae88498bcbc818230e105604710e2048fb57b7",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.92,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.5752803430079155,
+    "l0": 63.45912134814924,
+    "fvu_total": 0.004836651461787637,
+    "fvu_content": 0.13887467171386442,
+    "fvu_pc1": 1.9929910098251998e-05,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06312216818332672
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.925,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.5752803430079155,
+    "l0": 63.5228945035461,
+    "fvu_total": 0.005408251737256225,
+    "fvu_content": 0.1419384440368787,
+    "fvu_pc1": 2.2218218499816357e-05,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07639168202877045
+   },
+   "alive_frozen_calibration": 3032,
+   "alive_fresh_bridge_calibration": 3032,
+   "d_sae": 3072,
+   "structural_group_size": 204,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.42706110334339,
+    "test_fvu_content": 0.13859454308382857,
+    "test_fvu_total": 0.0048602527147141705,
+    "calibration_l0": 63.4012688026174,
+    "calibration_fvu_content": 0.13842762310604026,
+    "test_mean_l1": 296.17052886835893,
+    "n_alive_calibration": 3032
+   }
+  },
+  {
+   "condition": "standard",
+   "beta": 0.3,
+   "seed": 2,
+   "run": "standard_k64_s2_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/standard_k64_s2_beta0.3/sae.pt",
+   "checkpoint_sha256": "b815d1ab23bc75b138ded6d077f9c63f3ec666cedc2f8c4421ec07ebc9c006e1",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.96,
+    "top50_any_other_seed": 0.98,
+    "top50_no_other_seed_count": 1,
+    "dictwide_pairwise_sharing": 0.573582729070534,
+    "l0": 63.47650060097628,
+    "fvu_total": 0.004818484605950618,
+    "fvu_content": 0.13837671114041775,
+    "fvu_pc1": 1.9004675225415938e-05,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06609054654836655
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.96,
+    "top50_any_other_seed": 0.98,
+    "top50_no_other_seed_count": 1,
+    "dictwide_pairwise_sharing": 0.573582729070534,
+    "l0": 63.5353945035461,
+    "fvu_total": 0.005387308637342939,
+    "fvu_content": 0.14139829406891358,
+    "fvu_pc1": 2.175751553766049e-05,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.08043687790632248
+   },
+   "alive_frozen_calibration": 3034,
+   "alive_fresh_bridge_calibration": 3033,
+   "d_sae": 3072,
+   "structural_group_size": 209,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.4510143007825,
+    "test_fvu_content": 0.13810645943610256,
+    "test_fvu_total": 0.0048422974159451435,
+    "calibration_l0": 63.419502852810915,
+    "calibration_fvu_content": 0.1383147818266945,
+    "test_mean_l1": 296.47810758038275,
+    "n_alive_calibration": 3034
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.0,
+   "seed": 42,
+   "run": "bypass_k64_s42_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s42_beta0/sae.pt",
+   "checkpoint_sha256": "94d8ea3efcfe1fd0028d7fd3bfadc9264bfba1467e905f04650fc1806e239776",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.705,
+    "top50_any_other_seed": 0.84,
+    "top50_no_other_seed_count": 8,
+    "dictwide_pairwise_sharing": 0.4407552083333333,
+    "l0": 63.85479677189884,
+    "fvu_total": 0.0047377432463131955,
+    "fvu_content": 0.13652308422372797,
+    "fvu_pc1": 2.9389796092182825e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.060183972120285034
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.735,
+    "top50_any_other_seed": 0.86,
+    "top50_no_other_seed_count": 7,
+    "dictwide_pairwise_sharing": 0.4407552083333333,
+    "l0": 63.86199024822695,
+    "fvu_total": 0.005294238648700852,
+    "fvu_content": 0.13950474132276736,
+    "fvu_pc1": 3.189746451075324e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.06990718096494675
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 194,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.85793656634042,
+    "test_fvu_content": 0.1362347592288921,
+    "test_fvu_total": 0.004758663919334896,
+    "calibration_l0": 63.83525515700435,
+    "calibration_fvu_content": 0.13624065398159305,
+    "test_mean_l1": 280.7030662870662,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.0,
+   "seed": 137,
+   "run": "bypass_k64_s137_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s137_beta0/sae.pt",
+   "checkpoint_sha256": "00bde6ce3f633adb97b0e82e5bdcbe0ea71587541a27dcc8978064fb2e837b0f",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.61,
+    "top50_any_other_seed": 0.78,
+    "top50_no_other_seed_count": 11,
+    "dictwide_pairwise_sharing": 0.4461263020833333,
+    "l0": 63.82548384722938,
+    "fvu_total": 0.004733049146277301,
+    "fvu_content": 0.1363873598554853,
+    "fvu_pc1": 3.101037460331683e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.05971759185194969
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.67,
+    "top50_any_other_seed": 0.82,
+    "top50_no_other_seed_count": 9,
+    "dictwide_pairwise_sharing": 0.4461263020833333,
+    "l0": 63.83996010638298,
+    "fvu_total": 0.005292234656106967,
+    "fvu_content": 0.13945134591581862,
+    "fvu_pc1": 3.421111812772004e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07352731376886368
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 197,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.82867270095911,
+    "test_fvu_content": 0.13609140839955916,
+    "test_fvu_total": 0.004753672422335066,
+    "calibration_l0": 63.80442617936134,
+    "calibration_fvu_content": 0.13610645467020166,
+    "test_mean_l1": 280.71676321955624,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.0,
+   "seed": 0,
+   "run": "bypass_k64_s0_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s0_beta0/sae.pt",
+   "checkpoint_sha256": "c1c3bdbc6c311f2372a3bfb7302c9955e8823baad58ddd02621db36c02959db5",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.635,
+    "top50_any_other_seed": 0.82,
+    "top50_no_other_seed_count": 9,
+    "dictwide_pairwise_sharing": 0.4409993489583333,
+    "l0": 63.85582701694998,
+    "fvu_total": 0.004749111283956976,
+    "fvu_content": 0.13689713291561262,
+    "fvu_pc1": 3.077533673120345e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06019659340381622
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.7,
+    "top50_any_other_seed": 0.88,
+    "top50_no_other_seed_count": 6,
+    "dictwide_pairwise_sharing": 0.4409993489583333,
+    "l0": 63.86797429078014,
+    "fvu_total": 0.005314846887073936,
+    "fvu_content": 0.1400319463979837,
+    "fvu_pc1": 3.387823533580334e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07473069429397583
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 188,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.85798562562857,
+    "test_fvu_content": 0.13660819624279866,
+    "test_fvu_total": 0.0047717217772191185,
+    "calibration_l0": 63.84026918831212,
+    "calibration_fvu_content": 0.1365381335005352,
+    "test_mean_l1": 280.99918918653674,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.0,
+   "seed": 1,
+   "run": "bypass_k64_s1_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s1_beta0/sae.pt",
+   "checkpoint_sha256": "3c77e44ee849917c780458a3ffa55d7594b76311bf6f8e050f15a235da8eac25",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.7,
+    "top50_any_other_seed": 0.82,
+    "top50_no_other_seed_count": 9,
+    "dictwide_pairwise_sharing": 0.4453125,
+    "l0": 63.840152574386146,
+    "fvu_total": 0.004742298565109102,
+    "fvu_content": 0.1366540351248557,
+    "fvu_pc1": 3.055196755587876e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06243972107768059
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.715,
+    "top50_any_other_seed": 0.84,
+    "top50_no_other_seed_count": 8,
+    "dictwide_pairwise_sharing": 0.4453125,
+    "l0": 63.85146276595745,
+    "fvu_total": 0.005302228608349136,
+    "fvu_content": 0.1397149750323524,
+    "fvu_pc1": 3.314500770801136e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07669397443532944
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 208,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.85057767311796,
+    "test_fvu_content": 0.13636460503410525,
+    "test_fvu_total": 0.00476321069314498,
+    "calibration_l0": 63.83178390456051,
+    "calibration_fvu_content": 0.1363518998845174,
+    "test_mean_l1": 280.48142245686574,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.0,
+   "seed": 2,
+   "run": "bypass_k64_s2_beta0",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s2_beta0/sae.pt",
+   "checkpoint_sha256": "ef0ef058153d8605745c169f1e8f3ee8b25364afb1e3bfc776d261e14cb905bc",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.64,
+    "top50_any_other_seed": 0.76,
+    "top50_no_other_seed_count": 12,
+    "dictwide_pairwise_sharing": 0.4402669270833333,
+    "l0": 63.82327617926264,
+    "fvu_total": 0.0047314632827017145,
+    "fvu_content": 0.13681537779097025,
+    "fvu_pc1": 2.956767082647623e-07,
+    "w1": 0.9654192539822315,
+    "splice_dce": 0.05880482494831085
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.635,
+    "top50_any_other_seed": 0.76,
+    "top50_no_other_seed_count": 12,
+    "dictwide_pairwise_sharing": 0.4402669270833333,
+    "l0": 63.835660460992905,
+    "fvu_total": 0.005291033013338739,
+    "fvu_content": 0.13984229010387028,
+    "fvu_pc1": 3.2341825188789474e-07,
+    "w1": 0.9621665103796703,
+    "splice_dce": 0.07364397495985031
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 183,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.82972747565433,
+    "test_fvu_content": 0.13651296995790008,
+    "test_fvu_total": 0.004768385822469159,
+    "calibration_l0": 63.809453510486904,
+    "calibration_fvu_content": 0.13634709288104455,
+    "test_mean_l1": 280.01124963671344,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.03,
+   "seed": 42,
+   "run": "bypass_k64_s42_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s42_beta0.03/sae.pt",
+   "checkpoint_sha256": "e5730866223e0f0ef92fba24ca27c762b4ca48833e17d9bc27be9094d3840118",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.865,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.4710286458333333,
+    "l0": 63.78546373292124,
+    "fvu_total": 0.004730070697449904,
+    "fvu_content": 0.13634834982274485,
+    "fvu_pc1": 3.0372187975461706e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.062417540699243546
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.835,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.4710286458333333,
+    "l0": 63.801418439716315,
+    "fvu_total": 0.005292406935412981,
+    "fvu_content": 0.13944078175095836,
+    "fvu_pc1": 3.346759847996809e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07094399631023407
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 202,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.78867711629504,
+    "test_fvu_content": 0.1360583043981138,
+    "test_fvu_total": 0.004752511078178689,
+    "calibration_l0": 63.75989838939206,
+    "calibration_fvu_content": 0.1359568405261113,
+    "test_mean_l1": 272.41661161040474,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.03,
+   "seed": 137,
+   "run": "bypass_k64_s137_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s137_beta0.03/sae.pt",
+   "checkpoint_sha256": "39aa7a39f7438a549f0c96691a00c261b4e221e89fbbcc14f7f86f99ffb94ade",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.805,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.4689127604166667,
+    "l0": 63.75691122721809,
+    "fvu_total": 0.004728528152170581,
+    "fvu_content": 0.13630359057192212,
+    "fvu_pc1": 3.141899662708452e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.061291977763175964
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.86,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.4689127604166667,
+    "l0": 63.77402482269503,
+    "fvu_total": 0.005287362901114959,
+    "fvu_content": 0.13930764275994106,
+    "fvu_pc1": 3.4391026315098734e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07249612361192703
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 195,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.757328231167364,
+    "test_fvu_content": 0.13601097013681995,
+    "test_fvu_total": 0.004750867776927528,
+    "calibration_l0": 63.728138424503584,
+    "calibration_fvu_content": 0.1359292923489579,
+    "test_mean_l1": 272.2468445825995,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.03,
+   "seed": 0,
+   "run": "bypass_k64_s0_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s0_beta0.03/sae.pt",
+   "checkpoint_sha256": "39264fbb6f77337f34063030efce3eb51b38051a05f5be270cdf5e312d730342",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.84,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.4707845052083333,
+    "l0": 63.79896730198445,
+    "fvu_total": 0.0047388640513024,
+    "fvu_content": 0.1365548130624503,
+    "fvu_pc1": 3.143984064719119e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.0603308267891407
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.845,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.4707845052083333,
+    "l0": 63.81407358156029,
+    "fvu_total": 0.005303290128605024,
+    "fvu_content": 0.13974262961091471,
+    "fvu_pc1": 3.440098436080901e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07694607973098755
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 230,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.799617337552434,
+    "test_fvu_content": 0.13626247082049997,
+    "test_fvu_total": 0.004759651896948518,
+    "calibration_l0": 63.774528188963814,
+    "calibration_fvu_content": 0.1361996822809842,
+    "test_mean_l1": 272.45108156416336,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.03,
+   "seed": 1,
+   "run": "bypass_k64_s1_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s1_beta0.03/sae.pt",
+   "checkpoint_sha256": "23891df412414c6ad5a63e3e525ddbcc34d392c7de2710f52a9c866ffc0f270b",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.825,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.4772135416666667,
+    "l0": 63.73678465425467,
+    "fvu_total": 0.004735679235943121,
+    "fvu_content": 0.1364631373160503,
+    "fvu_pc1": 3.106751207448416e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.062449678778648376
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.845,
+    "top50_any_other_seed": 0.92,
+    "top50_no_other_seed_count": 4,
+    "dictwide_pairwise_sharing": 0.4772135416666667,
+    "l0": 63.76292109929078,
+    "fvu_total": 0.005294396637663053,
+    "fvu_content": 0.139508534713481,
+    "fvu_pc1": 3.335655537085348e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07534798234701157
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 227,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.73905364633159,
+    "test_fvu_content": 0.13617531198432078,
+    "test_fvu_total": 0.00475660367895314,
+    "calibration_l0": 63.71241803987285,
+    "calibration_fvu_content": 0.13616166043964306,
+    "test_mean_l1": 271.78066541822375,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.03,
+   "seed": 2,
+   "run": "bypass_k64_s2_beta0.03",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s2_beta0.03/sae.pt",
+   "checkpoint_sha256": "8623229cbe9acdb959f63b0801d041be46f003cf7ff1d9b01ec4e3592115bb62",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.775,
+    "top50_any_other_seed": 0.92,
+    "top50_no_other_seed_count": 4,
+    "dictwide_pairwise_sharing": 0.468017578125,
+    "l0": 63.75223833002183,
+    "fvu_total": 0.004737850379641488,
+    "fvu_content": 0.13652570468554276,
+    "fvu_pc1": 3.1068158632540714e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06123625487089157
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.76,
+    "top50_any_other_seed": 0.9,
+    "top50_no_other_seed_count": 5,
+    "dictwide_pairwise_sharing": 0.468017578125,
+    "l0": 63.77050088652482,
+    "fvu_total": 0.005296687157208918,
+    "fvu_content": 0.13956878257343178,
+    "fvu_pc1": 3.379636820080404e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07397766411304474
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 204,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.760149140235974,
+    "test_fvu_content": 0.13623764410903125,
+    "test_fvu_total": 0.00475878092507476,
+    "calibration_l0": 63.73035949407493,
+    "calibration_fvu_content": 0.1360746471832266,
+    "test_mean_l1": 271.4675786638468,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.1,
+   "seed": 42,
+   "run": "bypass_k64_s42_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s42_beta0.1/sae.pt",
+   "checkpoint_sha256": "0e6eb004ee8a7fa0ee9ad49582ac3c5aa6a5fef93066bbf4573ab079d75a955e",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.92,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5122884114583334,
+    "l0": 63.64864964309368,
+    "fvu_total": 0.004728380086701718,
+    "fvu_content": 0.13629902857764414,
+    "fvu_pc1": 3.2474117932624466e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06139359995722771
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.895,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.5122884114583334,
+    "l0": 63.680053191489364,
+    "fvu_total": 0.005290184700726955,
+    "fvu_content": 0.1393818078980069,
+    "fvu_pc1": 3.5125831846479236e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07212034612894058
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 204,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.61433267103294,
+    "test_fvu_content": 0.1360069837514666,
+    "test_fvu_total": 0.0047507385612382,
+    "calibration_l0": 63.57460532790701,
+    "calibration_fvu_content": 0.13589169094751016,
+    "test_mean_l1": 261.22500975270884,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.1,
+   "seed": 137,
+   "run": "bypass_k64_s137_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s137_beta0.1/sae.pt",
+   "checkpoint_sha256": "e7204c3bf6e3503e5d39f9253be92ab103afce81868ac36bf10adeea2d8a8346",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.92,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.5113932291666666,
+    "l0": 63.59462310201879,
+    "fvu_total": 0.004725830977352711,
+    "fvu_content": 0.13617857618541876,
+    "fvu_pc1": 3.378572051716543e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06317662447690964
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.915,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.5113932291666666,
+    "l0": 63.63339982269503,
+    "fvu_total": 0.0052836042901682635,
+    "fvu_content": 0.13922324724835386,
+    "fvu_pc1": 3.686501503932801e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07334893941879272
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 231,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.57131994014767,
+    "test_fvu_content": 0.13588727108376059,
+    "test_fvu_total": 0.004746570070371936,
+    "calibration_l0": 63.52705847929883,
+    "calibration_fvu_content": 0.1359246406444308,
+    "test_mean_l1": 261.4635965864807,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.1,
+   "seed": 0,
+   "run": "bypass_k64_s0_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s0_beta0.1/sae.pt",
+   "checkpoint_sha256": "ece11ca62bf9406682420a6728e8bbdc0be452e3312ea2f919428f6e0d997e76",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.955,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.509521484375,
+    "l0": 63.64281158780386,
+    "fvu_total": 0.004736603815688451,
+    "fvu_content": 0.13653610547060466,
+    "fvu_pc1": 3.2452023742921574e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06054825335741043
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.95,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.509521484375,
+    "l0": 63.6769725177305,
+    "fvu_total": 0.005296828881815075,
+    "fvu_content": 0.13955679788425007,
+    "fvu_pc1": 3.54299201368702e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07410886138677597
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 216,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.63675276571737,
+    "test_fvu_content": 0.13624633775989137,
+    "test_fvu_total": 0.004759099135385478,
+    "calibration_l0": 63.59780021013712,
+    "calibration_fvu_content": 0.13613005545903611,
+    "test_mean_l1": 260.91944306911654,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.1,
+   "seed": 1,
+   "run": "bypass_k64_s1_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s1_beta0.1/sae.pt",
+   "checkpoint_sha256": "c8d9a076e5364afbda9893a31c1955f659e22191db52063cdc78c28c930f6c09",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.92,
+    "top50_any_other_seed": 0.94,
+    "top50_no_other_seed_count": 3,
+    "dictwide_pairwise_sharing": 0.5145670572916666,
+    "l0": 63.61275050899012,
+    "fvu_total": 0.0047303552961169585,
+    "fvu_content": 0.1363091933216139,
+    "fvu_pc1": 3.2936274953094545e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.0628768727183342
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.945,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.5145670572916666,
+    "l0": 63.65274822695036,
+    "fvu_total": 0.005290670006939878,
+    "fvu_content": 0.13940985634621977,
+    "fvu_pc1": 3.5229645372657136e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07203067094087601
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 234,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.601945200775134,
+    "test_fvu_content": 0.13602486073161107,
+    "test_fvu_total": 0.004751367498240343,
+    "calibration_l0": 63.5648698612829,
+    "calibration_fvu_content": 0.1359791194896526,
+    "test_mean_l1": 260.54034472813424,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.1,
+   "seed": 2,
+   "run": "bypass_k64_s2_beta0.1",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s2_beta0.1/sae.pt",
+   "checkpoint_sha256": "e893ab1342549596a2aed1347da444c9f5f74e9023038a437d087bd206adfcf7",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.88,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.50830078125,
+    "l0": 63.60610297544583,
+    "fvu_total": 0.004731266500409082,
+    "fvu_content": 0.1363359830377718,
+    "fvu_pc1": 3.102804235479137e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06270293146371841
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.865,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.50830078125,
+    "l0": 63.644459219858156,
+    "fvu_total": 0.0052887467517782226,
+    "fvu_content": 0.13935939062273467,
+    "fvu_pc1": 3.4379403469655517e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07444325089454651
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 209,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.60454534304707,
+    "test_fvu_content": 0.1360489384898549,
+    "test_fvu_total": 0.004752189392346374,
+    "calibration_l0": 63.5700168907686,
+    "calibration_fvu_content": 0.13616974295088752,
+    "test_mean_l1": 260.74631879725393,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.3,
+   "seed": 42,
+   "run": "bypass_k64_s42_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s42_beta0.3/sae.pt",
+   "checkpoint_sha256": "ccf1b88d9a0cfa23ce6395fc15acd468d8db361f13e9b1e57753df2230476550",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.965,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.58544921875,
+    "l0": 63.40654205607477,
+    "fvu_total": 0.00473960845063262,
+    "fvu_content": 0.13662189029381652,
+    "fvu_pc1": 3.544087914978186e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.0652085617184639
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.96,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.58544921875,
+    "l0": 63.4697030141844,
+    "fvu_total": 0.005297396578429641,
+    "fvu_content": 0.13957085622331658,
+    "fvu_pc1": 3.8979812974941113e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.0777588039636612
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 249,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.39105158584149,
+    "test_fvu_content": 0.1363376577860404,
+    "test_fvu_total": 0.004762318087267539,
+    "calibration_l0": 63.351527484073465,
+    "calibration_fvu_content": 0.13622575973518575,
+    "test_mean_l1": 244.09302144990664,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.3,
+   "seed": 137,
+   "run": "bypass_k64_s137_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s137_beta0.3/sae.pt",
+   "checkpoint_sha256": "12a3a616c1b395d54de6a1db5e11572312472edc5a72f2a6fe1051297baa1362",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.95,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5787760416666666,
+    "l0": 63.39740476365688,
+    "fvu_total": 0.004731544825969414,
+    "fvu_content": 0.13638904501842028,
+    "fvu_pc1": 3.68422245254058e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.061500433832407
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.955,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5787760416666666,
+    "l0": 63.46207890070922,
+    "fvu_total": 0.005292523287150025,
+    "fvu_content": 0.13944209951843248,
+    "fvu_pc1": 4.0363259758418403e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07580889761447906
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 261,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.385728653077244,
+    "test_fvu_content": 0.136105160538447,
+    "test_fvu_total": 0.004754211701884083,
+    "calibration_l0": 63.34157922036468,
+    "calibration_fvu_content": 0.13614862024187405,
+    "test_mean_l1": 243.53145112474735,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.3,
+   "seed": 0,
+   "run": "bypass_k64_s0_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s0_beta0.3/sae.pt",
+   "checkpoint_sha256": "9e777a7e0ccddee9026e44bc86ffdf8cb47ecd9d6e988d9dbbc1874e262e99fd",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.96,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5732421875,
+    "l0": 63.39454706012216,
+    "fvu_total": 0.004745074385195553,
+    "fvu_content": 0.13677935354168935,
+    "fvu_pc1": 3.58245858198881e-07,
+    "w1": 0.9653110762432836,
+    "splice_dce": 0.06277860701084137
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.965,
+    "top50_any_other_seed": 1.0,
+    "top50_no_other_seed_count": 0,
+    "dictwide_pairwise_sharing": 0.5732421875,
+    "l0": 63.45879875886525,
+    "fvu_total": 0.005306743608711775,
+    "fvu_content": 0.13981703707673449,
+    "fvu_pc1": 3.938773158825297e-07,
+    "w1": 0.9620477962424865,
+    "splice_dce": 0.07713774591684341
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 234,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.36361517894375,
+    "test_fvu_content": 0.13648593041371326,
+    "test_fvu_total": 0.0047674999784662365,
+    "calibration_l0": 63.32052560879916,
+    "calibration_fvu_content": 0.13642948006310915,
+    "test_mean_l1": 243.96781025077925,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.3,
+   "seed": 1,
+   "run": "bypass_k64_s1_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s1_beta0.3/sae.pt",
+   "checkpoint_sha256": "11e55c06b2efed43480b672e1d3242946451724f699cba2b1b554bbe08d580fc",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.925,
+    "top50_any_other_seed": 0.98,
+    "top50_no_other_seed_count": 1,
+    "dictwide_pairwise_sharing": 0.5774739583333334,
+    "l0": 63.38900336056124,
+    "fvu_total": 0.004742701547942096,
+    "fvu_content": 0.13666378221648853,
+    "fvu_pc1": 3.7259836460942664e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06348265707492828
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.895,
+    "top50_any_other_seed": 0.96,
+    "top50_no_other_seed_count": 2,
+    "dictwide_pairwise_sharing": 0.5774739583333334,
+    "l0": 63.46028368794326,
+    "fvu_total": 0.005298234061421907,
+    "fvu_content": 0.13960770043567802,
+    "fvu_pc1": 4.107742433919891e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07758347690105438
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 246,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.39230259768931,
+    "test_fvu_content": 0.13637760401915036,
+    "test_fvu_total": 0.00476373044832138,
+    "calibration_l0": 63.35692721009722,
+    "calibration_fvu_content": 0.13615676708946564,
+    "test_mean_l1": 242.58757507660144,
+    "n_alive_calibration": 3072
+   }
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.3,
+   "seed": 2,
+   "run": "bypass_k64_s2_beta0.3",
+   "checkpoint": "s3://ssup-research-079415246777/e4real-gpt2/results/e4_real/gpt2/full/training/bypass_k64_s2_beta0.3/sae.pt",
+   "checkpoint_sha256": "52f89692b9985011068ef9137ba9a3d2aed25f8a5fe0584acfdacd0a16b21c9f",
+   "test": {
+    "n_tokens": 81534,
+    "top50_pairwise_sharing": 0.94,
+    "top50_any_other_seed": 0.98,
+    "top50_no_other_seed_count": 1,
+    "dictwide_pairwise_sharing": 0.573486328125,
+    "l0": 63.3959697794785,
+    "fvu_total": 0.004741881887213987,
+    "fvu_content": 0.13664084602077753,
+    "fvu_pc1": 3.479878557822479e-07,
+    "w1": 0.9652992050847488,
+    "splice_dce": 0.06317073851823807
+   },
+   "selection": {
+    "n_tokens": 45120,
+    "top50_pairwise_sharing": 0.94,
+    "top50_any_other_seed": 0.98,
+    "top50_no_other_seed_count": 1,
+    "dictwide_pairwise_sharing": 0.573486328125,
+    "l0": 63.457734929078015,
+    "fvu_total": 0.00530507825267302,
+    "fvu_content": 0.13978874267656705,
+    "fvu_pc1": 3.8374108369901667e-07,
+    "w1": 0.9620519580315152,
+    "splice_dce": 0.07992327958345413
+   },
+   "alive_frozen_calibration": 3072,
+   "alive_fresh_bridge_calibration": 3072,
+   "d_sae": 3072,
+   "structural_group_size": 228,
+   "calibration_tokens": 75189,
+   "grid_evaluator": {
+    "test_l0": 63.39435082296956,
+    "test_fvu_content": 0.13635703863301238,
+    "test_fvu_total": 0.004762987512624916,
+    "calibration_l0": 63.350396999561106,
+    "calibration_fvu_content": 0.13651346246700694,
+    "test_mean_l1": 244.0709520295565,
+    "n_alive_calibration": 3072
+   }
+  }
+ ],
+ "aggregate": [
+  {
+   "condition": "standard",
+   "beta": 0.0,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.064,
+    "sd": 0.00894427190999916,
+    "min": 0.06,
+    "max": 0.08,
+    "t95": [
+     0.052894219579208805,
+     0.07510578042079119
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.064,
+    "sd": 0.00894427190999916,
+    "min": 0.06,
+    "max": 0.08,
+    "t95": [
+     0.052894219579208805,
+     0.07510578042079119
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.4581782724876656,
+    "sd": 0.003651586303397098,
+    "min": 0.45293538865201705,
+    "max": 0.4626494023904382,
+    "t95": [
+     0.4536442292384035,
+     0.4627123157369278
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 64.0,
+    "sd": 0.0,
+    "min": 64.0,
+    "max": 64.0,
+    "t95": [
+     64.0,
+     64.0
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 64.0,
+    "sd": 0.0,
+    "min": 64.0,
+    "max": 64.0,
+    "t95": [
+     64.0,
+     64.0
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.004838279294031409,
+    "sd": 1.1042783913370449e-05,
+    "min": 0.004829753867215555,
+    "max": 0.0048571884553238265,
+    "t95": [
+     0.004824567866806233,
+     0.0048519907212565844
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.1394074257154071,
+    "sd": 0.00034237689260871175,
+    "min": 0.1391357874973319,
+    "max": 0.13999285244728266,
+    "t95": [
+     0.138982308654038,
+     0.1398325427767762
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.14263625278518371,
+    "sd": 0.0004100680633026933,
+    "min": 0.14239185481080274,
+    "max": 0.14335508014836046,
+    "t95": [
+     0.14212708603416763,
+     0.1431454195361998
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 1.1013970110326017e-06,
+    "sd": 3.535597655210982e-07,
+    "min": 7.345862999923988e-07,
+    "max": 1.690087270427747e-06,
+    "t95": [
+     6.623945789716887e-07,
+     1.5403994430935147e-06
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653015793164558,
+    "sd": 5.308943491119631e-06,
+    "min": 0.9652992050847488,
+    "max": 0.9653110762432836,
+    "t95": [
+     0.9652949873924543,
+     0.9653081712404572
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3028.2,
+    "sd": 24.035390573069538,
+    "min": 2994.0,
+    "max": 3049.0,
+    "t95": [
+     2998.356120842653,
+     3058.0438791573465
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3028.0,
+    "sd": 24.392621835300936,
+    "min": 2993.0,
+    "max": 3049.0,
+    "t95": [
+     2997.712559645308,
+     3058.287440354692
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 64.0,
+    "sd": 0.0,
+    "min": 64.0,
+    "max": 64.0,
+    "t95": [
+     64.0,
+     64.0
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.13912043351921544,
+    "sd": 0.0003419260554384237,
+    "min": 0.13884589709508496,
+    "max": 0.1397050680126285,
+    "t95": [
+     0.13869587624612972,
+     0.13954499079230115
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 522.2204846790765,
+    "sd": 2.3353970227639316,
+    "min": 519.0488221261347,
+    "max": 525.4798029818977,
+    "t95": [
+     519.3207062743983,
+     525.1202630837548
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.064,
+   "test.bridge_summary_dictwide_sharing": 0.4581782724876656,
+   "selection.bridge_summary_pairwise_sharing": 0.064,
+   "selection.bridge_summary_dictwide_sharing": 0.4581782724876656
+  },
+  {
+   "condition": "standard",
+   "beta": 0.03,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.148,
+    "sd": 0.03898717737923586,
+    "min": 0.12,
+    "max": 0.2,
+    "t95": [
+     0.09959102545661855,
+     0.19640897454338144
+    ]
+   },
+   "test.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.08399999999999999,
+    "sd": 0.04335896677735761,
+    "min": 0.039999999999999994,
+    "max": 0.14,
+    "t95": [
+     0.030162731953241866,
+     0.1378372680467581
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.179,
+    "sd": 0.04306971093471605,
+    "min": 0.12,
+    "max": 0.235,
+    "t95": [
+     0.12552189051931997,
+     0.23247810948068
+    ]
+   },
+   "selection.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.11499999999999999,
+    "sd": 0.05024937810560445,
+    "min": 0.039999999999999994,
+    "max": 0.175,
+    "t95": [
+     0.052607156274142364,
+     0.17739284372585762
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.47875109513539116,
+    "sd": 0.004278493730579626,
+    "min": 0.47360197368421053,
+    "max": 0.485014985014985,
+    "t95": [
+     0.4734386435035899,
+     0.48406354676719243
+    ]
+   },
+   "test.dictwide_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.020572822647725576,
+    "sd": 0.005461835040794063,
+    "min": 0.014683054902597248,
+    "max": 0.027612871361114955,
+    "t95": [
+     0.013791058713443787,
+     0.027354586582007366
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 63.966774597100596,
+    "sd": 0.007596941061498693,
+    "min": 63.955172075453184,
+    "max": 63.97363063261952,
+    "t95": [
+     63.957341748888055,
+     63.976207445313136
+    ]
+   },
+   "test.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.033225402899404344,
+    "sd": 0.007596941061498693,
+    "min": -0.04482792454681572,
+    "max": -0.026369367380482345,
+    "t95": [
+     -0.04265825111194318,
+     -0.02379255468686551
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 63.97207446808511,
+    "sd": 0.006385133107661982,
+    "min": 63.96232269503546,
+    "max": 63.97783687943262,
+    "t95": [
+     63.96414627818159,
+     63.980002657988635
+    ]
+   },
+   "selection.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.027925531914894462,
+    "sd": 0.006385133107661983,
+    "min": -0.03767730496453936,
+    "max": -0.022163120567377348,
+    "t95": [
+     -0.03585372181841728,
+     -0.019997342011371644
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.004823665391766261,
+    "sd": 9.755209459436665e-06,
+    "min": 0.004813412775139206,
+    "max": 0.004835582859396784,
+    "t95": [
+     0.004811552699385542,
+     0.004835778084146981
+    ]
+   },
+   "test.fvu_total.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -1.4613902265147618e-05,
+    "sd": 9.261173398497455e-06,
+    "min": -2.4990370810551443e-05,
+    "max": -1.664451910074645e-06,
+    "t95": [
+     -2.611316785518433e-05,
+     -3.1146366751109045e-06
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.13893737114941007,
+    "sd": 0.00028107363259092757,
+    "min": 0.13863916596398831,
+    "max": 0.13930820636797336,
+    "t95": [
+     0.13858837213897757,
+     0.13928637015984258
+    ]
+   },
+   "test.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.000470054565997019,
+    "sd": 0.0002648188333177825,
+    "min": -0.0007724544958104818,
+    "max": -0.00012538126748565248,
+    "t95": [
+     -0.0007988705773740337,
+     -0.0001412385546200044
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.1421193169196418,
+    "sd": 0.0002838225957090463,
+    "min": 0.14172743969762838,
+    "max": 0.14244881052216216,
+    "t95": [
+     0.14176690462067315,
+     0.14247172921861045
+    ]
+   },
+   "selection.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0005169358655419176,
+    "sd": 0.0003554296672035791,
+    "min": -0.0009062696261983028,
+    "max": -0.00013656075135079493,
+    "t95": [
+     -0.0009582600872021477,
+     -7.561164388168745e-05
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 3.88179998164492e-06,
+    "sd": 4.014291605169307e-07,
+    "min": 3.243627976829115e-06,
+    "max": 4.319143768542795e-06,
+    "t95": [
+     3.3833598452018865e-06,
+     4.380240118087954e-06
+    ]
+   },
+   "test.fvu_pc1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 2.7804029706123193e-06,
+    "sd": 5.290615142290985e-07,
+    "min": 2.2210868301556792e-06,
+    "max": 3.5845574685503963e-06,
+    "t95": [
+     2.123486335558878e-06,
+     3.4373196056657607e-06
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653087020115766,
+    "sd": 5.308943491119631e-06,
+    "min": 0.9652992050847488,
+    "max": 0.9653110762432836,
+    "t95": [
+     0.9653021100875752,
+     0.965315293935578
+    ]
+   },
+   "test.w1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 7.122695120909129e-06,
+    "sd": 6.502101313256527e-06,
+    "min": 0.0,
+    "max": 1.1871158534848547e-05,
+    "t95": [
+     -9.507299924349315e-07,
+     1.5196120234253189e-05
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3035.6,
+    "sd": 18.365728953678914,
+    "min": 3003.0,
+    "max": 3046.0,
+    "t95": [
+     3012.7959355574485,
+     3058.4040644425513
+    ]
+   },
+   "alive_frozen_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 7.4,
+    "sd": 14.842506526863986,
+    "min": -5.0,
+    "max": 32.0,
+    "t95": [
+     -11.029405997511434,
+     25.829405997511437
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3035.6,
+    "sd": 18.365728953678914,
+    "min": 3003.0,
+    "max": 3046.0,
+    "t95": [
+     3012.7959355574485,
+     3058.4040644425513
+    ]
+   },
+   "alive_fresh_bridge_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 7.6,
+    "sd": 14.876155417311287,
+    "min": -5.0,
+    "max": 32.0,
+    "t95": [
+     -10.87118661335935,
+     26.07118661335935
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 63.961500723624496,
+    "sd": 0.007596941061496719,
+    "min": 63.94989820197709,
+    "max": 63.968356759143425,
+    "t95": [
+     63.95206787541196,
+     63.97093357183703
+    ]
+   },
+   "grid_evaluator.test_l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.038499276375499394,
+    "sd": 0.0075969410614967195,
+    "min": -0.05010179802290793,
+    "max": -0.03164324085657455,
+    "t95": [
+     -0.04793212458803578,
+     -0.029066428162963013
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.1386485167588862,
+    "sd": 0.00028286339777109114,
+    "min": 0.13834727176124995,
+    "max": 0.13902321308098373,
+    "t95": [
+     0.13829729546146424,
+     0.13899973805630816
+    ]
+   },
+   "grid_evaluator.test_fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0004719167603292329,
+    "sd": 0.0002630502170011174,
+    "min": -0.000775155213905393,
+    "max": -0.00013100332781765256,
+    "t95": [
+     -0.0007985367444992087,
+     -0.0001452967761592571
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 413.35813155448625,
+    "sd": 1.77484301155775,
+    "min": 410.34287107233445,
+    "max": 415.07305448441406,
+    "t95": [
+     411.15437288457144,
+     415.56189022440105
+    ]
+   },
+   "grid_evaluator.test_mean_l1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -108.8623531245903,
+    "sd": 3.8466175635127327,
+    "min": -115.13693190956326,
+    "max": -105.25698048607563,
+    "t95": [
+     -113.63855966806236,
+     -104.08614658111824
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.148,
+   "test.bridge_summary_dictwide_sharing": 0.47875109513539116,
+   "selection.bridge_summary_pairwise_sharing": 0.179,
+   "selection.bridge_summary_dictwide_sharing": 0.47875109513539116
+  },
+  {
+   "condition": "standard",
+   "beta": 0.1,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.521,
+    "sd": 0.07900949310051293,
+    "min": 0.45,
+    "max": 0.645,
+    "t95": [
+     0.4228967569007642,
+     0.6191032430992358
+    ]
+   },
+   "test.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.457,
+    "sd": 0.0838600023849272,
+    "min": 0.37,
+    "max": 0.585,
+    "t95": [
+     0.3528740541493539,
+     0.5611259458506461
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.499,
+    "sd": 0.0761084752179414,
+    "min": 0.425,
+    "max": 0.62,
+    "t95": [
+     0.4044988463636986,
+     0.5935011536363014
+    ]
+   },
+   "selection.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.43500000000000005,
+    "sd": 0.081317279836453,
+    "min": 0.345,
+    "max": 0.56,
+    "t95": [
+     0.3340312611952153,
+     0.5359687388047848
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.5117135390269972,
+    "sd": 0.004531213781743856,
+    "min": 0.5083716349310571,
+    "max": 0.5195234943745863,
+    "t95": [
+     0.5060872940060411,
+     0.5173397840479533
+    ]
+   },
+   "test.dictwide_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.053535266539331695,
+    "sd": 0.005448456983181574,
+    "min": 0.04635588511782346,
+    "max": 0.059186153025220956,
+    "t95": [
+     0.04677011365755323,
+     0.06030041942111016
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 63.79777270831799,
+    "sd": 0.02085427079031631,
+    "min": 63.76614663821228,
+    "max": 63.82216008045723,
+    "t95": [
+     63.771878711068865,
+     63.82366670556712
+    ]
+   },
+   "test.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.20222729168199863,
+    "sd": 0.02085427079031631,
+    "min": -0.2338533617877232,
+    "max": -0.17783991954276956,
+    "t95": [
+     -0.2281212889311268,
+     -0.17633329443287046
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 63.82345744680852,
+    "sd": 0.020093436398306776,
+    "min": 63.79390514184397,
+    "max": 63.84709663120567,
+    "t95": [
+     63.79850815023254,
+     63.848406743384494
+    ]
+   },
+   "selection.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.17654255319149,
+    "sd": 0.020093436398306776,
+    "min": -0.20609485815602824,
+    "max": -0.15290336879432687,
+    "t95": [
+     -0.2014918497674647,
+     -0.15159325661551531
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.004820128444181577,
+    "sd": 4.330490879913746e-06,
+    "min": 0.004815315100894962,
+    "max": 0.004825823709126913,
+    "t95": [
+     0.004814751429561438,
+     0.004825505458801715
+    ]
+   },
+   "test.fvu_total.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -1.8150849849831764e-05,
+    "sd": 7.795621440223968e-06,
+    "min": -3.136474619691316e-05,
+    "max": -1.2171262905903701e-05,
+    "t95": [
+     -2.7830392335783263e-05,
+     -8.471307363880267e-06
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.13864646075801149,
+    "sd": 0.00014070253301985057,
+    "min": 0.1384923231138994,
+    "max": 0.13881142989845066,
+    "t95": [
+     0.13847175548830465,
+     0.13882116602771832
+    ]
+   },
+   "test.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0007609649573956156,
+    "sd": 0.00024809154579087504,
+    "min": -0.0011814225488319952,
+    "max": -0.0005709026157942609,
+    "t95": [
+     -0.0010690112980628664,
+     -0.00045291861672836495
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.1418126043200253,
+    "sd": 0.00016792214748288323,
+    "min": 0.14167623674632251,
+    "max": 0.14200837162797672,
+    "t95": [
+     0.14160410143499474,
+     0.14202110720505584
+    ]
+   },
+   "selection.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0008236484651584442,
+    "sd": 0.00031342737784292065,
+    "min": -0.0013726670400190932,
+    "max": -0.0005878406028082817,
+    "t95": [
+     -0.0012128199562774077,
+     -0.0004344769740394807
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 9.991175535338414e-06,
+    "sd": 7.790896682685237e-07,
+    "min": 9.278727549801675e-06,
+    "max": 1.130814466388751e-05,
+    "t95": [
+     9.023807942876872e-06,
+     1.0958543127799956e-05
+    ]
+   },
+   "test.fvu_pc1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 8.88977852430581e-06,
+    "sd": 4.85511579221715e-07,
+    "min": 8.256186403128239e-06,
+    "max": 9.618057393459763e-06,
+    "t95": [
+     8.286936275675152e-06,
+     9.49262077293647e-06
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653039535481627,
+    "sd": 6.5021013132565264e-06,
+    "min": 0.9652992050847488,
+    "max": 0.9653110762432836,
+    "t95": [
+     0.9652958801230493,
+     0.965312026973276
+    ]
+   },
+   "test.w1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 2.3742317069697093e-06,
+    "sd": 9.932123814756603e-06,
+    "min": -1.1871158534848547e-05,
+    "max": 1.1871158534848547e-05,
+    "t95": [
+     -9.95812885951582e-06,
+     1.470659227345524e-05
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3037.2,
+    "sd": 12.153188881935474,
+    "min": 3022.0,
+    "max": 3047.0,
+    "t95": [
+     3022.1098229019303,
+     3052.2901770980693
+    ]
+   },
+   "alive_frozen_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 9.0,
+    "sd": 12.288205727444508,
+    "min": -2.0,
+    "max": 28.0,
+    "t95": [
+     -6.257822654289171,
+     24.25782265428917
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3036.8,
+    "sd": 12.296340919151518,
+    "min": 3021.0,
+    "max": 3047.0,
+    "t95": [
+     3021.53207617105,
+     3052.0679238289504
+    ]
+   },
+   "alive_fresh_bridge_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 8.8,
+    "sd": 12.37739875741264,
+    "min": -2.0,
+    "max": 28.0,
+    "t95": [
+     -6.568570428491309,
+     24.16857042849131
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 63.781732774057446,
+    "sd": 0.02385638318624114,
+    "min": 63.75888586356612,
+    "max": 63.82036941643977,
+    "t95": [
+     63.752111161927736,
+     63.811354386187155
+    ]
+   },
+   "grid_evaluator.test_l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.21826722594255016,
+    "sd": 0.02385638318624114,
+    "min": -0.2411141364338789,
+    "max": -0.17963058356023254,
+    "t95": [
+     -0.24788883807225945,
+     -0.18864561381284087
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.1383566784686296,
+    "sd": 0.00014311343882155014,
+    "min": 0.13819436136135665,
+    "max": 0.13852158762421257,
+    "t95": [
+     0.13817897966398573,
+     0.13853437727327345
+    ]
+   },
+   "grid_evaluator.test_fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0007637550505858681,
+    "sd": 0.00024943170403261063,
+    "min": -0.001183480388415925,
+    "max": -0.0005741526757795379,
+    "t95": [
+     -0.001073465417493778,
+     -0.0004540446836779583
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 351.38029842719845,
+    "sd": 2.2196400365575513,
+    "min": 349.5734142860401,
+    "max": 355.23636866559207,
+    "t95": [
+     348.62425130483325,
+     354.13634554956366
+    ]
+   },
+   "grid_evaluator.test_mean_l1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -170.84018625187815,
+    "sd": 3.40330254919433,
+    "min": -174.5234908993932,
+    "max": -166.10156701222206,
+    "t95": [
+     -175.06594450220786,
+     -166.61442800154845
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.521,
+   "test.bridge_summary_dictwide_sharing": 0.5117135390269972,
+   "selection.bridge_summary_pairwise_sharing": 0.499,
+   "selection.bridge_summary_dictwide_sharing": 0.5117135390269972
+  },
+  {
+   "condition": "standard",
+   "beta": 0.3,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.9489999999999998,
+    "sd": 0.018841443681416745,
+    "min": 0.92,
+    "max": 0.965,
+    "t95": [
+     0.9256052577066008,
+     0.9723947422933988
+    ]
+   },
+   "test.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.8850000000000001,
+    "sd": 0.01658312395177693,
+    "min": 0.8600000000000001,
+    "max": 0.8999999999999999,
+    "t95": [
+     0.8644093320113281,
+     0.9055906679886722
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.952,
+    "sd": 0.018234582528810443,
+    "min": 0.925,
+    "max": 0.975,
+    "t95": [
+     0.9293587753517006,
+     0.9746412246482993
+    ]
+   },
+   "selection.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.8879999999999999,
+    "sd": 0.013509256086106276,
+    "min": 0.865,
+    "max": 0.8999999999999999,
+    "t95": [
+     0.8712260430753667,
+     0.9047739569246331
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.5734831830080747,
+    "sd": 0.0013502657780772125,
+    "min": 0.5719347396176665,
+    "max": 0.5752803430079155,
+    "t95": [
+     0.5718066066034296,
+     0.5751597594127197
+    ]
+   },
+   "test.dictwide_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.11530491052040918,
+    "sd": 0.003208890677741741,
+    "min": 0.11093332668009576,
+    "max": 0.11948067454745631,
+    "t95": [
+     0.11132054649168557,
+     0.1192892745491328
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 63.474999386758896,
+    "sd": 0.00945370620961726,
+    "min": 63.45912134814924,
+    "max": 63.48417837957171,
+    "t95": [
+     63.46326106010882,
+     63.48673771340897
+    ]
+   },
+   "test.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.525000613241103,
+    "sd": 0.00945370620961726,
+    "min": -0.5408786518507611,
+    "max": -0.5158216204282908,
+    "t95": [
+     -0.5367389398911802,
+     -0.5132622865910259
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 63.53352393617022,
+    "sd": 0.006386260022676344,
+    "min": 63.5228945035461,
+    "max": 63.540137411347516,
+    "t95": [
+     63.52559434701689,
+     63.54145352532355
+    ]
+   },
+   "selection.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.4664760638297878,
+    "sd": 0.006386260022676344,
+    "min": -0.4771054964539019,
+    "max": -0.4598625886524843,
+    "t95": [
+     -0.474405652983113,
+     -0.4585464746764626
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.004830498008126587,
+    "sd": 8.435887011721746e-06,
+    "min": 0.004818484605950618,
+    "max": 0.004836651461787637,
+    "t95": [
+     0.004820023470931217,
+     0.004840972545321957
+    ]
+   },
+   "test.fvu_total.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -7.781285904821626e-06,
+    "sd": 1.1897304964410124e-05,
+    "min": -2.053699353618977e-05,
+    "max": 4.421238366897513e-06,
+    "t95": [
+     -2.255374115478062e-05,
+     6.991169345137368e-06
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.13869201013422763,
+    "sd": 0.000216795904641433,
+    "min": 0.13837671114041775,
+    "max": 0.13887467171386442,
+    "t95": [
+     0.13842282246447635,
+     0.13896119780397892
+    ]
+   },
+   "test.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0007154155811794682,
+    "sd": 0.0003370081785733226,
+    "min": -0.0011181807334182392,
+    "max": -0.0004198835131487555,
+    "t95": [
+     -0.0011338665036141888,
+     -0.00029696465874474754
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.14180760354141989,
+    "sd": 0.0002684960277425263,
+    "min": 0.14139829406891358,
+    "max": 0.14208584897671905,
+    "t95": [
+     0.14147422169011126,
+     0.1421409853927285
+    ]
+   },
+   "selection.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0008286492437638515,
+    "sd": 0.0004633801735084115,
+    "min": -0.0014166361114817672,
+    "max": -0.0003439341875161872,
+    "t95": [
+     -0.001404011722690661,
+     -0.00025328676483704225
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 1.9778030700556663e-05,
+    "sd": 7.967384886770692e-07,
+    "min": 1.8905763226357107e-05,
+    "max": 2.0669015954923558e-05,
+    "t95": [
+     1.8788749203183068e-05,
+     2.0767312197930258e-05
+    ]
+   },
+   "test.fvu_pc1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 1.867663368952406e-05,
+    "sd": 9.691054239136422e-07,
+    "min": 1.721567595592936e-05,
+    "max": 1.9674241877477542e-05,
+    "t95": [
+     1.747333037418649e-05,
+     1.987993700486163e-05
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653087020115766,
+    "sd": 5.308943491119632e-06,
+    "min": 0.9652992050847488,
+    "max": 0.9653110762432836,
+    "t95": [
+     0.9653021100875752,
+     0.965315293935578
+    ]
+   },
+   "test.w1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 7.122695120909129e-06,
+    "sd": 6.502101313256527e-06,
+    "min": 0.0,
+    "max": 1.1871158534848547e-05,
+    "t95": [
+     -9.507299924349315e-07,
+     1.5196120234253189e-05
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3035.4,
+    "sd": 2.9664793948382653,
+    "min": 3032.0,
+    "max": 3039.0,
+    "t95": [
+     3031.716629334016,
+     3039.083370665984
+    ]
+   },
+   "alive_frozen_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 7.2,
+    "sd": 21.64948036327893,
+    "min": -11.0,
+    "max": 38.0,
+    "t95": [
+     -19.68138034690285,
+     34.08138034690285
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3035.0,
+    "sd": 3.391164991562634,
+    "min": 3032.0,
+    "max": 3040.0,
+    "t95": [
+     3030.7893125180076,
+     3039.2106874819924
+    ]
+   },
+   "alive_fresh_bridge_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 7.0,
+    "sd": 22.079402165819616,
+    "min": -12.0,
+    "max": 39.0,
+    "t95": [
+     -20.415198771160487,
+     34.41519877116049
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 63.443400299261654,
+    "sd": 0.010156803412489236,
+    "min": 63.42706110334339,
+    "max": 63.45197095690141,
+    "t95": [
+     63.43078896212754,
+     63.45601163639577
+    ]
+   },
+   "grid_evaluator.test_l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.5565997007383416,
+    "sd": 0.010156803412489238,
+    "min": -0.5729388966566091,
+    "max": -0.5480290430985875,
+    "t95": [
+     -0.5692110378724626,
+     -0.5439883636042206
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.13841657337643815,
+    "sd": 0.00021278122534599273,
+    "min": 0.13810645943610256,
+    "max": 0.13859454308382857,
+    "t95": [
+     0.13815237058943233,
+     0.13868077616344396
+    ]
+   },
+   "grid_evaluator.test_fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0007038601427773128,
+    "sd": 0.00033514726056096635,
+    "min": -0.0011105249287999275,
+    "max": -0.0004071869642641446,
+    "t95": [
+     -0.0011200004303124817,
+     -0.00028771985524214384
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 296.67148669961347,
+    "sd": 1.1337135086844952,
+    "min": 295.29474362878585,
+    "max": 298.3445074300696,
+    "t95": [
+     295.2637954516027,
+     298.07917794762426
+    ]
+   },
+   "grid_evaluator.test_mean_l1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -225.54899797946305,
+    "sd": 3.1930212379737997,
+    "min": -229.00169540151495,
+    "max": -220.70431469606513,
+    "t95": [
+     -229.51365749615513,
+     -221.58433846277097
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.9489999999999998,
+   "test.bridge_summary_dictwide_sharing": 0.5734831830080747,
+   "selection.bridge_summary_pairwise_sharing": 0.952,
+   "selection.bridge_summary_dictwide_sharing": 0.5734831830080747
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.0,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.658,
+    "sd": 0.04221966366516908,
+    "min": 0.61,
+    "max": 0.705,
+    "t95": [
+     0.6055773636106879,
+     0.7104226363893121
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.6910000000000001,
+    "sd": 0.039274673773310946,
+    "min": 0.635,
+    "max": 0.735,
+    "t95": [
+     0.6422340515344822,
+     0.7397659484655179
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.4426920572916667,
+    "sd": 0.0027909970975106262,
+    "min": 0.4402669270833333,
+    "max": 0.4461263020833333,
+    "t95": [
+     0.4392265766765966,
+     0.44615753790673685
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 63.83990727794539,
+    "sd": 0.015490513932104185,
+    "min": 63.82327617926264,
+    "max": 63.85582701694998,
+    "t95": [
+     63.820673264482224,
+     63.85914129140856
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 63.851409574468086,
+    "sd": 0.01383354805997783,
+    "min": 63.835660460992905,
+    "max": 63.86797429078014,
+    "t95": [
+     63.83423295587459,
+     63.86858619306158
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.0047387331048716575,
+    "sd": 7.186039025124746e-06,
+    "min": 0.0047314632827017145,
+    "max": 0.004749111283956976,
+    "t95": [
+     0.004729810458924473,
+     0.004747655750818842
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.1366553979821304,
+    "sd": 0.00020819614710653627,
+    "min": 0.1363873598554853,
+    "max": 0.13689713291561262,
+    "t95": [
+     0.13639688832170346,
+     0.13691390764255731
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.13970905975455847,
+    "sd": 0.00023989765799145615,
+    "min": 0.13945134591581862,
+    "max": 0.1400319463979837,
+    "t95": [
+     0.13941118746937708,
+     0.14000693203973985
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 3.0259029161811616e-07,
+    "sd": 7.332204406886473e-09,
+    "min": 2.9389796092182825e-07,
+    "max": 3.101037460331683e-07,
+    "t95": [
+     2.9348615737861425e-07,
+     3.1169442585761807e-07
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653255890959522,
+    "sd": 5.261198046986044e-05,
+    "min": 0.9652992050847488,
+    "max": 0.9654192539822315,
+    "t95": [
+     0.9652602626939286,
+     0.9653909154979758
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 63.84498000834007,
+    "sd": 0.014721755623767598,
+    "min": 63.82867270095911,
+    "max": 63.85798562562857,
+    "t95": [
+     63.826700534391684,
+     63.86325948228846
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.13636238777265103,
+    "sd": 0.00020785847383636812,
+    "min": 0.13609140839955916,
+    "max": 0.13660819624279866,
+    "t95": [
+     0.13610429738896684,
+     0.1366204781563352
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 280.5823381573477,
+    "sd": 0.3683531716284795,
+    "min": 280.01124963671344,
+    "max": 280.99918918653674,
+    "t95": [
+     280.1249672855124,
+     281.039709029183
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.658,
+   "test.bridge_summary_dictwide_sharing": 0.4426920572916667,
+   "selection.bridge_summary_pairwise_sharing": 0.6910000000000001,
+   "selection.bridge_summary_dictwide_sharing": 0.4426920572916667
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.03,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.8220000000000001,
+    "sd": 0.03420526275297412,
+    "min": 0.775,
+    "max": 0.865,
+    "t95": [
+     0.7795285566905319,
+     0.8644714433094682
+    ]
+   },
+   "test.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.164,
+    "sd": 0.0354259791678367,
+    "min": 0.125,
+    "max": 0.20499999999999996,
+    "t95": [
+     0.12001283706618054,
+     0.20798716293381947
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.829,
+    "sd": 0.039591665789658295,
+    "min": 0.76,
+    "max": 0.86,
+    "t95": [
+     0.7798404539600655,
+     0.8781595460399344
+    ]
+   },
+   "selection.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.13799999999999998,
+    "sd": 0.03327912258458746,
+    "min": 0.09999999999999998,
+    "max": 0.18999999999999995,
+    "t95": [
+     0.09667851159490785,
+     0.1793214884050921
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.47119140625,
+    "sd": 0.003595955581914996,
+    "min": 0.468017578125,
+    "max": 0.4772135416666667,
+    "t95": [
+     0.46672643766479627,
+     0.47565637483520373
+    ]
+   },
+   "test.dictwide_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.028499348958333347,
+    "sd": 0.0035202937267555484,
+    "min": 0.02278645833333337,
+    "max": 0.031901041666666685,
+    "t95": [
+     0.024128326974718416,
+     0.03287037094194828
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 63.76607304928005,
+    "sd": 0.025451812296301963,
+    "min": 63.73678465425467,
+    "max": 63.79896730198445,
+    "t95": [
+     63.73447045026269,
+     63.797675648297414
+    ]
+   },
+   "test.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.07383422866534203,
+    "sd": 0.01743658523823632,
+    "min": -0.10336792013147544,
+    "max": -0.056859714965533215,
+    "t95": [
+     -0.09548460880727132,
+     -0.05218384852341275
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 63.78458776595744,
+    "sd": 0.02197808731385038,
+    "min": 63.76292109929078,
+    "max": 63.81407358156029,
+    "t95": [
+     63.757298366190454,
+     63.811877165724425
+    ]
+   },
+   "selection.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0668218085106389,
+    "sd": 0.01305103916814682,
+    "min": -0.0885416666666714,
+    "max": -0.05390070921985313,
+    "t95": [
+     -0.08302681398487405,
+     -0.050616803036403764
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.004734198503301498,
+    "sd": 4.649940085732743e-06,
+    "min": 0.004728528152170581,
+    "max": 0.0047388640513024,
+    "t95": [
+     0.004728424840103239,
+     0.004739972166499757
+    ]
+   },
+   "test.fvu_total.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -4.534601570158926e-06,
+    "sd": 6.444195833749305e-06,
+    "min": -1.0247232654576714e-05,
+    "max": 6.387096939773976e-06,
+    "t95": [
+     -1.2536127534300144e-05,
+     3.466924393982292e-06
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.13643911909174208,
+    "sd": 0.00010961988287925787,
+    "min": 0.13630359057192212,
+    "max": 0.1365548130624503,
+    "t95": [
+     0.1363030080296836,
+     0.13657523015380058
+    ]
+   },
+   "test.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0002162788903882995,
+    "sd": 0.00010149134803201863,
+    "min": -0.00034231985316232616,
+    "max": -8.376928356318425e-05,
+    "t95": [
+     -0.0003422970433688257,
+     -9.026073740777329e-05
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.13951367428174538,
+    "sd": 0.00016065972640266283,
+    "min": 0.13930764275994106,
+    "max": 0.13974262961091471,
+    "t95": [
+     0.13931418888350994,
+     0.13971315967998083
+    ]
+   },
+   "selection.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.00019538547281308105,
+    "sd": 9.353099305230782e-05,
+    "min": -0.00028931678706897723,
+    "max": -6.395957180899137e-05,
+    "t95": [
+     -0.00031151953960237825,
+     -7.925140602378383e-05
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 3.107333919135246e-07,
+    "sd": 4.317048184333988e-09,
+    "min": 3.0372187975461706e-07,
+    "max": 3.143984064719119e-07,
+    "t95": [
+     3.0537306860452614e-07,
+     3.1609371522252307e-07
+    ]
+   },
+   "test.fvu_pc1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 8.143100295408383e-09,
+    "sd": 4.402774439945633e-09,
+    "min": 4.086220237676894e-09,
+    "max": 1.5004878060644834e-08,
+    "t95": [
+     2.676333781116139e-09,
+     1.3609866809700626e-08
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653039535481627,
+    "sd": 6.5021013132565264e-06,
+    "min": 0.9652992050847488,
+    "max": 0.9653110762432836,
+    "t95": [
+     0.9652958801230493,
+     0.965312026973276
+    ]
+   },
+   "test.w1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -2.1635547789577993e-05,
+    "sd": 5.5888340378213094e-05,
+    "min": -0.0001200488974827385,
+    "max": 1.1871158534848547e-05,
+    "t95": [
+     -9.103008795656307e-05,
+     4.775899237740709e-05
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "alive_frozen_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.0,
+    "sd": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "t95": [
+     0.0,
+     0.0
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "alive_fresh_bridge_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.0,
+    "sd": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "t95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 63.76896509431648,
+    "sd": 0.024677703381458017,
+    "min": 63.73905364633159,
+    "max": 63.799617337552434,
+    "t95": [
+     63.73832367846937,
+     63.799606510163585
+    ]
+   },
+   "grid_evaluator.test_l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.07601491402359813,
+    "sd": 0.020501093772980036,
+    "min": -0.11152402678636975,
+    "max": -0.0583682880761387,
+    "t95": [
+     -0.10147038408530686,
+     -0.0505594439618894
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.13614894028975716,
+    "sd": 0.00011034450959858906,
+    "min": 0.13601097013681995,
+    "max": 0.13626247082049997,
+    "t95": [
+     0.13601192948478913,
+     0.1362859510947252
+    ]
+   },
+   "grid_evaluator.test_fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.00021344748289389703,
+    "sd": 0.00010120490480264217,
+    "min": -0.0003457254222986872,
+    "max": -8.043826273920751e-05,
+    "t95": [
+     -0.00033910996962897724,
+     -8.77849961588168e-05
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 272.07255636784765,
+    "sd": 0.43105395972800475,
+    "min": 271.4675786638468,
+    "max": 272.45108156416336,
+    "t95": [
+     271.5373321847702,
+     272.6077805509251
+    ]
+   },
+   "grid_evaluator.test_mean_l1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -8.509781789500039,
+    "sd": 0.15046009625399248,
+    "min": -8.700757038641996,
+    "max": -8.286454676661435,
+    "t95": [
+     -8.696602674184895,
+     -8.322960904815183
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.8220000000000001,
+   "test.bridge_summary_dictwide_sharing": 0.47119140625,
+   "selection.bridge_summary_pairwise_sharing": 0.829,
+   "selection.bridge_summary_dictwide_sharing": 0.47119140625
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.1,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.9189999999999999,
+    "sd": 0.026551836094703494,
+    "min": 0.88,
+    "max": 0.955,
+    "t95": [
+     0.8860315410349993,
+     0.9519684589650006
+    ]
+   },
+   "test.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.261,
+    "sd": 0.05029910535983713,
+    "min": 0.21500000000000008,
+    "max": 0.31999999999999995,
+    "t95": [
+     0.19854541173283213,
+     0.3234545882671679
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.9139999999999999,
+    "sd": 0.03542597916783668,
+    "min": 0.865,
+    "max": 0.95,
+    "t95": [
+     0.8700128370661805,
+     0.9579871629338194
+    ]
+   },
+   "selection.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.223,
+    "sd": 0.03633180424916989,
+    "min": 0.16000000000000003,
+    "max": 0.25,
+    "t95": [
+     0.1778881066740191,
+     0.2681118933259809
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.5112141927083333,
+    "sd": 0.0024382846797348645,
+    "min": 0.50830078125,
+    "max": 0.5145670572916666,
+    "t95": [
+     0.5081866624041348,
+     0.5142417230125319
+    ]
+   },
+   "test.dictwide_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.06852213541666667,
+    "sd": 0.002260407619194544,
+    "min": 0.06526692708333331,
+    "max": 0.07153320312500006,
+    "t95": [
+     0.06571546865464732,
+     0.07132880217868602
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 63.62098756347045,
+    "sd": 0.023590059039763005,
+    "min": 63.59462310201879,
+    "max": 63.64864964309368,
+    "t95": [
+     63.59169663644528,
+     63.65027849049562
+    ]
+   },
+   "test.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.21891971447494285,
+    "sd": 0.01019299172953077,
+    "min": -0.23086074521059174,
+    "max": -0.2061471288051635,
+    "t95": [
+     -0.23157598533948995,
+     -0.20626344361039575
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 63.657526595744685,
+    "sd": 0.020379411770254572,
+    "min": 63.63339982269503,
+    "max": 63.680053191489364,
+    "t95": [
+     63.63222221384499,
+     63.68283097764438
+    ]
+   },
+   "selection.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.19388297872340415,
+    "sd": 0.009250083116641576,
+    "min": -0.2065602836879492,
+    "max": -0.18193705673758842,
+    "t95": [
+     -0.20536847390973048,
+     -0.18239748353707783
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.004730487335253784,
+    "sd": 4.004935422188844e-06,
+    "min": 0.004725830977352711,
+    "max": 0.004736603815688451,
+    "t95": [
+     0.004725514551124921,
+     0.004735460119382647
+    ]
+   },
+   "test.fvu_total.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -8.245769617873725e-06,
+    "sd": 4.973034726307168e-06,
+    "min": -1.250746826852566e-05,
+    "max": -1.9678229263263292e-07,
+    "t95": [
+     -1.4420607799346457e-05,
+     -2.070931436400993e-06
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.13633177731861068,
+    "sd": 0.0001292485840710342,
+    "min": 0.13617857618541876,
+    "max": 0.13653610547060466,
+    "t95": [
+     0.13617129400495087,
+     0.1364922606322705
+    ]
+   },
+   "test.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0003236206635197136,
+    "sd": 0.00011092328300453987,
+    "min": -0.00047939475319844216,
+    "max": -0.00020878367006654797,
+    "t95": [
+     -0.0004613501105890185,
+     -0.00018589121645040874
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.13938621999991305,
+    "sd": 0.00011932611969452632,
+    "min": 0.13922324724835386,
+    "max": 0.13955679788425007,
+    "t95": [
+     0.139238057053043,
+     0.13953438294678308
+    ]
+   },
+   "selection.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0003228397546454154,
+    "sd": 0.00015658027073723433,
+    "min": -0.00048289948113561243,
+    "max": -0.00012293342476046853,
+    "t95": [
+     -0.000517259839648838,
+     -0.0001284196696419928
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 3.253523590011948e-07,
+    "sd": 1.000854154162167e-08,
+    "min": 3.102804235479137e-07,
+    "max": 3.378572051716543e-07,
+    "t95": [
+     3.1292511329443637e-07,
+     3.3777960470795325e-07
+    ]
+   },
+   "test.fvu_pc1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 2.2762067383078565e-08,
+    "sd": 6.962195558418714e-09,
+    "min": 1.4603715283151376e-08,
+    "max": 3.0843218404416414e-08,
+    "t95": [
+     1.411735980973588e-08,
+     3.140677495642125e-08
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653039535481627,
+    "sd": 6.5021013132565264e-06,
+    "min": 0.9652992050847488,
+    "max": 0.9653110762432836,
+    "t95": [
+     0.9652958801230493,
+     0.965312026973276
+    ]
+   },
+   "test.w1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -2.1635547789577993e-05,
+    "sd": 5.525436080302848e-05,
+    "min": -0.0001200488974827385,
+    "max": 1.1871158534848547e-05,
+    "t95": [
+     -9.024289834245981e-05,
+     4.697180276330383e-05
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "alive_frozen_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.0,
+    "sd": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "t95": [
+     0.0,
+     0.0
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "alive_fresh_bridge_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.0,
+    "sd": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "t95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 63.60577918414403,
+    "sd": 0.023644165150018395,
+    "min": 63.57131994014767,
+    "max": 63.63675276571737,
+    "t95": [
+     63.57642107550967,
+     63.635137292778396
+    ]
+   },
+   "grid_evaluator.test_l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.23920082419604255,
+    "sd": 0.015469383304363692,
+    "min": -0.2573527608114432,
+    "max": -0.22123285991120412,
+    "t95": [
+     -0.2584086005194854,
+     -0.21999304787259974
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.1360428783633169,
+    "sd": 0.00012967183083768566,
+    "min": 0.13588727108376059,
+    "max": 0.13624633775989137,
+    "t95": [
+     0.13588186951938458,
+     0.13620388720724924
+    ]
+   },
+   "grid_evaluator.test_fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.0003195094093341455,
+    "sd": 0.00010584818682667641,
+    "min": -0.0004640314680451896,
+    "max": -0.00020413731579857486,
+    "t95": [
+     -0.0004509372921919758,
+     -0.00018808152647631522
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 260.97894258673887,
+    "sd": 0.369276539749837,
+    "min": 260.54034472813424,
+    "max": 261.4635965864807,
+    "t95": [
+     260.5204252019502,
+     261.4374599715275
+    ]
+   },
+   "grid_evaluator.test_mean_l1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -19.603395570608814,
+    "sd": 0.38531404084461396,
+    "min": -20.0797461174202,
+    "max": -19.253166633075523,
+    "t95": [
+     -20.081826143127987,
+     -19.12496499808964
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.9189999999999999,
+   "test.bridge_summary_dictwide_sharing": 0.5112141927083333,
+   "selection.bridge_summary_pairwise_sharing": 0.9139999999999999,
+   "selection.bridge_summary_dictwide_sharing": 0.5112141927083333
+  },
+  {
+   "condition": "bypass",
+   "beta": 0.3,
+   "n_seeds": 5,
+   "test.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.9480000000000001,
+    "sd": 0.016046806535881187,
+    "min": 0.925,
+    "max": 0.965,
+    "t95": [
+     0.9280752580382555,
+     0.9679247419617446
+    ]
+   },
+   "test.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.2899999999999999,
+    "sd": 0.0473022198210612,
+    "min": 0.2250000000000001,
+    "max": 0.33999999999999997,
+    "t95": [
+     0.23126653661306762,
+     0.34873346338693223
+    ]
+   },
+   "selection.top50_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.943,
+    "sd": 0.028416544476765622,
+    "min": 0.895,
+    "max": 0.965,
+    "t95": [
+     0.907716199769844,
+     0.9782838002301559
+    ]
+   },
+   "selection.top50_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.25199999999999995,
+    "sd": 0.04994997497496866,
+    "min": 0.18000000000000005,
+    "max": 0.30499999999999994,
+    "t95": [
+     0.18997891436240227,
+     0.3140210856375976
+    ]
+   },
+   "test.dictwide_pairwise_sharing": {
+    "n": 5,
+    "mean": 0.577685546875,
+    "sd": 0.0049720576784173225,
+    "min": 0.5732421875,
+    "max": 0.58544921875,
+    "t95": [
+     0.5715119218587166,
+     0.5838591718912833
+    ]
+   },
+   "test.dictwide_pairwise_sharing.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.13499348958333335,
+    "sd": 0.005438913972662777,
+    "min": 0.13216145833333337,
+    "max": 0.14469401041666669,
+    "t95": [
+     0.12824018591415057,
+     0.14174679325251613
+    ]
+   },
+   "test.l0": {
+    "n": 5,
+    "mean": 63.396693403978716,
+    "sd": 0.0063594255407109146,
+    "min": 63.38900336056124,
+    "max": 63.40654205607477,
+    "t95": [
+     63.38879713423556,
+     63.40458967372187
+    ]
+   },
+   "test.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.44321387396668827,
+    "sd": 0.014973916241136942,
+    "min": -0.4612799568278234,
+    "max": -0.4273063997841433,
+    "t95": [
+     -0.4618064466754267,
+     -0.42462130125794983
+    ]
+   },
+   "selection.l0": {
+    "n": 5,
+    "mean": 63.46171985815603,
+    "sd": 0.004752229935296371,
+    "min": 63.457734929078015,
+    "max": 63.4697030141844,
+    "t95": [
+     63.455819185334185,
+     63.467620530977875
+    ]
+   },
+   "selection.l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.38968971631205707,
+    "sd": 0.012908323519855186,
+    "min": -0.4091755319148902,
+    "max": -0.37788120567375927,
+    "t95": [
+     -0.4057175169038282,
+     -0.37366191572028595
+    ]
+   },
+   "test.fvu_total": {
+    "n": 5,
+    "mean": 0.004740162219390734,
+    "sd": 5.19858031157052e-06,
+    "min": 0.004731544825969414,
+    "max": 0.004745074385195553,
+    "t95": [
+     0.004733707329376086,
+     0.004746617109405382
+    ]
+   },
+   "test.fvu_total.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 1.4291145190763535e-06,
+    "sd": 5.489453341535094e-06,
+    "min": -4.036898761423588e-06,
+    "max": 1.041860451227259e-05,
+    "t95": [
+     -5.386942064927138e-06,
+     8.245171103079845e-06
+    ]
+   },
+   "test.fvu_content": {
+    "n": 5,
+    "mean": 0.13661898341823844,
+    "sd": 0.00014237591074920137,
+    "min": 0.13638904501842028,
+    "max": 0.13677935354168935,
+    "t95": [
+     0.1364422003756497,
+     0.1367957664608272
+    ]
+   },
+   "test.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -3.641456389192332e-05,
+    "sd": 0.00010904552084671658,
+    "min": -0.0001745317701927207,
+    "max": 9.880607008855291e-05,
+    "t95": [
+     -0.00017181246129266962,
+     9.898333350882296e-05
+    ]
+   },
+   "selection.fvu_content": {
+    "n": 5,
+    "mean": 0.13964528718614572,
+    "sd": 0.00015677648340744273,
+    "min": 0.13944209951843248,
+    "max": 0.13981703707673449,
+    "t95": [
+     0.1394506234709337,
+     0.13983995090135773
+    ]
+   },
+   "selection.fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -6.377256841274547e-05,
+    "sd": 0.0001056919532789785,
+    "min": -0.00021490932124920703,
+    "max": 6.611490054922453e-05,
+    "t95": [
+     -0.0001950064616990876,
+     6.746132487359666e-05
+    ]
+   },
+   "test.fvu_pc1": {
+    "n": 5,
+    "mean": 3.603326230684864e-07,
+    "sd": 1.0096163257699481e-08,
+    "min": 3.479878557822479e-07,
+    "max": 3.7259836460942664e-07,
+    "t95": [
+     3.477965806314133e-07,
+     3.728686655055595e-07
+    ]
+   },
+   "test.fvu_pc1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 5.7742331450370215e-08,
+    "sd": 6.6562391231419214e-09,
+    "min": 5.0492490886846464e-08,
+    "max": 6.707868905063902e-08,
+    "t95": [
+     4.9477518967729484e-08,
+     6.600714393301095e-08
+    ]
+   },
+   "test.w1": {
+    "n": 5,
+    "mean": 0.9653063277798697,
+    "sd": 6.5021013132565264e-06,
+    "min": 0.9652992050847488,
+    "max": 0.9653110762432836,
+    "t95": [
+     0.9652982543547564,
+     0.965314401204983
+    ]
+   },
+   "test.w1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -1.9261316082608283e-05,
+    "sd": 5.665376225496713e-05,
+    "min": -0.0001200488974827385,
+    "max": 1.1871158534848547e-05,
+    "t95": [
+     -8.96062530373964e-05,
+     5.108362087217984e-05
+    ]
+   },
+   "alive_frozen_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "alive_frozen_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.0,
+    "sd": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "t95": [
+     0.0,
+     0.0
+    ]
+   },
+   "alive_fresh_bridge_calibration": {
+    "n": 5,
+    "mean": 3072.0,
+    "sd": 0.0,
+    "min": 3072.0,
+    "max": 3072.0,
+    "t95": [
+     3072.0,
+     3072.0
+    ]
+   },
+   "alive_fresh_bridge_calibration.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": 0.0,
+    "sd": 0.0,
+    "min": 0.0,
+    "max": 0.0,
+    "t95": [
+     0.0,
+     0.0
+    ]
+   },
+   "grid_evaluator.test_l0": {
+    "n": 5,
+    "mean": 63.385409767704274,
+    "sd": 0.012593544710228902,
+    "min": 63.36361517894375,
+    "max": 63.39435082296956,
+    "t95": [
+     63.369772816627815,
+     63.401046718780734
+    ]
+   },
+   "grid_evaluator.test_l0.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -0.4595702406358086,
+    "sd": 0.023065109996856088,
+    "min": -0.4943704466848189,
+    "max": -0.43537665268477355,
+    "t95": [
+     -0.48820935733351456,
+     -0.4309311239381026
+    ]
+   },
+   "grid_evaluator.test_fvu_content": {
+    "n": 5,
+    "mean": 0.1363326782780727,
+    "sd": 0.00013954128737271682,
+    "min": 0.136105160538447,
+    "max": 0.13648593041371326,
+    "t95": [
+     0.13615941488527897,
+     0.1365059416708664
+    ]
+   },
+   "grid_evaluator.test_fvu_content.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -2.9709494578367135e-05,
+    "sd": 0.00010700052418336003,
+    "min": -0.00015593132488769812,
+    "max": 0.00010289855714828988,
+    "t95": [
+     -0.00016256819324577675,
+     0.00010314920408904248
+    ]
+   },
+   "grid_evaluator.test_mean_l1": {
+    "n": 5,
+    "mean": 243.65016198631824,
+    "sd": 0.6358601249979765,
+    "min": 242.58757507660144,
+    "max": 244.09302144990664,
+    "t95": [
+     242.8606373612149,
+     244.43968661142156
+    ]
+   },
+   "grid_evaluator.test_mean_l1.paired_delta_vs_beta0": {
+    "n": 5,
+    "mean": -36.93217617102943,
+    "sd": 0.7222053345204531,
+    "min": -37.893847380264305,
+    "max": -35.940297607156936,
+    "t95": [
+     -37.82891253421419,
+     -36.035439807844675
+    ]
+   },
+   "test.bridge_summary_pairwise_sharing": 0.9480000000000001,
+   "test.bridge_summary_dictwide_sharing": 0.577685546875,
+   "selection.bridge_summary_pairwise_sharing": 0.943,
+   "selection.bridge_summary_dictwide_sharing": 0.577685546875
+  }
+ ],
+ "bridge_paired_contrasts_top50_thr07": [
+  {
+   "kind": "beta_effect",
+   "left": [
+    "bypass",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.03
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.13800000000000012,
+   "interval_95_percentile": [
+    0.0949642857142857,
+    0.1971607142857142
+   ],
+   "bootstrap_valid_draws": 999,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.1433333333333333,
+    0.1449999999999999,
+    0.14500000000000013,
+    0.135,
+    0.12166666666666681
+   ],
+   "fixed_initial_index_delta": 0.08100000000000018,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "bypass",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.03
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.1639999999999997,
+   "interval_95_percentile": [
+    0.10000000000000009,
+    0.21760714285714292
+   ],
+   "bootstrap_valid_draws": 997,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.16333333333333333,
+    0.18166666666666653,
+    0.16666666666666685,
+    0.1499999999999999,
+    0.15833333333333333
+   ],
+   "fixed_initial_index_delta": 0.11099999999999988,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "bypass",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.1
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.2230000000000003,
+   "interval_95_percentile": [
+    0.17000000000000015,
+    0.2766904761904762
+   ],
+   "bootstrap_valid_draws": 999,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.21666666666666667,
+    0.2283333333333334,
+    0.21833333333333338,
+    0.2350000000000001,
+    0.21666666666666679
+   ],
+   "fixed_initial_index_delta": 0.16300000000000014,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "bypass",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.1
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.261,
+   "interval_95_percentile": [
+    0.20218253968253966,
+    0.3129642857142858
+   ],
+   "bootstrap_valid_draws": 999,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.25,
+    0.2816666666666666,
+    0.2566666666666668,
+    0.27,
+    0.2466666666666667
+   ],
+   "fixed_initial_index_delta": 0.18899999999999995,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "bypass",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.3
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.2520000000000002,
+   "interval_95_percentile": [
+    0.18216666666666662,
+    0.3200357142857143
+   ],
+   "bootstrap_valid_draws": 1000,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.24666666666666648,
+    0.28333333333333344,
+    0.2300000000000001,
+    0.255,
+    0.24499999999999988
+   ],
+   "fixed_initial_index_delta": 0.19799999999999995,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "bypass",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.3
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.2899999999999999,
+   "interval_95_percentile": [
+    0.21571428571428575,
+    0.35
+   ],
+   "bootstrap_valid_draws": 999,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.2766666666666666,
+    0.31833333333333325,
+    0.27833333333333365,
+    0.29666666666666686,
+    0.2799999999999999
+   ],
+   "fixed_initial_index_delta": 0.20599999999999996,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "standard",
+    0.03
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.11500000000000005,
+   "interval_95_percentile": [
+    0.08,
+    0.16
+   ],
+   "bootstrap_valid_draws": 998,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.10833333333333335,
+    0.10000000000000002,
+    0.11833333333333336,
+    0.11333333333333336,
+    0.13499999999999995
+   ],
+   "fixed_initial_index_delta": 0.000244897959183657,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    0.98,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "standard",
+    0.03
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.08400000000000002,
+   "interval_95_percentile": [
+    0.06284821428571427,
+    0.12250000000000003
+   ],
+   "bootstrap_valid_draws": 1000,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.07500000000000005,
+    0.07000000000000005,
+    0.09000000000000004,
+    0.09000000000000004,
+    0.095
+   ],
+   "fixed_initial_index_delta": 0.0,
+   "fixed_index_alive_survivor_fractions": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "standard",
+    0.1
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.43499999999999994,
+   "interval_95_percentile": [
+    0.38428571428571434,
+    0.51
+   ],
+   "bootstrap_valid_draws": 996,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.44,
+    0.4000000000000001,
+    0.4300000000000001,
+    0.4450000000000001,
+    0.46000000000000013
+   ],
+   "fixed_initial_index_delta": -0.007413314601202842,
+   "fixed_index_alive_survivor_fractions": [
+    0.9,
+    0.98,
+    0.92,
+    0.9,
+    0.96
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "standard",
+    0.1
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.45699999999999996,
+   "interval_95_percentile": [
+    0.39999999999999997,
+    0.5171428571428572
+   ],
+   "bootstrap_valid_draws": 999,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.4550000000000001,
+    0.42333333333333345,
+    0.45666666666666683,
+    0.47000000000000003,
+    0.4799999999999999
+   ],
+   "fixed_initial_index_delta": -0.007861973250601548,
+   "fixed_index_alive_survivor_fractions": [
+    0.9,
+    0.98,
+    0.94,
+    0.92,
+    0.96
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "standard",
+    0.3
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.8879999999999999,
+   "interval_95_percentile": [
+    0.8721944444444444,
+    0.9075
+   ],
+   "bootstrap_valid_draws": 1000,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.8883333333333335,
+    0.8916666666666667,
+    0.8849999999999999,
+    0.8900000000000001,
+    0.8849999999999999
+   ],
+   "fixed_initial_index_delta": 0.09233055669820373,
+   "fixed_index_alive_survivor_fractions": [
+    0.8,
+    0.88,
+    0.68,
+    0.76,
+    0.78
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "beta_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "standard",
+    0.3
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.8850000000000001,
+   "interval_95_percentile": [
+    0.8674642857142856,
+    0.9199999999999999
+   ],
+   "bootstrap_valid_draws": 997,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.8866666666666668,
+    0.8883333333333335,
+    0.8783333333333334,
+    0.8866666666666666,
+    0.8850000000000002
+   ],
+   "fixed_initial_index_delta": 0.09742555859553123,
+   "fixed_index_alive_survivor_fractions": [
+    0.8,
+    0.86,
+    0.68,
+    0.78,
+    0.78
+   ],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.0
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.6269999999999999,
+   "interval_95_percentile": [
+    0.5700000000000001,
+    0.6766666666666666
+   ],
+   "bootstrap_valid_draws": 997,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.6216666666666667,
+    0.6133333333333334,
+    0.645,
+    0.62,
+    0.6349999999999999
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.0
+   ],
+   "right": [
+    "bypass",
+    0.0
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.5940000000000001,
+   "interval_95_percentile": [
+    0.545,
+    0.6499999999999999
+   ],
+   "bootstrap_valid_draws": 998,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.5950000000000001,
+    0.5766666666666668,
+    0.6033333333333332,
+    0.585,
+    0.6099999999999999
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.03
+   ],
+   "right": [
+    "bypass",
+    0.03
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.65,
+   "interval_95_percentile": [
+    0.584388888888889,
+    0.72
+   ],
+   "bootstrap_valid_draws": 999,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.6566666666666666,
+    0.6583333333333332,
+    0.6716666666666667,
+    0.6416666666666666,
+    0.6216666666666668
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.03
+   ],
+   "right": [
+    "bypass",
+    0.03
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.6739999999999998,
+   "interval_95_percentile": [
+    0.6177569444444444,
+    0.7226339285714285
+   ],
+   "bootstrap_valid_draws": 998,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.6833333333333333,
+    0.6883333333333332,
+    0.6799999999999999,
+    0.6449999999999998,
+    0.6733333333333332
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.1
+   ],
+   "right": [
+    "bypass",
+    0.1
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.41500000000000026,
+   "interval_95_percentile": [
+    0.33424107142857157,
+    0.47756250000000006
+   ],
+   "bootstrap_valid_draws": 1000,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    0.3983333333333333,
+    0.44166666666666665,
+    0.43333333333333324,
+    0.4099999999999999,
+    0.3916666666666666
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.1
+   ],
+   "right": [
+    "bypass",
+    0.1
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": 0.39800000000000013,
+   "interval_95_percentile": [
+    0.3275,
+    0.4725446428571428
+   ],
+   "bootstrap_valid_draws": 996,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    0.3899999999999999,
+    0.4349999999999999,
+    0.4033333333333331,
+    0.3849999999999999,
+    0.3766666666666667
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.3
+   ],
+   "right": [
+    "bypass",
+    0.3
+   ],
+   "baseline": "model",
+   "ranking_split": "selection",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": -0.008999999999999786,
+   "interval_95_percentile": [
+    -0.048642857142857154,
+    0.020000000000000018
+   ],
+   "bootstrap_valid_draws": 999,
+   "article_resampled": true,
+   "n_articles": 15,
+   "leave_one_seed_out": [
+    -0.02000000000000035,
+    0.0050000000000001155,
+    -0.009999999999999787,
+    -0.015000000000000124,
+    -0.0050000000000001155
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  },
+  {
+   "kind": "bypass_effect",
+   "left": [
+    "standard",
+    0.3
+   ],
+   "right": [
+    "bypass",
+    0.3
+   ],
+   "baseline": "model",
+   "ranking_split": "test",
+   "top_n": 50,
+   "threshold": 0.7,
+   "delta_pairwise_sharing": -0.001000000000000112,
+   "interval_95_percentile": [
+    -0.04144841269841275,
+    0.020000000000000018
+   ],
+   "bootstrap_valid_draws": 1000,
+   "article_resampled": true,
+   "n_articles": 25,
+   "leave_one_seed_out": [
+    -0.015000000000000124,
+    0.0066666666666664876,
+    0.0033333333333334103,
+    -0.004999999999999782,
+    0.00499999999999956
+   ],
+   "fixed_initial_index_delta": null,
+   "fixed_index_alive_survivor_fractions": [],
+   "fixed_index_note": "Condition on beta-zero indices remaining calibration-alive; this is a selection diagnostic, not a proof of semantic identity."
+  }
+ ]
+}

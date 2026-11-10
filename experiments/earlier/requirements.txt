@@ -1,0 +1,19 @@
+# Pinned to the environment verified working July 2026 (Modal, Python 3.11).
+# Original May 2026 runs used then-current unpinned versions; results were
+# regenerated and verified under these pins.
+torch==2.13.0
+transformers==5.14.1
+datasets>=4.0
+accelerate>=1.0
+numpy>=1.26
+scipy==1.17.1
+tokenizers==0.22.2
+safetensors==0.8.0
+tqdm>=4.66
+modal>=1.0
+
+# Note: newer `datasets` requires the namespaced dataset ID
+# "Salesforce/wikitext" in place of the legacy "wikitext".
+# Model revisions: all models loaded at their default main revision as of
+# May 2026 (EleutherAI/pythia-{160m,1.4b,6.9b}, gpt2, google/gemma-2-{2b,9b},
+# meta-llama/Llama-3.1-{8B,70B}, Qwen/Qwen2.5-7B).

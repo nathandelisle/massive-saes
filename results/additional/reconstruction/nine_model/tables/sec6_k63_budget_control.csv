@@ -1,0 +1,10 @@
+model,condition,k,scalars_per_token,n_seeds,heldout_content_fvu,rel_vs_standard_pct,store_l0_exact,n_alive
+gemma-2-2b,bypass,63,64,3,0.20678,-0.82,62.8,7890
+gemma-2-2b,bypass,64,65,3,0.20597,-1.21,63.77,7928
+gemma-2-2b,standard,64,64,3,0.20849,0.0,63.91,7402
+gpt2,bypass,63,64,5,0.13822,-1.66,62.81,3071
+gpt2,bypass,64,65,5,0.13746,-2.2,63.81,3071
+gpt2,standard,64,64,5,0.14056,0.0,64.0,2979
+pythia-1.4b,bypass,63,64,3,0.22364,-1.23,63.0,7110
+pythia-1.4b,bypass,64,65,3,0.22295,-1.53,64.0,7134
+pythia-1.4b,standard,64,64,3,0.22642,0.0,63.98,6438

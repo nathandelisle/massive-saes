@@ -1,0 +1,261 @@
+{
+ "gate1": {
+  "max_abs": 0.0,
+  "pass_": true,
+  "what": "prefix capture == hidden_states[b+1]"
+ },
+ "gate2": {
+  "identity_max_abs_logit": 0.0,
+  "proj_restore_max_abs_logit_info": 0.0,
+  "tol": 0.026171875,
+  "proj_restore_elements_beyond_rounding_bound": 0,
+  "proj_restore_frac_elements_changed": 8.861728701958782e-07,
+  "pass_": true
+ },
+ "gate3_splice_equals_v3": {
+  "max_abs_logit": 0.0,
+  "pass_": true
+ },
+ "pc1_leakage": {
+  "mean_sq_recon_on_v1_over_mean_sq_coef": 558773.4375,
+  "mode": "standard",
+  "note": "bypass: the SAE output's PC1 component relative to the routed one"
+ },
+ "gate4": {
+  "max_row_support": 64,
+  "k": 64,
+  "l0_mean": 64.0,
+  "n_targets": 539,
+  "pass_": true
+ },
+ "gate5": {
+  "finite": true,
+  "dtype": "torch.float16",
+  "pass_": true
+ },
+ "gate7": {
+  "max_abs": 0.0024302005767822266,
+  "tol": 0.11443148994445801,
+  "noise_floor": 0.002019643783569336,
+  "pass_": true,
+  "features": [
+   {
+    "feature": 323,
+    "engine": 108.37302446365356,
+    "full_forward": 108.37255859375,
+    "full_forward_per_seq": 108.3727605342865,
+    "cls": "dense"
+   },
+   {
+    "feature": 569,
+    "engine": -1.1002578735351562,
+    "full_forward": -1.100714921951294,
+    "full_forward_per_seq": -1.1004164218902588,
+    "cls": "dense"
+   },
+   {
+    "feature": 2077,
+    "engine": -0.07674902677536011,
+    "full_forward": -0.0765860304236412,
+    "full_forward_per_seq": -0.07660636305809021,
+    "cls": "rare"
+   },
+   {
+    "feature": 2078,
+    "engine": 0.03650820255279541,
+    "full_forward": 0.036518871784210205,
+    "full_forward_per_seq": 0.03648841381072998,
+    "cls": "rare"
+   },
+   {
+    "feature": 2079,
+    "engine": -0.05545898526906967,
+    "full_forward": -0.05534329265356064,
+    "full_forward_per_seq": -0.05530363321304321,
+    "cls": "rare"
+   },
+   {
+    "feature": 2101,
+    "engine": -0.06983776390552521,
+    "full_forward": -0.06978261470794678,
+    "full_forward_per_seq": -0.06971663236618042,
+    "cls": "rare"
+   },
+   {
+    "feature": 5122,
+    "engine": 0.1383100375533104,
+    "full_forward": 0.1383754163980484,
+    "full_forward_per_seq": 0.138223048299551,
+    "cls": "random"
+   },
+   {
+    "feature": 5617,
+    "engine": -0.1061662882566452,
+    "full_forward": -0.10501737147569656,
+    "full_forward_per_seq": -0.1053260825574398,
+    "cls": "random"
+   },
+   {
+    "feature": 5676,
+    "engine": 88.52661371231079,
+    "full_forward": 88.52545928955078,
+    "full_forward_per_seq": 88.52604055404663,
+    "cls": "dense"
+   },
+   {
+    "feature": 6636,
+    "engine": 101.49440407752991,
+    "full_forward": 101.49197387695312,
+    "full_forward_per_seq": 101.4939935207367,
+    "cls": "dense"
+   },
+   {
+    "feature": 7316,
+    "engine": -0.07297305390238762,
+    "full_forward": -0.07205837965011597,
+    "full_forward_per_seq": -0.07377750612795353,
+    "cls": "random"
+   },
+   {
+    "feature": 7717,
+    "engine": -0.023020517081022263,
+    "full_forward": -0.02346644178032875,
+    "full_forward_per_seq": -0.022843949496746063,
+    "cls": "random"
+   }
+  ],
+  "dtype": "torch.float32",
+  "precision_of_check": "float32 (upcast for the logic check)",
+  "half_precision_info": {
+   "max_abs": 0.3519767038524151,
+   "noise_floor": 0.44484734535217285,
+   "features": [
+    {
+     "feature": 15,
+     "engine": 0.032814715057611465,
+     "full_forward": -0.006124062463641167,
+     "full_forward_per_seq": 0.05926600843667984,
+     "cls": "rare"
+    },
+    {
+     "feature": 21,
+     "engine": -0.20206378400325775,
+     "full_forward": -0.12934856116771698,
+     "full_forward_per_seq": -0.1525951474905014,
+     "cls": "rare"
+    },
+    {
+     "feature": 323,
+     "engine": 106.61433005332947,
+     "full_forward": 106.3868179321289,
+     "full_forward_per_seq": 106.27412629127502,
+     "cls": "dense"
+    },
+    {
+     "feature": 569,
+     "engine": -1.6380915641784668,
+     "full_forward": -1.8079147338867188,
+     "full_forward_per_seq": -1.7466700077056885,
+     "cls": "dense"
+    },
+    {
+     "feature": 5121,
+     "engine": -1.3688283674418926,
+     "full_forward": -1.0168516635894775,
+     "full_forward_per_seq": -1.3430776000022888,
+     "cls": "random"
+    },
+    {
+     "feature": 5617,
+     "engine": -0.01930813118815422,
+     "full_forward": -0.24930500984191895,
+     "full_forward_per_seq": -0.31576745957136154,
+     "cls": "random"
+    },
+    {
+     "feature": 5676,
+     "engine": 88.34066200256348,
+     "full_forward": 88.2550048828125,
+     "full_forward_per_seq": 88.21794843673706,
+     "cls": "dense"
+    },
+    {
+     "feature": 6636,
+     "engine": 101.61822926998138,
+     "full_forward": 101.52616119384766,
+     "full_forward_per_seq": 101.08131384849548,
+     "cls": "dense"
+    },
+    {
+     "feature": 7316,
+     "engine": -0.1590654905885458,
+     "full_forward": -0.18380209803581238,
+     "full_forward_per_seq": -0.07312623038887978,
+     "cls": "random"
+    },
+    {
+     "feature": 7717,
+     "engine": 0.05489020049571991,
+     "full_forward": -0.06435637921094894,
+     "full_forward_per_seq": -0.010096564888954163,
+     "cls": "random"
+    },
+    {
+     "feature": 8185,
+     "engine": -0.024524688720703125,
+     "full_forward": -0.06963682174682617,
+     "full_forward_per_seq": -0.04165840148925781,
+     "cls": "rare"
+    },
+    {
+     "feature": 8190,
+     "engine": -0.07264361530542374,
+     "full_forward": -0.07169882208108902,
+     "full_forward_per_seq": -0.045668214559555054,
+     "cls": "rare"
+    }
+   ]
+  }
+ },
+ "all_hard_pass": true,
+ "gate9": {
+  "fd": {
+   "checks": [
+    {
+     "pos": 111,
+     "feature": 3923,
+     "autograd": -0.010906126350164413,
+     "finite_diff": -0.88043212890625
+    },
+    {
+     "pos": 123,
+     "feature": 242,
+     "autograd": -0.016761839389801025,
+     "finite_diff": 0.262451171875
+    },
+    {
+     "pos": 53,
+     "feature": 7645,
+     "autograd": 0.02499740943312645,
+     "finite_diff": -3.66058349609375
+    }
+   ],
+   "max_rel": 1.0638665061773256,
+   "pass_": false,
+   "note": "loose tolerance: half-precision suffix, central difference eps=0.01"
+  },
+  "ig_convergence": [
+   {
+    "steps": 16,
+    "completeness_rel_error": 0.008018381938352184,
+    "top50_overlap_prev": null
+   },
+   {
+    "steps": 32,
+    "completeness_rel_error": 0.0001723707747944588,
+    "top50_overlap_prev": 0.98
+   }
+  ],
+  "ig_converged": true
+ }
+}

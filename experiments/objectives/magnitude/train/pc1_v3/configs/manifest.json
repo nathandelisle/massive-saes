@@ -1,0 +1,79 @@
+{
+  "protocol_source": "arXiv v2 Appendix G (v3/common/registry.py is the single source of truth)",
+  "run_order": ["a5", "a3", "a1", "a4", "a2", "b1", "b2", "b3", "c1", "c2", "r3", "r4", "r5", "figures"],
+  "gate_0": [
+    "capture-indexing parity vs old repo core/final.py on ~1k pythia-1.4b activations",
+    "(42,137) pythia-1.4b topk std+bypass reproduces v2: exp_a5 --models pythia-1.4b --seeds 42 137",
+    "relu_l1 calibration lands L0 in 59-64 before its 5-seed cells launch"
+  ],
+  "experiments": {
+    "a1": {"script": "scripts/exp_a1_patching.py", "status": "new", "closes": "s2Py activation-patching request",
+           "flags": ["--task {ioi,agreement,both}", "--model", "--n-pairs", "--topk", "--device"],
+           "canonical": "--task both", "depends_on": ["a5"], "gpu_h": [3, 6]},
+    "a2": {"script": "scripts/exp_a2_autointerp.py", "status": "canonize+extend", "closes": "one-model/one-seed/one-judge objection",
+           "flags": ["--models", "--pythia-layers", "--seeds", "--judge", "--judge2", "--judge-effort {low,medium,high}",
+                     "--no-structured", "--context-split {train,validation}", "--negatives {random,hard,mixed}",
+                     "--control {none,shuffled}", "--context-tokens", "--max-api-calls", "--dry-run", "--force", "--device"],
+           "canonical": "--context-split validation --control shuffled --judge2 hf:meta-llama/Llama-3.1-8B-Instruct --max-api-calls 20000",
+           "reproduce_rebuttal": "--models pythia-1.4b --pythia-layers 12 --seeds 42 --context-split train --negatives random --control none",
+           "depends_on": ["a5"], "gpu_h": [5, 10], "api_usd": [30, 90],
+           "requires_env": ["ANTHROPIC_API_KEY", "HF_TOKEN"]},
+    "a3": {"script": "scripts/exp_a3_seed_upgrade.py", "status": "extend", "closes": "two-seed cells -> five seeds",
+           "flags": ["--cells", "--eval-seqs", "--topk", "--l1-coef", "--device"],
+           "canonical": "", "depends_on": ["a5"], "gpu_h": [40, 60]},
+    "a4": {"script": "scripts/exp_a4_identifiability_suite.py", "status": "canonize+fix", "closes": "in-situ degeneracy evidence; curvature pairing bug",
+           "flags": ["--models", "--parts {loss,refit,curvature}", "--refit-steps", "--eps", "--device"],
+           "canonical": "", "depends_on": ["a5"], "gpu_h": [2, 4]},
+    "a5": {"script": "scripts/exp_a5_metric_battery.py", "status": "extend", "closes": "metric-dependence objection at full breadth",
+           "flags": ["--models", "--seeds", "--include-70b", "--metrics", "--eval-seqs", "--topk", "--device"],
+           "canonical": "", "depends_on": [], "gpu_h": [60, 90],
+           "note": "run FIRST: trains/caches every TopK SAE and emits the per-feature npz a2 reads"},
+    "b1": {"script": "scripts/exp_b1_architecture_law.py", "status": "new", "closes": "objective-symmetry law (registered predictions)",
+           "flags": ["--models", "--archs", "--eval-seqs", "--topk", "--device"],
+           "canonical": "--models pythia-1.4b", "depends_on": [], "gpu_h": [25, 35]},
+    "b2": {"script": "scripts/exp_b2_l1_phase.py", "status": "new", "closes": "causal knob: magnitude penalty phase transition",
+           "flags": ["--model", "--betas", "--lambdas", "--eval-seqs", "--topk", "--device"],
+           "canonical": "", "depends_on": ["b1"], "gpu_h": [20, 30],
+           "note": "takes --model (singular), unlike a5/b1/c2/r3/r4/r5 which take --models"},
+    "b3": {"script": "scripts/exp_b3_public_sae_audit.py", "status": "new", "closes": "shipped-artifact stakes (Gemma Scope)",
+           "flags": ["--repo", "--layer", "--width", "--l0-dirs", "--extra-repos", "--eval-seqs", "--device"],
+           "canonical": "", "depends_on": [], "gpu_h": [3, 8], "requires_env": ["HF_TOKEN"]},
+    "c1": {"script": "scripts/exp_c1_vision.py", "status": "extend", "closes": "cross-modality generality + FVU confound",
+           "flags": ["--backbones", "--device"],
+           "canonical": "", "depends_on": [], "gpu_h": [6, 10],
+           "note": "takes --backbones, not --models; frgfm/imagenette is a SCRIPT dataset (needs datasets<3)"},
+    "c2": {"script": "scripts/exp_c2_fvu_decomposition.py", "status": "new", "closes": "second confounded metric across LMs",
+           "flags": ["--models", "--include-70b", "--seed", "--device"],
+           "canonical": "", "depends_on": ["a5"], "gpu_h": [1, 2]},
+    "r3": {"script": "scripts/exp_r3_sparse_probing.py", "status": "canonize", "closes": "downstream-utility parity",
+           "flags": ["--models", "--tasks", "--device"],
+           "canonical": "", "depends_on": ["a5"], "gpu_h": [1, 2]},
+    "r4": {"script": "scripts/exp_r4_pc1_probes.py", "status": "canonize", "closes": "PC1 content probes vs random floor",
+           "flags": ["--models", "--device"],
+           "canonical": "", "depends_on": [], "gpu_h": [1, 3]},
+    "r5": {"script": "scripts/exp_r5_delete_vs_bypass.py", "status": "canonize", "closes": "Mu et al. delete-vs-bypass conflation",
+           "flags": ["--models", "--include-70b", "--eval-seqs", "--device"],
+           "canonical": "", "depends_on": ["a5"], "gpu_h": [1, 3]}
+  },
+  "tools": {
+    "pc1audit": {"script": "scripts/tool_pc1audit.py", "status": "new (community artifact)",
+                 "flags": ["--model (required)", "--layer", "--sae", "--sae-npz", "--sae2", "--sae2-npz",
+                           "--uncentered", "--bypass", "--importance", "--topk", "--eval-seqs", "--device"]},
+    "figures": {"script": "scripts/make_figures.py", "status": "-", "flags": []}
+  },
+  "tiers": {
+    "a": {"script": "aws/run_tier_a.sh", "experiments": ["a5", "a3", "a1", "a4", "a2"]},
+    "b": {"script": "aws/run_tier_b.sh", "experiments": ["b1", "b2", "b3"]},
+    "c": {"script": "aws/run_tier_c.sh", "experiments": ["c1", "c2", "r3", "r4", "r5", "figures"]}
+  },
+  "skipped": [
+    "matryoshka (conditional on b1)",
+    "llama-70b new rows (cost-gated, --include-70b)",
+    "human-rater auto-interp (not scriptable; a2 per-feature JSON is in ratable form)",
+    "public seed-pair audit (checkpoint availability unverified; --extra-repos plumbed)"
+  ],
+  "verify_before_headline": [
+    "Gemma Scope npz layout / hub file paths (exp_b3)",
+    "JumpReLU STE kernel + Gated aux-loss vs reference implementations (v3/common/saes.py)"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+ "gates.json": {
+  "kind": "gates",
+  "protocol": "2fbc3872543dfe37",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T04:31:56Z"
+ },
+ "chunks_rank": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T04:32:05Z"
+ },
+ "rank_zero.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T01:02:51Z"
+ },
+ "plan.json": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T01:02:51Z"
+ },
+ "rank_grad.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T01:12:12Z"
+ },
+ "resample_universe.npy": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T01:12:13Z"
+ },
+ "rank_sp.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T09:51:30Z"
+ },
+ "rank_mg.npz": {
+  "kind": "imp",
+  "protocol": "bfdb828aa4f86e50",
+  "code": "f18e8081a9c8b2dd",
+  "unpinned": false,
+  "utc": "2026-10-07T23:12:20Z"
+ },
+ "rank_st.npz": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T07:09:05Z"
+ },
+ "rank_mean.npz": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T08:50:31Z"
+ },
+ "chunks_valid": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T08:50:33Z"
+ },
+ "valid_zero.npz": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T09:26:07Z"
+ },
+ "valid_grad.npz": {
+  "kind": "imp",
+  "protocol": "86bd3830330c1078",
+  "code": "f9955145f6762e83",
+  "unpinned": false,
+  "utc": "2026-10-08T09:29:27Z"
+ }
+}

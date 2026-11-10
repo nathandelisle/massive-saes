@@ -1,0 +1,7 @@
+# Install CUDA-enabled torch in the AWS launcher/environment first.
+numpy>=1.24,<3
+scipy>=1.10
+transformers>=4.45,<5
+safetensors
+datasets>=2.20
+boto3

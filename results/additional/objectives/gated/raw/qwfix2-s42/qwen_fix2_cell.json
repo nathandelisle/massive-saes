@@ -1,0 +1,158 @@
+{
+ "role": "fix2_cell",
+ "arch": "gated_lr",
+ "coef": 5.64369,
+ "seeds": [
+  42,
+  137,
+  0
+ ],
+ "cell": {
+  "top50_mean": 0.12000000000000001,
+  "top50_std": 0.020000000000000004,
+  "dictwide_mean": 0.01286509040333797,
+  "dictwide_std": 0.0003477051460361617,
+  "dense_importance_share": 0.40491941223753786,
+  "dense_importance_share_signed": 0.40489606883179313,
+  "dense_importance_denominator": 125.76429827311546,
+  "dense_importance_n_evaluated": 1500,
+  "l0_measured": [
+   282.83038330078125,
+   410.98114013671875,
+   515.067138671875
+  ],
+  "l0_measured_mean": 402.9595540364583,
+  "l0_train_log_stale": [
+   328.652099609375,
+   480.7470703125,
+   355.772216796875
+  ],
+  "fvu": 0.0005866957944817841,
+  "l0_matched": false,
+  "top50_dense_frac": 0.46,
+  "top50_shared_dense": 0.043478260869565216,
+  "top50_shared_content": 0.18518518518518517,
+  "top50_dce_max": 11.902931805856833,
+  "top50_dce_min": 0.15502389506507575,
+  "dce_p99_over_median": 4190.138059154948,
+  "n_cand": 1500,
+  "n_screened": 1500,
+  "screen": 1500,
+  "n_alive": 2876,
+  "jumprelu_testability": null
+ },
+ "per_seed": [
+  {
+   "seed": 42,
+   "l0_exact": 265.65014,
+   "rows": 100000,
+   "n_alive": 2848,
+   "n_never_fired": 10446,
+   "fvu_total": 0.0012106393347728456,
+   "fvu_content": 0.9883622102313308,
+   "w1_rows": 0.9988292483727843,
+   "heldout_l0_exact": 262.96133,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2859,
+   "heldout_n_never_fired": 10312,
+   "heldout_fvu_total": 0.001186927565523729,
+   "heldout_fvu_content": 1.0122808957500837,
+   "heldout_w1_rows": 0.998879449100339,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 2431.1533203125,
+     "fvu": 0.0005828454741276801,
+     "l0": 532.7314453125
+    },
+    {
+     "step": 18000,
+     "mse": 2523.03466796875,
+     "fvu": 0.0006526992074213922,
+     "l0": 308.66845703125
+    },
+    {
+     "step": 19000,
+     "mse": 2560.646484375,
+     "fvu": 0.0005866957944817841,
+     "l0": 328.652099609375
+    }
+   ]
+  },
+  {
+   "seed": 137,
+   "l0_exact": 385.92502,
+   "rows": 100000,
+   "n_alive": 2719,
+   "n_never_fired": 10508,
+   "fvu_total": 0.0006660288455436959,
+   "fvu_content": 0.5140926308898071,
+   "w1_rows": 0.9988292483727843,
+   "heldout_l0_exact": 384.140635,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2720,
+   "heldout_n_never_fired": 10385,
+   "heldout_fvu_total": 0.0006480776755599946,
+   "heldout_fvu_content": 0.5211964639655622,
+   "heldout_w1_rows": 0.998879449100339,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 7649.158203125,
+     "fvu": 0.0019565022084861994,
+     "l0": 498.300537109375
+    },
+    {
+     "step": 18000,
+     "mse": 2867.89990234375,
+     "fvu": 0.0007669256301596761,
+     "l0": 410.149169921875
+    },
+    {
+     "step": 19000,
+     "mse": 2778.2822265625,
+     "fvu": 0.0007392711704596877,
+     "l0": 480.7470703125
+    }
+   ]
+  },
+  {
+   "seed": 0,
+   "l0_exact": 483.47062,
+   "rows": 100000,
+   "n_alive": 2943,
+   "n_never_fired": 10282,
+   "fvu_total": 0.000654820142925973,
+   "fvu_content": 0.5216202613160363,
+   "w1_rows": 0.9988292483727843,
+   "heldout_l0_exact": 480.14265,
+   "heldout_rows": 200000,
+   "heldout_n_alive": 2899,
+   "heldout_n_never_fired": 10180,
+   "heldout_fvu_total": 0.0006385317350426141,
+   "heldout_fvu_content": 0.531190847255252,
+   "heldout_w1_rows": 0.998879449100339,
+   "train_log_tail": [
+    {
+     "step": 17000,
+     "mse": 2882.90576171875,
+     "fvu": 0.0007361168973147869,
+     "l0": 435.341552734375
+    },
+    {
+     "step": 18000,
+     "mse": 3120.546875,
+     "fvu": 0.0006892030360177159,
+     "l0": 384.044921875
+    },
+    {
+     "step": 19000,
+     "mse": 2634.53662109375,
+     "fvu": 0.0006490802043117583,
+     "l0": 355.772216796875
+    }
+   ]
+  }
+ ],
+ "siblings_trained_here": []
+}

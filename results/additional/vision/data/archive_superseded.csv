@@ -1,0 +1,5 @@
+archived_file,model,site,quantity,archived_value,corrected_value,cause
+vit_sae/registers_only_results.json,dinov2-with-registers-base,hidden_states[9],max patch norm / median,10.745639749861716,1.71373872967536,"archived h[:, 1:] kept the 4 learned register tokens in the patch population"
+vit_sae/registers_only_results.json,dinov2-with-registers-base,hidden_states[9],fraction of patches > 3x median,0.003846153849735856,0.0,"archived h[:, 1:] kept the 4 learned register tokens in the patch population"
+vit_sae/registers_only_results.json,dinov2-with-registers-base,hidden_states[9],PC1 variance share,0.3351317048072815,0.0399852213081176,"archived h[:, 1:] kept the 4 learned register tokens in the patch population"
+vit_sae/registers_only_results.json,dinov2-with-registers-base,hidden_states[9],outlier energy on PC1,0.9984435439109802,,"archived h[:, 1:] kept the 4 learned register tokens in the patch population"

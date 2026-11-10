@@ -1,0 +1,37 @@
+{
+ "blocked": true,
+ "why": "intervention failed its validation gate",
+ "validation": {
+  "cls_cosine_baseline_vs_intervened": 0.9373543858528137,
+  "wrapper_matches_hf_max_abs_diff": 0.0,
+  "patch_tokens_baseline": 256,
+  "patch_tokens_intervened": 256,
+  "token_counts_match": true,
+  "outlier_frac_baseline": 0.0123291015625,
+  "outlier_frac_intervened": 0.0,
+  "outlier_frac_ratio": 0.0,
+  "max_patch_norm_baseline": 598.3856201171875,
+  "max_patch_norm_intervened": 47.54484176635742,
+  "added_register_mean_norm": 37.13644790649414,
+  "register_carries_more_than_max_patch": false,
+  "median_patch_norm_baseline": 25.07147216796875,
+  "detect_layer": -2,
+  "norm_mult": 10.0,
+  "variant": "per_neuron",
+  "per_neuron_max": true,
+  "n_registers": 1,
+  "selected_layers": {
+   "8": 7,
+   "9": 4,
+   "7": 7,
+   "6": 10,
+   "5": 8,
+   "4": 4,
+   "0": 7,
+   "2": 1,
+   "1": 1,
+   "3": 1
+  },
+  "passes": false
+ }
+}
