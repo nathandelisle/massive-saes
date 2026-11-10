@@ -520,7 +520,7 @@ def main(argv=None):
     ap.add_argument("--max-seqs", type=int, default=None)
     a = ap.parse_args(argv)
     spec = M.spec_of(a.model)
-    out = common.RESULTS / "aux" / a.model
+    out = common.RESULTS / "auxiliary" / a.model
     out.mkdir(parents=True, exist_ok=True)
     dev = "cuda" if torch.cuda.is_available() else "cpu"
     prep, mean, pca, alive_npz = fetch_prep(a.model)
